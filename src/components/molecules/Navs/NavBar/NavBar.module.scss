@@ -1,0 +1,41 @@
+@use "../../../../shared/styles/index" as *;
+
+.NavBar {
+  @include flexRow(space-between);
+  flex-wrap: wrap;
+  gap: $large;
+  width: 100%;
+  padding: $padding-content-mobile;
+
+  img {
+    max-width: 180px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  ul {
+    @include flexRow();
+    flex-wrap: wrap;
+    gap: $medium;
+    list-style: none;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+      font-size: 1.375rem;
+    }
+  }
+
+  @include resolution(xx-desktop, max-width) {
+    ul {
+      display: none;
+    }
+  }
+
+  @include resolution(tablet) {
+    padding: $padding-content-tablet;
+    img {
+      max-width: 200px;
+    }
+  }
+}

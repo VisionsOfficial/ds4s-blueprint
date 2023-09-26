@@ -1,0 +1,12 @@
+@use "../../../shared/styles/index" as *;
+
+.Copyright {
+  @include flexRow();
+  padding: $small;
+  background: $primary;
+  color: $white;
+  text-align: center;
+  text-wrap: balance;
+  font-size: 18px;
+  width: 100%;
+}

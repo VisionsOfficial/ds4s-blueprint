@@ -1,0 +1,16 @@
+@use "../../../../shared/styles/index" as *;
+
+.FooterList {
+  text-decoration: none;
+  list-style: none;
+  @include flexColumn(flex-start);
+  gap: $x-small;
+  font-size: 1.1rem;
+  min-width: fit-content;
+
+  .title {
+    font-weight: bold;
+    font-size: 1.35rem;
+    margin-bottom: $small;
+  }
+}

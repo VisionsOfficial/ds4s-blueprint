@@ -1,0 +1,17 @@
+@use "../../../../shared/styles/index" as *;
+
+.BurgerMenu {
+  cursor: pointer;
+  span {
+    display: block;
+    width: $large;
+    height: 3px;
+    background-color: $primary;
+    margin: 6px 0;
+    border-radius: $x-small;
+  }
+
+  @include resolution(xx-desktop) {
+    display: none;
+  }
+}

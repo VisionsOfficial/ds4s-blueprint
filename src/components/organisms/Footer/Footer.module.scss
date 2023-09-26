@@ -1,0 +1,77 @@
+@use "../../../shared/styles/index" as *;
+
+.Footer {
+  background: $gradient-footer;
+  color: $white;
+
+  &Content {
+    padding: $padding-content-mobile;
+    padding-bottom: $large;
+    @include flexColumn();
+    gap: 40px;
+    .description {
+      @include flexColumn();
+      gap: $large;
+      .logos {
+        @include flexColumn();
+        gap: $medium;
+
+        img {
+          max-width: 280px;
+          transition: all 0.2s ease-in-out;
+        }
+
+        .ds4skillsLogo {
+          filter: brightness(0) invert(1);
+          max-width: 180px;
+        }
+      }
+
+      p {
+        text-align: justify;
+        line-height: 1;
+        font-size: 1.1rem;
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .listsContainer {
+    @include fluidGrid(130px);
+    justify-items: flex-start;
+    justify-content: center;
+    gap: $large;
+    width: 100%;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  @include resolution(tablet) {
+    &Content {
+      @include flexRow(space-between, flex-start);
+      gap: 80px;
+      max-width: $max-width-content;
+      padding: $padding-content-tablet;
+      margin: auto;
+
+      .description {
+        flex: 1;
+        .logos {
+          @include flexRow(flex-start);
+          flex-wrap: wrap;
+          width: 100%;
+        }
+      }
+
+      .listsContainer {
+        width: auto;
+        @include flexRow();
+      }
+    }
+  }
+}

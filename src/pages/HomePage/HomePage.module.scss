@@ -1,0 +1,10 @@
+@use "../../shared/styles/index" as *;
+
+.HomePage {
+  .header {
+    background-color: $primary;
+    width: 100%;
+    min-height: 200px;
+    color: white;
+  }
+}

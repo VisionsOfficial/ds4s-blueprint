@@ -1,0 +1,60 @@
+@use "../../../../shared/styles/index" as *;
+
+.SideNav {
+  min-height: 100vh;
+  width: 270px;
+  background: $gradient-footer;
+  transition: transform 0.5s ease;
+  float: right;
+  padding: $medium;
+  position: relative;
+  padding-top: 90px;
+  @include flexColumn(center, flex-start);
+  cursor: initial;
+  animation: slide-in-right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+
+  ul {
+    @include flexColumn(flex-end);
+    width: 100%;
+    gap: $large;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: $medium;
+    right: $medium;
+    color: $white;
+    cursor: pointer;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.closeMenu {
+  animation: slide-away 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes slide-away {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(270px);
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(270px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
