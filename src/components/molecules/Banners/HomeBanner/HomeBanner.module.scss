@@ -1,0 +1,23 @@
+@use "../../../../shared/styles/index" as *;
+
+.HomeBanner {
+  background-color: $primary;
+  min-height: 200px;
+  color: white;
+  @include flexRow(space-between);
+  gap: $medium;
+
+  .description {
+    @include flexColumn(flex-start);
+    gap: $medium;
+  }
+
+  @include resolution(x-tablet, max-width) {
+    flex-wrap: wrap;
+    justify-content: center;
+    .description {
+      text-align: center;
+      align-items: center;
+    }
+  }
+}

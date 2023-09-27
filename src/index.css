@@ -42,3 +42,38 @@ body {
 a {
   text-decoration: none;
 }
+
+.img-placeholder {
+  background-color: black;
+  width: 250px;
+  max-width: 250px;
+  min-width: 250px;
+  height: 250px;
+  min-height: 250px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1.375rem;
+  }
+}

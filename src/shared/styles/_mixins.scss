@@ -56,3 +56,22 @@
   -webkit-line-clamp: $line-clamp;
   -webkit-box-orient: vertical;
 }
+
+@mixin sizingContent {
+  transition: all 0.2s ease-in-out;
+  margin-inline: auto;
+  padding: $padding-content-mobile;
+  width: 100%;
+
+  @include resolution(tablet) {
+    padding: $padding-content-tablet;
+  }
+
+  @include resolution(x-desktop) {
+    padding: $padding-content;
+  }
+
+  @include resolution(desktop) {
+    padding: 3.5rem 15rem;
+  }
+}

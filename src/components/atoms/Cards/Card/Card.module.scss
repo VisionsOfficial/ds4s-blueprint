@@ -1,0 +1,23 @@
+@use "../../../../shared/styles/index" as *;
+
+.Card {
+  border-radius: 0 0 $large $large;
+  overflow: hidden;
+}
+
+.bgDefault {
+  background-color: $primary;
+  color: $white;
+}
+
+.bgUseCases {
+  background-color: $tertiary;
+}
+
+.bgBBs {
+  background-color: $secondary;
+}
+
+.bgInitiatives {
+  background-color: $quaternary;
+}

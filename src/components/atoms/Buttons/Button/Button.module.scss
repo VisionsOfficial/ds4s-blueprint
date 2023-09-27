@@ -1,0 +1,80 @@
+@use "../../../../shared/styles/index" as *;
+
+.Button {
+  border: 0;
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  border-radius: $large;
+  font-size: 1.1rem;
+  @include flexRow();
+  gap: $small;
+
+  svg {
+    background-color: $white;
+    border-radius: 50%;
+    min-width: 25px;
+    max-width: 25px;
+  }
+
+  .svgPrimary {
+    stroke: $primary;
+  }
+
+  .svgSecondary {
+    stroke: $secondary;
+  }
+
+  .svgTertiary {
+    stroke: $tertiary;
+  }
+
+  .svgQuaternary {
+    stroke: $quaternary;
+  }
+
+  .svgWhite {
+    stroke: $white;
+  }
+
+  .svgBlack {
+    stroke: black;
+  }
+
+  .initiatives {
+    svg {
+      stroke: $quaternary;
+    }
+  }
+
+  @include resolution(mobile) {
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+  }
+}
+
+.bgPrimary {
+  background-color: $primary;
+  color: $white;
+
+  svg {
+    stroke: $primary;
+  }
+}
+
+.bgSecondary {
+  background-color: $secondary;
+  color: $white;
+
+  svg {
+    stroke: $secondary;
+  }
+}
+
+.bgWhite {
+  background-color: $white;
+}
+
+.bgTransparent {
+  background-color: transparent;
+  border-radius: 0;
+}

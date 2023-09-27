@@ -5,7 +5,7 @@
   color: $white;
 
   &Content {
-    padding: $padding-content-mobile;
+    @include sizingContent();
     padding-bottom: $large;
     @include flexColumn();
     gap: 40px;
@@ -55,8 +55,6 @@
     &Content {
       @include flexRow(space-between, flex-start);
       gap: 80px;
-      max-width: $max-width-content;
-      padding: $padding-content-tablet;
       margin: auto;
 
       .description {

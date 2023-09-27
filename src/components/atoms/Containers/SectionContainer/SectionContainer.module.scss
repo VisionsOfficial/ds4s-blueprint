@@ -1,0 +1,19 @@
+@use "../../../../shared/styles/index" as *;
+
+.SectionContainer {
+  @include sizingContent();
+  min-height: 450px;
+}
+
+.primary {
+  background-color: $primary;
+  color: $white;
+}
+
+.secondary {
+  background-color: $secondary;
+}
+
+.white {
+  background-color: $white;
+}

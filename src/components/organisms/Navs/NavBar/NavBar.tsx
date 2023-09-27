@@ -3,8 +3,8 @@ import Styles from "./NavBar.module.scss";
 import { Link } from "react-router-dom";
 import { APP_LINKS } from "../../../../utils/appLinks";
 import { APP_IMAGES } from "../../../../utils/appImages";
-import { SideNav } from "../../../organisms/Navs/SideNav/SideNav";
-import { BurgerMenu } from "../../Menus/BurgerMenu/BurgerMenu";
+import { SideNav } from "../SideNav/SideNav";
+import { BurgerMenu } from "../../../molecules/Menus/BurgerMenu/BurgerMenu";
 import { NavBarLinks } from "../../../../types";
 
 const CONTENT_NAVBAR: NavBarLinks[] = [
