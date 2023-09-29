@@ -1,0 +1,26 @@
+@use "../../../../shared/styles/index" as *;
+
+.Modal {
+  background-color: $white;
+  border-radius: $large;
+
+  .content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 1.5rem;
+    padding-top: 3rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .minus {
+      background-color: $secondary;
+      border-radius: 50%;
+      stroke: $white;
+      cursor: pointer;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+  }
+}

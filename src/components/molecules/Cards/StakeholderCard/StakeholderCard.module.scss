@@ -1,0 +1,117 @@
+@use "../../../../shared/styles/index" as *;
+
+.StakeholderCard {
+  width: 280px;
+  background-color: $white;
+  @include flexColumn(stretch, space-between);
+  position: relative;
+  overflow: visible;
+
+  header {
+    @include flexColumn();
+    gap: $small;
+    padding: 1.5rem;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      border-radius: 1rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      text-align: center;
+      text-wrap: balance;
+    }
+  }
+
+  .content {
+    button {
+      width: 100%;
+      border-top: 1px solid black;
+      padding: 0.5rem 1.5rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  &:nth-child(5n + 1) {
+    header {
+      h3 {
+        color: $hight-light-primary;
+      }
+    }
+
+    .content {
+      button {
+        svg {
+          background-color: $hight-light-primary !important;
+        }
+      }
+    }
+  }
+
+  &:nth-child(5n + 2) {
+    header {
+      h3 {
+        color: $tertiary;
+      }
+    }
+
+    .content {
+      button {
+        svg {
+          background-color: $tertiary !important;
+        }
+      }
+    }
+  }
+
+  &:nth-child(5n + 3) {
+    header {
+      h3 {
+        color: $light-primary;
+      }
+    }
+
+    .content {
+      button {
+        svg {
+          background-color: $light-primary !important;
+        }
+      }
+    }
+  }
+
+  &:nth-child(5n + 4) {
+    header {
+      h3 {
+        color: $quaternary;
+      }
+    }
+
+    .content {
+      button {
+        svg {
+          background-color: $quaternary !important;
+        }
+      }
+    }
+  }
+
+  &:nth-child(5n + 5) {
+    header {
+      h3 {
+        color: $secondary;
+      }
+    }
+
+    .content {
+      button {
+        svg {
+          background-color: $secondary !important;
+        }
+      }
+    }
+  }
+}

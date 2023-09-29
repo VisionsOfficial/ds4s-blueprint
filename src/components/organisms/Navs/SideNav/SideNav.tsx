@@ -2,16 +2,68 @@ import { PropsWithChildren, useEffect, useState } from "react";
 import Styles from "./SideNav.module.scss";
 import { Link } from "react-router-dom";
 import { APP_LINKS } from "../../../../utils/appLinks";
+import { NavBarLinks } from "../../../../types";
 
 type SideNavProps = {
   closing: () => void;
 };
+
+const CONTENT_NAVBAR: NavBarLinks[] = [
+  {
+    name: "Home",
+    url: APP_LINKS.home,
+  },
+  {
+    name: "Use cases",
+    url: APP_LINKS.useCases + "/map",
+  },
+  {
+    name: "Building blocks",
+    url: APP_LINKS.buildingBlocks,
+  },
+  {
+    name: "Initiatives",
+    url: APP_LINKS.initiatives,
+  },
+  {
+    name: "Wiki",
+    url: "http://example.com",
+  },
+];
 
 export const SideNav = ({ closing }: PropsWithChildren<SideNavProps>) => {
   const [closingAnimation, setClosingAnimation] = useState(false);
 
   const handleClosingAnimation = () => {
     setClosingAnimation((prev) => !prev);
+  };
+
+  const setNavBarLink = (el: NavBarLinks) => {
+    if (el.name === "Wiki") {
+      return (
+        <Link
+          to={el.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => {
+            handleClosingAnimation();
+          }}
+        >
+          {el.name}
+        </Link>
+      );
+    } else {
+      return (
+        <Link
+          to={el.url}
+          onClick={() => {
+            handleClosingAnimation();
+          }}
+        >
+          {el.name}
+        </Link>
+      );
+    }
   };
 
   useEffect(() => {
@@ -59,27 +111,9 @@ export const SideNav = ({ closing }: PropsWithChildren<SideNavProps>) => {
           </svg>
         </div>
         <ul>
-          <li>
-            <Link to={APP_LINKS.home}>Home</Link>
-          </li>
-          <li>
-            <Link to={APP_LINKS.useCases}>Use cases</Link>
-          </li>
-          <li>
-            <Link to={APP_LINKS.buildingBlocks}>Building blocks</Link>
-          </li>
-          <li>
-            <Link to={APP_LINKS.initiatives}>Initiatives</Link>
-          </li>
-          <li>
-            <Link
-              to={"http://example.com"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Wiki
-            </Link>
-          </li>
+          {CONTENT_NAVBAR.map((el, index) => (
+            <li key={el.name + index}>{setNavBarLink(el)}</li>
+          ))}
         </ul>
       </aside>
     </div>

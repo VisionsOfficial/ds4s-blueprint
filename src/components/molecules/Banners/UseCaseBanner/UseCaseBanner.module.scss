@@ -1,0 +1,51 @@
+@use "../../../../shared/styles/index" as *;
+
+.UseCaseBanner {
+  @include flexColumn(stretch);
+  gap: $large;
+  background-image: url("../../../../assets/imgs/img/useCase/use_case_banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .nav {
+    @include flexColumn(flex-start);
+    gap: $medium;
+    margin-bottom: $large;
+
+    button {
+      flex-wrap: wrap;
+      justify-content: flex-start !important;
+      color: $white;
+      padding: 0;
+      span {
+        text-transform: uppercase;
+      }
+
+      &:last-child {
+        justify-content: flex-end !important;
+        flex-wrap: wrap-reverse;
+        align-self: flex-end;
+      }
+    }
+
+    @include resolution(x-tablet) {
+      @include flexRow(space-between);
+    }
+  }
+
+  header {
+    @include flexRow(flex-start);
+    gap: $medium;
+
+    span {
+      font-size: 2.5rem;
+    }
+
+    img {
+      background-color: $white;
+      border-radius: 50%;
+      width: min(40px, 40px);
+    }
+  }
+}

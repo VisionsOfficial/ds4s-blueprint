@@ -1,0 +1,199 @@
+@use "../../../../shared/styles/index" as *;
+
+.backdrop {
+  background-color: $black-opacity;
+}
+
+.StakeholderModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: scale-in 0.2s forwards ease-in-out;
+  z-index: $zindex-modal;
+  > div {
+    @include resolution(xx-desktop) {
+      &::-webkit-scrollbar-track {
+        border-radius: $large;
+      }
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: $large;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: $light-primary;
+      }
+    }
+  }
+
+  .path {
+    font-size: 1.2rem;
+    margin-bottom: $medium;
+  }
+
+  .content {
+    @include flexColumn();
+    gap: $small;
+
+    h4 {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    button {
+      padding: 0.7rem 1.2rem;
+      align-self: flex-start;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      margin-top: $small;
+    }
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1.04);
+  }
+}
+
+.hightLightPrimary {
+  svg {
+    background-color: $hight-light-primary !important;
+  }
+
+  > div {
+    &::-webkit-scrollbar-thumb {
+      background: $hight-light-primary;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: $light-primary;
+    }
+  }
+
+  .path {
+    color: $hight-light-primary;
+  }
+
+  .content {
+    button {
+      background-color: $hight-light-primary;
+    }
+  }
+}
+
+.tertiary {
+  svg {
+    background-color: $tertiary !important;
+  }
+
+  > div {
+    &::-webkit-scrollbar-thumb {
+      background: $tertiary;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: $dark-tertiary;
+    }
+  }
+
+  .path {
+    color: $tertiary;
+  }
+
+  .content {
+    button {
+      background-color: $tertiary;
+    }
+  }
+}
+
+.lightPrimary {
+  svg {
+    background-color: $light-primary !important;
+  }
+
+  > div {
+    &::-webkit-scrollbar-thumb {
+      background: $light-primary;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: $primary;
+    }
+  }
+
+  .path {
+    color: $light-primary;
+  }
+
+  .content {
+    button {
+      background-color: $light-primary;
+    }
+  }
+}
+
+.quaternary {
+  svg {
+    background-color: $quaternary !important;
+  }
+
+  > div {
+    &::-webkit-scrollbar-thumb {
+      background: $quaternary;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: $dark-quaternary;
+    }
+  }
+
+  .path {
+    color: $quaternary;
+  }
+
+  .content {
+    button {
+      background-color: $quaternary;
+    }
+  }
+}
+
+.secondary {
+  svg {
+    background-color: $secondary !important;
+  }
+
+  > div {
+    &::-webkit-scrollbar-thumb {
+      background: $secondary;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: $dark-secondary;
+    }
+  }
+
+  .path {
+    color: $secondary;
+  }
+
+  .content {
+    button {
+      background-color: $secondary;
+    }
+  }
+}

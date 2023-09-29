@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Styles from "./NavBar.module.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { APP_LINKS } from "../../../../utils/appLinks";
 import { APP_IMAGES } from "../../../../utils/appImages";
 import { SideNav } from "../SideNav/SideNav";
@@ -14,7 +14,7 @@ const CONTENT_NAVBAR: NavBarLinks[] = [
   },
   {
     name: "Use cases",
-    url: APP_LINKS.useCases,
+    url: APP_LINKS.useCases + "/map",
   },
   {
     name: "Building blocks",
@@ -31,6 +31,7 @@ const CONTENT_NAVBAR: NavBarLinks[] = [
 ];
 
 export const NavBar = () => {
+  const navigate = useNavigate();
   const [sideNavActive, setSideNavActive] = useState(false);
 
   const handleSideNavActive = () => {
@@ -51,7 +52,13 @@ export const NavBar = () => {
 
   return (
     <nav className={Styles.NavBar}>
-      <img src={APP_IMAGES.logo.ds4skills} alt="DS4Skills logo" />
+      <img
+        src={APP_IMAGES.logo.ds4skills}
+        alt="DS4Skills logo"
+        onClick={() => {
+          navigate(APP_LINKS.home);
+        }}
+      />
       <ul>
         {CONTENT_NAVBAR.map((el, index) => (
           <li key={el.name + index}>{setNavBarLink(el)}</li>

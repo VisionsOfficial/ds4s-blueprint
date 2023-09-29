@@ -12,12 +12,48 @@
     gap: $medium;
   }
 
-  @include resolution(x-tablet, max-width) {
+  .image {
+    position: relative;
+    width: calc(100% + 1rem);
+    display: flex;
+    transform: translateY(3.5rem);
+    .mainImg {
+      width: 100%;
+      z-index: 2;
+      position: relative;
+      align-self: center;
+      max-height: 600px;
+      object-fit: contain;
+    }
+
+    .cube {
+      position: absolute;
+      z-index: 1;
+      opacity: 0.2;
+      height: 130%;
+      transform: translate(10%, -20%);
+      object-fit: contain;
+    }
+  }
+
+  @include resolution(xx-desktop, max-width) {
     flex-wrap: wrap;
     justify-content: center;
+    gap: $medium;
+
     .description {
       text-align: center;
       align-items: center;
+    }
+  }
+
+  @include resolution(tablet, max-width) {
+    @include flexColumn();
+    .image {
+      .cube {
+        height: 150%;
+        transform: translate(0%, -25%);
+      }
     }
   }
 }

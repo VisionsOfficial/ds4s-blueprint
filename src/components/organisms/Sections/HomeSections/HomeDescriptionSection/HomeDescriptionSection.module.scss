@@ -1,0 +1,16 @@
+@use "../../../../../shared/styles/index" as *;
+
+.HomeDescriptionSection {
+  @include flexColumn();
+  gap: $large;
+  text-align: center;
+  color: $secondary;
+  span {
+    font-weight: bold;
+  }
+
+  img {
+    width: min(100px, 100px);
+    aspect-ratio: 1/1;
+  }
+}

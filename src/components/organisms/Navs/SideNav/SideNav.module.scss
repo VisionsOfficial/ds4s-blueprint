@@ -9,6 +9,7 @@
   padding: $medium;
   position: relative;
   padding-top: 90px;
+  z-index: $zindex-modal;
   @include flexColumn(center, flex-start);
   cursor: initial;
   animation: slide-in-right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
@@ -34,6 +35,10 @@
       width: 30px;
       height: 30px;
     }
+  }
+
+  @include resolution(xx-desktop) {
+    display: none;
   }
 }
 

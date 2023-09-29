@@ -1,13 +1,16 @@
 @use "../../../../shared/styles/index" as *;
 
 .ExploreCard {
+  border-radius: 0 0 $large $large !important;
   width: 100%;
-  max-width: 270px;
+  max-width: 290px;
   min-width: 250px;
 
   img {
     width: 100%;
     max-width: 100%;
+    min-height: 250px;
+    object-fit: cover;
     cursor: pointer;
   }
 
@@ -16,6 +19,7 @@
     font-weight: bold;
     font-size: 1.4rem;
     text-align: start;
+    padding: 1.7rem 1.5rem;
     svg {
       transition: transform 0.2s ease-in-out;
       transform: rotate(0deg);
@@ -47,5 +51,15 @@
 
   .isOpen {
     grid-template-rows: 1fr;
+  }
+}
+
+.discover {
+  svg {
+    background-color: initial !important;
+  }
+
+  button {
+    color: $white;
   }
 }

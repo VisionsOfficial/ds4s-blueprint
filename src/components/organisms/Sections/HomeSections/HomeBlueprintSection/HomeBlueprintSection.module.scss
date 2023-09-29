@@ -1,0 +1,65 @@
+@use "../../../../../shared/styles/index" as *;
+
+.HomeBlueprintSection {
+  @include flexColumn();
+  gap: $large;
+  position: relative;
+
+  &Content {
+    @include flexColumn();
+    gap: $medium;
+    text-align: center;
+    h2 {
+      color: $secondary;
+    }
+
+    p {
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .image {
+    position: relative;
+    width: calc(100% + 2rem);
+    display: flex;
+    transform: translateY(3.5rem);
+    .laptop {
+      width: 100%;
+      z-index: 2;
+      position: relative;
+      align-self: center;
+    }
+
+    .cube {
+      position: absolute;
+      z-index: 1;
+      opacity: 0.2;
+      height: 150%;
+      transform: translate(0%, -20%);
+      object-fit: contain;
+    }
+  }
+
+  @include resolution(tablet) {
+    &Content {
+      text-align: start;
+      align-items: flex-start;
+    }
+
+    .image {
+      width: calc(100% + 6rem);
+    }
+  }
+
+  @include resolution(xx-desktop) {
+    @include flexRow(space-between, stretch);
+    gap: 0;
+
+    .image {
+      min-width: 60%;
+      align-self: flex-end;
+    }
+  }
+}

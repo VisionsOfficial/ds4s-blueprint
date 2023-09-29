@@ -28,6 +28,7 @@ export const Card = (props: PropsWithChildren<CardProps>) => {
         break;
 
       default:
+        color = Styles.bgDefault;
         break;
     }
 

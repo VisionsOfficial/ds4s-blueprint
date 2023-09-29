@@ -1,13 +1,12 @@
 @use "../../../../shared/styles/index" as *;
 
 .Card {
-  border-radius: 0 0 $large $large;
+  border-radius: $large;
   overflow: hidden;
 }
 
 .bgDefault {
   background-color: $primary;
-  color: $white;
 }
 
 .bgUseCases {

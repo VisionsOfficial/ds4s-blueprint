@@ -3,7 +3,7 @@ import Styles from "./SectionContainer.module.scss";
 
 type SectionContainerProps = {
   className?: string;
-  variantColor?: "primary" | "secondary" | "white";
+  variantColor?: "primary" | "secondary" | "white" | "grey";
 };
 
 export const SectionContainer = ({
@@ -23,6 +23,9 @@ export const SectionContainer = ({
         break;
       case "white":
         color = Styles.white;
+        break;
+      case "grey":
+        color = Styles.grey;
         break;
 
       default:
