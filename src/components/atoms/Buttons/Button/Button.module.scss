@@ -40,6 +40,14 @@
     stroke: black;
   }
 
+  .svgHightLightPrimary {
+    stroke: $hight-light-primary;
+  }
+
+  .svgLightPrimary {
+    stroke: $light-primary;
+  }
+
   .initiatives {
     svg {
       stroke: $quaternary;
@@ -77,4 +85,24 @@
 .bgTransparent {
   background-color: transparent;
   border-radius: 0;
+}
+
+.bgHightLightPrimary {
+  background-color: $hight-light-primary;
+}
+
+.bgTertiary {
+  background-color: $tertiary;
+}
+
+.bgLightPrimary {
+  background-color: $light-primary;
+}
+
+.bgQuaternary {
+  background-color: $quaternary;
+}
+
+.bgBlack {
+  background-color: black;
 }

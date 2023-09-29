@@ -1,0 +1,23 @@
+@use "../../../../shared/styles/index" as *;
+
+.StakeholderDocumentationByCategoryCard {
+  background-color: $grey;
+  border-radius: 0;
+  padding: 1.5rem;
+  @include flexColumn(stretch, flex-start);
+  gap: $medium;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    @include fluidGrid(250px);
+    gap: $medium;
+    p {
+      color: $white;
+      text-align: center;
+      padding: 0.5rem 1rem;
+    }
+  }
+}

@@ -4,6 +4,9 @@ import { Modal } from "../../../atoms/Modals/Modal/Modal";
 import { CategoriesContentStakeholder } from "../../../../hooks/useStakeholder";
 import { Button } from "../../../atoms/Buttons/Button/Button";
 import { Stakeholder } from "../../../../types";
+import { useNavigate, useParams } from "react-router-dom";
+import { APP_LINKS } from "../../../../utils/appLinks";
+import { LOCAL_STORAGE_KEY } from "../../../../utils/keys/localStorageKeys";
 
 type StakeholderModalProps = {
   closingModal: () => void;
@@ -20,10 +23,55 @@ export const StakeholderModal = ({
   stakeholderSection,
   nthChild = 0,
 }: PropsWithChildren<StakeholderModalProps>) => {
+  const navigate = useNavigate();
+  const { useCase } = useParams();
   const [child, setChild] = useState<string>();
 
   const setProps = () => {
     return [Styles.StakeholderModal, clasName, child].join(" ");
+  };
+
+  const handleClickButton = () => {
+    if (!useCase) return;
+    switch (nthChild % 5) {
+      case 0:
+        sessionStorage.setItem(
+          LOCAL_STORAGE_KEY.color.stakeholder,
+          "hightLightPrimary"
+        );
+        break;
+      case 1:
+        sessionStorage.setItem(LOCAL_STORAGE_KEY.color.stakeholder, "tertiary");
+        break;
+      case 2:
+        sessionStorage.setItem(
+          LOCAL_STORAGE_KEY.color.stakeholder,
+          "lightPrimary"
+        );
+        break;
+      case 3:
+        sessionStorage.setItem(
+          LOCAL_STORAGE_KEY.color.stakeholder,
+          "quaternary"
+        );
+        break;
+      case 4:
+        sessionStorage.setItem(
+          LOCAL_STORAGE_KEY.color.stakeholder,
+          "secondary"
+        );
+        break;
+
+      default:
+        break;
+    }
+
+    navigate(
+      APP_LINKS.useCases +
+        `/${useCase}/${stakeholderSection?.replace(/\s+/g, "-")}/${
+          stakeholder?.name
+        }`
+    );
   };
 
   useEffect(() => {
@@ -63,7 +111,13 @@ export const StakeholderModal = ({
             {stakeholder?.content.definition}
           </p>
 
-          <Button>Learn more</Button>
+          <Button
+            onClick={() => {
+              handleClickButton();
+            }}
+          >
+            Learn more
+          </Button>
         </div>
       </Modal>
       <div

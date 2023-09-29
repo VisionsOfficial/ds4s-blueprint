@@ -1,19 +1,14 @@
 import React, { PropsWithChildren } from "react";
 import Styles from "./Button.module.scss";
+import { ColorVariant } from "../../../../types";
 
 type ButtonProps = React.DetailedHTMLProps<
   React.ButtonHTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement
 > & {
   className?: string;
-  variantBgColor?: "primary" | "secondary" | "transparent" | "white";
-  variantSvgColor?:
-    | "primary"
-    | "secondary"
-    | "tertiary"
-    | "quaternary"
-    | "white"
-    | "black";
+  variantBgColor?: ColorVariant;
+  variantSvgColor?: ColorVariant;
   icon?: "plus" | "arrowLeft" | "arrowRight" | "plusSquare";
   iconPosition?: "prev" | "next";
 };
@@ -44,6 +39,21 @@ export const Button = (props: PropsWithChildren<ButtonProps>) => {
       case "transparent":
         bgColor = Styles.bgTransparent;
         break;
+      case "hightLightPrimary":
+        bgColor = Styles.bgHightLightPrimary;
+        break;
+      case "tertiary":
+        bgColor = Styles.bgTertiary;
+        break;
+      case "lightPrimary":
+        bgColor = Styles.bgLightPrimary;
+        break;
+      case "quaternary":
+        bgColor = Styles.bgQuaternary;
+        break;
+      case "black":
+        bgColor = Styles.bgBlack;
+        break;
 
       default:
         break;
@@ -66,6 +76,10 @@ export const Button = (props: PropsWithChildren<ButtonProps>) => {
         return Styles.svgWhite;
       case "black":
         return Styles.svgBlack;
+      case "hightLightPrimary":
+        return Styles.svgHightLightPrimary;
+      case "lightPrimary":
+        return Styles.svgLightPrimary;
       default:
         return "";
     }

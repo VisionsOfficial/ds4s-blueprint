@@ -1,0 +1,65 @@
+@use "../../shared/styles/color" as *;
+
+.bgPrimary {
+  background-color: $primary;
+}
+
+.bgSecondary {
+  background-color: $secondary;
+}
+
+.bgWhite {
+  background-color: $white;
+}
+
+.bgHightLightPrimary {
+  background-color: $hight-light-primary;
+}
+
+.bgTertiary {
+  background-color: $tertiary;
+}
+
+.bgLightPrimary {
+  background-color: $light-primary;
+}
+
+.bgQuaternary {
+  background-color: $quaternary;
+}
+
+.bgBlack {
+  background-color: black;
+}
+
+.primary {
+  color: $primary;
+}
+
+.secondary {
+  color: $secondary;
+}
+
+.white {
+  color: $white;
+}
+
+.hightLightPrimary {
+  color: $hight-light-primary;
+}
+
+.tertiary {
+  color: $tertiary;
+}
+
+.lightPrimary {
+  color: $light-primary;
+}
+
+.quaternary {
+  color: $quaternary;
+}
+
+.black {
+  color: black;
+}

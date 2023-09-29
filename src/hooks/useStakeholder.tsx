@@ -17,6 +17,11 @@ export type CategoriesContentStakeholder = {
   content: {
     title: string;
     definition: string;
+    examples?: string[];
+    secondExamples?: string[];
+    obligations?: string[];
+    benefits?: string[];
+    costs?: string[];
   };
 };
 
@@ -36,6 +41,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Individuals Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -44,6 +65,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Individuals Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -52,6 +89,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Individuals Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -60,6 +113,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Individuals Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -76,6 +145,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Edtechs & AI Providers Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -84,6 +169,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Edtechs & AI Providers Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -92,6 +193,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Edtechs & AI Providers Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -100,6 +217,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Edtechs & AI Providers Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -116,6 +249,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Educational Institutions Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -124,6 +273,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Educational Institutions Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -132,6 +297,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Educational Institutions Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -140,6 +321,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Educational Institutions Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -156,6 +353,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Individuals and employees Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -164,6 +377,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Individuals and employees Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -172,6 +401,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Individuals and employees Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -180,6 +425,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Individuals and employees Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -196,6 +457,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "University & Training providers Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -204,6 +481,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "University & Training providers Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -212,6 +505,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "University & Training providers Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -220,6 +529,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "University & Training providers Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -236,6 +561,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Employers Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -244,6 +585,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Employers Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -252,6 +609,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Employers Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -260,6 +633,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Employers Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -276,6 +665,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Organisational & employers Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -284,6 +689,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Organisational & employers Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -292,6 +713,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Organisational & employers Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -300,6 +737,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Organisational & employers Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -316,6 +769,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Educational & Training providers Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -324,6 +793,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Educational & Training providers Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -332,6 +817,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Educational & Training providers Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -340,6 +841,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Educational & Training providers Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -356,6 +873,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Employment Agencies Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -364,6 +897,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Employment Agencies Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -372,6 +921,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Employment Agencies Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -380,6 +945,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Employment Agencies Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -396,6 +977,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Learning & development units Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -404,6 +1001,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Learning & development units Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -412,6 +1025,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Learning & development units Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -420,6 +1049,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Learning & development units Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -436,6 +1081,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Public Institutions Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -444,6 +1105,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Public Institutions Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -452,6 +1129,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Public Institutions Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -460,6 +1153,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Public Institutions Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -476,6 +1185,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Observatories Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -484,6 +1209,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Observatories Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -492,6 +1233,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Observatories Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -500,6 +1257,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Observatories Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -516,6 +1289,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Governments & Pilocy Markers Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -524,6 +1313,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Governments & Pilocy Markers Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -532,6 +1337,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Governments & Pilocy Markers Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -540,6 +1361,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Governments & Pilocy Markers Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -556,6 +1393,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Orchestator Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -564,6 +1417,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Orchestator Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -572,6 +1441,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Orchestator Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -580,6 +1465,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Orchestator Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -596,6 +1497,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Infrastructure service Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -604,6 +1521,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Infrastructure service Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -612,6 +1545,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Infrastructure service Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -620,6 +1569,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Infrastructure service Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],
@@ -636,6 +1601,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Infrastructure providers Governance",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -644,6 +1625,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Infrastructure providers Business",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -652,6 +1649,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Infrastructure providers Technical",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
               },
             },
             {
@@ -660,6 +1673,22 @@ export const useStakeholder = ({ stakeholder }: Props) => {
                 title: "Infrastructure providers Value",
                 definition:
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
               },
             },
           ],

@@ -3,7 +3,15 @@ import Styles from "./SectionContainer.module.scss";
 
 type SectionContainerProps = {
   className?: string;
-  variantColor?: "primary" | "secondary" | "white" | "grey";
+  variantColor?:
+    | "primary"
+    | "secondary"
+    | "white"
+    | "grey"
+    | "hightLightPrimary"
+    | "tertiary"
+    | "lightPrimary"
+    | "quaternary";
 };
 
 export const SectionContainer = ({
@@ -26,6 +34,18 @@ export const SectionContainer = ({
         break;
       case "grey":
         color = Styles.grey;
+        break;
+      case "hightLightPrimary":
+        color = Styles.hightLightPrimary;
+        break;
+      case "tertiary":
+        color = Styles.tertiary;
+        break;
+      case "lightPrimary":
+        color = Styles.lightPrimary;
+        break;
+      case "quaternary":
+        color = Styles.quaternary;
         break;
 
       default:

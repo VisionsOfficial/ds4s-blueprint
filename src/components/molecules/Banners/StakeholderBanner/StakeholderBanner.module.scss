@@ -1,0 +1,17 @@
+@use "../../../../shared/styles/index" as *;
+
+.StakeholderBanner {
+  color: $white;
+  @include flexColumn(flex-start, flex-start);
+  gap: $large;
+
+  .path {
+    a {
+      text-decoration: underline;
+      color: $white;
+    }
+    .useCase {
+      text-transform: uppercase;
+    }
+  }
+}

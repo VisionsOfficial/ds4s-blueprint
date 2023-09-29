@@ -39,3 +39,14 @@ export type StakeholderCategories =
   | "Business"
   | "Technical"
   | "Value";
+
+export type ColorVariant =
+  | "hightLightPrimary"
+  | "tertiary"
+  | "lightPrimary"
+  | "quaternary"
+  | "secondary"
+  | "primary"
+  | "white"
+  | "transparent"
+  | "black";

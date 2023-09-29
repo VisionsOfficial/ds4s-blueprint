@@ -1,0 +1,14 @@
+@use "../../../../../shared/styles/index" as *;
+
+.StakeholderContentSection {
+  @include flexColumn();
+  gap: $large;
+  .cards {
+    @include fluidGrid(530px);
+    gap: $small;
+    width: 100%;
+  }
+  button {
+    color: $white;
+  }
+}
