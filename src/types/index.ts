@@ -50,3 +50,12 @@ export type ColorVariant =
   | "white"
   | "transparent"
   | "black";
+
+export type GovernanceCategories =
+  | "Standards"
+  | "Accession rules"
+  | "Code of conduct"
+  | "Use cases"
+  | "Business model"
+  | "Data & service usage policies"
+  | "Building blocks";

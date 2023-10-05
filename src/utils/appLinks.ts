@@ -3,4 +3,5 @@ export const APP_LINKS = {
   useCases: "/use-cases",
   buildingBlocks: "/building-blocks",
   initiatives: "/initiatives",
+  govervance: "/governance",
 } as const;

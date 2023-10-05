@@ -5,7 +5,7 @@
   gap: $large;
   .cards {
     @include fluidGrid(530px);
-    gap: $small;
+    gap: $large;
     width: 100%;
   }
   button {

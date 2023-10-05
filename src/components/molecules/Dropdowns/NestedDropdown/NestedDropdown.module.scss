@@ -1,0 +1,196 @@
+@use "../../../../shared/styles/index" as *;
+
+.NestedDropdown {
+  @include flexRow(space-between, stretch);
+  gap: $large;
+  background-color: $secondary;
+  padding: 1.5rem 1rem;
+  border-radius: $medium;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+
+  .main {
+    @include flexRow();
+    gap: $medium;
+    white-space: nowrap;
+    height: 100%;
+    width: 100%;
+    padding-inline: $small;
+
+    svg {
+      fill: #000;
+      border-radius: 50%;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .activeSvg {
+      transform: rotate(-180deg);
+    }
+  }
+
+  .modal {
+    position: absolute;
+    left: -1rem;
+    background-color: $secondary;
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem;
+    width: calc(100% + 2rem);
+    font-size: 1.1rem;
+    z-index: 20;
+  }
+
+  .modalEco {
+    background-color: $light-secondary;
+    z-index: 21;
+  }
+
+  .modalParticipant {
+    background-color: $hight-light-secondary;
+    z-index: 22;
+    width: 100%;
+    left: 0;
+    top: 70px;
+    margin-top: -$small;
+  }
+
+  .dataSpace {
+    position: relative;
+  }
+
+  .ecosystem {
+    @include flexRow(space-between, stretch);
+    gap: $large;
+    background-color: $light-secondary;
+    padding: 1.5rem 1rem;
+    border-radius: $medium;
+    width: 100%;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+
+    &Content {
+      position: relative;
+    }
+
+    .participant {
+      background-color: lighten($color: $light-secondary, $amount: 15);
+      @include flexRow(center, stretch);
+      gap: $large;
+      padding: 1.5rem 1rem;
+      border-radius: $medium;
+      width: 100%;
+      cursor: pointer;
+      z-index: 3;
+      position: relative;
+    }
+  }
+
+  @include resolution(desktop) {
+    .main {
+      min-width: 330px;
+    }
+  }
+
+  @include resolution(xx-desktop, max-width) {
+    .main {
+      font-size: 1.2rem;
+      white-space: initial;
+      padding-inline: 0;
+
+      svg {
+        min-width: 20px;
+        min-height: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  @include resolution(tablet, max-width) {
+    @include flexColumn();
+    width: 100%;
+
+    .dataSpace {
+        width: 100%;
+    }
+
+    .ecosystem {
+      @include flexColumn();
+      &Content {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.quaternary {
+  background-color: $quaternary;
+
+  .modal {
+    background-color: $quaternary;
+  }
+
+  .modalEco {
+    background-color: $light-quaternary;
+  }
+
+  .modalParticipant {
+    background-color: $hight-light-quaternary;
+  }
+
+  .ecosystem {
+    background-color: $light-quaternary;
+
+    .participant {
+      background-color: $hight-light-quaternary;
+    }
+  }
+}
+
+.tertiary {
+  background-color: $tertiary;
+
+  .modal {
+    background-color: $tertiary;
+  }
+
+  .modalEco {
+    background-color: $light-tertiary;
+  }
+
+  .modalParticipant {
+    background-color: $hight-light-tertiary;
+  }
+
+  .ecosystem {
+    background-color: $light-tertiary;
+
+    .participant {
+      background-color: $hight-light-tertiary;
+    }
+  }
+}
+
+.lightPrimary {
+  background-color: $light-primary;
+
+  .modal {
+    background-color: $light-primary;
+  }
+
+  .modalEco {
+    background-color: lighten($color: $hight-light-primary, $amount: 15);
+  }
+
+  .modalParticipant {
+    background-color: lighten($color: $hight-light-primary, $amount: 22);
+  }
+
+  .ecosystem {
+    background-color: lighten($color: $hight-light-primary, $amount: 15);
+
+    .participant {
+      background-color: lighten($color: $hight-light-primary, $amount: 22);
+    }
+  }
+}

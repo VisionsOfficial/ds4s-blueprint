@@ -9,6 +9,7 @@ import { Layout } from "./layouts/Layout/Layout";
 import { APP_LINKS } from "./utils/appLinks";
 import { UseCasePage } from "./pages/UseCasePage/UseCasePage";
 import { StakeholderPage } from "./pages/StakeholderPage/StakeholderPage";
+import { GovernancePage } from "./pages/GovernancePage/GovernancePage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
         path={APP_LINKS.useCases + "/:useCase/:stakeholder/:category"}
         element={<StakeholderPage />}
       ></Route>
+      <Route path={APP_LINKS.govervance} element={<GovernancePage />}></Route>
     </Route>
   )
 );

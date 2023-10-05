@@ -1,0 +1,13 @@
+@use "../../shared/styles/index" as *;
+
+.GovernancePage {
+  .governances {
+    @include flexColumn(stretch);
+    gap: 80px;
+
+    h3 {
+        font-size: 1.7rem;
+        margin-bottom: $small;
+    }
+  }
+}
