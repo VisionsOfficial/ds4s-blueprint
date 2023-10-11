@@ -1,0 +1,42 @@
+@use "../../../../shared/styles/index" as *;
+
+.EUDuneBanner {
+  background-color: $primary;
+  color: $white;
+  @include flexColumn();
+  gap: $medium;
+
+  .informations {
+    @include flexColumn(flex-start);
+    gap: $medium;
+
+    p {
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .image {
+    align-self: center;
+    @include flexColumn(center, flex-end);
+    width: 100%;
+    position: relative;
+    .matilda {
+      width: 100%;
+      align-self: center;
+      max-width: 550px;
+      transform: translateY(3.5rem);
+      position: relative;
+    }
+
+    .absolute {
+      position: absolute;
+      width: 15%;
+    }
+  }
+
+  @include resolution(xx-desktop) {
+    @include flexRow();
+  }
+}

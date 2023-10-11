@@ -32,7 +32,15 @@ export type Stakeholder =
   | "Governments & Pilocy Markers"
   | "Orchestator"
   | "Infrastructure service"
-  | "Infrastructure providers";
+  | "Infrastructure providers"
+  | "Individuals: Matilda, Francesco, Anita"
+  | "Organisations: DigiFutUX, IntelliAITraining"
+  | "Data Intermediary: InfraTrust"
+  | "Governance Authority (association): Fire-X"
+  | "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool"
+  | "Data Providers (Organisational): Jobo, JobRightNow and Jobijob"
+  | "Orchestator: SkillsFast"
+  | "Service Providers: SkillProfiX, SDAI, SkillFast";
 
 export type StakeholderCategories =
   | "Governance"
@@ -49,7 +57,8 @@ export type ColorVariant =
   | "primary"
   | "white"
   | "transparent"
-  | "black";
+  | "black"
+  | "grey";
 
 export type GovernanceCategories =
   | "Standards"
@@ -59,3 +68,14 @@ export type GovernanceCategories =
   | "Business model"
   | "Data & service usage policies"
   | "Building blocks";
+
+export type EUDuneCategoryCard =
+  | "francesco"
+  | "gear"
+  | "cloud"
+  | "graph"
+  | "login"
+  | "ai"
+  | "anita"
+  | "money"
+  | "shield";

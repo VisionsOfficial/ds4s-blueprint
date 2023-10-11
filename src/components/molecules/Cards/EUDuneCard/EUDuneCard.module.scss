@@ -1,0 +1,57 @@
+@use "../../../../shared/styles/index" as *;
+
+.EUDuneCard {
+  background-color: $grey;
+  @include flexColumn(center, flex-start);
+  gap: $medium;
+  padding: 1.5rem 1rem;
+
+  figure {
+    @include flexRow();
+    background-color: $white;
+    border-radius: 60px;
+    width: min(170px, 170px);
+    aspect-ratio: 1/1;
+
+    img {
+      width: 100%;
+      transform: scale(1.1);
+    }
+  }
+
+  p {
+    font-size: 1.05rem;
+  }
+  span {
+    font-weight: bold;
+  }
+
+  ul {
+    list-style: inside;
+    padding-left: $small;
+  }
+
+  .fontHPrimary {
+    color: $hight-light-primary;
+  }
+
+  .fontLPrimary {
+    color: $light-primary;
+  }
+
+  .fontPrimary {
+    color: $primary;
+  }
+
+  .fontTertiary {
+    color: $tertiary;
+  }
+
+  .fontSecondary {
+    color: $secondary;
+  }
+
+  .fontQuaternary {
+    color: $quaternary;
+  }
+}

@@ -1694,6 +1694,849 @@ export const useStakeholder = ({ stakeholder }: Props) => {
           ],
         });
         break;
+      case "Individuals: Matilda, Francesco, Anita":
+        setData({
+          name: "Individuals: Matilda, Francesco, Anita",
+          image: APP_IMAGES.image.stakeholder.individuals,
+          categories: [
+            {
+              name: "Governance",
+              content: {
+                title: "Individuals: Matilda, Francesco, Anita Governance",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Business",
+              content: {
+                title: "Individuals: Matilda, Francesco, Anita Business",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Technical",
+              content: {
+                title: "Individuals: Matilda, Francesco, Anita Technical",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Value",
+              content: {
+                title: "Individuals: Matilda, Francesco, Anita Value",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
+              },
+            },
+          ],
+        });
+        break;
+      case "Organisations: DigiFutUX, IntelliAITraining":
+        setData({
+          name: "Organisations: DigiFutUX, IntelliAITraining",
+          image: APP_IMAGES.image.stakeholder.employmentAgencies,
+          categories: [
+            {
+              name: "Governance",
+              content: {
+                title: "Organisations: DigiFutUX, IntelliAITraining Governance",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Business",
+              content: {
+                title: "Organisations: DigiFutUX, IntelliAITraining Business",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Technical",
+              content: {
+                title: "Organisations: DigiFutUX, IntelliAITraining Technical",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Value",
+              content: {
+                title: "Organisations: DigiFutUX, IntelliAITraining Value",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
+              },
+            },
+          ],
+        });
+        break;
+      case "Data Intermediary: InfraTrust":
+        setData({
+          name: "Data Intermediary: InfraTrust",
+          image: APP_IMAGES.image.stakeholder.dataIntermediary,
+          categories: [
+            {
+              name: "Governance",
+              content: {
+                title: "Data Intermediary: InfraTrust Governance",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Business",
+              content: {
+                title: "Data Intermediary: InfraTrust Business",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Technical",
+              content: {
+                title: "Data Intermediary: InfraTrust Technical",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Value",
+              content: {
+                title: "Data Intermediary: InfraTrust Value",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
+              },
+            },
+          ],
+        });
+        break;
+      case "Governance Authority (association): Fire-X":
+        setData({
+          name: "Governance Authority (association): Fire-X",
+          image: APP_IMAGES.image.stakeholder.publicInstitutions,
+          categories: [
+            {
+              name: "Governance",
+              content: {
+                title: "Governance Authority (association): Fire-X Governance",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Business",
+              content: {
+                title: "Governance Authority (association): Fire-X Business",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Technical",
+              content: {
+                title: "Governance Authority (association): Fire-X Technical",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Value",
+              content: {
+                title: "Governance Authority (association): Fire-X Value",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
+              },
+            },
+          ],
+        });
+        break;
+      case "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool":
+        setData({
+          name: "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool",
+          image: APP_IMAGES.image.stakeholder.learningDevelopmentUnits,
+          categories: [
+            {
+              name: "Governance",
+              content: {
+                title:
+                  "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool Governance",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Business",
+              content: {
+                title:
+                  "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool Business",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Technical",
+              content: {
+                title:
+                  "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool Technical",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Value",
+              content: {
+                title:
+                  "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool Value",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
+              },
+            },
+          ],
+        });
+        break;
+      case "Data Providers (Organisational): Jobo, JobRightNow and Jobijob":
+        setData({
+          name: "Data Providers (Organisational): Jobo, JobRightNow and Jobijob",
+          image: APP_IMAGES.image.stakeholder.employers,
+          categories: [
+            {
+              name: "Governance",
+              content: {
+                title:
+                  "Data Providers (Organisational): Jobo, JobRightNow and Jobijob Governance",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Business",
+              content: {
+                title:
+                  "Data Providers (Organisational): Jobo, JobRightNow and Jobijob Business",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Technical",
+              content: {
+                title:
+                  "Data Providers (Organisational): Jobo, JobRightNow and Jobijob Technical",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Value",
+              content: {
+                title:
+                  "Data Providers (Organisational): Jobo, JobRightNow and Jobijob Value",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
+              },
+            },
+          ],
+        });
+        break;
+      case "Orchestator: SkillsFast":
+        setData({
+          name: "Orchestator: SkillsFast",
+          image: APP_IMAGES.image.stakeholder.orchestrator,
+          categories: [
+            {
+              name: "Governance",
+              content: {
+                title: "Orchestator: SkillsFast Governance",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Business",
+              content: {
+                title: "Orchestator: SkillsFast Business",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Technical",
+              content: {
+                title: "Orchestator: SkillsFast Technical",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Value",
+              content: {
+                title: "Orchestator: SkillsFast Value",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
+              },
+            },
+          ],
+        });
+        break;
+      case "Service Providers: SkillProfiX, SDAI, SkillFast":
+        setData({
+          name: "Service Providers: SkillProfiX, SDAI, SkillFast",
+          image: APP_IMAGES.image.stakeholder.infrastructureProviders,
+          categories: [
+            {
+              name: "Governance",
+              content: {
+                title:
+                  "Service Providers: SkillProfiX, SDAI, SkillFast Governance",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                obligations: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Business",
+              content: {
+                title:
+                  "Service Providers: SkillProfiX, SDAI, SkillFast Business",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Technical",
+              content: {
+                title:
+                  "Service Providers: SkillProfiX, SDAI, SkillFast Technical",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                examples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+                secondExamples: [
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                  "Lorem ipsum",
+                ],
+              },
+            },
+            {
+              name: "Value",
+              content: {
+                title: "Service Providers: SkillProfiX, SDAI, SkillFast Value",
+                definition:
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+                benefits: [
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                  "Benefit definition",
+                ],
+                costs: [
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                  "Cost definition",
+                ],
+              },
+            },
+          ],
+        });
+        break;
 
       default:
         break;

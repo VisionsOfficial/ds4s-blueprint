@@ -32,7 +32,6 @@ export const StakeholderModal = ({
   };
 
   const handleClickButton = () => {
-    if (!useCase) return;
     switch (nthChild % 5) {
       case 0:
         sessionStorage.setItem(
@@ -68,7 +67,7 @@ export const StakeholderModal = ({
 
     navigate(
       APP_LINKS.useCases +
-        `/${useCase}/${stakeholderSection?.replace(/\s+/g, "-")}/${
+        `/${useCase ? useCase : "eudune"}/${stakeholderSection?.replace(/\s+/g, "-")}/${
           stakeholder?.name
         }`
     );

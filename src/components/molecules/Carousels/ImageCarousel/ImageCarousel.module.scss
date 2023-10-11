@@ -1,0 +1,51 @@
+@use "../../../../shared/styles/index" as *;
+
+.ImageCarousel {
+  @include flexRow(space-between);
+  gap: $small;
+  overflow: hidden;
+  width: 100%;
+  padding: $small $medium;
+
+  button {
+    border: none;
+    background-color: darken($grey, 20%);
+    border-radius: 50%;
+    z-index: 2;
+    @include flexRow();
+    svg {
+      stroke: $grey;
+      aspect-ratio: 1/1;
+      width: 40px;
+      height: 40px;
+      top: 50%;
+      cursor: pointer;
+    }
+    &:hover {
+      background-color: $white;
+      svg {
+        stroke: darken($grey, 20%);
+      }
+    }
+  }
+
+  .container {
+    @include flexRow();
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .wrapper {
+    transition: transform 0.3s ease;
+    width: calc(100% * 3);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}

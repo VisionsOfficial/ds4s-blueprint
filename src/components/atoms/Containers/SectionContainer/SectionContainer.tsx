@@ -1,17 +1,10 @@
 import { PropsWithChildren } from "react";
 import Styles from "./SectionContainer.module.scss";
+import { ColorVariant } from "../../../../types";
 
 type SectionContainerProps = {
   className?: string;
-  variantColor?:
-    | "primary"
-    | "secondary"
-    | "white"
-    | "grey"
-    | "hightLightPrimary"
-    | "tertiary"
-    | "lightPrimary"
-    | "quaternary";
+  variantColor?: ColorVariant;
 };
 
 export const SectionContainer = ({

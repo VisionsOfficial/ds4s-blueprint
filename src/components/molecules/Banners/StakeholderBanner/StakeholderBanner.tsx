@@ -30,6 +30,10 @@ export const StakeholderBanner = ({
   };
 
   const setNavigateLink = () => {
+    if (useCase === "eudune") {
+      return APP_LINKS.EUDune;
+    }
+
     return APP_LINKS.useCases + `/${useCase}`;
   };
 

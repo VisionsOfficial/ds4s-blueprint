@@ -10,6 +10,7 @@ import { APP_LINKS } from "./utils/appLinks";
 import { UseCasePage } from "./pages/UseCasePage/UseCasePage";
 import { StakeholderPage } from "./pages/StakeholderPage/StakeholderPage";
 import { GovernancePage } from "./pages/GovernancePage/GovernancePage";
+import { EUDunePage } from "./pages/EUDunePage/EUDunePage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
         element={<StakeholderPage />}
       ></Route>
       <Route path={APP_LINKS.govervance} element={<GovernancePage />}></Route>
+      <Route path={APP_LINKS.EUDune} element={<EUDunePage />}></Route>
     </Route>
   )
 );

@@ -1,0 +1,39 @@
+@use "../../../../../shared/styles/index" as *;
+
+.EUDuneCardsSection {
+  @include flexColumn(stretch);
+  gap: $medium;
+
+  .end {
+    span {
+      font-weight: bold;
+    }
+  }
+
+  @include resolution(tablet) {
+    @include flexRow(center, stretch);
+    flex-wrap: wrap;
+    & > div {
+      width: calc(100% / 2 - $medium);
+    }
+  }
+
+  @include resolution(xx-desktop) {
+    & > div {
+      width: calc(100% / 3 - $medium);
+
+      &:is(:nth-child(5n + 4), :nth-child(5n + 5)) {
+        width: calc(100% / 2 - $medium);
+      }
+    }
+
+    .shield {
+      width: calc(67% - $medium) !important;
+    }
+
+    .end {
+      width: calc(33% - $medium) !important;
+      align-self: flex-end;
+    }
+  }
+}
