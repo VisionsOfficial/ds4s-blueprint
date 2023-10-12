@@ -1,0 +1,16 @@
+@use "../../../../../shared/styles/index" as *;
+
+.MainSchemaSection {
+  @include flexColumn(stretch);
+  gap: $medium;
+  max-width: 230px;
+
+  button {
+    color: $white;
+  }
+
+  .arrow {
+    width: 30px;
+    margin-inline: auto;
+  }
+}

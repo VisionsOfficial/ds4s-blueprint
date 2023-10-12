@@ -22,6 +22,11 @@ import starCheck from "../assets/imgs/icons/eudune/star_check.png";
 import ux from "../assets/imgs/icons/eudune/ux.png";
 import womanPage from "../assets/imgs/icons/eudune/woman_page.png";
 
+import dataProvider from "../assets/imgs/icons/buildingblocks/data_provider.jpg";
+import dataConsumer from "../assets/imgs/icons/buildingblocks/data_consumer.jpg";
+import individual from "../assets/imgs/icons/buildingblocks/individual.jpg";
+import organisation from "../assets/imgs/icons/buildingblocks/organisation.jpg";
+
 //IMAGES
 import homeBanner from "../assets/imgs/img/home/banner.png";
 import homeBlueprint from "../assets/imgs/img/home/laptop_blueprint.png";
@@ -76,6 +81,12 @@ export const APP_IMAGES = {
       womanPage,
     },
     plus,
+    buildingBlock: {
+      dataConsumer,
+      dataProvider,
+      individual,
+      organisation,
+    },
   },
   image: {
     home: {

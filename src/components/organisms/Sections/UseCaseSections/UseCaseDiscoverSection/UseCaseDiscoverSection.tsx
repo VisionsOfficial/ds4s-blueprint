@@ -9,7 +9,7 @@ export const UseCaseDiscoverSection = () => {
       <div className={Styles.cards}>
         <ExploreCard category="Examples" variant="discover" />
         <ExploreCard category="Building Blocks" variant="discover" />
-        <ExploreCard category="Initiatives" variant="discover" />
+        {/* <ExploreCard category="Initiatives" variant="discover" /> */}
       </div>
     </SectionContainer>
   );

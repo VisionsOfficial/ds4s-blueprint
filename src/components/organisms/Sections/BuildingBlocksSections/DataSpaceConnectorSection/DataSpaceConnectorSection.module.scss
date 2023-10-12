@@ -1,0 +1,43 @@
+@use "../../../../../shared/styles/index" as *;
+
+.DataSpaceConnectorSection {
+  @include flexRow();
+  figure {
+    @include flexColumn();
+
+    img {
+      width: 80px;
+      height: 80px;
+      aspect-ratio: 1/1;
+    }
+
+    figcaption {
+      font-weight: bold;
+    }
+  }
+
+  .arrow {
+    width: 50px;
+    height: auto;
+  }
+
+  .container {
+    max-width: 230px;
+    border: 5px dashed $light-tertiary;
+    border-radius: $large;
+    width: max-content;
+    padding: $medium;
+    @include flexColumn(stretch);
+    gap: $medium;
+
+    h4 {
+      color: $light-tertiary;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    button {
+      color: $white;
+    }
+  }
+}

@@ -1,43 +1,55 @@
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren, forwardRef } from "react";
 import Styles from "./Card.module.scss";
-import { ExploreCategories } from "../../../../types";
+import { ColorVariant, ExploreCategories } from "../../../../types";
+import { UseColor } from "../../../../hooks/useColor/useColor";
 
 type CardProps = React.HTMLProps<HTMLDivElement> & {
   className?: string;
   category?: ExploreCategories | "default";
+  variantBgColor?: ColorVariant;
 };
 
-export const Card = (props: PropsWithChildren<CardProps>) => {
-  const { className = "", category = "default", children, ...rest } = props;
+export const Card = forwardRef<HTMLDivElement, PropsWithChildren<CardProps>>(
+  (props, ref) => {
+    const {
+      className = "",
+      category = "default",
+      variantBgColor = "primary",
+      children,
+      ...rest
+    } = props;
 
-  const setProps = () => {
-    let color = "";
+    const { selectedColor } = UseColor({ color: variantBgColor });
 
-    switch (category) {
-      case "default":
-        color = Styles.bgDefault;
-        break;
-      case "Use cases":
-        color = Styles.bgUseCases;
-        break;
-      case "Building Blocks":
-        color = Styles.bgBBs;
-        break;
-      case "Initiatives":
-        color = Styles.bgInitiatives;
-        break;
+    const setProps = () => {
+      let color: string | undefined = "";
 
-      default:
-        color = Styles.bgDefault;
-        break;
-    }
+      switch (category) {
+        case "default":
+          color = selectedColor;
+          break;
+        case "Use cases":
+          color = Styles.bgUseCases;
+          break;
+        case "Building Blocks":
+          color = Styles.bgBBs;
+          break;
+        case "Initiatives":
+          color = Styles.bgInitiatives;
+          break;
 
-    return [Styles.Card, className, color].join(" ");
-  };
+        default:
+          color = Styles.bgDefault;
+          break;
+      }
 
-  return (
-    <div {...rest} className={setProps()}>
-      {children}
-    </div>
-  );
-};
+      return [Styles.Card, className, color].join(" ");
+    };
+
+    return (
+      <div {...rest} ref={ref} className={setProps()}>
+        {children}
+      </div>
+    );
+  }
+);

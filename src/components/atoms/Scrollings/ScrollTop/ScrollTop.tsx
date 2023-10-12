@@ -1,9 +1,7 @@
-import React, { PropsWithChildren } from 'react';
-import { useScrollTop } from '../../../../hooks/useScrollTop';
+import { PropsWithChildren } from "react";
+import { useScrollTop } from "../../../../hooks/useScrollTop";
 
-type Props = {};
-
-export const ScrollTop = ({ children }: PropsWithChildren<Props>) => {
-    useScrollTop();
-    return <>{children}</>;
+export const ScrollTop = ({ children }: PropsWithChildren) => {
+  useScrollTop();
+  return <>{children}</>;
 };

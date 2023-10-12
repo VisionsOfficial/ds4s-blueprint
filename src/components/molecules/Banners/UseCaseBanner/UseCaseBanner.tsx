@@ -12,17 +12,17 @@ type UseCaseBannerProps = {
 
 type BannerContent = {
   links: {
-    prev: {
+    prev?: {
       name: UseCase;
       link: string;
     };
-    next: {
+    next?: {
       name: UseCase;
       link: string;
     };
   };
   icon: string;
-  title: "1) MAP" | "2) MATCH" | "3) FORECAST";
+  title: "1) MATCH" | "2) FORECAST";
   description: string;
 };
 
@@ -40,38 +40,16 @@ export const UseCaseBanner = ({
     }
 
     switch (useCase) {
-      case "map":
-        setContentBanner({
-          links: {
-            prev: {
-              name: "forecast",
-              link: APP_LINKS.useCases + "/forecast",
-            },
-            next: {
-              name: "match",
-              link: APP_LINKS.useCases + "/match",
-            },
-          },
-          icon: "🔎",
-          title: "1) MAP",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-        });
-        break;
       case "match":
         setContentBanner({
           links: {
-            prev: {
-              name: "map",
-              link: APP_LINKS.useCases + "/map",
-            },
             next: {
               name: "forecast",
               link: APP_LINKS.useCases + "/forecast",
             },
           },
           icon: "🎲",
-          title: "2) MATCH",
+          title: "1) MATCH",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
         });
@@ -83,13 +61,9 @@ export const UseCaseBanner = ({
               name: "match",
               link: APP_LINKS.useCases + "/match",
             },
-            next: {
-              name: "map",
-              link: APP_LINKS.useCases + "/map",
-            },
           },
           icon: "🎲",
-          title: "3) FORECAST",
+          title: "2) FORECAST",
           description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
         });
@@ -119,25 +93,31 @@ export const UseCaseBanner = ({
   return (
     <SectionContainer variantColor="primary" className={Styles.UseCaseBanner}>
       <div className={Styles.nav}>
-        <Button
-          variantBgColor="transparent"
-          onClick={() => {
-            if (contentBanner) navigate(contentBanner?.links.prev.link);
-          }}
-          icon="arrowLeft"
-          iconPosition="prev"
-        >
-          Previous use case <span>({contentBanner?.links.prev.name})</span>
-        </Button>
-        <Button
-          variantBgColor="transparent"
-          onClick={() => {
-            if (contentBanner) navigate(contentBanner?.links.next.link);
-          }}
-          icon="arrowRight"
-        >
-          Next use case <span>({contentBanner?.links.next.name})</span>
-        </Button>
+        {contentBanner?.links?.prev && (
+          <Button
+            variantBgColor="transparent"
+            onClick={() => {
+              if (contentBanner?.links?.prev)
+                navigate(contentBanner?.links?.prev?.link);
+            }}
+            icon="arrowLeft"
+            iconPosition="prev"
+          >
+            Previous use case <span>({contentBanner?.links.prev.name})</span>
+          </Button>
+        )}
+        {contentBanner?.links?.next && (
+          <Button
+            variantBgColor="transparent"
+            onClick={() => {
+              if (contentBanner?.links?.next)
+                navigate(contentBanner?.links.next.link);
+            }}
+            icon="arrowRight"
+          >
+            Next use case <span>({contentBanner?.links.next.name})</span>
+          </Button>
+        )}
       </div>
 
       <header>

@@ -14,7 +14,7 @@ const CONTENT_NAVBAR: NavBarLinks[] = [
   },
   {
     name: "Use cases",
-    url: APP_LINKS.useCases + "/map",
+    url: APP_LINKS.useCases + "/match",
   },
   {
     name: "Building blocks",
@@ -22,7 +22,7 @@ const CONTENT_NAVBAR: NavBarLinks[] = [
   },
   {
     name: "Initiatives",
-    url: APP_LINKS.initiatives,
+    url: "#",
   },
   {
     name: "Wiki",

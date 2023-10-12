@@ -1,0 +1,236 @@
+@use "../../../../../shared/styles/index" as *;
+
+.SchemaBuildingBlocksSection {
+  position: relative;
+  overflow: auto;
+
+  button {
+    border-radius: 0;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.05rem;
+  }
+
+  .schema {
+    margin: auto;
+    position: relative;
+    min-height: 1220px;
+    width: 1300px;
+
+    .provider {
+      position: absolute;
+      left: 0;
+      top: 195px;
+    }
+
+    .main {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .consumer {
+      position: absolute;
+      right: 0;
+      top: 195px;
+    }
+
+    .dataModels {
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+      transform: translate(-50%, -15%);
+    }
+
+    .personal {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .consumerTop {
+      position: absolute;
+      top: 116px;
+      transform: rotate(90deg);
+      width: 125px;
+      right: 218px;
+    }
+
+    .providerTop {
+      position: absolute;
+      top: 115px;
+      transform: rotate(90deg);
+      width: 120px;
+      left: 206px;
+    }
+
+    .trustRight {
+      position: absolute;
+      top: 35px;
+      width: 255px;
+      right: 280px;
+      text {
+        font-size: 1.3rem;
+      }
+    }
+
+    .trustLeft {
+      position: absolute;
+      top: 35px;
+      width: 266px;
+      left: 266px;
+      text {
+        font-size: 1.3rem;
+      }
+    }
+
+    .connectionIdentify {
+      position: absolute;
+      top: 140px;
+      width: 266px;
+      left: 266px;
+    }
+    .connectionIdentifyRight {
+      position: absolute;
+      top: 135px;
+      width: 248px;
+      right: 281px;
+      transform: rotate(180deg);
+    }
+
+    .connectionDataSpace {
+      position: absolute;
+      top: 291px;
+      width: 165px;
+      right: 380px;
+    }
+    .connectionDataSpaceLeft {
+      position: absolute;
+      top: 291px;
+      width: 168px;
+      left: 380px;
+    }
+
+    .connectionPublication {
+      position: absolute;
+      top: 445px;
+      width: 168px;
+      left: 380px;
+      text {
+        font-size: 3rem;
+      }
+    }
+    .connectionDiscovery {
+      position: absolute;
+      top: 445px;
+      width: 165px;
+      right: 380px;
+      text {
+        font-size: 3rem;
+      }
+    }
+
+    .connectionConsent {
+      position: absolute;
+      top: 620px;
+      width: 168px;
+      right: 380px;
+      text {
+        font-size: 3rem;
+      }
+    }
+    .connectionConsentLeft {
+      position: absolute;
+      top: 620px;
+      width: 168px;
+      left: 380px;
+      text {
+        font-size: 3rem;
+      }
+    }
+
+    .connectionDataModels {
+      position: absolute;
+      bottom: 275px;
+      width: 160px;
+      left: 239px;
+    }
+    .connectionDataModelsRight {
+      position: absolute;
+      bottom: 275px;
+      width: 160px;
+      right: 240px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .consumerPrivacy {
+    position: absolute;
+    bottom: 485px;
+    width: 120px;
+    right: 218px;
+    transform: rotate(-90deg);
+  }
+  .providerPrivacy {
+    position: absolute;
+    bottom: 485px;
+    width: 120px;
+    left: 210px;
+    transform: rotate(-90deg);
+  }
+
+  .connectionProviderConsumer {
+    position: absolute;
+    bottom: 325px;
+    width: 824px;
+    left: 269px;
+    text {
+      font-size: 0.4rem;
+    }
+  }
+
+  .consumerBottom {
+    position: absolute;
+    bottom: 224px;
+    width: 520px;
+    right: -20px;
+    transform: rotate(-90deg);
+  }
+  .providerBottom {
+    position: absolute;
+    bottom: 224px;
+    width: 520px;
+    left: -20px;
+    transform: rotate(-90deg);
+  }
+
+  .connectionProviderPersonal {
+    position: absolute;
+    bottom: -6px;
+    width: 310px;
+    left: 240px;
+  }
+  .connectionConsumerPersonal {
+    position: absolute;
+    bottom: -6px;
+    width: 311px;
+    right: 213px;
+  }
+}
+.legend {
+  @include flexColumn(flex-start);
+  align-self: flex-start;
+  gap: $small;
+
+  button {
+    border-radius: 0;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.05rem;
+    color: $white;
+    width: 100%;
+    text-align: start;
+    justify-content: flex-start;
+    max-width: 300px;
+  }
+}

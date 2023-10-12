@@ -12,7 +12,7 @@ export const HomeExploreSection = () => {
       <div className={Styles.cards}>
         <ExploreCard category="Use cases" />
         <ExploreCard category="Building Blocks" />
-        <ExploreCard category="Initiatives" />
+        {/* <ExploreCard category="Initiatives" /> */}
       </div>
     </SectionContainer>
   );

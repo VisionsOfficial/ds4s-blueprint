@@ -14,7 +14,7 @@ export type ExploreLinksCards = {
   url: string;
 };
 
-export type UseCase = "map" | "match" | "forecast";
+export type UseCase = "match" | "forecast";
 
 export type Stakeholder =
   | "Individuals"

@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import Styles from "./Button.module.scss";
 import { ColorVariant } from "../../../../types";
+import { UseColor } from "../../../../hooks/useColor/useColor";
 
 type ButtonProps = React.DetailedHTMLProps<
   React.ButtonHTMLAttributes<HTMLButtonElement>,
@@ -23,6 +24,8 @@ export const Button = (props: PropsWithChildren<ButtonProps>) => {
     children,
     ...rest
   } = props;
+
+  const { selectedColor } = UseColor({ color: variantBgColor });
 
   const setProps = () => {
     let bgColor = "";
@@ -59,7 +62,7 @@ export const Button = (props: PropsWithChildren<ButtonProps>) => {
         break;
     }
 
-    return [Styles.Button, className, bgColor].join(" ");
+    return [Styles.Button, className, bgColor, selectedColor].join(" ");
   };
 
   const setSvgColor = () => {

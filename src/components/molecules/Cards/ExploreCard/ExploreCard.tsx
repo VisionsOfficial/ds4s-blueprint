@@ -94,15 +94,14 @@ export const ExploreCard = ({
     switch (category) {
       case "Use cases":
         setLinksCard([
-          { linkName: "1) MAP", url: APP_LINKS.useCases + "/map" },
-          { linkName: "2) MATCH", url: APP_LINKS.useCases + "/match" },
-          { linkName: "3) FORECAST", url: APP_LINKS.useCases + "/forecast" },
+          { linkName: "1) MATCH", url: APP_LINKS.useCases + "/match" },
+          { linkName: "2) FORECAST", url: APP_LINKS.useCases + "/forecast" },
         ]);
         break;
       case "Building Blocks":
         setLinksCard([
-          { linkName: "Governance model", url: "#" },
-          { linkName: "Technical architecture and BBs", url: "#" },
+          { linkName: "Governance model", url: APP_LINKS.govervance },
+          { linkName: "Technical architecture and Building Blocks", url: APP_LINKS.buildingBlocks },
         ]);
         break;
       case "Initiatives":
@@ -112,10 +111,7 @@ export const ExploreCard = ({
         ]);
         break;
       case "Examples":
-        setLinksCard([
-          { linkName: "Link 1", url: "#" },
-          { linkName: "link 2", url: "#" },
-        ]);
+        setLinksCard([{ linkName: "EU Dune", url: APP_LINKS.EUDune }]);
         break;
 
       default:

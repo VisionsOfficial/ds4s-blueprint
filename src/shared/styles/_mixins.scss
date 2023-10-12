@@ -24,7 +24,7 @@
       @content;
     }
   } @else if $device == desktop {
-    @media screen and ($query: 1500px) {
+    @media screen and ($query: 1440px) {
       @content;
     }
   }
