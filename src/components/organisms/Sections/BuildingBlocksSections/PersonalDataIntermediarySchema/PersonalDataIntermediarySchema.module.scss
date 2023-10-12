@@ -1,7 +1,22 @@
 @use "../../../../../shared/styles/index" as *;
 
 .PersonalDataIntermediarySchema {
+  @include flexColumn();
+  gap: $small;
   button {
     color: $white;
+  }
+
+  .arrow {
+    width: 20px;
+    height: 20px;
+    height: auto;
+    transform: rotate(-90deg);
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+    aspect-ratio: 1/1;
   }
 }

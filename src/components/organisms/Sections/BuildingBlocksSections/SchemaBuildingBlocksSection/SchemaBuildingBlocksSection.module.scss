@@ -13,7 +13,7 @@
   .schema {
     margin: auto;
     position: relative;
-    min-height: 1220px;
+    min-height: 1300px;
     width: 1300px;
 
     .provider {
@@ -37,9 +37,9 @@
 
     .dataModels {
       position: absolute;
-      bottom: 15%;
+      bottom: 20%;
       left: 50%;
-      transform: translate(-50%, -15%);
+      transform: translate(-50%, -20%);
     }
 
     .personal {
@@ -152,70 +152,68 @@
 
     .connectionDataModels {
       position: absolute;
-      bottom: 275px;
+      bottom: 350px;
       width: 160px;
       left: 239px;
     }
     .connectionDataModelsRight {
       position: absolute;
-      bottom: 275px;
+      bottom: 350px;
       width: 160px;
       right: 240px;
       transform: rotate(180deg);
     }
-  }
-
-  .consumerPrivacy {
-    position: absolute;
-    bottom: 485px;
-    width: 120px;
-    right: 218px;
-    transform: rotate(-90deg);
-  }
-  .providerPrivacy {
-    position: absolute;
-    bottom: 485px;
-    width: 120px;
-    left: 210px;
-    transform: rotate(-90deg);
-  }
-
-  .connectionProviderConsumer {
-    position: absolute;
-    bottom: 325px;
-    width: 824px;
-    left: 269px;
-    text {
-      font-size: 0.4rem;
+    .consumerPrivacy {
+      position: absolute;
+      bottom: 570px;
+      width: 120px;
+      right: 218px;
+      transform: rotate(-90deg);
     }
-  }
+    .providerPrivacy {
+      position: absolute;
+      bottom: 570px;
+      width: 120px;
+      left: 210px;
+      transform: rotate(-90deg);
+    }
 
-  .consumerBottom {
-    position: absolute;
-    bottom: 224px;
-    width: 520px;
-    right: -20px;
-    transform: rotate(-90deg);
-  }
-  .providerBottom {
-    position: absolute;
-    bottom: 224px;
-    width: 520px;
-    left: -20px;
-    transform: rotate(-90deg);
-  }
+    .connectionProviderConsumer {
+      position: absolute;
+      bottom: 410px;
+      width: 824px;
+      left: 269px;
+      text {
+        font-size: 0.4rem;
+      }
+    }
+    .consumerBottom {
+      position: absolute;
+      bottom: 304px;
+      width: 520px;
+      right: -20px;
+      transform: rotate(-90deg);
+    }
+    .providerBottom {
+      position: absolute;
+      bottom: 304px;
+      width: 520px;
+      left: -20px;
+      transform: rotate(-90deg);
+    }
 
-  .connectionProviderPersonal {
-    position: absolute;
-    bottom: -6px;
-    width: 310px;
-    left: 240px;
-  }
-  .connectionConsumerPersonal {
-    position: absolute;
-    bottom: -6px;
-    width: 311px;
-    right: 213px;
+    .connectionProviderPersonal {
+      position: absolute;
+      bottom: 75px;
+      width: 310px;
+      left: 240px;
+    }
+    .connectionConsumerPersonal {
+      position: absolute;
+      bottom: 75px;
+      width: 311px;
+      right: 213px;
+    }
   }
 }
 .legend {
