@@ -2,6 +2,7 @@ import { EUDuneBanner } from "../../components/molecules/Banners/EUDuneBanner/EU
 import { EUDuneCardsSection } from "../../components/organisms/Sections/EUDuneSections/EUDuneCardsSection/EUDuneCardsSection";
 import { EUDuneCarouselSection } from "../../components/organisms/Sections/EUDuneSections/EUDuneCarouselSection/EUDuneCarouselSection";
 import { EUDuneStakeholderSection } from "../../components/organisms/Sections/EUDuneSections/EUDuneStakeholderSection/EUDuneStakeholderSection";
+import { EUDuneUXSection } from "../../components/organisms/Sections/EUDuneSections/EUDuneUXSection/EUDuneUXSection";
 import Styles from "./EUDunePage.module.scss";
 
 export const EUDunePage = () => {
@@ -11,6 +12,7 @@ export const EUDunePage = () => {
       <EUDuneCardsSection />
       <EUDuneStakeholderSection />
       <EUDuneCarouselSection />
+      <EUDuneUXSection />
     </main>
   );
 };

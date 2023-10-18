@@ -1,0 +1,19 @@
+@use "../../../../../shared/styles/index" as *;
+
+.EUDuneUXSection {
+  @include flexColumn(stretch);
+  gap: $large;
+
+  h2 {
+    color: $primary;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .cards {
+    @include fluidGrid(350px);
+    justify-items: center;
+    align-items: flex-start;
+    gap: $large;
+  }
+}

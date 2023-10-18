@@ -109,3 +109,11 @@ export type TechnicalTrackGovernance = {
     website: string;
   }[];
 };
+
+export type UXInstruction = {
+  title: "Introduction" | "Accessibility" | "Trust" | "Holistic UX Approach";
+  descriptions: {
+    short?: string;
+    long: string;
+  };
+};

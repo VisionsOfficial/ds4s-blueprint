@@ -96,12 +96,16 @@ export const ExploreCard = ({
         setLinksCard([
           { linkName: "1) MATCH", url: APP_LINKS.useCases + "/match" },
           { linkName: "2) FORECAST", url: APP_LINKS.useCases + "/forecast" },
+          { linkName: "3) EU DUNE", url: APP_LINKS.EUDune },
         ]);
         break;
       case "Building Blocks":
         setLinksCard([
           { linkName: "Governance model", url: APP_LINKS.govervance },
-          { linkName: "Technical architecture and Building Blocks", url: APP_LINKS.buildingBlocks },
+          {
+            linkName: "Technical architecture and Building Blocks",
+            url: APP_LINKS.buildingBlocks,
+          },
         ]);
         break;
       case "Initiatives":
