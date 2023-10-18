@@ -1,0 +1,8 @@
+@use "../../../../../shared/styles/index" as *;
+
+.TechnicalTrackGovernanceContent {
+  @include fluidGrid(500px);
+  gap: $large;
+  height: auto;
+  min-height: auto;
+}

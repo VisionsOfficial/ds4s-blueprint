@@ -24,6 +24,7 @@ type BannerContent = {
   icon: string;
   title: "1) MATCH" | "2) FORECAST";
   description: string;
+  mainValue: string[];
 };
 
 export const UseCaseBanner = ({
@@ -50,8 +51,13 @@ export const UseCaseBanner = ({
           },
           icon: "🎲",
           title: "1) MATCH",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+          description: `The "Match" usage scenario aims to intelligently link job seekers and employees with suitable job and training opportunities based on their unique skills and requirements. Utilising advanced algorithms and comprehensive skills taxonomies, it bridges the gap between individual competencies and market demands. This streamlined process aids in reducing recruitment inefficiencies, enhancing skill development, and ensuring more harmonious job placements.
+            `,
+          mainValue: [
+            "Precision Matching: Accurately aligns individual skills with market needs, reducing mismatches and enhancing job satisfaction",
+            "Efficiency Boost: Streamlines the recruitment and training process, saving time and resources for both employers and job seekers.",
+            "Skill Development: Highlights areas for personal upskilling, leading to continuous professional growth and meeting evolving market demands.",
+          ],
         });
         break;
       case "forecast":
@@ -64,8 +70,12 @@ export const UseCaseBanner = ({
           },
           icon: "🎲",
           title: "2) FORECAST",
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+          description: `The “Forecast” usage scenario integrates complex algorithms and comprehensive data sets to predict upcoming trends in skill requirements. By evaluating current skill availabilities against projected industry shifts, it offers a visionary outlook on potential mismatches in the job market. This foresight facilitates educational institutions in curating curriculum, empowers businesses to strategise talent management, and aids individuals in making informed decisions about their career trajectories, ensuring that they remain aligned with the evolving demands of the global workforce.`,
+          mainValue: [
+            "Proactive Approach: Allows stakeholders to anticipate market changes, facilitating the creation of timely and relevant educational and training programs.",
+            "Strategic Decision-Making: Provides businesses with valuable insights to align their talent acquisition and development strategies with future demands.",
+            "Empowered Career Planning: Equips individuals with foresight on emerging skills, enabling them to remain competitive and relevant in their professions.",
+          ],
         });
         break;
 
@@ -127,6 +137,13 @@ export const UseCaseBanner = ({
       <p>
         Description and main value: <br /> {contentBanner?.description}
       </p>
+      {contentBanner?.mainValue.length && (
+        <ul>
+          {contentBanner.mainValue.map((value, index) => (
+            <li key={"mainValue" + index}>{value}</li>
+          ))}
+        </ul>
+      )}
     </SectionContainer>
   );
 };

@@ -1,0 +1,37 @@
+@use "../../../../shared/styles/index" as *;
+
+.TechnicalTrackGovernanceCard {
+  background-color: $white;
+  padding: 1rem 2rem;
+  @include flexColumn(stretch, flex-start);
+  gap: $x-large;
+  border-radius: 0;
+
+  .content {
+    @include flexColumn(stretch);
+    gap: $small;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+
+  ul {
+    @include fluidGrid(150px);
+    gap: $medium;
+    list-style-type: none;
+
+    li {
+      @include flexColumn();
+      background-color: $primary;
+      color: $white;
+      text-align: center;
+      max-width: 200px;
+      padding: 0.5rem 0.8rem;
+    }
+  }
+
+  .clickable {
+    background-color: $hight-light-primary;
+    cursor: pointer;
+  }
+}

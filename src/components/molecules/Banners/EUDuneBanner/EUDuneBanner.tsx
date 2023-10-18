@@ -13,6 +13,15 @@ export const EUDuneBanner = () => {
           <span>AI-powered design tools</span> in today's fast-moving tech
           world.
         </p>
+        <p>
+          EU-DUNE is a real use case representing a dynamic upskilling platform
+          designed for employees to navigate the evolving digital landscape.
+          Leveraging a comprehensive skills data space, the platform, through
+          various integrated tools, offers personalized skills assessment,
+          recommendations, and training matches. In this use case, Matilda, a UX
+          designer, navigates her career progression and training options,
+          empowered by data-driven insights and seamless data interconnections.
+        </p>
       </div>
       <div className={Styles.image}>
         <img

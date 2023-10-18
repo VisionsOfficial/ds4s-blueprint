@@ -2,6 +2,9 @@ import { PropsWithChildren } from "react";
 import Styles from "./MainSchemaSection.module.scss";
 import { Button } from "../../../../atoms/Buttons/Button/Button";
 import { WrapperSchemaButtons } from "../../../../molecules/Wrappers/WrapperSchemaButtons/WrapperSchemaButtons";
+import { useNavigate } from "react-router-dom";
+import { APP_LINKS } from "../../../../../utils/appLinks";
+import { APP_PARAMS } from "../../../../../utils/appParams";
 
 type MainSchemaSectionProps = {
   className?: string;
@@ -10,9 +13,21 @@ type MainSchemaSectionProps = {
 export const MainSchemaSection = ({
   className = "",
 }: PropsWithChildren<MainSchemaSectionProps>) => {
+  const navigate = useNavigate();
+
+  const handleClick = (params: string) => {
+    navigate(APP_LINKS.buildingBlocks + `/${params}`);
+  };
+
   return (
     <div className={`${Styles.MainSchemaSection} ${className}`}>
-      <WrapperSchemaButtons title="Trust">
+      <WrapperSchemaButtons
+        title="Trust"
+        onClick={() => {
+          handleClick(APP_PARAMS.buildingBlocks.trust);
+        }}
+        style={{ cursor: "pointer" }}
+      >
         <Button variantBgColor="lightPrimary">Trustworthy AI assessment</Button>
       </WrapperSchemaButtons>
 
@@ -57,13 +72,32 @@ export const MainSchemaSection = ({
         />
       </svg>
 
-      <WrapperSchemaButtons title="Identity management">
+      <WrapperSchemaButtons
+        title="Identity management"
+        onClick={() => {
+          handleClick(APP_PARAMS.buildingBlocks.identifyManagement);
+        }}
+        style={{ cursor: "pointer" }}
+      >
         <Button variantBgColor="lightPrimary">PDI identity</Button>
       </WrapperSchemaButtons>
 
-      <Button variantBgColor="secondary">Marketplace & usage accounting</Button>
+      <Button
+        variantBgColor="secondary"
+        onClick={() => {
+          handleClick(APP_PARAMS.buildingBlocks.marketplacesAndUsageAccounting);
+        }}
+      >
+        Marketplace & usage accounting
+      </Button>
 
-      <WrapperSchemaButtons title="Publication & discovery">
+      <WrapperSchemaButtons
+        title="Publication & discovery"
+        onClick={() => {
+          handleClick(APP_PARAMS.buildingBlocks.publicationAndDiscovery);
+        }}
+        style={{ cursor: "pointer" }}
+      >
         <Button variantBgColor="lightPrimary">
           PDI data & service catalog
         </Button>
@@ -72,7 +106,15 @@ export const MainSchemaSection = ({
         </Button>
       </WrapperSchemaButtons>
 
-      <WrapperSchemaButtons title="Access & usage policies and control">
+      <WrapperSchemaButtons
+        title="Access & usage policies and control"
+        onClick={() => {
+          handleClick(
+            APP_PARAMS.buildingBlocks.accessAndUsagePoliciesAndControl
+          );
+        }}
+        style={{ cursor: "pointer" }}
+      >
         <Button variantBgColor="lightPrimary">Personal data access logs</Button>
         <Button variantBgColor="lightPrimary">PDI consent</Button>
       </WrapperSchemaButtons>

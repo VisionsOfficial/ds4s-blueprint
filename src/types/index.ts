@@ -79,3 +79,33 @@ export type EUDuneCategoryCard =
   | "anita"
   | "money"
   | "shield";
+
+export type TechnicalTrackGovernanceCategory =
+  | "Data Models & Formats"
+  | "Data Exchange"
+  | "Access & Usage Policies and Control"
+  | "Identity Management"
+  | "Trust"
+  | "Data, Services and Offerings Descriptions"
+  | "Publication & Discovery"
+  | "Marketplaces & Usage Accounting"
+  | "Data spaces protocol building block"
+  | "Decentralized AI training";
+
+export type TechnicalTrackGovernance = {
+  title: TechnicalTrackGovernanceCategory;
+  description: string;
+  functionalities: {
+    desctipion: string;
+    functions: string[];
+  }[];
+  standards: {
+    name: string;
+    website: string;
+    description?: string;
+  }[];
+  referenceImplementations: {
+    name: string;
+    website: string;
+  }[];
+};

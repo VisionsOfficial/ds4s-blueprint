@@ -1,17 +1,18 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, forwardRef } from "react";
 import Styles from "./SectionContainer.module.scss";
 import { ColorVariant } from "../../../../types";
 
-type SectionContainerProps = {
+type SectionContainerProps = React.HTMLProps<HTMLSelectElement> & {
   className?: string;
   variantColor?: ColorVariant;
 };
 
-export const SectionContainer = ({
-  className = "",
-  variantColor = "white",
-  children,
-}: PropsWithChildren<SectionContainerProps>) => {
+export const SectionContainer = forwardRef<
+  HTMLElement,
+  PropsWithChildren<SectionContainerProps>
+>((props, ref) => {
+  const { className, variantColor = "white", children, ...rest } = props;
+
   const setProps = () => {
     let color = "";
 
@@ -40,7 +41,6 @@ export const SectionContainer = ({
       case "quaternary":
         color = Styles.quaternary;
         break;
-
       default:
         break;
     }
@@ -48,5 +48,9 @@ export const SectionContainer = ({
     return [Styles.SectionContainer, className, color].join(" ");
   };
 
-  return <section className={setProps()}>{children}</section>;
-};
+  return (
+    <section {...rest} ref={ref} className={setProps()}>
+      {children}
+    </section>
+  );
+});

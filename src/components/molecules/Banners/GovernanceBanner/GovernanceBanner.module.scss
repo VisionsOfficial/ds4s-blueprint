@@ -10,5 +10,22 @@
   header {
     @include flexColumn(flex-start);
     gap: $x-medium;
+
+    ul {
+      list-style: inside;
+      padding-left: $medium;
+      span {
+        font-weight: bold;
+      }
+      li {
+        font-size: 1.3rem;
+      }
+
+      .mainLi {
+        &::marker {
+          content: "-";
+        }
+      }
+    }
   }
 }

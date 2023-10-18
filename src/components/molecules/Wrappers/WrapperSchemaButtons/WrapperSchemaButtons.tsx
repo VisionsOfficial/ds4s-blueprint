@@ -1,45 +1,35 @@
-import { PropsWithChildren, forwardRef, Ref } from "react";
+import React, { PropsWithChildren, forwardRef } from "react";
 import Styles from "./WrapperSchemaButtons.module.scss";
 import { Card } from "../../../atoms/Cards/Card/Card";
 
-type WrapperSchemaButtonsProps = {
+type WrapperSchemaButtonsProps = React.HTMLProps<HTMLDivElement> & {
   className?: string;
   title: string;
   display?: "flex" | "grid";
 };
 
-export const WrapperSchemaButtons = forwardRef(
-  (
-    {
-      title,
-      className = "",
-      display = "flex",
-      children,
-    }: PropsWithChildren<WrapperSchemaButtonsProps>,
-    ref: Ref<HTMLDivElement>
-  ) => {
-    const setDisplay = () => {
-      switch (display) {
-        case "grid":
-          return Styles.grid;
+export const WrapperSchemaButtons = forwardRef<
+  HTMLDivElement,
+  PropsWithChildren<WrapperSchemaButtonsProps>
+>(({ className, children, title, display = "flex", ...rest }, ref) => {
+  const setDisplay = () => {
+    switch (display) {
+      case "grid":
+        return Styles.grid;
+      default:
+        break;
+    }
+  };
 
-        default:
-          break;
-      }
-    };
-
-    return (
-      <Card
-        className={`${
-          Styles.WrapperSchemaButtons
-        } ${className} ${setDisplay()}`}
-        variantBgColor="secondary"
-        ref={ref}
-      >
-        <p>{title}</p>
-
-        <div className={Styles.content}>{children}</div>
-      </Card>
-    );
-  }
-);
+  return (
+    <Card
+      {...rest}
+      className={`${Styles.WrapperSchemaButtons} ${className} ${setDisplay()}`}
+      variantBgColor="secondary"
+      ref={ref}
+    >
+      <p>{title}</p>
+      <div className={Styles.content}>{children}</div>
+    </Card>
+  );
+});

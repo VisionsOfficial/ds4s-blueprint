@@ -37,7 +37,7 @@
   }
 
   .content {
-    @include flexColumn();
+    @include flexColumn(stretch);
     gap: $small;
 
     h4 {

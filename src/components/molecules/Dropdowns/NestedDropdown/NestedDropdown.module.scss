@@ -38,6 +38,23 @@
     width: calc(100% + 2rem);
     font-size: 1.1rem;
     z-index: 20;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 400px;
+    &::-webkit-scrollbar-track {
+      border-radius: $large;
+    }
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: $large;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: $light-primary;
+    }
   }
 
   .modalEco {
@@ -88,7 +105,7 @@
 
   @include resolution(desktop) {
     .main {
-      min-width: 330px;
+      min-width: 320px;
     }
   }
 
@@ -111,7 +128,7 @@
     width: 100%;
 
     .dataSpace {
-        width: 100%;
+      width: 100%;
     }
 
     .ecosystem {

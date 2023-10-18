@@ -3,6 +3,9 @@ import Styles from "./PersonalDataIntermediarySchema.module.scss";
 import { Button } from "../../../../atoms/Buttons/Button/Button";
 import { WrapperSchemaButtons } from "../../../../molecules/Wrappers/WrapperSchemaButtons/WrapperSchemaButtons";
 import { APP_IMAGES } from "../../../../../utils/appImages";
+import { useNavigate } from "react-router-dom";
+import { APP_LINKS } from "../../../../../utils/appLinks";
+import { APP_PARAMS } from "../../../../../utils/appParams";
 
 type PersonalDataIntermediarySchemaProps = {
   className?: string;
@@ -11,9 +14,20 @@ type PersonalDataIntermediarySchemaProps = {
 export const PersonalDataIntermediarySchema = ({
   className = "",
 }: PropsWithChildren<PersonalDataIntermediarySchemaProps>) => {
+  const navigate = useNavigate();
+
+  const handleClick = (params: string) => {
+    navigate(APP_LINKS.buildingBlocks + `/${params}`);
+  };
+
   return (
     <div className={`${Styles.PersonalDataIntermediarySchema} ${className}`}>
-      <WrapperSchemaButtons title="Personal Data Intermediary">
+      <WrapperSchemaButtons
+        title="Personal Data Intermediary"
+        onClick={() => {
+          handleClick(APP_PARAMS.buildingBlocks.personalDataIntermediary);
+        }}
+      >
         <Button variantBgColor="lightPrimary">PDI consent management</Button>
         <Button variantBgColor="lightPrimary">PDI identify</Button>
       </WrapperSchemaButtons>

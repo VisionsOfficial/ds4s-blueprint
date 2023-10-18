@@ -12,6 +12,7 @@ import { StakeholderPage } from "./pages/StakeholderPage/StakeholderPage";
 import { GovernancePage } from "./pages/GovernancePage/GovernancePage";
 import { EUDunePage } from "./pages/EUDunePage/EUDunePage";
 import { BuildingBlocksPage } from "./pages/BuildingBlocksPage/BuildingBlocksPage";
+import { TechnicalTrackPage } from "./pages/TechnicalTrackPage/TechnicalTrackPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,6 +31,10 @@ const router = createBrowserRouter(
       <Route
         path={APP_LINKS.buildingBlocks}
         element={<BuildingBlocksPage />}
+      ></Route>
+      <Route
+        path={APP_LINKS.buildingBlocks + "/:bbs"}
+        element={<TechnicalTrackPage />}
       ></Route>
     </Route>
   )

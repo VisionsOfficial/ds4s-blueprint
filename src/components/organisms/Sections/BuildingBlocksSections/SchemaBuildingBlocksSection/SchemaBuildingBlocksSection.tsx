@@ -6,15 +6,61 @@ import { MainSchemaSection } from "../MainSchemaSection/MainSchemaSection";
 import { DataModelsSchemaSection } from "../DataModelsSchemaSection/DataModelsSchemaSection";
 import { PersonalDataIntermediarySchema } from "../PersonalDataIntermediarySchema/PersonalDataIntermediarySchema";
 import { Arrow } from "../../../../atoms/Arrows/Arrow/Arrow";
+import { MouseEvent, useRef, useState } from "react";
 
 export type CoordinatesReducer = {
   trust: number;
 };
 
 export const SchemaBuildingBlocksSection = () => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStartX, setDragStartX] = useState(0);
+
+  const handleMouseDown = (e: MouseEvent) => {
+    setIsDragging(true);
+    setDragStartX(e.clientX);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e: MouseEvent) => {
+    if (!isDragging) return;
+
+    const deltaX = e.clientX - dragStartX;
+
+    if (containerRef.current) {
+      containerRef.current.scrollLeft -= deltaX;
+    }
+
+    setDragStartX(e.clientX);
+  };
+
   return (
     <>
-      <SectionContainer className={Styles.SchemaBuildingBlocksSection}>
+      <SectionContainer className={Styles.legend}>
+        <Button variantBgColor="secondary">DSSC generic Building Block</Button>
+        <Button variantBgColor="primary">
+          DS4Skills specific Building Block
+        </Button>
+        <Button variantBgColor="lightPrimary">
+          DS4Skills specific function
+        </Button>
+      </SectionContainer>
+      <SectionContainer
+        className={Styles.SchemaBuildingBlocksSection}
+        ref={containerRef}
+        onMouseDown={(e: MouseEvent) => {
+          handleMouseDown(e);
+        }}
+        onMouseUp={handleMouseUp}
+        onMouseMove={(e) => {
+          handleMouseMove(e);
+        }}
+      >
         <div className={Styles.schema}>
           <DataSpaceConnectorSection
             category="provider"
@@ -352,19 +398,6 @@ export const SchemaBuildingBlocksSection = () => {
               markerEnd="url(#arrowhead)"
             />
           </svg>
-        </div>
-      </SectionContainer>
-      <SectionContainer>
-        <div className={Styles.legend}>
-          <Button variantBgColor="secondary">
-            DSSC generic Building Block
-          </Button>
-          <Button variantBgColor="primary">
-            DS4Skills specific Building Block
-          </Button>
-          <Button variantBgColor="lightPrimary">
-            DS4Skills specific function
-          </Button>
         </div>
       </SectionContainer>
     </>

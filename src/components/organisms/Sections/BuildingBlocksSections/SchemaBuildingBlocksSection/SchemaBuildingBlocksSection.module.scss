@@ -3,6 +3,13 @@
 .SchemaBuildingBlocksSection {
   position: relative;
   overflow: auto;
+  cursor: grab;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+
+  &:active {
+    cursor: grabbing;
+  }
 
   button {
     border-radius: 0;
@@ -218,8 +225,9 @@
 }
 .legend {
   @include flexColumn(flex-start);
-  align-self: flex-start;
   gap: $small;
+  min-height: auto;
+  padding-block: 1rem;
 
   button {
     border-radius: 0;
@@ -230,5 +238,22 @@
     text-align: start;
     justify-content: flex-start;
     max-width: 300px;
+    cursor: initial;
+  }
+}
+
+@include resolution(desktop, max-width) {
+  .SchemaBuildingBlocksSection {
+    .schema {
+      transform: scale(0.7) translate(-15%, -15%);
+    }
+  }
+}
+
+@include resolution(x-desktop, max-width) {
+  .SchemaBuildingBlocksSection {
+    .schema {
+      transform: scale(0.6) translate(-25%, -25%);
+    }
   }
 }
