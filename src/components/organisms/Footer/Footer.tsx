@@ -32,35 +32,48 @@ export const Footer = () => {
         </div>
         <div className={Styles.listsContainer}>
           <FooterList title="Blueprint">
-            <li>About</li>
             <li>
-              <Link to={APP_LINKS.useCases}>Use cases</Link>
+              <Link
+                to={"https://www.skillsdataspace.eu/what-is/"}
+                target="_blank"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to={APP_LINKS.useCases + "/match"}>Use cases</Link>
             </li>
             <li>
               <Link to={APP_LINKS.buildingBlocks}>Building Blocks</Link>
             </li>
             <li>
-              <Link to={APP_LINKS.initiatives}>Initiatives</Link>
+              <Link to={"#"}>Initiatives</Link>
             </li>
           </FooterList>
 
           <FooterList title="Follow Us">
             <li>
-              <Link to={"https://www.skillsdataspace.eu/"}>Website</Link>
+              <Link to={"https://www.skillsdataspace.eu/"} target="_blank">
+                Website
+              </Link>
             </li>
             <li>
-              <Link to={"https://www.linkedin.com/company/skillsdataspace/"}>
+              <Link
+                to={"https://www.linkedin.com/company/skillsdataspace/"}
+                target="_blank"
+              >
                 LinkedIn
               </Link>
             </li>
             <li>
-              <Link to={"#"}>Twitter</Link>
+              <Link to={"https://twitter.com/skillsdataspace"} target="_blank">
+                Twitter
+              </Link>
             </li>
             <li>
               <Link
-                to={
-                  "https://www.youtube.com/channel/UCd0hjTTyIt4-locnt_Han9Q?app=desktop"
-                }
+                to={"https://www.youtube.com/@skillsdataspace"}
+                target="_blank"
               >
                 Youtube
               </Link>
