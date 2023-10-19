@@ -132,7 +132,13 @@ export type CategoriesContentStakeholder = {
     examples?: string[];
     secondExamples?: string[];
     obligations?: string[];
-    benefits?: string[];
-    costs?: string[];
+    benefits?: {
+      actor: "Monetary benefits" | "Non-monetary benefits";
+      definition: string;
+    }[];
+    costsRisks?: {
+      costs: string;
+      risks: string;
+    };
   };
 };

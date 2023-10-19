@@ -1,7 +1,7 @@
 @use "../../../../../shared/styles/index" as *;
 
 .StakeholderContentSection {
-  @include flexColumn();
+  @include flexColumn(center, space-between);
   gap: $large;
   .cards {
     @include fluidGrid(530px);

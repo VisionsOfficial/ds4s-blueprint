@@ -35,12 +35,6 @@ export const StakeholderContentSection = ({
               category={currentCategory}
               currentColor={currentColor}
             />
-            <StakeholderDocumentationByCategoryCard
-              title="Examples"
-              stakeholder={currentStakeholder}
-              category={currentCategory}
-              currentColor={currentColor}
-            />
           </>
         );
       case "Technical":
@@ -69,12 +63,6 @@ export const StakeholderContentSection = ({
               category={currentCategory}
               currentColor={currentColor}
             />
-            <StakeholderDocumentationByCategoryCard
-              title="Second Examples"
-              stakeholder={currentStakeholder}
-              category={currentCategory}
-              currentColor={currentColor}
-            />
           </>
         );
       case "Value":
@@ -87,7 +75,7 @@ export const StakeholderContentSection = ({
               currentColor={currentColor}
             />
             <StakeholderDocumentationByCategoryCard
-              title="Costs"
+              title="Costs & Risks"
               stakeholder={currentStakeholder}
               category={currentCategory}
               currentColor={currentColor}

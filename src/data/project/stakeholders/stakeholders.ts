@@ -83,21 +83,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Individuals (end users)",
           definition: "Get innovative employment and orientation services.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -184,21 +182,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "University & Training Providers (data and service providers)",
           definition: "Match their offers with relevant profiles.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -286,21 +282,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "Match their offers with relevant profiles and get precise employee profiles. ",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -388,21 +382,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "Provide students with innovative employment and orientation services. ",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -490,21 +482,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "Frame training policies based on regional skills gap analysis and promote courses and training that fill the identified skills gaps. ",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -591,21 +581,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Employment Agencies (service providers and end users)",
           definition: "Offer innovative employment and orientation services.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -693,21 +681,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "Offer better-personalised services due to better data access. ",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -795,21 +781,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "Offer services and building blocks to enable data matching, including consent, contract, interoperability, data visualisation, and decentralised processing.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -897,21 +881,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "Provides the ecosystem portal and coordinates governance, use cases, and business model discussions.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -999,21 +981,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "They are primary data consumers that analyse the skills inventory, identify gaps, and strategize for future needs, they contribute data about their job positions.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -1101,21 +1081,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "They use the dashboard for targeted training and contribute data on training efficacy and skill development.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -1204,21 +1182,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "Contribute data on training outcomes and skill development, while using the dashboard to tailor their educational programs.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -1306,21 +1282,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "Use data for policy formulation and governance, while also contributing public-sector data to enrich the dataset.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -1408,21 +1382,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "Their skills data enriches the ecosystem, and they also benefit from better job and training matching.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -1510,21 +1482,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "Collect, store, and provide data from multiple sources, including public and private sectors.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -1612,21 +1582,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
@@ -1638,55 +1606,37 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Orchestator: SkillsFast Governance",
+          title: "Orchestator: SkillsFast",
           definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+            "Organisation that organises operationally the data ecosystem and ensures its diffusion and commercialisation.",
           obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "MUST define the precise governance rules",
+            "MUST define the Code of conduct",
+            "MUST define the Accession rules",
+            "MUST define the Incentive mechanisms",
+            "MUST define how other participants can be involved in code of conduct / accession rules definition (democratic or centralised governance)",
+            "MUST ensure the respect of rules set by the Alliance Structure",
+            "MUST make the rules and values of the data ecosystem publicly available in machine readable format",
           ],
         },
       },
       {
         name: "Business",
         content: {
-          title: "Orchestator: SkillsFast Business",
+          title: "Orchestator: SkillsFast",
           definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+            "E.g.: Transaction (sell reports), Subscription (portal access), Freemium",
           examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees",
+            "Marketplace model - a marketplace provider typically charges participants on commission on transactions (either per number of transactions or per monetary value of transactions). Example: SkillsFast provides a qualified skills profile marketplace for training catalogues such as YourTraining to access.",
+            "Usage-based - pays for the usage of a software or data product instead of for its availability. Example: YourTraining pays SkillsFast a subscription according to the number of individual profile it receives. ",
           ],
         },
       },
       {
         name: "Technical",
         content: {
-          title: "Orchestator: SkillsFast Technical",
+          title: "Orchestator: SkillsFast",
           definition:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
           examples: [
@@ -1714,21 +1664,24 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "SkillsFast orchestrates the ecosystem, ensuring seamless coordination between different services and data providers as well as its commercialisation. ",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition:
+                "Gets paid for services they provide for the use case, governance model, portal, marketing etc.",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: `Societal impact - faster, cost-effective and new innovations for employment, skills mismatch problem.   <br />
+              Recognition, awards 
+              `,
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs:
+              "E.g.: Operational, marketing, data space use case management",
+            risks:
+              "No engagement and interest from users, service/data providers, inability to generate value for stakeholders and attract more users and services.  ",
+          },
         },
       },
     ],
@@ -1764,24 +1717,10 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Business",
         content: {
-          title: "Service Providers: SkillProfiX, SDAI, SkillFast Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+          title: "Service Providers: SkillProfiX, SDAI, SkillFast",
+          definition: "E.g.: Transaction, freemium, subscription model.",
           examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "Data based - pays only for tailored or custom data product. Example: SkillProfiX charges for the data included in the analytics towards the employers.",
           ],
         },
       },
@@ -1816,21 +1755,32 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "SkillProfiX and SDAI offer skills assessment and training recommendation services, respectively",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: `Gets paid for services.  <br /> <br />
+              Service providers benefit from easy access to high-quality data, resulting in lower costs, faster time to market, and improved service
+              `,
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: `Access to data space and users: being part of a data space use case provides service providers with a ready audience, opening doors to user engagement and potential business.<br /><br/>
+              Increased user base and brand visibility: inclusion in a data space naturally amplifies brand recognition and extends the service provider's reach, benefiting from economies of scale.<br /><br/>
+              Reduced marketing and customer acquisition costs: a collaborative data space can serve as a shared platform for marketing, thereby reducing individual customer acquisition costs for service providers.<br /><br/>
+              Access to diverse data sources: membership in a data space use case grants service providers access to a variety of data sources, enriching their service capabilities.<br /><br/>
+              Shared marketing costs: marketing expenses can be distributed among multiple stakeholders in the data space use case, making promotional efforts more cost-effective.<br /><br/>
+              Lower development costs: the standardization of data interoperability, compliance, and governance within a data space can reduce the costs associated with developing new services and integrating new data space use cases.<br /><br/>
+              Innovation opportunities: service providers have the chance to continuously improve, iterate, and even create entirely new services based on emerging needs and insights from the data space.
+              
+              `,
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: `Pays for own & DS operational costs. <br />
+            Pays for costs of their data product (e.g., data usage, other services included).
+            `,
+            risks:
+              "Limited number of consumers, paying customers, data sources, limited engagement and interest from users, service/data providers, inability to generate value for stakeholders. ",
+          },
         },
       },
     ],
@@ -1869,23 +1819,15 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title:
             "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+          definition: "E.g.: Transaction, freemium, subscription model, ",
           examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+            "Aggregation model - an aggregation of data products from multiple sources. Example: YourTraining aggregates data from multiple training organisations and sells it to SDAI.",
+            "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+            "Advertisement model - offers data products to consumers without payment (data product is sold for advertisement). Example: IntelliAITraining provides data about its training to be advertised on YourTraining. ",
+            "Availability based - charges users for the availability of the data product regardless of whether it is used or not. Example: SkillProfiX buys API access for JobRightNow, Jobijob and Jobo.",
+            "Performance-based - pays for the performance of the data product. Example: SkillProfiX pays for a platform access that will support peak times.",
+            "Value-based - pays for a value that could be financial gain, functional or even emotional outcome received. However, some value streams may not be directly chargeable or it's difficult to find applicable charging metrics. Example: IntelliAITraining pays to YourTraining a percentage on the trainings it sells thanks to its service. ",
           ],
         },
       },
@@ -1922,21 +1864,22 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "SkillProfiX, DigiFutUX, UXlife, and UXschool provide Matilda's skills data.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "Gets paid for services",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: `Gets requirements to improve their services.<br />
+              Gets digital commons to operate 
+              `,
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "Pays for Data space operational costs",
+            risks:
+              "Limited number of consumers, paying customers, data sources, limited engagement and interest from users, service/data providers, inability to generate value for stakeholders. ",
+          },
         },
       },
     ],
@@ -1975,23 +1918,15 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title:
             "Data Providers (Organisational): Jobo, JobRightNow and Jobijob Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+          definition: "E.g.: Transaction, freemium, subscription model, ",
           examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+            "Aggregation model - an aggregation of data products from multiple sources. Example: YourTraining aggregates data from multiple training organisations and sells it to SDAI.",
+            "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+            "Advertisement model - offers data products to consumers without payment (data product is sold for advertisement). Example: IntelliAITraining provides data about its training to be advertised on YourTraining. ",
+            "Availability based - charges users for the availability of the data product regardless of whether it is used or not. Example: SkillProfiX buys API access for JobRightNow, Jobijob and Jobo.",
+            "Performance-based - pays for the performance of the data product. Example: SkillProfiX pays for a platform access that will support peak times.",
+            "Value-based - pays for a value that could be financial gain, functional or even emotional outcome received. However, some value streams may not be directly chargeable or it's difficult to find applicable charging metrics. Example: IntelliAITraining pays to YourTraining a percentage on the trainings it sells thanks to its service. ",
           ],
         },
       },
@@ -2028,21 +1963,22 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "JobRightNow, Jobijob, and Jobo provide job market data; FindTraining and YourTraining offer training catalogues.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "Gets paid for services",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: `Gets requirements to improve their services.<br />
+                Gets digital commons to operate 
+                `,
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "Pays for Data space operational costs",
+            risks:
+              "Limited number of consumers, paying customers, data sources, limited engagement and interest from users, service/data providers, inability to generate value for stakeholders. ",
+          },
         },
       },
     ],
@@ -2055,54 +1991,28 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Governance",
         content: {
           title: "Individuals: Matilda, Francesco, Anita Governance",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+          definition: "Person using the system for their career and learning",
           obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "MUST participate in the value exchange",
+            "CAN exerce their rights on their data across the ecosystem",
           ],
         },
       },
       {
         name: "Business",
         content: {
-          title: "Individuals: Matilda, Francesco, Anita Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+          title: "Individuals: Matilda, Francesco, Anita",
+          definition: "End users as clients don't have business models",
           examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "Freemium model - free data products with limited features and charges users a premium for additional features.",
+            "Matilda will have basic functions and some of trainings available for free.",
           ],
         },
       },
       {
         name: "Technical",
         content: {
-          title: "Individuals: Matilda, Francesco, Anita Technical",
+          title: "Individuals: Matilda, Francesco, Anita",
           definition:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
           examples: [
@@ -2130,21 +2040,21 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "Matilda (trainee), Francesco (employer), Anita (training sales representative).",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "Bonuses, salary, allowances",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition:
+                "Personalized skill development, enhanced career planning, time efficiency, job satisfaction, improved opportunities, skill validation, greater control, lifelong learning, career advancement, personal growth",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "Cost of services, insights, results.",
+            risks:
+              "Limited number of services, poor data quality, high costs, and a complex system can all negatively impact the network effect, making it difficult for the data space use case to grow and improve.",
+          },
         },
       },
     ],
@@ -2181,17 +2091,10 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Business",
         content: {
           title: "Organisations: DigiFutUX, IntelliAITraining Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+          definition: `Give data for the data space use case, get back services provided and pay for the services. <br />
+            E.g.: Transaction, freemium, subscription model,
+            `,
           examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
             "Lorem ipsum",
             "Lorem ipsum",
             "Lorem ipsum",
@@ -2232,21 +2135,22 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "DigiFutUX (employer), IntelliAITraining (training provider).",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition:
+                "Reduced manual work and management time of verifying skills, searching insight, and foresight into skills and trainings.",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition:
+                "Enhanced employee performance, increased employee satisfaction, improved talent retention, competitive advantage, stronger employer brand, employee empowerment etc. ",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "Cost of services, insights, results.",
+            risks:
+              "Limited number of services, poor data quality, high costs, and a complex system can all negatively impact the network effect, making it difficult for the data space use case to grow and improve",
+          },
         },
       },
     ],
@@ -2283,24 +2187,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Business",
         content: {
           title: "Governance Authority (association): Fire-X Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
+          definition: `Non-profit organization and business model. At the beginning a public and private partnership comes of a great importance when guaranteeing the sufficient funds for the functioning of the skills data space.<br/><br/>
+            Later different business models could be used to sustain itself.  
+            `,
         },
       },
       {
@@ -2334,21 +2223,24 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "Fire-X sets and oversees the data space standards as well provides building blocks and certifies InfraTrust.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition:
+                "Gets paid for their services; governance model, building blocks.",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: `Gets recognition in the domain and across data spaces, gets more influence, visibility, and power.<br/><br/>
+            Gets requirements from concrete use cases to provide the right/better digital commons 
+            `,
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs:
+              "Operational, management and development costs (e.g., building blocks)",
+            risks:
+              "A critical mass of engagement and usage of the authorisation framework has to be achieved and soft infrastructure set up in order to make the Skills Data Space up and running, and in the long run a sustainable business for all stakeholders.   ",
+          },
         },
       },
     ],
@@ -2436,21 +2328,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition:
             "InfraTrust manages data flows and ensures compliance with Fire-X standards.",
           benefits: [
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
-            "Benefit definition",
+            {
+              actor: "Monetary benefits",
+              definition: "",
+            },
+            {
+              actor: "Non-monetary benefits",
+              definition: "",
+            },
           ],
-          costs: [
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-            "Cost definition",
-          ],
+          costsRisks: {
+            costs: "",
+            risks: "",
+          },
         },
       },
     ],
