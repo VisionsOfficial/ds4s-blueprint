@@ -21,11 +21,32 @@
     .useCase {
       border-top: 2px solid darken($grey, 20%);
       padding: $small $medium;
-      @include flexColumn();
+      @include flexColumn(stretch);
       gap: $small;
       h3 {
         font-weight: bold;
         text-transform: uppercase;
+        align-self: center;
+      }
+
+      ul {
+        list-style: inside;
+        list-style-type: disc;
+        padding-left: 1.3rem;
+        li {
+          font-size: 1.2rem;
+        }
+
+        ul {
+          list-style-type: circle;
+
+          ul {
+            list-style-type: square;
+          }
+        }
+      }
+      span {
+        font-weight: bold;
       }
     }
   }

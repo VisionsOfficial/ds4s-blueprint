@@ -142,3 +142,8 @@ export type CategoriesContentStakeholder = {
     };
   };
 };
+
+export type SchemaUseCase =
+  | "business model radat"
+  | "data value chain tracker"
+  | "data value chain tracker BB";
