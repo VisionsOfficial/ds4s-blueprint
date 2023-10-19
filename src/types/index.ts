@@ -97,7 +97,10 @@ export type TechnicalTrackGovernance = {
   description: string;
   functionalities: {
     desctipion: string;
-    functions: string[];
+    functions: {
+      description: string;
+      subDescription?: string[];
+    }[];
   }[];
   standards: {
     name: string;

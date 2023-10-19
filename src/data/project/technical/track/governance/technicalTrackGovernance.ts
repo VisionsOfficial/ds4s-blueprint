@@ -8,63 +8,112 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     functionalities: [
       {
         desctipion:
-          "On top of the DSSC building block, for the skills context and its specific requirements in terms of semantic interoperability, specific functions are required:",
+          "For the skills context and its specific requirements in terms of semantic interoperability, specific functions are required as extension of:",
         functions: [
-          "Data Format Conversion",
-          "Data Structure Conversion",
-          "Taxonomy /Ontology/ Learner Model Conversions",
-          "(Skills) Data Normalisation",
-          "Language Models",
+          {
+            description:
+              "Integration and alignment of multiple data models to address overlapping or related concepts (DSSC blueprint Function 5):",
+            subDescription: [
+              "Data Format Conversion, Data Structure Conversion and Taxonomy /Ontology /Learner Model Conversions",
+            ],
+          },
+          {
+            description:
+              "Easy creation of standardised data models from data assets that are not compliant with standards (DSSC blueprint Function 4):",
+            subDescription: ["(Skills) Data Normalisation", " Language Models"],
+          },
         ],
       },
       {
         desctipion:
-          "On top of the DSSC building block, for the skills context and its specific requirements in terms of data quality, a specific function is required:",
-        functions: ["Data Quality Assurance"],
+          "For the skills context and its specific requirements in terms of data quality, a specific function is required:",
+        functions: [
+          {
+            description: "Data Quality Assurance",
+          },
+        ],
       },
     ],
     standards: [
       {
         name: "OSLO standard (based on RDF/OWL)",
-        website: "http://www.example.com",
+        website:
+          "https://joinup.ec.europa.eu/collection/oslo-open-standards-linked-organisations-0/about",
+      },
+      {
+        name: "ESCO",
+        website: "https://esco.ec.europa.eu/en/classification",
+      },
+      {
+        name: "Lightcast Ontology",
+        website:
+          "https://lightcast.io/open-skills/skills/KS1278N6G5S9YYGB8SMR/ontologies",
+      },
+      {
+        name: "LinkedIn Ontology",
+        website:
+          "https://learn.microsoft.com/en-us/linkedin/shared/references/v2/standardized-data/skills",
       },
       {
         name: "Xbildung",
-        website: "http://www.example.com",
+        website:
+          "https://www.xrepository.de/details/urn:xoev-de:xbildung-de:def:standard:xbildung_0.6",
       },
       {
         name: "Schema.org Educational or Occupational Credential",
-        website: "http://www.example.com",
+        website: "https://schema.org/",
       },
       {
         name: "CEDS",
-        website: "http://www.example.com",
+        website: "https://ceds.ed.gov/",
       },
       {
         name: "IEEE 1484.20.3",
-        website: "http://www.example.com",
+        website: "https://standards.ieee.org/ieee/1484.20.3/10749/",
+      },
+      {
+        name: "JSON-LD",
+        website: "https://json-ld.org/",
+      },
+      {
+        name: "ROME",
+        website:
+          "https://www.data.gouv.fr/fr/datasets/repertoire-operationnel-des-metiers-et-des-emplois-rome/",
+      },
+      {
+        name: "nodefr",
+        website: "https://hal.science/hal-02161156",
+      },
+      {
+        name: "ISCO-08",
+        website: "https://www.ilo.org/public/english/bureau/stat/isco/isco08/",
+      },
+      {
+        name: "CompetentNL",
+        website: "https://www.competentnl.nl/",
+      },
+      {
+        name: "SKOS",
+        website: "https://www.w3.org/2004/02/skos/",
+      },
+      {
+        name: "HR-XML/ HR-RDF",
+        website: "https://fr.wikipedia.org/wiki/Human_Resource_XML",
       },
     ],
     referenceImplementations: [
       {
-        name: "IFrame",
-        website: "http://www.example.com",
-      },
-      {
         name: "EQF",
-        website: "http://www.example.com",
-      },
-      {
-        name: "SKOS",
-        website: "http://www.example.com",
-      },
-      {
-        name: "HR-RDF which extends HR-XML",
-        website: "http://www.example.com",
+        website:
+          "https://europa.eu/europass/en/europass-tools/european-qualifications-framework#:~:text=The%20EU%20developed%20the%20European,and%20professional%20development%20across%20Europe.",
       },
       {
         name: "ELMO",
-        website: "http://www.example.com",
+        website: "",
+      },
+      {
+        name: "HeadAI Graphmind",
+        website: "https://headai.com/",
       },
     ],
   },
@@ -75,47 +124,60 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     functionalities: [
       {
         desctipion:
-          "On top of the DSSC building block, for the skills context and its specific requirements in terms of the human-centred approach and personal data protection, specific functions are required: ",
+          "For the skills context and its specific requirements in terms of the human-centred approach and personal data protection, specific functions are required as extension of:",
         functions: [
-          "Safeguard for personal data.",
-          "Privacy preserving data exchange protocols.",
+          {
+            description:
+              "Generic data exchange protocols (DSSC blueprint Function 2):",
+            subDescription: [
+              "Safeguard for personal data.",
+              "Privacy preserving data exchange protocols.",
+            ],
+          },
         ],
       },
     ],
     standards: [
       {
         name: "eIDAS",
-        website: "http://www.example.com",
+        website:
+          "https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation",
       },
       {
         name: "xAPI",
-        website: "http://www.example.com",
+        website: "https://xapi.com/",
+      },
+      {
+        name: "cmi5",
+        website:
+          "https://xapi.com/cmi5/?utm_source=google&utm_medium=natural_search",
+      },
+      {
+        name: "HTTP",
+        website: "https://www.w3.org/Protocols/",
+      },
+      {
+        name: "REST API",
+        website: "https://www.w3.org/2001/sw/wiki/REST",
       },
     ],
     referenceImplementations: [
       {
-        name: "cmi5",
-        website: "http://www.example.com",
-      },
-      {
         name: "GraphQL",
-        website: "http://www.example.com",
-      },
-      {
-        name: "HATEOAS",
-        website: "http://www.example.com",
+        website: "https://graphql.org/learn/",
       },
       {
         name: "LTI",
-        website: "http://www.example.com",
+        website:
+          "https://www.imsglobal.org/activity/learning-tools-interoperability",
       },
       {
         name: "OOAPI",
-        website: "http://www.example.com",
+        website: "https://openonderwijsapi.nl/#/",
       },
       {
         name: "EduAPI",
-        website: "http://www.example.com",
+        website: "https://www.imsglobal.org/edu-api",
       },
     ],
   },
@@ -126,44 +188,60 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     functionalities: [
       {
         desctipion:
-          "On top of the DSSC building block, for the skills context and its specific requirements in terms of the human-centred approach and consent, specific functions are required:",
-        functions: ["Consent", "Personal Data Access Logs"],
+          "For the skills context and its specific requirements in terms of the human-centred approach and consent, specific functions are required:",
+        functions: [
+          {
+            description: "PDI Consent",
+          },
+          {
+            description: "Personal Data Access Logs",
+          },
+        ],
       },
     ],
     standards: [
       {
         name: "Kantara Consent Receipt",
-        website: "htpp://www.example.com",
+        website: "https://kantarainitiative.org/",
       },
       {
         name: "Verifiable Credentials",
-        website: "htpp://www.example.com",
+        website: "https://www.w3.org/TR/vc-data-model-2.0/",
       },
       {
         name: "Data Privacy Vocabulary W3C",
-        website: "htpp://www.example.com",
+        website: "https://w3c.github.io/dpv/dpv/",
+      },
+      {
+        name: "ODRL",
+        website: "https://www.w3.org/TR/odrl-model/",
+      },
+      {
+        name: "JSON-LD",
+        website: "https://json-ld.org/",
       },
     ],
     referenceImplementations: [
       {
         name: "UMA",
-        website: "htpp://www.example.com",
+        website:
+          "https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html",
       },
       {
         name: "MyData Principles",
-        website: "htpp://www.example.com",
+        website: "https://www.mydata.org/about/purposes-principles/",
       },
       {
         name: "Prometheus-X",
-        website: "htpp://www.example.com",
+        website: "https://github.com/Prometheus-X-association",
       },
       {
         name: "MyDataShare",
-        website: "htpp://www.example.com",
+        website: "https://www.mydatashare.com/",
       },
       {
         name: "VisionsTrust",
-        website: "htpp://www.example.com",
+        website: "https://catalog.visionstrust.com/",
       },
     ],
   },
@@ -174,100 +252,133 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     functionalities: [
       {
         desctipion:
-          "On top of the DSSC building block, for the skills context and its specific requirements in terms of the human-centred approach, specific functions are required:",
-        functions: ["PDI Identity"],
+          "For the skills context and its specific requirements in terms of the human-centred approach, specific functions are required:",
+        functions: [
+          {
+            description: "PDI Identity",
+          },
+        ],
       },
     ],
     standards: [
       {
         name: "EDC",
-        website: "http://www.example.com",
+        website: "https://projects.eclipse.org/projects/technology.edc",
       },
       {
         name: "OEPass",
-        website: "http://www.example.com",
+        website: "https://oepass.eu/",
       },
       {
         name: "Micro credentials",
-        website: "http://www.example.com",
+        website:
+          "https://www.etf.europa.eu/sites/default/files/2023-05/Micro-Credential%20Guidelines%20Final%20Delivery.pdf",
       },
       {
         name: "W3C Verifiable Credentials",
-        website: "http://www.example.com",
-      },
-      {
-        name: "W3C Verifiable Presentations",
-        website: "http://www.example.com",
+        website: "https://www.w3.org/TR/vc-data-model-2.0/",
       },
       {
         name: "Confidential Storage",
-        website: "http://www.example.com",
+        website: "https://identity.foundation/confidential-storage/",
       },
       {
         name: "W3C WebID",
-        website: "http://www.example.com",
+        website: "https://www.w3.org/wiki/WebID",
       },
       {
         name: "DIDs",
-        website: "http://www.example.com",
+        website: "https://www.w3.org/TR/did-core/",
       },
       {
         name: "OpenID Connect",
-        website: "http://www.example.com",
+        website: "https://openid.net/developers/how-connect-works/",
+      },
+      {
+        name: "SAML 2.0",
+        website:
+          "https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=security",
+      },
+      {
+        name: "OAuth 2.0 Authorisation Server Metadata",
+        website: "https://oauth.net/2/authorization-server-metadata/",
       },
     ],
     referenceImplementations: [
       {
         name: "EDCI",
-        website: "http://www.example.com",
+        website: "https://europa.eu/europass/de/edci-standards",
       },
       {
         name: "SOLID",
-        website: "http://www.example.com",
+        website: "https://solidproject.org/",
       },
       {
         name: "eSignature",
-        website: "http://www.example.com",
-      },
-      {
-        name: "OICD",
-        website: "http://www.example.com",
+        website:
+          "https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eSignature",
       },
       {
         name: "MyAcademicID",
-        website: "http://www.example.com",
+        website: "https://myacademic-id.eu/",
       },
       {
-        name: "W3C DID",
-        website: "http://www.example.com",
-      },
-      {
-        name: "OAuth 2.0 Authorisation Server Metadata",
-        website: "http://www.example.com",
-      },
-      {
-        name: "SAML 2.0",
-        website: "http://www.example.com",
-      },
-      {
-        name: "SOLIDW3C",
-        website: "http://www.example.com",
+        name: "eduID",
+        website: "https://eduid.nl/",
       },
     ],
   },
   {
     title: "Trust",
-    description:
-      "“This building block should specify the functioning of trust anchors in a data space: what are they? How can they be used and how can they work together? And how do they work together with the identity management building block?” (as defined in the DSSC blueprint).",
+    description: `“This building block should specify the functioning of trust anchors in a data space: what are they? How can they be used and how can they work together? And how do they work together with the identity management building block?” (as defined in the DSSC blueprint).<br />
+      “Therefore, the purpose of this building block is to provide assurance to all participants of a data space to ensure the secure and reliable exchange of data between different entities within a data ecosystem while fostering data sovereignty” (as defined in the DSSC blueprint).
+      `,
     functionalities: [
       {
         desctipion:
-          "On top of the DSSC building block, for the skills context and its specific requirements in terms of the human-centred approach and personal data protection, specific functions are required:",
-        functions: ["Trustworthy AI assessment"],
+          "For the skills context and its specific requirements in terms of the human-centred approach and personal data protection, specific functions are required:",
+        functions: [
+          {
+            description: "Trustworthy AI assessment",
+          },
+        ],
       },
     ],
-    standards: [],
-    referenceImplementations: [],
+    standards: [
+      {
+        name: "W3C Verifiable Credentials",
+        website: "https://www.w3.org/TR/vc-data-model-2.0/",
+      },
+      {
+        name: "DIDs",
+        website: "https://www.w3.org/TR/did-core/",
+      },
+      {
+        name: "eIDAS",
+        website:
+          "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2014.257.01.0073.01.ENG",
+      },
+      {
+        name: "EV SSL",
+        website:
+          "https://www.globalsign.com/fr/centre-information-ssl/definition-certificat-ev-ssl",
+      },
+    ],
+    referenceImplementations: [
+      {
+        name: "EBSI",
+        website:
+          "https://ec.europa.eu/digital-building-blocks/wikis/display/EBSI/Home",
+      },
+      {
+        name: "Open Badges",
+        website: "https://openbadges.org/",
+      },
+      {
+        name: "Open Badge Passport",
+        website: "https://openbadgepassport.com/",
+      },
+    ],
   },
   {
     title: "Data, Services and Offerings Descriptions",
@@ -276,52 +387,29 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     functionalities: [
       {
         desctipion:
-          "On top of the DSSC building block, for the skills context and its specific requirements coming from the business model, specific functions are required:",
-        functions: ["Offerings"],
+          "For the skills context and its specific requirements coming from the business model, specific functions are required:",
+        functions: [
+          {
+            description: "Offering",
+          },
+        ],
       },
     ],
     standards: [
       {
-        name: "RDFS",
-        website: "http://www.example.com",
+        name: "CTDL",
+        website:
+          "https://credentialengine.org/credential-transparency/ctdl/#:~:text=What%20is%20the%20CTDL%3F,discovery%20and%20cross%2Dsystem%20interoperability.",
       },
       {
-        name: "CTDL Suite",
-        website: "http://www.example.com",
-      },
-      {
-        name: "RDF",
-        website: "http://www.example.com",
-      },
-      {
-        name: "CTDL-ASN",
-        website: "http://www.example.com",
-      },
-      {
-        name: "CompetentNL",
-        website: "http://www.example.com",
+        name: "JSON-LD",
+        website: "https://json-ld.org/",
       },
     ],
     referenceImplementations: [
       {
-        name: "ESCO",
-        website: "http://www.example.com",
-      },
-      {
-        name: "ROME",
-        website: "http://www.example.com",
-      },
-      {
-        name: "nodefr",
-        website: "http://www.example.com",
-      },
-      {
-        name: "ISCO-08",
-        website: "http://www.example.com",
-      },
-      {
         name: "DigComp",
-        website: "http://www.example.com",
+        website: "https://joint-research-centre.ec.europa.eu/digcomp_en",
       },
     ],
   },
@@ -332,64 +420,75 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     functionalities: [
       {
         desctipion:
-          "On top of the DSSC building block, for the skills context and its specific requirements in terms of the human-centred approach in general, specific functions are required:",
+          "For the skills context and its specific requirements in terms of the human-centred approach in general, specific functions are required:",
         functions: [
-          "PDI Data and service catalogue",
-          "PDI Distributed data visualization",
+          {
+            description: "PDI Catalogue",
+          },
+          {
+            description: "PDI Distributed data visualization",
+          },
         ],
       },
       {
         desctipion:
-          "On top of the DSSC building block, for the skills context and its specific requirements coming from the business model, specific functions are required:",
-        functions: ["Publication and discovery services"],
+          "For the skills context and its specific requirements coming from the business model, specific functions are required:",
+        functions: [
+          {
+            description: "Publication and discovery services",
+          },
+        ],
       },
     ],
     standards: [
       {
-        name: "TQF",
-        website: "http://www.example.com",
-      },
-      {
         name: "Single Digital Gateway (SDG)",
-        website: "http://www.example.com",
+        website:
+          "https://single-market-economy.ec.europa.eu/single-market/single-digital-gateway_en",
       },
       {
         name: "JSON-LD",
-        website: "http://www.example.com",
+        website: "https://json-ld.org/",
       },
       {
         name: "DCAT v3",
-        website: "http://www.example.com",
+        website: "https://www.w3.org/TR/vocab-dcat-3/",
       },
       {
-        name: "Shex / Shacl",
-        website: "http://www.example.com",
-      },
-      {
-        name: "VC / DID",
-        website: "http://www.example.com",
+        name: "W3C Verifiable Credentials",
+        website: "https://www.w3.org/TR/vc-data-model-2.0/",
       },
     ],
     referenceImplementations: [
       {
-        name: "Power BI",
-        website: "http://www.example.com",
-      },
-      {
         name: "Formacode",
-        website: "http://www.example.com",
+        website: "https://formacode.centre-inffo.fr/",
       },
       {
         name: "SCORM",
-        website: "http://www.example.com",
+        website: "https://scorm.com/",
       },
       {
         name: "IMS Caliper Analytics",
-        website: "http://www.example.com",
+        website:
+          "https://www.imsglobal.org/activity/caliper#:~:text=Caliper%20Analytics%20enables%20institutions%20to,Student%20recruitment%20and%20retention%20plans",
       },
       {
-        name: "IDS, GAIA-X and Prometheus-X metadata brokers are the baseline to build the Catalogue",
-        website: "http://www.example.com",
+        name: "International Data Spaces",
+        website: "https://internationaldataspaces.org/",
+      },
+      {
+        name: "GAIA-X",
+        website: "https://gaia-x.eu/",
+      },
+      {
+        name: "Prometheus-X",
+        website: "https://prometheus-x.org/",
+      },
+      {
+        name: "TQF",
+        website:
+          "https://www.colorado.edu/teaching-quality-framework/about-tqf",
       },
     ],
   },
@@ -400,8 +499,21 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     functionalities: [
       {
         desctipion:
-          "On top of the DSSC building block, for the skills context and its specific requirements coming from the business model, specific functions are required: ",
-        functions: ["Contract / Order", "Marketplace", "Billing", "Aftersales"],
+          "For the skills context and its specific requirements coming from the business model, specific functions are required:",
+        functions: [
+          {
+            description: "Contract / Order",
+          },
+          {
+            description: "Marketplace",
+          },
+          {
+            description: "Billing",
+          },
+          {
+            description: "Aftersales",
+          },
+        ],
       },
     ],
     standards: [],
@@ -439,12 +551,10 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
       "AI providers need user data to train their models, while data providers need AI models to provide innovative features to their users. This building block is an answer to this need by making the link between AI providers and data providers through secure and trusted decentralized learning protocol.",
     functionalities: [
       {
-        desctipion: `Key Functionalities <br />
-            Users give or revoke consent or their personal data.<br />
-            Each contributor securely receives the AI model to train, including the weights, and the related algorithms. The relevant user data, already in place, is identified and queried.   <br />
-            The computation is then made in a secure environment to guarantee the robustness and trustworthiness of the execution.  <br />
-            During the process, no user data is exposed whatsoever, ensuring the security and the privacy of the users.  <br />
-            Any organisation or individual can implement its own learning model and submit it to a call for contribution so that individuals can participate with their data.
+        desctipion: `●	The users give or revoke the right to mobilize their data, wherever it is stored, to train AI models.<br />
+        ●	A decentralised federated learning protocol allows to train AI models without disclosing users' contributions. Whereas today, the training of AI imposes the need to provide the data in clear to a central actor. Individuals no longer have to arbitrate between altruism and confidentiality. Since data is no longer shared, AI researchers can focus on their core business because they no longer have to spend time on compliance for data access.<br/>
+        By mobilising data at its source, decentralised learning increases the relevance of AIs by allowing them to train on more transversal, sensitive and up-to-date data, from multiple sources: data is no longer shared to benefit from the service.
+        
             `,
         functions: [],
       },

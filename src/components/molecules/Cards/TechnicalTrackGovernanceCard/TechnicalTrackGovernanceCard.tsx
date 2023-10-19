@@ -5,7 +5,10 @@ import { Card } from "../../../atoms/Cards/Card/Card";
 type TechnicalTrackGovernanceCardProps = {
   functionalites?: {
     desctipion: string;
-    functions: string[];
+    functions: {
+      description: string;
+      subDescription?: string[];
+    }[];
   }[];
   standards?: {
     name: string;
@@ -39,9 +42,18 @@ export const TechnicalTrackGovernanceCard = ({
           {functionalites.map((el, index) => (
             <div key={"description" + index} className={Styles.content}>
               <p dangerouslySetInnerHTML={{ __html: el.desctipion || "" }}></p>
-              <ul>
+              <ul className={Styles.listFunctionalites}>
                 {el.functions.map((func, i) => (
-                  <li key={func + i}>{func}</li>
+                  <li key={"functions" + i}>
+                    {func.description}
+                    {func?.subDescription?.length && (
+                      <ul>
+                        {func.subDescription.map((sub, index) => (
+                          <li key={sub + index}>- {sub}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -60,7 +72,9 @@ export const TechnicalTrackGovernanceCard = ({
                 key={el.name + index}
                 className={Styles.clickable}
                 onClick={() => {
-                  openNewWindow(el?.website);
+                  if (el?.website) {
+                    openNewWindow(el?.website);
+                  }
                 }}
               >
                 {el.name}
@@ -81,7 +95,9 @@ export const TechnicalTrackGovernanceCard = ({
                 key={el.name + index}
                 className={Styles.clickable}
                 onClick={() => {
-                  openNewWindow(el?.website);
+                  if (el?.website) {
+                    openNewWindow(el?.website);
+                  }
                 }}
               >
                 {el.name}

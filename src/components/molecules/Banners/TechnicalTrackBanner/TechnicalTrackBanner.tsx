@@ -16,7 +16,7 @@ export const TechnicalTrackBanner = ({
       variantColor="primary"
     >
       <h1>{bbs?.title}</h1>
-      <p>{bbs?.description}</p>
+      <p dangerouslySetInnerHTML={{ __html: bbs?.description || "" }}></p>
     </SectionContainer>
   );
 };
