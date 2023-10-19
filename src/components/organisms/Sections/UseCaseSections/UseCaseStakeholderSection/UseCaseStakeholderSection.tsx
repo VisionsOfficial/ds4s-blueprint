@@ -33,7 +33,7 @@ export const UseCaseStakeholderSection = ({
           "Employment Agencies",
           "Edtechs & AI Providers",
           "Orchestator",
-          "Infrastructure service",
+          "Infrastructure providers",
         ]);
         break;
       case "forecast":

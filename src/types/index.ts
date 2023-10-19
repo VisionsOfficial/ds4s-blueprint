@@ -117,3 +117,22 @@ export type UXInstruction = {
     long: string;
   };
 };
+
+export type ContentStakeholder = {
+  name: Stakeholder;
+  image: string;
+  categories: CategoriesContentStakeholder[];
+};
+
+export type CategoriesContentStakeholder = {
+  name: StakeholderCategories;
+  content: {
+    title: string;
+    definition: string;
+    examples?: string[];
+    secondExamples?: string[];
+    obligations?: string[];
+    benefits?: string[];
+    costs?: string[];
+  };
+};
