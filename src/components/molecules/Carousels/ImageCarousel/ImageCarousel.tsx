@@ -34,6 +34,7 @@ export const ImageCarousel = ({
 
   const imageStyle = {
     transform: `translateX(-${currentIndex * 100}%)`,
+    width: `calc(100% * ${images?.length})`,
   };
 
   return (
@@ -63,9 +64,11 @@ export const ImageCarousel = ({
         <div className={Styles.wrapper} style={imageStyle}>
           {images?.map((img, index) => (
             <img
-              key={"images" + index}
               src={img}
               alt={`Image ${index}`}
+              onClick={() => {
+                window.open(img);
+              }}
             />
           ))}
         </div>

@@ -4,12 +4,24 @@ import { Link } from "react-router-dom";
 import { APP_IMAGES } from "../../../utils/appImages";
 import { APP_LINKS } from "../../../utils/appLinks";
 import { Copyright } from "../Copyright/Copyright";
+import { useInView } from "react-intersection-observer";
+import { SlideTopContainer } from "../../atoms/Animations/SlideTopContainer/SlideTopContainer";
 
 export const Footer = () => {
+  const [ref, InView] = useInView({
+    triggerOnce: true,
+  });
+  const [linksRef, InViewLinks] = useInView({
+    triggerOnce: true,
+  });
   return (
     <footer className={Styles.Footer}>
       <div className={Styles.FooterContent}>
-        <div className={Styles.description}>
+        <SlideTopContainer
+          className={Styles.description}
+          ref={ref}
+          InView={InView}
+        >
           <div className={Styles.logos}>
             <img
               src={APP_IMAGES.logo.ds4skills}
@@ -29,8 +41,12 @@ export const Footer = () => {
             European union nor the gratting authority can be held responsible
             for them
           </p>
-        </div>
-        <div className={Styles.listsContainer}>
+        </SlideTopContainer>
+        <SlideTopContainer
+          className={Styles.listsContainer}
+          ref={linksRef}
+          InView={InViewLinks}
+        >
           <FooterList title="Blueprint">
             <li>
               <Link
@@ -79,7 +95,7 @@ export const Footer = () => {
               </Link>
             </li>
           </FooterList>
-        </div>
+        </SlideTopContainer>
       </div>
       <Copyright />
     </footer>

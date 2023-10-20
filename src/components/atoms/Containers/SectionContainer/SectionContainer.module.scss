@@ -3,6 +3,7 @@
 .SectionContainer {
   @include sizingContent();
   min-height: 450px;
+  overflow: hidden;
 }
 
 .primary {

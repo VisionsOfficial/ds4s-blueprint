@@ -50,9 +50,17 @@ import orchestrator from "../assets/imgs/img/stakeholders/orchestrator.jpg";
 import publicInstitutions from "../assets/imgs/img/stakeholders/public_institutions.jpg";
 import dataIntermediary from "../assets/imgs/img/stakeholders/data_intermediary.jpg";
 
-import schemaMap from "../assets/imgs/img/schemas/schema_map.png";
-import schemaMatch from "../assets/imgs/img/schemas/schema_match.png";
-import schemaForecast from "../assets/imgs/img/schemas/schema_forecast.png";
+import schemaChainTrackBB from "../assets/imgs/img/schemas/schema_chain_tracker_bb.png";
+import schemaLegendChainTracker from "../assets/imgs/img/schemas/schema_chain_tracker_1.png";
+import schemaChainTracker from "../assets/imgs/img/schemas/schema_chain_tracker_2.png";
+import schemaRadarOne from "../assets/imgs/img/schemas/schema_radar_1.png";
+import schemaRadarTwo from "../assets/imgs/img/schemas/schema_radar_2.png";
+import schemaRadarThree from "../assets/imgs/img/schemas/schema_radar_3.png";
+import schemaRadarFour from "../assets/imgs/img/schemas/schema_radar_4.png";
+import schemaRadarFive from "../assets/imgs/img/schemas/schema_radar_5.png";
+import schemaRadarSix from "../assets/imgs/img/schemas/schema_radar_6.png";
+import schemaRadarSeven from "../assets/imgs/img/schemas/schema_radar_7.png";
+import schemaRadarEight from "../assets/imgs/img/schemas/schema_radar_8.png";
 
 export const APP_IMAGES = {
   logo: {
@@ -116,9 +124,17 @@ export const APP_IMAGES = {
       dataIntermediary,
     },
     schema: {
-      schemaForecast,
-      schemaMap,
-      schemaMatch,
+      schemaRadarOne,
+      schemaRadarTwo,
+      schemaRadarThree,
+      schemaRadarFour,
+      schemaRadarFive,
+      schemaRadarSix,
+      schemaRadarSeven,
+      schemaRadarEight,
+      schemaChainTrackBB,
+      schemaLegendChainTracker,
+      schemaChainTracker,
     },
   },
 };

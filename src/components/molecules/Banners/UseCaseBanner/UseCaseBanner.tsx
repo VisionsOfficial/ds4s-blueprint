@@ -5,6 +5,8 @@ import { UseCase } from "../../../../types";
 import { APP_LINKS } from "../../../../utils/appLinks";
 import { Button } from "../../../atoms/Buttons/Button/Button";
 import { useNavigate } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
+import { SlideTopContainer } from "../../../atoms/Animations/SlideTopContainer/SlideTopContainer";
 
 type UseCaseBannerProps = {
   useCase: UseCase | string;
@@ -31,6 +33,9 @@ export const UseCaseBanner = ({
   useCase,
 }: PropsWithChildren<UseCaseBannerProps>) => {
   const navigate = useNavigate();
+  const [ref, InView] = useInView({
+    triggerOnce: true,
+  });
 
   const [contentBanner, setContentBanner] = useState<BannerContent>();
   const [useCaseError, setUseCaseError] = useState<boolean>(false);
@@ -101,49 +106,55 @@ export const UseCaseBanner = ({
   }
 
   return (
-    <SectionContainer variantColor="primary" className={Styles.UseCaseBanner}>
-      <div className={Styles.nav}>
-        {contentBanner?.links?.prev && (
-          <Button
-            variantBgColor="transparent"
-            onClick={() => {
-              if (contentBanner?.links?.prev)
-                navigate(contentBanner?.links?.prev?.link);
-            }}
-            icon="arrowLeft"
-            iconPosition="prev"
-          >
-            Previous use case <span>({contentBanner?.links.prev.name})</span>
-          </Button>
-        )}
-        {contentBanner?.links?.next && (
-          <Button
-            variantBgColor="transparent"
-            onClick={() => {
-              if (contentBanner?.links?.next)
-                navigate(contentBanner?.links.next.link);
-            }}
-            icon="arrowRight"
-          >
-            Next use case <span>({contentBanner?.links.next.name})</span>
-          </Button>
-        )}
-      </div>
+    <SectionContainer variantColor="primary" className={Styles.bgImage}>
+      <SlideTopContainer
+        className={Styles.UseCaseBanner}
+        ref={ref}
+        InView={InView}
+      >
+        <div className={Styles.nav}>
+          {contentBanner?.links?.prev && (
+            <Button
+              variantBgColor="transparent"
+              onClick={() => {
+                if (contentBanner?.links?.prev)
+                  navigate(contentBanner?.links?.prev?.link);
+              }}
+              icon="arrowLeft"
+              iconPosition="prev"
+            >
+              Previous use case <span>({contentBanner?.links.prev.name})</span>
+            </Button>
+          )}
+          {contentBanner?.links?.next && (
+            <Button
+              variantBgColor="transparent"
+              onClick={() => {
+                if (contentBanner?.links?.next)
+                  navigate(contentBanner?.links.next.link);
+              }}
+              icon="arrowRight"
+            >
+              Next use case <span>({contentBanner?.links.next.name})</span>
+            </Button>
+          )}
+        </div>
 
-      <header>
-        <span>{contentBanner?.icon}</span>
-        <h1>{contentBanner?.title}</h1>
-      </header>
-      <p>
-        Description and main value: <br /> {contentBanner?.description}
-      </p>
-      {contentBanner?.mainValue.length && (
-        <ul>
-          {contentBanner.mainValue.map((value, index) => (
-            <li key={"mainValue" + index}>{value}</li>
-          ))}
-        </ul>
-      )}
+        <header>
+          <span>{contentBanner?.icon}</span>
+          <h1>{contentBanner?.title}</h1>
+        </header>
+        <p>
+          Description and main value: <br /> {contentBanner?.description}
+        </p>
+        {contentBanner?.mainValue.length && (
+          <ul>
+            {contentBanner.mainValue.map((value, index) => (
+              <li key={"mainValue" + index}>{value}</li>
+            ))}
+          </ul>
+        )}
+      </SlideTopContainer>
     </SectionContainer>
   );
 };

@@ -2,6 +2,8 @@ import React, { PropsWithChildren } from "react";
 import Styles from "./Button.module.scss";
 import { ColorVariant } from "../../../../types";
 import { UseColor } from "../../../../hooks/useColor/useColor";
+import { OpacityContainer } from "../../Animations/OpacityContainer/OpacityContainer";
+import { useInView } from "react-intersection-observer";
 
 type ButtonProps = React.DetailedHTMLProps<
   React.ButtonHTMLAttributes<HTMLButtonElement>,
@@ -12,6 +14,7 @@ type ButtonProps = React.DetailedHTMLProps<
   variantSvgColor?: ColorVariant;
   icon?: "plus" | "arrowLeft" | "arrowRight" | "plusSquare";
   iconPosition?: "prev" | "next";
+  animation?: "opacity";
 };
 
 export const Button = (props: PropsWithChildren<ButtonProps>) => {
@@ -21,9 +24,13 @@ export const Button = (props: PropsWithChildren<ButtonProps>) => {
     icon,
     iconPosition = "next",
     variantSvgColor = "black",
+    animation,
     children,
     ...rest
   } = props;
+  const [ref, InView] = useInView({
+    triggerOnce: true,
+  });
 
   const { selectedColor } = UseColor({ color: variantBgColor });
 
@@ -175,9 +182,19 @@ export const Button = (props: PropsWithChildren<ButtonProps>) => {
       className={setProps()}
       style={icon ? { justifyContent: "space-between" } : {}}
     >
-      {iconPosition === "prev" && setIcons()}
+      {iconPosition === "prev" && !animation && setIcons()}
+      {iconPosition === "prev" && animation === "opacity" && (
+        <OpacityContainer ref={ref} InView={InView}>
+          {setIcons()}
+        </OpacityContainer>
+      )}
       {children}
-      {iconPosition === "next" && setIcons()}
+      {iconPosition === "next" && !animation && setIcons()}
+      {iconPosition === "next" && animation === "opacity" && (
+        <OpacityContainer ref={ref} InView={InView}>
+          {setIcons()}
+        </OpacityContainer>
+      )}
     </button>
   );
 };

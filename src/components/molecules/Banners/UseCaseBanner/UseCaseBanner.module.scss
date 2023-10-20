@@ -3,10 +3,6 @@
 .UseCaseBanner {
   @include flexColumn(stretch);
   gap: $large;
-  background-image: url("../../../../assets/imgs/img/useCase/use_case_banner.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 
   .nav {
     @include flexColumn(flex-start);
@@ -57,4 +53,11 @@
       margin-block: $x-small;
     }
   }
+}
+
+.bgImage {
+  background-image: url("../../../../assets/imgs/img/useCase/use_case_banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

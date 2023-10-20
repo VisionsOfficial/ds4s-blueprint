@@ -3,6 +3,7 @@ import Styles from "./EUDuneCard.module.scss";
 import { Card } from "../../../atoms/Cards/Card/Card";
 import { APP_IMAGES } from "../../../../utils/appImages";
 import { EUDuneCategoryCard } from "../../../../types";
+import { useInView } from "react-intersection-observer";
 
 type EUDuneCardProps = {
   category: EUDuneCategoryCard;
@@ -15,6 +16,10 @@ export const EUDuneCard = ({
   contentDirection = "normal",
   className = "",
 }: PropsWithChildren<EUDuneCardProps>) => {
+  const [ref, InView] = useInView({
+    triggerOnce: true,
+  });
+
   const setContent = () => {
     switch (category) {
       case "francesco":
@@ -257,7 +262,10 @@ export const EUDuneCard = ({
 
   return (
     <Card
-      className={`${Styles.EUDuneCard} ${className}`}
+      className={`${Styles.EUDuneCard} ${className} ${
+        InView ? "slide-top-animation" : ""
+      }`}
+      ref={ref}
       style={
         contentDirection === "reverse"
           ? { flexDirection: "column-reverse" }

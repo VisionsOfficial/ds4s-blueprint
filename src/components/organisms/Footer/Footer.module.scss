@@ -9,6 +9,7 @@
     padding-bottom: $large;
     @include flexColumn();
     gap: 40px;
+    overflow: hidden;
     .description {
       @include flexColumn();
       gap: $large;

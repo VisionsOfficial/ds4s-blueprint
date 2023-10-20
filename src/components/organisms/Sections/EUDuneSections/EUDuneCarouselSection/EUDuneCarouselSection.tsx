@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { APP_IMAGES } from "../../../../../utils/appImages";
 import { SectionContainer } from "../../../../atoms/Containers/SectionContainer/SectionContainer";
 import Styles from "./EUDuneCarouselSection.module.scss";
 import { ImageCarousel } from "../../../../molecules/Carousels/ImageCarousel/ImageCarousel";
 import { SchemaUseCase } from "../../../../../types";
+import { SlideTopContainer } from "../../../../atoms/Animations/SlideTopContainer/SlideTopContainer";
+import { useInView } from "react-intersection-observer";
 
 const CONTENT_CAROUSEL: SchemaUseCase[] = [
   "business model radat",
@@ -11,7 +13,24 @@ const CONTENT_CAROUSEL: SchemaUseCase[] = [
   "data value chain tracker BB",
 ];
 
+const CONTENT_IMAGES_CAROUSEL = [
+  APP_IMAGES.image.schema.schemaRadarOne,
+  APP_IMAGES.image.schema.schemaRadarTwo,
+  APP_IMAGES.image.schema.schemaRadarThree,
+  APP_IMAGES.image.schema.schemaRadarFour,
+  APP_IMAGES.image.schema.schemaRadarFive,
+  APP_IMAGES.image.schema.schemaRadarSix,
+  APP_IMAGES.image.schema.schemaRadarSeven,
+  APP_IMAGES.image.schema.schemaRadarEight,
+  APP_IMAGES.image.schema.schemaChainTracker,
+  APP_IMAGES.image.schema.schemaLegendChainTracker,
+  APP_IMAGES.image.schema.schemaChainTrackBB,
+];
+
 export const EUDuneCarouselSection = () => {
+  const [ref, InView] = useInView({
+    triggerOnce: true,
+  });
   const [currentCarouselItem, setCurrentCarouselItem] = useState<number>(0);
 
   const updateIndicator = (index: number) => {
@@ -233,63 +252,91 @@ export const EUDuneCarouselSection = () => {
     }
   };
 
+  const updateContentByIndex = () => {
+    switch (currentCarouselItem) {
+      case 0:
+      case 1:
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+      case 6:
+      case 7:
+        return (
+          <>
+            <h3>{CONTENT_CAROUSEL[0]}</h3>
+            <p>Definition:</p>
+            {setContent(CONTENT_CAROUSEL[0])}
+          </>
+        );
+      case 8:
+      case 9:
+        return (
+          <>
+            <h3>{CONTENT_CAROUSEL[1]}</h3>
+            <p>Definition:</p>
+            {setContent(CONTENT_CAROUSEL[1])}
+          </>
+        );
+      case 10:
+        return (
+          <>
+            <h3>{CONTENT_CAROUSEL[2]}</h3>
+            <p>Definition:</p>
+            {setContent(CONTENT_CAROUSEL[2])}
+          </>
+        );
+
+      default:
+        return null;
+    }
+  };
+
   return (
-    <SectionContainer className={Styles.EUDuneCarouselSection}>
-      <header>
-        {/* <h2>Check other examples</h2> */}
-        <p>
-          The following tools: Business model radar, Value tracker, and Value
-          sharing model are custom-tailored to address the unique challenges and
-          opportunities within the EU-DUNE landscape.
-          <br /> In our increasingly data-driven world, comprehending the
-          journey of data and its transformation into economic value is of
-          utmost importance. While the "Business Model Radar" aids each use case
-          participant in defining their motivations, benefits, risks, and costs
-          for participation, the "Data Value Chain Tracker" illuminates the
-          complex path that data follows, shedding light on how data translates
-          into monetary value.
-        </p>
-      </header>
-      <div>
-        <div className={Styles.carousel}>
-          <ImageCarousel
-            updateIndicator={updateIndicator}
-            images={[
-              APP_IMAGES.image.schema.schemaMap,
-              APP_IMAGES.image.schema.schemaMatch,
-              APP_IMAGES.image.schema.schemaForecast,
-            ]}
-          />
-          <div className={Styles.useCase}>
-            {CONTENT_CAROUSEL.map((el, index) => {
-              if (index === currentCarouselItem) {
-                return (
-                  <React.Fragment key={el + index}>
-                    <h3>{el}</h3>
-                    <p>Definition:</p>
-                    {setContent(el)}
-                  </React.Fragment>
-                );
-              } else {
-                return null;
-              }
-            })}
+    <SectionContainer>
+      <SlideTopContainer
+        className={Styles.EUDuneCarouselSection}
+        ref={ref}
+        InView={InView}
+      >
+        <header>
+          {/* <h2>Check other examples</h2> */}
+          <p>
+            The following tools: Business model radar, Value tracker, and Value
+            sharing model are custom-tailored to address the unique challenges
+            and opportunities within the EU-DUNE landscape.
+            <br /> In our increasingly data-driven world, comprehending the
+            journey of data and its transformation into economic value is of
+            utmost importance. While the "Business Model Radar" aids each use
+            case participant in defining their motivations, benefits, risks, and
+            costs for participation, the "Data Value Chain Tracker" illuminates
+            the complex path that data follows, shedding light on how data
+            translates into monetary value.
+          </p>
+        </header>
+        <div>
+          <div className={Styles.carousel}>
+            <ImageCarousel
+              updateIndicator={updateIndicator}
+              images={CONTENT_IMAGES_CAROUSEL}
+            />
+            <div className={Styles.useCase}>{updateContentByIndex()}</div>
+          </div>
+          <div className={Styles.indicator}>
+            {[...Array(CONTENT_IMAGES_CAROUSEL.length)].map((_, index) => (
+              <span
+                key={"indicator" + index}
+                className={
+                  currentCarouselItem === index ? Styles.activeIndicator : ""
+                }
+                onClick={() => {
+                  setCurrentCarouselItem(index);
+                }}
+              ></span>
+            ))}
           </div>
         </div>
-        <div className={Styles.indicator}>
-          {[...Array(3)].map((_, index) => (
-            <span
-              key={"indicator" + index}
-              className={
-                currentCarouselItem === index ? Styles.activeIndicator : ""
-              }
-              onClick={() => {
-                setCurrentCarouselItem(index);
-              }}
-            ></span>
-          ))}
-        </div>
-      </div>
+      </SlideTopContainer>
     </SectionContainer>
   );
 };

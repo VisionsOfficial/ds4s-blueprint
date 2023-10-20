@@ -3,12 +3,14 @@
 .BuildingBlocksBanner {
   @include flexColumn(flex-start);
   gap: $large;
-  background-image: url(../../../../assets/imgs/img/useCase/use_case_banner.jpg);
-  background-position: center;
-  background-size: cover;
 
   header {
     @include flexColumn(flex-start);
     gap: $x-medium;
   }
+}
+
+.bgImage {
+  background-image: url(../../../../assets/imgs/img/useCase/use_case_banner.jpg);
+  background-size: cover;
 }

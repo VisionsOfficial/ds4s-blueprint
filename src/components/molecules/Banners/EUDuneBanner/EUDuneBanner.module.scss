@@ -1,7 +1,6 @@
 @use "../../../../shared/styles/index" as *;
 
 .EUDuneBanner {
-  background-color: $primary;
   color: $white;
   @include flexColumn();
   gap: $medium;

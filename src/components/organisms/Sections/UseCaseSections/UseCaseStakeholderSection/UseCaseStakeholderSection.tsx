@@ -3,6 +3,7 @@ import { SectionContainer } from "../../../../atoms/Containers/SectionContainer/
 import { StakeholderCard } from "../../../../molecules/Cards/StakeholderCard/StakeholderCard";
 import { Stakeholder, UseCase } from "../../../../../types";
 import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 type UseCaseStakeholderSectionProps = {
   useCase: UseCase | string;
@@ -12,6 +13,9 @@ export const UseCaseStakeholderSection = ({
   useCase,
 }: UseCaseStakeholderSectionProps) => {
   const [content, setContent] = useState<Stakeholder[]>();
+  const [ref, InView] = useInView({
+    triggerOnce: true,
+  });
 
   useEffect(() => {
     switch (useCase) {
@@ -59,7 +63,9 @@ export const UseCaseStakeholderSection = ({
       variantColor="grey"
       className={Styles.UseCaseStakeholderSection}
     >
-      <h2>Choose a Stakeholder</h2>
+      <h2 ref={ref} className={InView ? "opacity-animation" : ""}>
+        Choose a Stakeholder
+      </h2>
       <div>
         {content?.map((el, index) => (
           <StakeholderCard
