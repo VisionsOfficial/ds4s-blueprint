@@ -4,6 +4,7 @@
   color: $white;
   @include flexColumn(flex-start, flex-start);
   gap: $large;
+  min-height: auto;
 
   .path {
     a {

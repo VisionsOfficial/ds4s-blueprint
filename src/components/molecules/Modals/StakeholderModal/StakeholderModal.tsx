@@ -1,12 +1,12 @@
 import { PropsWithChildren, useEffect, useState } from "react";
 import Styles from "./StakeholderModal.module.scss";
 import { Modal } from "../../../atoms/Modals/Modal/Modal";
-import { CategoriesContentStakeholder } from "../../../../hooks/useStakeholder";
 import { Button } from "../../../atoms/Buttons/Button/Button";
-import { Stakeholder } from "../../../../types";
+import { CategoriesContentStakeholder, Stakeholder } from "../../../../types";
 import { useNavigate, useParams } from "react-router-dom";
 import { APP_LINKS } from "../../../../utils/appLinks";
 import { LOCAL_STORAGE_KEY } from "../../../../utils/keys/localStorageKeys";
+import React from "react";
 
 type StakeholderModalProps = {
   closingModal: () => void;
@@ -31,7 +31,7 @@ export const StakeholderModal = ({
     return [Styles.StakeholderModal, clasName, child].join(" ");
   };
 
-  const handleClickButton = () => {
+  const handleClickButton = (key?: number) => {
     switch (nthChild % 5) {
       case 0:
         sessionStorage.setItem(
@@ -67,9 +67,10 @@ export const StakeholderModal = ({
 
     navigate(
       APP_LINKS.useCases +
-        `/${useCase ? useCase : "eudune"}/${stakeholderSection?.replace(/\s+/g, "-")}/${
-          stakeholder?.name
-        }`
+        `/${useCase ? useCase : "eudune"}/${stakeholderSection?.replace(
+          /\s+/g,
+          "-"
+        )}/${stakeholder?.name}${key ? `?gov=${key}` : ""}`
     );
   };
 
@@ -96,6 +97,49 @@ export const StakeholderModal = ({
     }
   }, [nthChild]);
 
+  if (stakeholder?.name === "Governance" && stakeholder?.content?.governance) {
+    return (
+      <>
+        <Modal clonsingModal={closingModal} className={setProps()}>
+          <p
+            className={Styles.path}
+          >{`${stakeholderSection} > ${stakeholder?.name}`}</p>
+          <div className={Styles.content}>
+            {stakeholder?.content?.governance?.map((gov, index) => (
+              <React.Fragment key={gov.title + index}>
+                <h4>{gov.title}</h4>
+                <div>
+                  <p>
+                    <span>Definition:</span>
+                  </p>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: gov.definition || "",
+                    }}
+                  ></p>
+                </div>
+
+                <Button
+                  onClick={() => {
+                    handleClickButton(index + 1);
+                  }}
+                >
+                  Learn more
+                </Button>
+              </React.Fragment>
+            ))}
+          </div>
+        </Modal>
+        <div
+          className={`backdrop ${Styles.backdrop}`}
+          onClick={() => {
+            closingModal();
+          }}
+        ></div>
+      </>
+    );
+  }
+
   return (
     <>
       <Modal clonsingModal={closingModal} className={setProps()}>
@@ -104,11 +148,16 @@ export const StakeholderModal = ({
         >{`${stakeholderSection} > ${stakeholder?.name}`}</p>
         <div className={Styles.content}>
           <h4>{stakeholder?.content.title}</h4>
-          <p>
-            <span>Definition:</span>
-            <br />
-            {stakeholder?.content.definition}
-          </p>
+          <div>
+            <p>
+              <span>Definition:</span>
+            </p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: stakeholder?.content.definition || "",
+              }}
+            ></p>
+          </div>
 
           <Button
             onClick={() => {

@@ -8,6 +8,7 @@ import {
 } from "../../../../types";
 import { useStakeholder } from "../../../../hooks/useStakeholder";
 import { UseColor } from "../../../../hooks/useColor/useColor";
+import { useLocation } from "react-router-dom";
 
 type StakeholderDocumentationByCategoryCardProps = {
   title:
@@ -29,23 +30,44 @@ export const StakeholderDocumentationByCategoryCard = ({
 }: PropsWithChildren<StakeholderDocumentationByCategoryCardProps>) => {
   const { data } = useStakeholder({ stakeholder });
   const { selectedColor } = UseColor({ color: currentColor });
+  const location = useLocation();
+  const searchLocation = location.search.split("=")[1];
 
   const setContent = () => {
     const content = data?.categories.map((el) => {
       if (el.name === category) {
         switch (title) {
           case "Obligations":
-            return el.content.obligations?.map((obligation, index) => (
-              <p className={selectedColor} key={obligation + index}>
-                {obligation}
-              </p>
-            ));
+            if (searchLocation) {
+              if (!el.content.governance) return;
+              return el.content.governance[
+                parseInt(searchLocation) - 1
+              ].obligations?.map((obligation, index) => (
+                <p className={selectedColor} key={obligation + index}>
+                  {obligation}
+                </p>
+              ));
+            } else {
+              return el.content.obligations?.map((obligation, index) => (
+                <p className={selectedColor} key={obligation + index}>
+                  {obligation}
+                </p>
+              ));
+            }
           case "Examples":
-            return el.content.examples?.map((ex, index) => (
-              <p className={selectedColor} key={ex + index}>
-                {ex}
-              </p>
-            ));
+            if (el.content.examples?.length) {
+              return el.content.examples?.map((ex, index) => (
+                <p className={selectedColor} key={ex + index}>
+                  {ex}
+                </p>
+              ));
+            } else {
+              return (
+                <p className={selectedColor} key={'example'}>
+                  This stakeholder don't have example
+                </p>
+              );
+            }
           case "Second Examples":
             return el.content.secondExamples?.map((secondEx, index) => (
               <p className={selectedColor} key={secondEx + index}>

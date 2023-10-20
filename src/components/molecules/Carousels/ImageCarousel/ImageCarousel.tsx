@@ -64,6 +64,7 @@ export const ImageCarousel = ({
         <div className={Styles.wrapper} style={imageStyle}>
           {images?.map((img, index) => (
             <img
+              key={"image_carousel" + index}
               src={img}
               alt={`Image ${index}`}
               onClick={() => {

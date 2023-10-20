@@ -131,6 +131,11 @@ export type CategoriesContentStakeholder = {
   name: StakeholderCategories;
   content: {
     title: string;
+    governance?: {
+      title: string;
+      definition: string;
+      obligations?: string[];
+    }[];
     definition: string;
     examples?: string[];
     secondExamples?: string[];
