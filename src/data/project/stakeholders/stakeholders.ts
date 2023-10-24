@@ -1,5 +1,7 @@
 import { ContentStakeholder } from "../../../types";
 import { APP_IMAGES } from "../../../utils/appImages";
+import { APP_LINKS } from "../../../utils/appLinks";
+import { APP_PARAMS } from "../../../utils/appParams";
 
 export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
   {
@@ -32,23 +34,20 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Technical",
         content: {
           title: "Individuals (end users)",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Identity Management",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.identifyManagement}`,
+            },
+            {
+              name: "Trust",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.trust}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
           ],
         },
       },
@@ -125,23 +124,24 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Technical",
         content: {
           title: "University & Training providers Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Data Models & Formats",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataModelAndFormat}`,
+            },
+            {
+              name: "Data, Services and Offerings Descriptions",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataServicesAndOfferingDescriptions}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
+            {
+              name: "Data Exchange",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataExchange}`,
+            },
           ],
         },
       },
@@ -208,47 +208,34 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Business",
         content: {
           title: "Employers Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
+          definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
+          E.g.: Transaction, freemium, subscription model,
+          `,
+          examples: [],
         },
       },
       {
         name: "Technical",
         content: {
           title: "Employers Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Data Models & Formats",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataModelAndFormat}`,
+            },
+            {
+              name: "Data, Services and Offerings Descriptions",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataServicesAndOfferingDescriptions}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
+            {
+              name: "Data Exchange",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataExchange}`,
+            },
           ],
         },
       },
@@ -261,16 +248,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           benefits: [
             {
               actor: "Monetary benefits",
-              definition: "",
+              definition:
+                "Reduced manual work and management time of verifying skills, searching insight, and foresight into skills and trainings.",
             },
             {
               actor: "Non-monetary benefits",
-              definition: "",
+              definition:
+                "Enhanced employee performance, increased employee satisfaction, improved talent retention, competitive advantage, stronger employer brand, employee empowerment etc.",
             },
           ],
           costsRisks: {
-            costs: "",
-            risks: "",
+            costs: "Cost of services, insights, results",
+            risks:
+              "Limited number of services, poor data quality, high costs, and a complex system can all negatively impact the network effect, making it difficult for the data space use case to grow and improve.",
           },
         },
       },
@@ -283,72 +273,64 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Educational Institutions Governance",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Educational Institutions",
+          definition: "",
+          governance: [
+            {
+              title: "Educational Institutions (end user)",
+              definition:
+                "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              obligations: [
+                "MUST define clear data usage policies",
+                "MUST participate in the value exchange",
+              ],
+            },
+            {
+              title: "Educational Institutions (data provider)",
+              definition: "Organisations that provide data",
+              obligations: [
+                "MUST describe their organisations and service offerings in a machine readable format and human readable",
+                "MUST define clear data set terms of use",
+                "MUST accept and comply with requests from the person on data sharing, consent and GDPR rights",
+                "MUST accept Personal Data Intermediary as valid representation of people",
+                "MUST define pricing and value sharing on the use of the data",
+              ],
+            },
           ],
         },
       },
       {
         name: "Business",
         content: {
-          title: "Educational Institutions Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
+          title: "Educational Institutions",
+          definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
+            E.g.: Transaction, freemium, subscription model,
+            `,
+          examples: [],
         },
       },
       {
         name: "Technical",
         content: {
           title: "Educational Institutions Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Data Models & Formats",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataModelAndFormat}`,
+            },
+            {
+              name: "Data, Services and Offerings Descriptions",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataServicesAndOfferingDescriptions}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
+            {
+              name: "Decentralized AI training",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.decentralizedAITraining}`,
+            },
           ],
         },
       },
@@ -357,20 +339,23 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Educational Institutions (service providers and end users)",
           definition:
-            "Provide students with innovative employment and orientation services. ",
+            "Provide students with innovative employment and orientation services.",
           benefits: [
             {
               actor: "Monetary benefits",
-              definition: "",
+              definition:
+                "Reduced manual work and management time of verifying skills, searching insight, and foresight into skills and trainings.",
             },
             {
               actor: "Non-monetary benefits",
-              definition: "",
+              definition:
+                "Enhanced employee performance, increased employee satisfaction, improved talent retention, competitive advantage, stronger employer brand, employee empowerment etc.",
             },
           ],
           costsRisks: {
-            costs: "",
-            risks: "",
+            costs: "Cost of services, insights, results",
+            risks:
+              "Limited number of services, poor data quality, high costs, and a complex system can all negatively impact the network effect, making it difficult for the data space use case to grow and improve.",
           },
         },
       },
@@ -394,14 +379,6 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
             "Lorem ipsum",
             "Lorem ipsum",
           ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
         },
       },
       {
@@ -410,22 +387,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Governments & Pilocy Markers Business",
           definition:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
+          examples: [],
         },
       },
       {
@@ -434,22 +396,6 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Governments & Pilocy Markers Technical",
           definition:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
         },
       },
       {
@@ -483,72 +429,39 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Employment Agencies Governance",
+          title: "Employment Agencies (end user)",
           definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+            "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
           obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "MUST define clear data usage policies",
+            "MUST participate in the value exchange",
           ],
         },
       },
       {
         name: "Business",
         content: {
-          title: "Employment Agencies Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
+          title: "Employment Agencies (end user)",
+          definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
+          E.g.: Transaction, freemium, subscription model,
+          `,
+          examples: [],
         },
       },
       {
         name: "Technical",
         content: {
           title: "Employment Agencies Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Data Models & Formats",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataModelAndFormat}`,
+            },
+            {
+              name: "Data, Services and Offerings Descriptions",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataServicesAndOfferingDescriptions}`,
+            },
           ],
         },
       },
@@ -560,16 +473,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           benefits: [
             {
               actor: "Monetary benefits",
-              definition: "",
+              definition:
+                "Reduced manual work and management time of verifying skills, searching insight, and foresight into skills and trainings.",
             },
             {
               actor: "Non-monetary benefits",
-              definition: "",
+              definition:
+                "Enhanced employee performance, increased employee satisfaction, improved talent retention, competitive advantage, stronger employer brand, employee empowerment etc.",
             },
           ],
           costsRisks: {
-            costs: "",
-            risks: "",
+            costs: "Cost of services, insights, results",
+            risks:
+              "Limited number of services, poor data quality, high costs, and a complex system can all negatively impact the network effect, making it difficult for the data space use case to grow and improve.",
           },
         },
       },
@@ -638,23 +554,20 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Technical",
         content: {
           title: "Edtechs & AI Providers (data and service providers)",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Decentralized AI training",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.decentralizedAITraining}`,
+            },
+            {
+              name: "Identity Management",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.identifyManagement}`,
+            },
+            {
+              name: "Trust",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.trust}`,
+            },
           ],
         },
       },
@@ -746,23 +659,24 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Technical",
         content: {
           title: "Infrastructure providers",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Access & Usage Policies and Control",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.accessAndUsagePoliciesAndControl}`,
+            },
+            {
+              name: "Identity Management",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.identifyManagement}`,
+            },
+            {
+              name: "Trust",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.trust}`,
+            },
+            {
+              name: "Data Exchange",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataExchange}`,
+            },
           ],
         },
       },
@@ -794,13 +708,13 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
     ],
   },
   {
-    name: "Orchestator",
+    name: "Orchestrator",
     image: APP_IMAGES.image.stakeholder.orchestrator,
     categories: [
       {
         name: "Governance",
         content: {
-          title: "Orchestator",
+          title: "Orchestrator",
           definition:
             "Organisation that organises operationally the data ecosystem and ensures its diffusion and commercialisation.",
           obligations: [
@@ -817,7 +731,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Business",
         content: {
-          title: "Orchestator",
+          title: "Orchestrator",
           definition:
             "E.g.: Transaction (sell reports), Subscription (portal access), Freemium",
           examples: [
@@ -830,31 +744,24 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Technical",
         content: {
-          title: "Orchestator Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Orchestrator Technical",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Access & Usage Policies and Control",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.accessAndUsagePoliciesAndControl}`,
+            },
+            {
+              name: "Trust",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.trust}`,
+            },
           ],
         },
       },
       {
         name: "Value",
         content: {
-          title: "Orchestator",
+          title: "Orchestrator",
           definition:
             "Provides the ecosystem portal and coordinates governance, use cases, and business model discussions.",
           benefits: [
@@ -887,94 +794,89 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Organisational & employers Governance",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Organisational & employers",
+          definition: "",
+          governance: [
+            {
+              title: "Organisational & employers (end user)",
+              definition:
+                "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              obligations: [
+                "MUST define clear data usage policies",
+                "MUST participate in the value exchange",
+              ],
+            },
+            {
+              title: "Organisational & employers (data provider)",
+              definition: "Organisations that provide data",
+              obligations: [
+                "MUST describe their organisations and service offerings in a machine readable format and human readable",
+                "MUST define clear data set terms of use",
+                "MUST accept and comply with requests from the person on data sharing, consent and GDPR rights",
+                "MUST accept Personal Data Intermediary as valid representation of people",
+                "MUST define pricing and value sharing on the use of the data",
+              ],
+            },
           ],
         },
       },
       {
         name: "Business",
         content: {
-          title: "Organisational & employers Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
+          title: "Organisational & employers",
+          definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
+          E.g.: Transaction, freemium, subscription model,
+          `,
+          examples: [],
         },
       },
       {
         name: "Technical",
         content: {
-          title: "Organisational & employers Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Organisational & employers",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Data Models & Formats",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataModelAndFormat}`,
+            },
+            {
+              name: "Data, Services and Offerings Descriptions",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataServicesAndOfferingDescriptions}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
+            {
+              name: "Data Exchange",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataExchange}`,
+            },
           ],
         },
       },
       {
         name: "Value",
         content: {
-          title: "Organisational & employers (end users and data providers)",
+          title: "Organisational & employers (data providers and end users)",
           definition:
-            "They are primary data consumers that analyse the skills inventory, identify gaps, and strategize for future needs, they contribute data about their job positions.",
+            "Match their offers with relevant profiles and get precise employee profiles. ",
           benefits: [
             {
               actor: "Monetary benefits",
-              definition: "",
+              definition:
+                "Reduced manual work and management time of verifying skills, searching insight, and foresight into skills and trainings.",
             },
             {
               actor: "Non-monetary benefits",
-              definition: "",
+              definition:
+                "Enhanced employee performance, increased employee satisfaction, improved talent retention, competitive advantage, stronger employer brand, employee empowerment etc.",
             },
           ],
           costsRisks: {
-            costs: "",
-            risks: "",
+            costs: "Cost of services, insights, results",
+            risks:
+              "Limited number of services, poor data quality, high costs, and a complex system can all negatively impact the network effect, making it difficult for the data space use case to grow and improve.",
           },
         },
       },
@@ -987,72 +889,64 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Learning & development units Governance",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Learning & development units",
+          definition: "",
+          governance: [
+            {
+              title: "Learning & development units (end user)",
+              definition:
+                "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              obligations: [
+                "MUST define clear data usage policies",
+                "MUST participate in the value exchange",
+              ],
+            },
+            {
+              title: "Learning & development units (data provider)",
+              definition: "Organisations that provide data",
+              obligations: [
+                "MUST describe their organisations and service offerings in a machine readable format and human readable",
+                "MUST define clear data set terms of use",
+                "MUST accept and comply with requests from the person on data sharing, consent and GDPR rights",
+                "MUST accept Personal Data Intermediary as valid representation of people",
+                "MUST define pricing and value sharing on the use of the data",
+              ],
+            },
           ],
         },
       },
       {
         name: "Business",
         content: {
-          title: "Learning & development units Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
+          title: "Learning & development units",
+          definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
+            E.g.: Transaction, freemium, subscription model,
+            `,
+          examples: [],
         },
       },
       {
         name: "Technical",
         content: {
           title: "Learning & development units Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Data Models & Formats",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataModelAndFormat}`,
+            },
+            {
+              name: "Data, Services and Offerings Descriptions",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataServicesAndOfferingDescriptions}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
+            {
+              name: "Decentralized AI training",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.decentralizedAITraining}`,
+            },
           ],
         },
       },
@@ -1065,16 +959,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           benefits: [
             {
               actor: "Monetary benefits",
-              definition: "",
+              definition:
+                "Reduced manual work and management time of verifying skills, searching insight, and foresight into skills and trainings.",
             },
             {
               actor: "Non-monetary benefits",
-              definition: "",
+              definition:
+                "Enhanced employee performance, increased employee satisfaction, improved talent retention, competitive advantage, stronger employer brand, employee empowerment etc.",
             },
           ],
           costsRisks: {
-            costs: "",
-            risks: "",
+            costs: "Cost of services, insights, results",
+            risks:
+              "Limited number of services, poor data quality, high costs, and a complex system can all negatively impact the network effect, making it difficult for the data space use case to grow and improve.",
           },
         },
       },
@@ -1087,72 +984,64 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Educational & Training providers Governance",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Educational & Training providers",
+          definition: "",
+          governance: [
+            {
+              title: "Educational & Training providers (end user)",
+              definition:
+                "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              obligations: [
+                "MUST define clear data usage policies",
+                "MUST participate in the value exchange",
+              ],
+            },
+            {
+              title: "Educational & Training providers (data provider)",
+              definition: "Organisations that provide data",
+              obligations: [
+                "MUST describe their organisations and service offerings in a machine readable format and human readable",
+                "MUST define clear data set terms of use",
+                "MUST accept and comply with requests from the person on data sharing, consent and GDPR rights",
+                "MUST accept Personal Data Intermediary as valid representation of people",
+                "MUST define pricing and value sharing on the use of the data",
+              ],
+            },
           ],
         },
       },
       {
         name: "Business",
         content: {
-          title: "Educational & Training providers Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
+          title: "Educational & Training providers",
+          definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
+            E.g.: Transaction, freemium, subscription model,
+            `,
+          examples: [],
         },
       },
       {
         name: "Technical",
         content: {
-          title: "Educational & Training providers Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Educational & Training providers",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Data Models & Formats",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataModelAndFormat}`,
+            },
+            {
+              name: "Data, Services and Offerings Descriptions",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataServicesAndOfferingDescriptions}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
+            {
+              name: "Data Exchange",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataExchange}`,
+            },
           ],
         },
       },
@@ -1160,22 +1049,24 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Value",
         content: {
           title:
-            "Educational & Training providers (data providers and end users)",
-          definition:
-            "Contribute data on training outcomes and skill development, while using the dashboard to tailor their educational programs.",
+            "Educational & Training providers (data and service providers)",
+          definition: "Match their offers with relevant profiles.",
           benefits: [
             {
               actor: "Monetary benefits",
-              definition: "",
+              definition:
+                "Reduced manual work and management time of verifying skills, searching insight, and foresight into skills and trainings.",
             },
             {
               actor: "Non-monetary benefits",
-              definition: "",
+              definition:
+                "Enhanced employee performance, increased employee satisfaction, improved talent retention, competitive advantage, stronger employer brand, employee empowerment etc.",
             },
           ],
           costsRisks: {
-            costs: "",
-            risks: "",
+            costs: "Cost of services, insights, results",
+            risks:
+              "Limited number of services, poor data quality, high costs, and a complex system can all negatively impact the network effect, making it difficult for the data space use case to grow and improve.",
           },
         },
       },
@@ -1188,72 +1079,47 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Public Institutions Governance",
+          title: "Public Institutions",
           definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+            "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
           obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "MUST define clear data usage policies",
+            "MUST participate in the value exchange",
           ],
         },
       },
       {
         name: "Business",
         content: {
-          title: "Public Institutions Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
+          title: "Public Institutions",
+          definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
+          E.g.: Transaction, freemium, subscription model,
+          `,
+          examples: [],
         },
       },
       {
         name: "Technical",
         content: {
-          title: "Public Institutions Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Public Institutions",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Data Models & Formats",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataModelAndFormat}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
+            {
+              name: "Access & Usage Policies and Control",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.accessAndUsagePoliciesAndControl}`,
+            },
+            {
+              name: "Data Exchange",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataExchange}`,
+            },
           ],
         },
       },
@@ -1266,16 +1132,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           benefits: [
             {
               actor: "Monetary benefits",
-              definition: "",
+              definition:
+                "Reduced manual work and management time of verifying skills, searching insight, and foresight into skills and trainings.",
             },
             {
               actor: "Non-monetary benefits",
-              definition: "",
+              definition:
+                "Enhanced employee performance, increased employee satisfaction, improved talent retention, competitive advantage, stronger employer brand, employee empowerment etc.",
             },
           ],
           costsRisks: {
-            costs: "",
-            risks: "",
+            costs: "Cost of services, insights, results",
+            risks:
+              "Limited number of services, poor data quality, high costs, and a complex system can all negatively impact the network effect, making it difficult for the data space use case to grow and improve.",
           },
         },
       },
@@ -1288,94 +1157,67 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Individuals and employees Governance",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+          title: "Individuals and employees (end users)",
+          definition: "Person using the system for their career and learning",
           obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "MUST participate in the value exchange",
+            "CAN exerce their rights on their data across the ecosystem",
           ],
         },
       },
       {
         name: "Business",
         content: {
-          title: "Individuals and employees Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+          title: "Individuals and employees (end users)",
+          definition: "End users as clients don't have business models",
           examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "Freemium model - free data products with limited features and charges users a premium for additional features.",
+            "Matilda will have basic functions and some of trainings available for free.",
           ],
         },
       },
       {
         name: "Technical",
         content: {
-          title: "Individuals and employees Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Individuals and employees (end users)",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Identity Management",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.identifyManagement}`,
+            },
+            {
+              name: "Trust",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.trust}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
           ],
         },
       },
       {
         name: "Value",
         content: {
-          title: "Individuals and employees (data providers and end users)",
-          definition:
-            "Their skills data enriches the ecosystem, and they also benefit from better job and training matching.",
+          title: "Individuals and employees (end users)",
+          definition: "Get innovative employment and orientation services.",
           benefits: [
             {
               actor: "Monetary benefits",
-              definition: "",
+              definition: "Bonuses, salary, allowances",
             },
             {
               actor: "Non-monetary benefits",
-              definition: "",
+              definition:
+                "Personalized skill development, enhanced career planning, time efficiency, job satisfaction, improved opportunities, skill validation, greater control, lifelong learning, career advancement, personal growth.",
             },
           ],
           costsRisks: {
-            costs: "",
-            risks: "",
+            costs:
+              "Potential cost of services, insights, results (not everything is freemium).",
+            risks:
+              "Limited number of services, poor data quality, high costs, and a complex system can all negatively impact the network effect, making it difficult for the data space use case to grow and improve.",
           },
         },
       },
@@ -1388,94 +1230,88 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Observatories Governance",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Observatories",
+          definition: "",
+          governance: [
+            {
+              title: "Observatories (end user)",
+              definition:
+                "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              obligations: [
+                "MUST define clear data usage policies",
+                "MUST participate in the value exchange",
+              ],
+            },
+            {
+              title: "Observatories (data provider)",
+              definition: "Organisations that provide data",
+              obligations: [
+                "MUST describe their organisations and service offerings in a machine readable format and human readable",
+                "MUST define clear data set terms of use",
+                "MUST accept and comply with requests from the person on data sharing, consent and GDPR rights",
+                "MUST accept Personal Data Intermediary as valid representation of people",
+                "MUST define pricing and value sharing on the use of the data",
+              ],
+            },
           ],
         },
       },
       {
         name: "Business",
         content: {
-          title: "Observatories Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
+          title: "Observatories",
+          definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
+            E.g.: Transaction, freemium, subscription model,
+            `,
+          examples: [],
         },
       },
       {
         name: "Technical",
         content: {
-          title: "Observatories Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Observatories",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
+            {
+              name: "Access & Usage Policies and Control",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.accessAndUsagePoliciesAndControl}`,
+            },
+            {
+              name: "Identity Management",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.identifyManagement}`,
+            },
+            {
+              name: "Data Exchange",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataExchange}`,
+            },
           ],
         },
       },
       {
         name: "Value",
         content: {
-          title: "Observatories (data providers)",
-          definition:
-            "Collect, store, and provide data from multiple sources, including public and private sectors.",
+          title: "Observatories (data and service providers)",
+          definition: "Match their offers with relevant profiles.",
           benefits: [
             {
               actor: "Monetary benefits",
-              definition: "",
+              definition:
+                "Reduced manual work and management time of verifying skills, searching insight, and foresight into skills and trainings.",
             },
             {
               actor: "Non-monetary benefits",
-              definition: "",
+              definition:
+                "Enhanced employee performance, increased employee satisfaction, improved talent retention, competitive advantage, stronger employer brand, employee empowerment etc.",
             },
           ],
           costsRisks: {
-            costs: "",
-            risks: "",
+            costs: "Cost of services, insights, results",
+            risks:
+              "Limited number of services, poor data quality, high costs, and a complex system can all negatively impact the network effect, making it difficult for the data space use case to grow and improve.",
           },
         },
       },
@@ -1488,7 +1324,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Infrastructure service Governance",
+          title: "Infrastructure service",
           definition: "",
           governance: [
             {
@@ -1526,80 +1362,69 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Infrastructure service Business",
           definition:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
+          examples: [],
         },
       },
       {
         name: "Technical",
         content: {
-          title: "Infrastructure service Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Infrastructure service",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Access & Usage Policies and Control",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.accessAndUsagePoliciesAndControl}`,
+            },
+            {
+              name: "Identity Management",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.identifyManagement}`,
+            },
+            {
+              name: "Trust",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.trust}`,
+            },
+            {
+              name: "Data Exchange",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataExchange}`,
+            },
           ],
         },
       },
       {
         name: "Value",
         content: {
-          title: "Infrastructure service Value",
+          title: "Infrastructure service",
           definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+            "Offer services and building blocks to enable data matching, including consent, contract, interoperability, data visualisation, and decentralised processing.",
           benefits: [
             {
               actor: "Monetary benefits",
-              definition: "",
+              definition: "Gets paid for services",
             },
             {
               actor: "Non-monetary benefits",
-              definition: "",
+              definition: `Gets requirements to improve their services. <br/>
+              Gets digital commons to operate 
+              `,
             },
           ],
           costsRisks: {
-            costs: "",
-            risks: "",
+            costs: "Pays for Data space operational costs",
+            risks:
+              "Limited number of consumers, paying customers, data sources, limited engagement and interest from users, service/data providers, inability to generate value for stakeholders. ",
           },
         },
       },
     ],
   },
   {
-    name: "Orchestator: SkillsFast",
+    name: "Orchestrator: SkillsFast",
     image: APP_IMAGES.image.stakeholder.orchestrator,
     categories: [
       {
         name: "Governance",
         content: {
-          title: "Orchestator: SkillsFast",
+          title: "Orchestrator: SkillsFast",
           definition:
             "Organisation that organises operationally the data ecosystem and ensures its diffusion and commercialisation.",
           obligations: [
@@ -1616,7 +1441,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Business",
         content: {
-          title: "Orchestator: SkillsFast",
+          title: "Orchestrator: SkillsFast",
           definition:
             "E.g.: Transaction (sell reports), Subscription (portal access), Freemium",
           examples: [
@@ -1629,31 +1454,24 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Technical",
         content: {
-          title: "Orchestator: SkillsFast",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Orchestrator: SkillsFast",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Access & Usage Policies and Control",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.accessAndUsagePoliciesAndControl}`,
+            },
+            {
+              name: "Trust",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.trust}`,
+            },
           ],
         },
       },
       {
         name: "Value",
         content: {
-          title: "Orchestator: SkillsFast",
+          title: "Orchestrator: SkillsFast",
           definition:
             "SkillsFast orchestrates the ecosystem, ensuring seamless coordination between different services and data providers as well as its commercialisation. ",
           benefits: [
@@ -1687,23 +1505,34 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Governance",
         content: {
           title: "Service Providers: SkillProfiX, SDAI, SkillFast Governance",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          definition: "",
+          governance: [
+            {
+              title:
+                "Infrastructure providers (organisational data intermediary)",
+              definition:
+                "Tools for data and service providers to connect to the data ecosystem",
+              obligations: [
+                "MUST be a data intermediary compliant with Data Governance Act",
+                "MUST Verify the validity of agreements between data providers and data users",
+                "MUST describe their organisations and service offerings in a machine readable format and human readable",
+                "MUST implement the rules and building blocks defined by the Alliance Structure and the Orchestrator",
+                "MUST publish its endpoints",
+              ],
+            },
+            {
+              title: "Infrastructure providers (personal data intermediary)",
+              definition:
+                "Tool for the person to navigate the data ecosystem, exercise their rights, manage consent and data sharing, discover the apps and use them, be informed on risks etc",
+              obligations: [
+                "CAN NOT be service or data provider or end user",
+                "MUST be a data intermediary compliant with Data Governance Act ",
+                "MUST ensure traceability and record, revocation, verification of consent and data rights exertion",
+                "MUST verify the validity of agreements between data providers and data users",
+                "MUST inform the person of the value and risks of sharing their data",
+                "MUST implement the standards and protocols defined by the Alliance Structure ",
+              ],
+            },
           ],
         },
       },
@@ -1720,24 +1549,25 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Technical",
         content: {
-          title: "Service Providers: SkillProfiX, SDAI, SkillFast Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Service Providers: SkillProfiX, SDAI, SkillFast",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Access & Usage Policies and Control",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.accessAndUsagePoliciesAndControl}`,
+            },
+            {
+              name: "Identity Management",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.identifyManagement}`,
+            },
+            {
+              name: "Trust",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.trust}`,
+            },
+            {
+              name: "Data Exchange",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataExchange}`,
+            },
           ],
         },
       },
@@ -1786,24 +1616,31 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Governance",
         content: {
           title:
-            "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool Governance",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool",
+          definition: "",
+          governance: [
+            {
+              title:
+                "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool (end user)",
+              definition:
+                "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              obligations: [
+                "MUST define clear data usage policies",
+                "MUST participate in the value exchange",
+              ],
+            },
+            {
+              title:
+                "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool (data provider)",
+              definition: "Organisations that provide data",
+              obligations: [
+                "MUST describe their organisations and service offerings in a machine readable format and human readable",
+                "MUST define clear data set terms of use",
+                "MUST accept and comply with requests from the person on data sharing, consent and GDPR rights",
+                "MUST accept Personal Data Intermediary as valid representation of people",
+                "MUST define pricing and value sharing on the use of the data",
+              ],
+            },
           ],
         },
       },
@@ -1811,7 +1648,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Business",
         content: {
           title:
-            "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool Business",
+            "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool",
           definition: "E.g.: Transaction, freemium, subscription model, ",
           examples: [
             "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
@@ -1828,24 +1665,25 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Technical",
         content: {
           title:
-            "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Data Models & Formats",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataModelAndFormat}`,
+            },
+            {
+              name: "Data, Services and Offerings Descriptions",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataServicesAndOfferingDescriptions}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
+            {
+              name: "Decentralized AI training",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.decentralizedAITraining}`,
+            },
           ],
         },
       },
@@ -1885,24 +1723,31 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Governance",
         content: {
           title:
-            "Data Providers (Organisational): Jobo, JobRightNow and Jobijob Governance",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "Data Providers (Organisational): Jobo, JobRightNow and Jobijob",
+          definition: "",
+          governance: [
+            {
+              title:
+                "Data Providers (Organisational): Jobo, JobRightNow and Jobijob Governance (end user)",
+              definition:
+                "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              obligations: [
+                "MUST define clear data usage policies",
+                "MUST participate in the value exchange",
+              ],
+            },
+            {
+              title:
+                "Data Providers (Organisational): Jobo, JobRightNow and Jobijob Governance (data provider)",
+              definition: "Organisations that provide data",
+              obligations: [
+                "MUST describe their organisations and service offerings in a machine readable format and human readable",
+                "MUST define clear data set terms of use",
+                "MUST accept and comply with requests from the person on data sharing, consent and GDPR rights",
+                "MUST accept Personal Data Intermediary as valid representation of people",
+                "MUST define pricing and value sharing on the use of the data",
+              ],
+            },
           ],
         },
       },
@@ -1910,7 +1755,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Business",
         content: {
           title:
-            "Data Providers (Organisational): Jobo, JobRightNow and Jobijob Business",
+            "Data Providers (Organisational): Jobo, JobRightNow and Jobijob",
           definition: "E.g.: Transaction, freemium, subscription model, ",
           examples: [
             "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
@@ -1927,24 +1772,25 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Technical",
         content: {
           title:
-            "Data Providers (Organisational): Jobo, JobRightNow and Jobijob Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "Data Providers (Organisational): Jobo, JobRightNow and Jobijob",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Data Models & Formats",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataModelAndFormat}`,
+            },
+            {
+              name: "Data, Services and Offerings Descriptions",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataServicesAndOfferingDescriptions}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
+            {
+              name: "Data Exchange",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataExchange}`,
+            },
           ],
         },
       },
@@ -1983,7 +1829,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Individuals: Matilda, Francesco, Anita Governance",
+          title: "Individuals: Matilda, Francesco, Anita",
           definition: "Person using the system for their career and learning",
           obligations: [
             "MUST participate in the value exchange",
@@ -2006,23 +1852,20 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Technical",
         content: {
           title: "Individuals: Matilda, Francesco, Anita",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Identity Management",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.identifyManagement}`,
+            },
+            {
+              name: "Trust",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.trust}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
           ],
         },
       },
@@ -2059,65 +1902,65 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Organisations: DigiFutUX, IntelliAITraining Governance",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Organisations: DigiFutUX, IntelliAITraining",
+          definition: "",
+          governance: [
+            {
+              title: "Organisations: DigiFutUX, IntelliAITraining (end user)",
+              definition:
+                "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              obligations: [
+                "MUST define clear data usage policies",
+                "MUST participate in the value exchange",
+              ],
+            },
+            {
+              title:
+                "Organisations: DigiFutUX, IntelliAITraining (data provider)",
+              definition: "Organisations that provide data",
+              obligations: [
+                "MUST describe their organisations and service offerings in a machine readable format and human readable",
+                "MUST define clear data set terms of use",
+                "MUST accept and comply with requests from the person on data sharing, consent and GDPR rights",
+                "MUST accept Personal Data Intermediary as valid representation of people",
+                "MUST define pricing and value sharing on the use of the data",
+              ],
+            },
           ],
         },
       },
       {
         name: "Business",
         content: {
-          title: "Organisations: DigiFutUX, IntelliAITraining Business",
+          title: "Organisations: DigiFutUX, IntelliAITraining",
           definition: `Give data for the data space use case, get back services provided and pay for the services. <br />
             E.g.: Transaction, freemium, subscription model,
             `,
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
+          examples: [],
         },
       },
       {
         name: "Technical",
         content: {
-          title: "Organisations: DigiFutUX, IntelliAITraining Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Organisations: DigiFutUX, IntelliAITraining",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Data Models & Formats",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataModelAndFormat}`,
+            },
+            {
+              name: "Data, Services and Offerings Descriptions",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataServicesAndOfferingDescriptions}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
+            {
+              name: "Data Exchange",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataExchange}`,
+            },
           ],
         },
       },
@@ -2155,31 +1998,19 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Governance Authority (association): Fire-X Governance",
+          title: "Governance Authority (association): Fire-X",
           definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+            "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
           obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "MUST define clear data usage policies",
+            "MUST participate in the value exchange",
           ],
         },
       },
       {
         name: "Business",
         content: {
-          title: "Governance Authority (association): Fire-X Business",
+          title: "Governance Authority (association): Fire-X",
           definition: `Non-profit organization and business model. At the beginning a public and private partnership comes of a great importance when guaranteeing the sufficient funds for the functioning of the skills data space.<br/><br/>
             Later different business models could be used to sustain itself.  
             `,
@@ -2188,24 +2019,25 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Technical",
         content: {
-          title: "Governance Authority (association): Fire-X Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Governance Authority (association): Fire-X",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Data Models & Formats",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataModelAndFormat}`,
+            },
+            {
+              name: "Publication & Discovery",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.publicationAndDiscovery}`,
+            },
+            {
+              name: "Access & Usage Policies and Control",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.accessAndUsagePoliciesAndControl}`,
+            },
+            {
+              name: "Data Exchange",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataExchange}`,
+            },
           ],
         },
       },
@@ -2245,72 +2077,49 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Data Intermediary: InfraTrust Governance",
+          title: "Data Intermediary: InfraTrust",
           definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
+            "Tool for the person to navigate the data ecosystem, exercise their rights, manage consent and data sharing, discover the apps and use them, be informed on risks etc",
           obligations: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+            "CAN NOT be service or data provider or end user",
+            "MUST be a data intermediary compliant with Data Governance Act ",
+            "MUST ensure traceability and record, revocation, verification of consent and data rights exertion",
+            "MUST verify the validity of agreements between data providers and data users",
+            "MUST inform the person of the value and risks of sharing their data",
+            "MUST implement the standards and protocols defined by the Alliance Structure ",
           ],
         },
       },
       {
         name: "Business",
         content: {
-          title: "Data Intermediary: InfraTrust Business",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
+          title: "Data Intermediary: InfraTrust",
+          definition: "E.g.: Transaction, freemium, subscription model, ",
+          examples: [],
         },
       },
       {
         name: "Technical",
         content: {
-          title: "Data Intermediary: InfraTrust Technical",
-          definition:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus voluptatem eaque omnis optio officiis. Adipisci et quos ipsam illum, sit eos voluptatibus nulla optio, voluptatum ex delectus debitis praesentium.",
-          examples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-          ],
-          secondExamples: [
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
-            "Lorem ipsum",
+          title: "Data Intermediary: InfraTrust",
+          definition: "Type of building blocks used per this stakeholder",
+          bbs: [
+            {
+              name: "Access & Usage Policies and Control",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.accessAndUsagePoliciesAndControl}`,
+            },
+            {
+              name: "Identity Management",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.identifyManagement}`,
+            },
+            {
+              name: "Trust",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.trust}`,
+            },
+            {
+              name: "Data Exchange",
+              path: `${APP_LINKS.buildingBlocks}/${APP_PARAMS.buildingBlocks.dataExchange}`,
+            },
           ],
         },
       },

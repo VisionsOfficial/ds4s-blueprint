@@ -35,7 +35,7 @@ export const useStakeholder = ({ stakeholder }: Props) => {
       case "Infrastructure providers":
         setData(STAKEHOLDER_CONTENT[7]);
         break;
-      case "Orchestator":
+      case "Orchestrator":
         setData(STAKEHOLDER_CONTENT[8]);
         break;
       case "Organisational & employers":
@@ -59,7 +59,7 @@ export const useStakeholder = ({ stakeholder }: Props) => {
       case "Infrastructure service":
         setData(STAKEHOLDER_CONTENT[15]);
         break;
-      case "Orchestator: SkillsFast":
+      case "Orchestrator: SkillsFast":
         setData(STAKEHOLDER_CONTENT[16]);
         break;
       case "Service Providers: SkillProfiX, SDAI, SkillFast":

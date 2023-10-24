@@ -36,7 +36,7 @@ export const UseCaseStakeholderSection = ({
           "Educational Institutions",
           "Employment Agencies",
           "Edtechs & AI Providers",
-          "Orchestator",
+          "Orchestrator",
           "Infrastructure providers",
         ]);
         break;
@@ -48,7 +48,7 @@ export const UseCaseStakeholderSection = ({
           "Learning & development units",
           "Public Institutions",
           "Observatories",
-          "Orchestator",
+          "Orchestrator",
           "Infrastructure providers",
         ]);
         break;

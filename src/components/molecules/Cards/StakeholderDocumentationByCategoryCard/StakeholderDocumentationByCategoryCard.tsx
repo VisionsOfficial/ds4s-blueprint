@@ -8,7 +8,7 @@ import {
 } from "../../../../types";
 import { useStakeholder } from "../../../../hooks/useStakeholder";
 import { UseColor } from "../../../../hooks/useColor/useColor";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 type StakeholderDocumentationByCategoryCardProps = {
   title:
@@ -16,7 +16,8 @@ type StakeholderDocumentationByCategoryCardProps = {
     | "Costs & Risks"
     | "Examples"
     | "Obligations"
-    | "Second Examples";
+    | "Second Examples"
+    | "Building Blocks";
   stakeholder: Stakeholder;
   category: StakeholderCategories;
   currentColor: ColorVariant;
@@ -32,6 +33,7 @@ export const StakeholderDocumentationByCategoryCard = ({
   const { selectedColor } = UseColor({ color: currentColor });
   const location = useLocation();
   const searchLocation = location.search.split("=")[1];
+  const navigate = useNavigate();
 
   const setContent = () => {
     const content = data?.categories.map((el) => {
@@ -63,7 +65,7 @@ export const StakeholderDocumentationByCategoryCard = ({
               ));
             } else {
               return (
-                <p className={selectedColor} key={'example'}>
+                <p className={selectedColor} key={"example"}>
                   This stakeholder don't have example
                 </p>
               );
@@ -100,6 +102,19 @@ export const StakeholderDocumentationByCategoryCard = ({
                 ></p>
               </React.Fragment>
             );
+          case "Building Blocks":
+            return el.content.bbs?.map((bbs, index) => (
+              <p
+                className={selectedColor}
+                key={bbs.name + index}
+                onClick={() => {
+                  navigate(bbs.path);
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                {bbs.name}
+              </p>
+            ));
 
           default:
             break;

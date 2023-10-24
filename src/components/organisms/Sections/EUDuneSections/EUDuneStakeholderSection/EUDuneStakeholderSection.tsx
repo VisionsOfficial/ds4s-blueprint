@@ -10,7 +10,7 @@ const CONTENT_STAKEHOLDER: Stakeholder[] = [
   "Governance Authority (association): Fire-X",
   "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool",
   "Data Providers (Organisational): Jobo, JobRightNow and Jobijob",
-  "Orchestator: SkillsFast",
+  "Orchestrator: SkillsFast",
   "Service Providers: SkillProfiX, SDAI, SkillFast",
 ];
 

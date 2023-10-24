@@ -74,26 +74,6 @@ export const StakeholderBanner = ({
     });
   }, [data, category, searchLocation]);
 
-  if (searchLocation) {
-    return (
-      <SectionContainer className={setProps()} variantColor={variantBgColor}>
-        <p className={Styles.path}>
-          <Link to={setNavigateLink()} className={Styles.useCase}>
-            {useCase}
-          </Link>{" "}
-          {">"}{" "}
-          <Link to={setNavigateLink()}>{stakeholder?.replace(/-/g, " ")}</Link>{" "}
-          {">"} <Link to={setNavigateLink()}>{category}</Link>
-        </p>
-
-        <div className={Styles.content}>
-          <h2>{setTitle()}</h2>
-          <p dangerouslySetInnerHTML={{ __html: currentDefintion || "" }}></p>
-        </div>
-      </SectionContainer>
-    );
-  }
-
   return (
     <SectionContainer className={setProps()} variantColor={variantBgColor}>
       <p className={Styles.path}>
@@ -106,7 +86,7 @@ export const StakeholderBanner = ({
       </p>
 
       <div className={Styles.content}>
-        <h2>{data?.name}</h2>
+        <h2>{searchLocation ? setTitle() : data?.name}</h2>
         <p dangerouslySetInnerHTML={{ __html: currentDefintion || "" }}></p>
       </div>
     </SectionContainer>

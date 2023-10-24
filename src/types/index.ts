@@ -30,7 +30,7 @@ export type Stakeholder =
   | "Public Institutions"
   | "Observatories"
   | "Governments & Pilocy Markers"
-  | "Orchestator"
+  | "Orchestrator"
   | "Infrastructure service"
   | "Infrastructure providers"
   | "Individuals: Matilda, Francesco, Anita"
@@ -39,7 +39,7 @@ export type Stakeholder =
   | "Governance Authority (association): Fire-X"
   | "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool"
   | "Data Providers (Organisational): Jobo, JobRightNow and Jobijob"
-  | "Orchestator: SkillsFast"
+  | "Orchestrator: SkillsFast"
   | "Service Providers: SkillProfiX, SDAI, SkillFast";
 
 export type StakeholderCategories =
@@ -121,6 +121,17 @@ export type UXInstruction = {
   };
 };
 
+export type BuildingBlocks =
+  | "Identity Management"
+  | "Data Models & Formats"
+  | "Data Exchange"
+  | "Access & Usage Policies and Control"
+  | "Trust"
+  | "Data, Services and Offerings Descriptions"
+  | "Publication & Discovery"
+  | "Marketplaces & Usage Accounting"
+  | "Decentralized AI training";
+
 export type ContentStakeholder = {
   name: Stakeholder;
   image: string;
@@ -138,6 +149,10 @@ export type CategoriesContentStakeholder = {
     }[];
     definition: string;
     examples?: string[];
+    bbs?: {
+      name: BuildingBlocks;
+      path: string;
+    }[];
     secondExamples?: string[];
     obligations?: string[];
     benefits?: {

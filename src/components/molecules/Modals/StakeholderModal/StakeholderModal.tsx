@@ -31,6 +31,76 @@ export const StakeholderModal = ({
     return [Styles.StakeholderModal, clasName, child].join(" ");
   };
 
+  const setContentModal = () => {
+    if (
+      stakeholder?.name === "Governance" &&
+      stakeholder?.content?.governance
+    ) {
+      return stakeholder?.content?.governance?.map((gov, index) => (
+        <React.Fragment key={gov.title + index}>
+          <h4>{gov.title}</h4>
+          <div>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: gov.definition || "",
+              }}
+            ></p>
+          </div>
+
+          <Button
+            onClick={() => {
+              handleClickButton(index + 1);
+            }}
+          >
+            Learn more
+          </Button>
+        </React.Fragment>
+      ));
+    }
+
+    if (stakeholder?.name === "Technical" && stakeholder?.content?.bbs) {
+      return (
+        <>
+          <h4>{stakeholder?.content.title}</h4>
+          <p>{stakeholder?.content.definition} :</p>
+          <ul>
+            {stakeholder?.content?.bbs?.map((bbs, index) => (
+              <li key={bbs.name + index}>{bbs.name}</li>
+            ))}
+          </ul>
+          <Button
+            onClick={() => {
+              handleClickButton();
+            }}
+          >
+            Learn more
+          </Button>
+        </>
+      );
+    }
+
+    return (
+      <>
+        <h4>{stakeholder?.content.title}</h4>
+        <div>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: stakeholder?.content.definition || "",
+            }}
+          ></p>
+        </div>
+
+        <Button
+          onClick={() => {
+            handleClickButton();
+          }}
+        >
+          Learn more
+        </Button>
+      </>
+    );
+  };
+
   const handleClickButton = (key?: number) => {
     switch (nthChild % 5) {
       case 0:
@@ -97,76 +167,13 @@ export const StakeholderModal = ({
     }
   }, [nthChild]);
 
-  if (stakeholder?.name === "Governance" && stakeholder?.content?.governance) {
-    return (
-      <>
-        <Modal clonsingModal={closingModal} className={setProps()}>
-          <p
-            className={Styles.path}
-          >{`${stakeholderSection} > ${stakeholder?.name}`}</p>
-          <div className={Styles.content}>
-            {stakeholder?.content?.governance?.map((gov, index) => (
-              <React.Fragment key={gov.title + index}>
-                <h4>{gov.title}</h4>
-                <div>
-                  <p>
-                    <span>Definition:</span>
-                  </p>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: gov.definition || "",
-                    }}
-                  ></p>
-                </div>
-
-                <Button
-                  onClick={() => {
-                    handleClickButton(index + 1);
-                  }}
-                >
-                  Learn more
-                </Button>
-              </React.Fragment>
-            ))}
-          </div>
-        </Modal>
-        <div
-          className={`backdrop ${Styles.backdrop}`}
-          onClick={() => {
-            closingModal();
-          }}
-        ></div>
-      </>
-    );
-  }
-
   return (
     <>
       <Modal clonsingModal={closingModal} className={setProps()}>
         <p
           className={Styles.path}
         >{`${stakeholderSection} > ${stakeholder?.name}`}</p>
-        <div className={Styles.content}>
-          <h4>{stakeholder?.content.title}</h4>
-          <div>
-            <p>
-              <span>Definition:</span>
-            </p>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: stakeholder?.content.definition || "",
-              }}
-            ></p>
-          </div>
-
-          <Button
-            onClick={() => {
-              handleClickButton();
-            }}
-          >
-            Learn more
-          </Button>
-        </div>
+        <div className={Styles.content}>{setContentModal()}</div>
       </Modal>
       <div
         className={`backdrop ${Styles.backdrop}`}

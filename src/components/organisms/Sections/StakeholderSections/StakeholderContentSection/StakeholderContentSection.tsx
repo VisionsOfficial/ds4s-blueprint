@@ -41,13 +41,7 @@ export const StakeholderContentSection = ({
         return (
           <>
             <StakeholderDocumentationByCategoryCard
-              title="Examples"
-              stakeholder={currentStakeholder}
-              category={currentCategory}
-              currentColor={currentColor}
-            />
-            <StakeholderDocumentationByCategoryCard
-              title="Second Examples"
+              title="Building Blocks"
               stakeholder={currentStakeholder}
               category={currentCategory}
               currentColor={currentColor}
