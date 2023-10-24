@@ -5,9 +5,13 @@
     @include flexColumn(stretch);
     gap: 80px;
 
+    div {
+      transition: all 0.3s ease-out;
+    }
+
     h3 {
-        font-size: 1.7rem;
-        margin-bottom: $small;
+      font-size: 1.7rem;
+      margin-bottom: $small;
     }
   }
 }

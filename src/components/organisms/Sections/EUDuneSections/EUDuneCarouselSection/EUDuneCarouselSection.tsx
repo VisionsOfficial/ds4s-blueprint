@@ -326,9 +326,6 @@ export const EUDuneCarouselSection = () => {
                 className={
                   currentCarouselItem === index ? Styles.activeIndicator : ""
                 }
-                onClick={() => {
-                  setCurrentCarouselItem(index);
-                }}
               ></span>
             ))}
           </div>

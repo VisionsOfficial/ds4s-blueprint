@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { SlideTopContainer } from "../../components/atoms/Animations/SlideTopContainer/SlideTopContainer";
 import { SectionContainer } from "../../components/atoms/Containers/SectionContainer/SectionContainer";
 import { GovernanceBanner } from "../../components/molecules/Banners/GovernanceBanner/GovernanceBanner";
@@ -20,6 +21,12 @@ export const GovernancePage = () => {
   const [ref, InView] = useInView({
     triggerOnce: true,
   });
+  const [openModal, setOpenModal] = useState<{
+    dataSpace: boolean;
+    ecosystem: boolean;
+    participantLevel: boolean;
+  }>();
+  const [currentModal, setCurrentModal] = useState(0);
 
   const setTitle = (title: GovernanceCategories) => {
     switch (title) {
@@ -43,6 +50,18 @@ export const GovernancePage = () => {
     }
   };
 
+  const updateOpenModal = (
+    state: {
+      dataSpace: boolean;
+      ecosystem: boolean;
+      participantLevel: boolean;
+    },
+    index: number
+  ) => {
+    setOpenModal(state);
+    setCurrentModal(index);
+  };
+
   return (
     <main className={Styles.GovernancePage}>
       <GovernanceBanner />
@@ -54,9 +73,28 @@ export const GovernancePage = () => {
           className={Styles.governances}
         >
           {CONTENT_DROPDOWN.map((el, index) => (
-            <div key={el + index}>
+            <div
+              key={el + index}
+              style={
+                currentModal === index
+                  ? {
+                      minHeight: openModal?.dataSpace
+                        ? 600
+                        : openModal?.ecosystem
+                        ? 500
+                        : openModal?.participantLevel
+                        ? 300
+                        : 0,
+                    }
+                  : {}
+              }
+            >
               <h3>{setTitle(el)}</h3>
-              <NestedDropdown category={el} currentIndex={index} />
+              <NestedDropdown
+                category={el}
+                currentIndex={index}
+                updateOpenModal={updateOpenModal}
+              />
             </div>
           ))}
         </SlideTopContainer>

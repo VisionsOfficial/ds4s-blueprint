@@ -5,6 +5,7 @@ import { ColorVariant, GovernanceCategories } from "../../../../types";
 type NestedDropdownProps = {
   category: GovernanceCategories;
   currentIndex: number;
+  updateOpenModal?: (state: ActiveDropdown, index: number) => void;
 };
 
 type ActiveDropdown = {
@@ -22,6 +23,7 @@ type ContentCategory = {
 export const NestedDropdown = ({
   currentIndex,
   category,
+  updateOpenModal,
 }: PropsWithChildren<NestedDropdownProps>) => {
   const [colorActive, setColorActive] = useState<ColorVariant>("secondary");
   const [activeDropdown, setActiveDropdown] = useState<ActiveDropdown>({
@@ -36,6 +38,10 @@ export const NestedDropdown = ({
     section: "dataSpace" | "ecosystem" | "participantLevel"
   ) => {
     setActiveDropdown((prev) => ({ ...prev, [section]: !prev[section] }));
+    if (updateOpenModal) {
+      const newObj = { ...activeDropdown };
+      updateOpenModal({ ...newObj, [section]: !newObj[section] }, currentIndex);
+    }
   };
 
   const setColor = () => {
@@ -184,7 +190,6 @@ export const NestedDropdown = ({
         </p>
         {activeDropdown.dataSpace && (
           <p className={Styles.modal}>
-            Description: <br />
             <span
               dangerouslySetInnerHTML={{
                 __html: currentCategoryContent?.dataSpace || "'",

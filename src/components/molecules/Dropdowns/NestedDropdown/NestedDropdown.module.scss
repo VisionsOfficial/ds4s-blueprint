@@ -41,6 +41,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     max-height: 400px;
+    animation: modal 0.1s 0.15s ease-in-out both;
     &::-webkit-scrollbar-track {
       border-radius: $large;
     }
@@ -209,5 +210,14 @@
     .participant {
       background-color: lighten($color: $hight-light-primary, $amount: 22);
     }
+  }
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
