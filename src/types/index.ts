@@ -114,7 +114,7 @@ export type TechnicalTrackGovernance = {
 };
 
 export type UXInstruction = {
-  title: "Introduction" | "Accessibility" | "Trust" | "Holistic UX Approach";
+  title: "Accessibility" | "Trust" | "Holistic UX Approach";
   descriptions: {
     short?: string;
     long: string;

@@ -144,9 +144,7 @@ export const UseCaseBanner = ({
           <span>{contentBanner?.icon}</span>
           <h1>{contentBanner?.title}</h1>
         </header>
-        <p>
-          Description and main value: <br /> {contentBanner?.description}
-        </p>
+        <p>{contentBanner?.description}</p>
         {contentBanner?.mainValue.length && (
           <ul>
             {contentBanner.mainValue.map((value, index) => (

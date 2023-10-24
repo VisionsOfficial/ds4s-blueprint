@@ -265,7 +265,6 @@ export const EUDuneCarouselSection = () => {
         return (
           <>
             <h3>{CONTENT_CAROUSEL[0]}</h3>
-            <p>Definition:</p>
             {setContent(CONTENT_CAROUSEL[0])}
           </>
         );
@@ -274,7 +273,6 @@ export const EUDuneCarouselSection = () => {
         return (
           <>
             <h3>{CONTENT_CAROUSEL[1]}</h3>
-            <p>Definition:</p>
             {setContent(CONTENT_CAROUSEL[1])}
           </>
         );
@@ -282,7 +280,6 @@ export const EUDuneCarouselSection = () => {
         return (
           <>
             <h3>{CONTENT_CAROUSEL[2]}</h3>
-            <p>Definition:</p>
             {setContent(CONTENT_CAROUSEL[2])}
           </>
         );

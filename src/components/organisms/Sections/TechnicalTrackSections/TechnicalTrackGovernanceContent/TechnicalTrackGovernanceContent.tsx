@@ -16,10 +16,12 @@ export const TechnicalTrackGovernanceContent = ({
       className={Styles.TechnicalTrackGovernanceContent}
       variantColor="grey"
     >
-      <TechnicalTrackGovernanceCard functionalites={bbs?.functionalities} />
-      <TechnicalTrackGovernanceCard standards={bbs?.standards} />
       <TechnicalTrackGovernanceCard
-        referenceImplementations={bbs?.referenceImplementations}
+        functionalites={bbs?.functionalities || []}
+      />
+      <TechnicalTrackGovernanceCard standards={bbs?.standards || []} />
+      <TechnicalTrackGovernanceCard
+        referenceImplementations={bbs?.referenceImplementations || []}
       />
     </SectionContainer>
   );

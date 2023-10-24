@@ -88,12 +88,7 @@ export const StakeholderBanner = ({
 
         <div className={Styles.content}>
           <h2>{setTitle()}</h2>
-          <div>
-            <p>
-              <span>Definition:</span>
-            </p>
-            <p dangerouslySetInnerHTML={{ __html: currentDefintion || "" }}></p>
-          </div>
+          <p dangerouslySetInnerHTML={{ __html: currentDefintion || "" }}></p>
         </div>
       </SectionContainer>
     );
@@ -112,12 +107,7 @@ export const StakeholderBanner = ({
 
       <div className={Styles.content}>
         <h2>{data?.name}</h2>
-        <div>
-          <p>
-            <span>Definition:</span>
-          </p>
-          <p dangerouslySetInnerHTML={{ __html: currentDefintion || "" }}></p>
-        </div>
+        <p dangerouslySetInnerHTML={{ __html: currentDefintion || "" }}></p>
       </div>
     </SectionContainer>
   );

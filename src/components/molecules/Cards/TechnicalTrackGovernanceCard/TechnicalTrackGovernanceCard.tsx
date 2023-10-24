@@ -107,6 +107,8 @@ export const TechnicalTrackGovernanceCard = ({
         </Card>
       );
     }
+
+    return null;
   };
 
   return setContent();

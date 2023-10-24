@@ -9,7 +9,10 @@ export const BuildingBlocksBanner = () => {
     triggerOnce: true,
   });
   return (
-    <SectionContainer variantColor="primary" className={`${Styles.bgImage} slide-top-bg-image`}>
+    <SectionContainer
+      variantColor="primary"
+      className={`${Styles.bgImage} slide-top-bg-image`}
+    >
       <SlideTopContainer
         className={Styles.BuildingBlocksBanner}
         ref={ref}
@@ -18,7 +21,6 @@ export const BuildingBlocksBanner = () => {
         <header>
           <h1>Building blocks</h1>
           <p>
-            Description: <br />
             The Skills & Education Data Space, designed for decentralized data
             sharing, relies on a set of key technical building blocks. Informed
             by user-centric principles like consent and transparency, these

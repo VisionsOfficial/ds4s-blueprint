@@ -18,7 +18,6 @@ export const GovernanceBanner = () => {
         <header>
           <h1>Governance</h1>
           <p>
-            Description: <br />
             To realize the business value, data spaces must foster trust among
             participants for decentralized data sharing. This involves
             governance models that maintain participant control over data and
