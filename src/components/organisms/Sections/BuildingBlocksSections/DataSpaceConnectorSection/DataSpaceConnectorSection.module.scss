@@ -22,22 +22,24 @@
   }
 
   .container {
-    max-width: 230px;
-    border: 5px dashed $light-tertiary;
+    max-width: 280px;
+    border: 5px dashed $dark-quaternary;
     border-radius: $large;
     width: max-content;
     padding: $medium;
     @include flexColumn(stretch);
     gap: $medium;
+    background-color: $hight-light-quaternary;
 
     h4 {
-      color: $light-tertiary;
+      color: $quaternary;
       text-align: center;
       font-size: 1.2rem;
     }
 
     button {
       color: $white;
+      font-weight: bold;
     }
   }
 }

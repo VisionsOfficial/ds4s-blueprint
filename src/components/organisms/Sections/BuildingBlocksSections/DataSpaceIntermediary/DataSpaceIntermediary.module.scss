@@ -1,0 +1,24 @@
+@use "../../../../../shared/styles/index" as *;
+
+.DataSpaceIntermediary {
+  background-color: $tertiary;
+  @include flexColumn(stretch);
+  gap: 19px;
+  padding: $medium;
+
+  .title {
+    color: $white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.05rem;
+  }
+
+  .arrow {
+    width: 35px;
+    margin-inline: auto;
+  }
+
+  button {
+    font-weight: bold;
+  }
+}

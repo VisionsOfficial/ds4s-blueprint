@@ -20,13 +20,13 @@
   .schema {
     margin: auto;
     position: relative;
-    min-height: 1300px;
+    min-height: 1650px;
     width: 1300px;
 
     .provider {
       position: absolute;
       left: 0;
-      top: 195px;
+      top: 48%;
     }
 
     .main {
@@ -39,187 +39,184 @@
     .consumer {
       position: absolute;
       right: 0;
-      top: 195px;
+      top: 48%;
     }
 
-    .dataModels {
+    .PDILeft {
       position: absolute;
-      bottom: 20%;
-      left: 50%;
-      transform: translate(-50%, -20%);
+      top: 20.2%;
+      left: 16.9%;
+      width: 270px;
     }
 
-    .personal {
+    .PDIRight {
       position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .consumerTop {
-      position: absolute;
-      top: 116px;
-      transform: rotate(90deg);
-      width: 125px;
-      right: 218px;
+      top: 20.2%;
+      right: 16.9%;
+      width: 270px;
     }
 
     .providerTop {
       position: absolute;
-      top: 115px;
+      top: 34%;
       transform: rotate(90deg);
-      width: 120px;
-      left: 206px;
+      width: 35%;
+      left: -0.5%;
     }
 
-    .trustRight {
+    .consumerTop {
       position: absolute;
-      top: 35px;
-      width: 255px;
-      right: 280px;
-      text {
-        font-size: 1.3rem;
-      }
+      top: 34%;
+      transform: rotate(90deg);
+      width: 35%;
+      right: -0.5%;
     }
 
     .trustLeft {
       position: absolute;
-      top: 35px;
-      width: 266px;
-      left: 266px;
-      text {
-        font-size: 1.3rem;
+      top: 40%;
+      left: 23%;
+      width: 205px;
+    }
+
+    .trustRight {
+      position: absolute;
+      top: 40%;
+      right: 23%;
+      width: 205px;
+    }
+
+    .providerBarTop {
+      position: absolute;
+      top: 44%;
+      transform: rotate(90deg);
+      width: 10%;
+      left: 18%;
+    }
+
+    .consumerBarTop {
+      position: absolute;
+      top: 44%;
+      transform: rotate(90deg);
+      width: 10%;
+      right: 18%;
+    }
+
+    .identifyLeft {
+      position: absolute;
+      top: 46.8%;
+      left: 23%;
+      width: 205px;
+    }
+
+    .identifyRight {
+      position: absolute;
+      top: 46.8%;
+      right: 23%;
+      width: 205px;
+    }
+
+    .marketLeft {
+      position: absolute;
+      bottom: 43%;
+      left: 34%;
+      width: 60px;
+    }
+
+    .marketRight {
+      position: absolute;
+      bottom: 43%;
+      right: 34.5%;
+      width: 57px;
+    }
+
+    .publicationLeft {
+      position: absolute;
+      bottom: 32%;
+      left: 34%;
+      width: 60px;
+      p {
+        top: -45px;
+        font-size: 0.9rem;
       }
     }
 
-    .connectionIdentify {
+    .publicationRight {
       position: absolute;
-      top: 140px;
-      width: 266px;
-      left: 266px;
-    }
-    .connectionIdentifyRight {
-      position: absolute;
-      top: 135px;
-      width: 248px;
-      right: 281px;
-      transform: rotate(180deg);
-    }
-
-    .connectionDataSpace {
-      position: absolute;
-      top: 291px;
-      width: 165px;
-      right: 380px;
-    }
-    .connectionDataSpaceLeft {
-      position: absolute;
-      top: 291px;
-      width: 168px;
-      left: 380px;
-    }
-
-    .connectionPublication {
-      position: absolute;
-      top: 445px;
-      width: 168px;
-      left: 380px;
-      text {
-        font-size: 3rem;
-      }
-    }
-    .connectionDiscovery {
-      position: absolute;
-      top: 445px;
-      width: 165px;
-      right: 380px;
-      text {
-        font-size: 3rem;
+      bottom: 32%;
+      right: 34.5%;
+      width: 57px;
+      p {
+        top: -45px;
+        font-size: 0.9rem;
       }
     }
 
-    .connectionConsent {
+    .accessLeft {
       position: absolute;
-      top: 620px;
-      width: 168px;
-      right: 380px;
-      text {
-        font-size: 3rem;
-      }
-    }
-    .connectionConsentLeft {
-      position: absolute;
-      top: 620px;
-      width: 168px;
-      left: 380px;
-      text {
-        font-size: 3rem;
-      }
+      bottom: 25%;
+      left: 34%;
+      width: 60px;
     }
 
-    .connectionDataModels {
+    .accessRight {
       position: absolute;
-      bottom: 350px;
-      width: 160px;
-      left: 239px;
-    }
-    .connectionDataModelsRight {
-      position: absolute;
-      bottom: 350px;
-      width: 160px;
-      right: 240px;
-      transform: rotate(180deg);
-    }
-    .consumerPrivacy {
-      position: absolute;
-      bottom: 570px;
-      width: 120px;
-      right: 218px;
-      transform: rotate(-90deg);
-    }
-    .providerPrivacy {
-      position: absolute;
-      bottom: 570px;
-      width: 120px;
-      left: 210px;
-      transform: rotate(-90deg);
+      bottom: 25%;
+      right: 34.5%;
+      width: 57px;
     }
 
-    .connectionProviderConsumer {
+    .connectionProvider {
       position: absolute;
-      bottom: 410px;
-      width: 824px;
-      left: 269px;
-      text {
-        font-size: 0.4rem;
-      }
-    }
-    .consumerBottom {
-      position: absolute;
-      bottom: 304px;
-      width: 520px;
-      right: -20px;
-      transform: rotate(-90deg);
-    }
-    .providerBottom {
-      position: absolute;
-      bottom: 304px;
-      width: 520px;
-      left: -20px;
-      transform: rotate(-90deg);
+      bottom: 22.2%;
+      transform: rotate(90deg);
+      width: 5.6%;
+      left: 27.3%;
     }
 
-    .connectionProviderPersonal {
+    .connectionConsumer {
       position: absolute;
-      bottom: 75px;
-      width: 310px;
-      left: 240px;
+      bottom: 22.2%;
+      transform: rotate(90deg);
+      width: 5.6%;
+      right: 27.3%;
     }
-    .connectionConsumerPersonal {
+
+    .connection {
       position: absolute;
-      bottom: 75px;
-      width: 311px;
-      right: 213px;
+      bottom: 19.9%;
+      width: 40%;
+      right: 30%;
+    }
+
+    .providerBot {
+      position: absolute;
+      bottom: 18%;
+      transform: rotate(90deg);
+      width: 10%;
+      left: 20%;
+    }
+
+    .consumerBot {
+      position: absolute;
+      bottom: 18%;
+      transform: rotate(90deg);
+      width: 10%;
+      right: 20%;
+    }
+
+    .dataModelsLeft {
+      position: absolute;
+      bottom: 14%;
+      width: 13.5%;
+      left: 25%;
+    }
+
+    .dataModelsRight {
+      position: absolute;
+      bottom: 14%;
+      width: 13.5%;
+      right: 25%;
     }
   }
 }

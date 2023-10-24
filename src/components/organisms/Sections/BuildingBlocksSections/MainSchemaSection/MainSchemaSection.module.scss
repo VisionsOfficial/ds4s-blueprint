@@ -3,7 +3,7 @@
 .MainSchemaSection {
   @include flexColumn(stretch);
   gap: $medium;
-  max-width: 230px;
+  max-width: 320px;
 
   button {
     color: $white;
@@ -11,6 +11,8 @@
 
   .arrow {
     width: 30px;
-    margin-inline: auto;
+    height: auto;
+    transform: rotate(90deg);
+    margin: auto;
   }
 }

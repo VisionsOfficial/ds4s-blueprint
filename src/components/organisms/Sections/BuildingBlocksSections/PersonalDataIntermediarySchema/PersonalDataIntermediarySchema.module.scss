@@ -3,20 +3,43 @@
 .PersonalDataIntermediarySchema {
   @include flexColumn();
   gap: $small;
+  figure {
+    @include flexColumn();
+
+    img {
+      width: 80px;
+      height: 80px;
+      aspect-ratio: 1/1;
+    }
+
+    figcaption {
+      font-weight: bold;
+    }
+  }
   button {
     color: $white;
   }
 
   .arrow {
-    width: 20px;
-    height: 20px;
+    width: 30px;
     height: auto;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
   }
 
   img {
     width: 80px;
     height: 80px;
     aspect-ratio: 1/1;
+  }
+
+  .section {
+    background-color: $tertiary;
+    cursor: initial;
+    font-weight: bold;
+
+    button {
+      cursor: initial;
+      font-weight: bold;
+    }
   }
 }

@@ -3,10 +3,8 @@ import { SectionContainer } from "../../../../atoms/Containers/SectionContainer/
 import { Button } from "../../../../atoms/Buttons/Button/Button";
 import { DataSpaceConnectorSection } from "../DataSpaceConnectorSection/DataSpaceConnectorSection";
 import { MainSchemaSection } from "../MainSchemaSection/MainSchemaSection";
-import { DataModelsSchemaSection } from "../DataModelsSchemaSection/DataModelsSchemaSection";
-import { PersonalDataIntermediarySchema } from "../PersonalDataIntermediarySchema/PersonalDataIntermediarySchema";
-import { Arrow } from "../../../../atoms/Arrows/Arrow/Arrow";
 import { MouseEvent, useRef, useState } from "react";
+import { Arrow } from "../../../../atoms/Arrows/Arrow/Arrow";
 
 export type CoordinatesReducer = {
   trust: number;
@@ -42,12 +40,17 @@ export const SchemaBuildingBlocksSection = () => {
   return (
     <>
       <SectionContainer className={Styles.legend}>
-        <Button variantBgColor="secondary">DSSC generic Building Block</Button>
+        <Button variantBgColor="secondary">
+          DSSC Technical Building Block
+        </Button>
+        <Button variantBgColor="tertiary">
+          DSSC Governance Building Block
+        </Button>
         <Button variantBgColor="primary">
-          DS4Skills specific Building Block
+          DS4Skills Specific Building Block
         </Button>
         <Button variantBgColor="lightPrimary">
-          DS4Skills specific function
+          DS4Skills Specific Function
         </Button>
       </SectionContainer>
       <SectionContainer
@@ -71,333 +74,48 @@ export const SchemaBuildingBlocksSection = () => {
             category="consumer"
             className={Styles.consumer}
           />
-          <DataModelsSchemaSection className={Styles.dataModels} />
-          <PersonalDataIntermediarySchema className={Styles.personal} />
 
-          <svg viewBox="0 0 350 100" className={Styles.consumerTop}>
-            <defs>
-              <marker
-                id="arrowhead"
-                markerWidth="10"
-                markerHeight="7"
-                refX="0"
-                refY="3.5"
-                orient="auto"
-              >
-                <polygon points="0 0, 10 3.5, 0 7" />
-              </marker>
-            </defs>
-            <line
-              x1="0"
-              y1="50"
-              x2="290"
-              y2="50"
-              stroke="#000"
-              strokeWidth="4"
-              markerEnd="url(#arrowhead)"
-            />
-          </svg>
-          <svg viewBox="0 0 350 100" className={Styles.trustRight}>
-            <line
-              x1="0"
-              y1="50"
-              x2="350"
-              y2="50"
-              stroke="#000"
-              strokeWidth="2"
-            />
-            <text x="175" y="40" dominantBaseline="middle" textAnchor="middle">
-              Data
-            </text>
-          </svg>
+          <Arrow className={Styles.PDILeft} />
+          <Arrow className={Styles.PDIRight} type="simpleL" />
 
-          <svg viewBox="0 0 350 100" className={Styles.providerTop}>
-            <line
-              x1="0"
-              y1="50"
-              x2="350"
-              y2="50"
-              stroke="#000"
-              strokeWidth="4"
-            />
-          </svg>
-          <svg viewBox="0 0 350 100" className={Styles.trustLeft}>
-            <defs>
-              <marker
-                id="arrowhead"
-                markerWidth="10"
-                markerHeight="7"
-                refX="0"
-                refY="3.5"
-                orient="auto"
-              >
-                <polygon points="0 0, 10 3.5, 0 7" />
-              </marker>
-            </defs>
-            <line
-              x1="0"
-              y1="50"
-              x2="330"
-              y2="50"
-              stroke="#000"
-              strokeWidth="2"
-              markerEnd="url(#arrowhead)"
-            />
-            <text x="175" y="40" dominantBaseline="middle" textAnchor="middle">
-              Data
-            </text>
-          </svg>
+          <Arrow className={Styles.providerTop} />
+          <Arrow className={Styles.consumerTop} />
 
-          <svg viewBox="0 0 350 100" className={Styles.connectionIdentify}>
-            <defs>
-              <marker
-                id="arrowhead"
-                markerWidth="10"
-                markerHeight="7"
-                refX="0"
-                refY="3.5"
-                orient="auto"
-              >
-                <polygon points="0 0, 10 3.5, 0 7" />
-              </marker>
-            </defs>
-            <line
-              x1="0"
-              y1="50"
-              x2="330"
-              y2="50"
-              stroke="#000"
-              strokeWidth="2"
-              markerEnd="url(#arrowhead)"
-            />
-          </svg>
-          <svg viewBox="0 0 350 100" className={Styles.connectionIdentifyRight}>
-            <defs>
-              <marker
-                id="arrowhead"
-                markerWidth="10"
-                markerHeight="7"
-                refX="0"
-                refY="3.5"
-                orient="auto"
-              >
-                <polygon points="0 0, 10 3.5, 0 7" />
-              </marker>
-            </defs>
-            <line
-              x1="0"
-              y1="50"
-              x2="330"
-              y2="50"
-              stroke="#000"
-              strokeWidth="2"
-              markerEnd="url(#arrowhead)"
-            />
-          </svg>
+          <Arrow className={Styles.trustLeft} text="Data" />
+          <Arrow className={Styles.trustRight} type="simpleL" text="Data" />
 
-          <Arrow type="double" className={Styles.connectionDataSpace} />
-          <Arrow type="double" className={Styles.connectionDataSpaceLeft} />
+          <Arrow className={Styles.providerBarTop} type="bar" />
+          <Arrow className={Styles.consumerBarTop} type="bar" />
+
+          <Arrow className={Styles.identifyLeft} />
+          <Arrow className={Styles.identifyRight} type="simpleL" />
+
+          <Arrow className={Styles.marketLeft} type="double" />
+          <Arrow className={Styles.marketRight} type="double" />
+
           <Arrow
+            className={Styles.publicationLeft}
             type="double"
-            className={Styles.connectionPublication}
             text="Data Publication"
           />
           <Arrow
+            className={Styles.publicationRight}
             type="double"
-            className={Styles.connectionDiscovery}
             text="Data Discovery"
           />
-          <Arrow
-            type="double"
-            className={Styles.connectionConsent}
-            text="Consent"
-          />
-          <Arrow
-            type="double"
-            className={Styles.connectionConsentLeft}
-            text="Consent"
-          />
 
-          <svg viewBox="0 0 350 100" className={Styles.providerPrivacy}>
-            <line
-              x1="0"
-              y1="50"
-              x2="350"
-              y2="50"
-              stroke="#000"
-              strokeWidth="4"
-            />
-          </svg>
-          <svg viewBox="0 0 350 100" className={Styles.consumerPrivacy}>
-            <defs>
-              <marker
-                id="arrowhead"
-                markerWidth="10"
-                markerHeight="7"
-                refX="0"
-                refY="3.5"
-                orient="auto"
-              >
-                <polygon points="0 0, 10 3.5, 0 7" />
-              </marker>
-            </defs>
-            <line
-              x1="0"
-              y1="50"
-              x2="320"
-              y2="50"
-              stroke="#000"
-              strokeWidth="4"
-              markerEnd="url(#arrowhead)"
-            />
-          </svg>
-          <svg
-            viewBox="0 0 350 100"
-            className={Styles.connectionProviderConsumer}
-          >
-            <line
-              x1="0"
-              y1="50"
-              x2="320"
-              y2="50"
-              stroke="#000"
-              strokeWidth="1"
-            />
-            <text x="175" y="45" dominantBaseline="middle" textAnchor="middle">
-              Data
-            </text>
-          </svg>
+          <Arrow className={Styles.accessLeft} type="double" />
+          <Arrow className={Styles.accessRight} type="double" />
 
-          <svg viewBox="0 0 350 100" className={Styles.consumerBottom}>
-            <defs>
-              <marker
-                id="arrowhead"
-                markerWidth="10"
-                markerHeight="7"
-                refX="0"
-                refY="3.5"
-                orient="auto"
-              >
-                <polygon points="0 0, 10 3.5, 0 7" />
-              </marker>
-            </defs>
-            <line
-              x1="0"
-              y1="50"
-              x2="320"
-              y2="50"
-              stroke="#000"
-              strokeWidth="1"
-              markerEnd="url(#arrowhead)"
-            />
-          </svg>
+          <Arrow className={Styles.connectionProvider} type="bar" />
+          <Arrow className={Styles.connectionConsumer} type="simpleL" />
+          <Arrow className={Styles.connection} type="bar" text="Data" />
 
-          <svg viewBox="0 0 350 100" className={Styles.providerBottom}>
-            <defs>
-              <marker
-                id="arrowhead"
-                markerWidth="10"
-                markerHeight="7"
-                refX="0"
-                refY="3.5"
-                orient="auto"
-              >
-                <polygon points="0 0, 10 3.5, 0 7" />
-              </marker>
-            </defs>
-            <line
-              x1="0"
-              y1="50"
-              x2="320"
-              y2="50"
-              stroke="#000"
-              strokeWidth="1"
-              markerEnd="url(#arrowhead)"
-            />
-          </svg>
+          <Arrow className={Styles.providerBot} type="simpleL" />
+          <Arrow className={Styles.consumerBot} type="simpleL" />
 
-          <svg
-            viewBox="0 0 350 100"
-            className={Styles.connectionProviderPersonal}
-          >
-            <line
-              x1="0"
-              y1="50"
-              x2="320"
-              y2="50"
-              stroke="#000"
-              strokeWidth="2"
-            />
-            <text x="175" y="40" dominantBaseline="middle" textAnchor="middle">
-              Consent
-            </text>
-          </svg>
-          <svg
-            viewBox="0 0 350 100"
-            className={Styles.connectionConsumerPersonal}
-          >
-            <line
-              x1="0"
-              y1="50"
-              x2="320"
-              y2="50"
-              stroke="#000"
-              strokeWidth="2"
-            />
-            <text x="175" y="40" dominantBaseline="middle" textAnchor="middle">
-              Consent
-            </text>
-          </svg>
-
-          <svg viewBox="0 0 350 100" className={Styles.connectionDataModels}>
-            <defs>
-              <marker
-                id="arrowhead"
-                markerWidth="10"
-                markerHeight="7"
-                refX="0"
-                refY="3.5"
-                orient="auto"
-              >
-                <polygon points="0 0, 10 3.5, 0 7" />
-              </marker>
-            </defs>
-            <line
-              x1="0"
-              y1="50"
-              x2="320"
-              y2="50"
-              stroke="#000"
-              strokeWidth="3"
-              markerEnd="url(#arrowhead)"
-            />
-          </svg>
-          <svg
-            viewBox="0 0 350 100"
-            className={Styles.connectionDataModelsRight}
-          >
-            <defs>
-              <marker
-                id="arrowhead"
-                markerWidth="10"
-                markerHeight="7"
-                refX="0"
-                refY="3.5"
-                orient="auto"
-              >
-                <polygon points="0 0, 10 3.5, 0 7" />
-              </marker>
-            </defs>
-            <line
-              x1="0"
-              y1="50"
-              x2="320"
-              y2="50"
-              stroke="#000"
-              strokeWidth="3"
-              markerEnd="url(#arrowhead)"
-            />
-          </svg>
+          <Arrow className={Styles.dataModelsLeft} />
+          <Arrow className={Styles.dataModelsRight} type="simpleL" />
         </div>
       </SectionContainer>
     </>

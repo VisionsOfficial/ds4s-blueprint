@@ -1,5 +1,67 @@
+@use "../../../../shared/styles/index" as *;
+
 .Arrow {
-  text {
-    font-size: 1.3rem;
+  width: 100px;
+  background-color: $black;
+
+  .bar {
+    position: relative;
+    width: 100%;
+    height: 2px;
+
+    p {
+      margin-inline: auto;
+      font-size: 1rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 5%;
+      top: -20px;
+    }
+
+    .arrow {
+      border: solid $black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+  }
+}
+
+.right {
+  .arrow {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+.left {
+  .arrow {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    transform: rotate(135deg);
+  }
+}
+
+.double {
+  .arrow {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    transform: rotate(-45deg);
+  }
+
+  .arrowSecond {
+    border: solid $black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    transform: rotate(135deg);
   }
 }

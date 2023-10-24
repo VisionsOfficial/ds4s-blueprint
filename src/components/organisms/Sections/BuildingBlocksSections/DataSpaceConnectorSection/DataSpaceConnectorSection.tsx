@@ -75,28 +75,32 @@ export const DataSpaceConnectorSection = ({
         >
           Decentralized AI training
         </Button>
-        <Button
-          variantBgColor="secondary"
-          onClick={() => {
-            handleClick(
-              APP_PARAMS.buildingBlocks.dataServicesAndOfferingDescriptions
-            );
-          }}
-        >
-          Data, service and offering descriptions
-        </Button>
+
+        <WrapperSchemaButtons title="Data, Services & Offerings Descriptions">
+          <Button
+            variantBgColor="lightPrimary"
+            onClick={() => {
+              handleClick(
+                APP_PARAMS.buildingBlocks.dataServicesAndOfferingDescriptions
+              );
+            }}
+          >
+            Offerings
+          </Button>
+        </WrapperSchemaButtons>
+
         <WrapperSchemaButtons
-          title="Data exchange"
+          title="Data Exchange"
           onClick={() => {
             handleClick(APP_PARAMS.buildingBlocks.dataExchange);
           }}
           style={{ cursor: "pointer" }}
         >
           <Button variantBgColor="lightPrimary">
-            Safeguard for personal data
+            Safeguard for Personal Data
           </Button>
           <Button variantBgColor="lightPrimary">
-            Privacy preserving DE protocols
+            Privacy Preserving DE Protocols
           </Button>
         </WrapperSchemaButtons>
       </div>
