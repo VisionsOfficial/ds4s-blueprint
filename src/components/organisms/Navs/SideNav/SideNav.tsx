@@ -22,10 +22,6 @@ const CONTENT_NAVBAR: NavBarLinks[] = [
     url: APP_LINKS.buildingBlocks,
   },
   {
-    name: "Initiatives",
-    url: "#",
-  },
-  {
     name: "Wiki",
     url: "http://example.com",
   },
