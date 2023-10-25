@@ -40,7 +40,8 @@ export type Stakeholder =
   | "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool"
   | "Data Providers (Organisational): Jobo, JobRightNow and Jobijob"
   | "Orchestrator: SkillsFast"
-  | "Service Providers: SkillProfiX, SDAI, SkillFast";
+  | "Service Providers: SkillProfiX, SDAI, SkillFast"
+  | "Governance Authority (association): Fire X";
 
 export type StakeholderCategories =
   | "Governance"

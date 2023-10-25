@@ -42,6 +42,8 @@
     overflow-y: auto;
     max-height: 400px;
     animation: modal 0.1s 0.15s ease-in-out both;
+    scrollbar-width: thin; 
+    scrollbar-color: $black; 
     &::-webkit-scrollbar-track {
       border-radius: $large;
     }
@@ -53,8 +55,8 @@
       border-radius: $large;
     }
 
-    &::-webkit-scrollbar-thumb:hover {
-      background: $light-primary;
+    &::-webkit-scrollbar-thumb {
+      background: $black;
     }
   }
 
@@ -219,5 +221,30 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+.defaultSpace {
+  min-height: 0px;
+}
+
+.largeSpace {
+  min-height: 385px;
+  @include resolution(tablet, max-width) {
+    min-height: 150px;
+  }
+}
+
+.mediumSpace {
+  min-height: 360px;
+  @include resolution(tablet, max-width) {
+    min-height: 210px;
+  }
+}
+
+.smallSpace {
+  min-height: 100px;
+  @include resolution(tablet, max-width) {
+    min-height: 120px;
   }
 }

@@ -62,9 +62,6 @@ export const Footer = () => {
             <li>
               <Link to={APP_LINKS.buildingBlocks}>Building Blocks</Link>
             </li>
-            <li>
-              <Link to={"#"}>Initiatives</Link>
-            </li>
           </FooterList>
 
           <FooterList title="Follow Us">

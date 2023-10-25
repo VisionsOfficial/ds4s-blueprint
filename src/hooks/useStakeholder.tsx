@@ -80,6 +80,9 @@ export const useStakeholder = ({ stakeholder }: Props) => {
       case "Governance Authority (association): Fire-X":
         setData(STAKEHOLDER_CONTENT[22]);
         break;
+      case "Governance Authority (association): Fire X":
+        setData(STAKEHOLDER_CONTENT[22]);
+        break;
       case "Data Intermediary: InfraTrust":
         setData(STAKEHOLDER_CONTENT[23]);
         break;

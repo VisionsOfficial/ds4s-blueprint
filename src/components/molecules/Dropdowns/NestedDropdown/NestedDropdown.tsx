@@ -5,7 +5,6 @@ import { ColorVariant, GovernanceCategories } from "../../../../types";
 type NestedDropdownProps = {
   category: GovernanceCategories;
   currentIndex: number;
-  updateOpenModal?: (state: ActiveDropdown, index: number) => void;
 };
 
 type ActiveDropdown = {
@@ -23,7 +22,6 @@ type ContentCategory = {
 export const NestedDropdown = ({
   currentIndex,
   category,
-  updateOpenModal,
 }: PropsWithChildren<NestedDropdownProps>) => {
   const [colorActive, setColorActive] = useState<ColorVariant>("secondary");
   const [activeDropdown, setActiveDropdown] = useState<ActiveDropdown>({
@@ -38,10 +36,6 @@ export const NestedDropdown = ({
     section: "dataSpace" | "ecosystem" | "participantLevel"
   ) => {
     setActiveDropdown((prev) => ({ ...prev, [section]: !prev[section] }));
-    if (updateOpenModal) {
-      const newObj = { ...activeDropdown };
-      updateOpenModal({ ...newObj, [section]: !newObj[section] }, currentIndex);
-    }
   };
 
   const setColor = () => {
@@ -165,95 +159,106 @@ export const NestedDropdown = ({
   }, [category]);
 
   return (
-    <div
-      className={`${Styles.NestedDropdown} ${setColor()}`}
-      style={{ zIndex: 20 - currentIndex }}
-    >
-      <div className={Styles.dataSpace}>
-        <p
-          className={Styles.main}
-          onClick={(e) => {
-            e.stopPropagation();
-            handleClickModal("dataSpace");
-          }}
-        >
-          Data Space level{" "}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            width="24"
-            height="24"
-            className={activeDropdown.dataSpace ? Styles.activeSvg : ""}
+    <>
+      <div
+        className={`${Styles.NestedDropdown} ${setColor()}`}
+        style={{ zIndex: 20 - currentIndex }}
+      >
+        <div className={Styles.dataSpace}>
+          <p
+            className={Styles.main}
+            onClick={(e) => {
+              e.stopPropagation();
+              handleClickModal("dataSpace");
+            }}
           >
-            <path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
-          </svg>
-        </p>
-        {activeDropdown.dataSpace && (
-          <p className={Styles.modal}>
-            <span
-              dangerouslySetInnerHTML={{
-                __html: currentCategoryContent?.dataSpace || "'",
+            Data Space level{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              width="24"
+              height="24"
+              className={activeDropdown.dataSpace ? Styles.activeSvg : ""}
+            >
+              <path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+            </svg>
+          </p>
+          {activeDropdown.dataSpace && (
+            <p className={Styles.modal}>
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: currentCategoryContent?.dataSpace || "'",
+                }}
+              ></span>
+            </p>
+          )}
+        </div>
+        <div className={Styles.ecosystem}>
+          <div className={Styles.ecosystemContent}>
+            <p
+              className={Styles.main}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleClickModal("ecosystem");
               }}
-            ></span>
-          </p>
-        )}
-      </div>
-      <div className={Styles.ecosystem}>
-        <div className={Styles.ecosystemContent}>
-          <p
-            className={Styles.main}
-            onClick={(e) => {
-              e.stopPropagation();
-              handleClickModal("ecosystem");
-            }}
-          >
-            Ecosystem level{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              width="24"
-              height="24"
-              className={activeDropdown.ecosystem ? Styles.activeSvg : ""}
             >
-              <path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
-            </svg>
-          </p>
-          {activeDropdown.ecosystem && (
-            <p className={`${Styles.modal} ${Styles.modalEco}`}>
-              Description: <br />
-              {currentCategoryContent?.ecosystem}
+              Ecosystem level{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="24"
+                height="24"
+                className={activeDropdown.ecosystem ? Styles.activeSvg : ""}
+              >
+                <path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+              </svg>
             </p>
-          )}
-        </div>
-        <div className={Styles.participant}>
-          <p
-            className={Styles.main}
-            onClick={(e) => {
-              e.stopPropagation();
-              handleClickModal("participantLevel");
-            }}
-          >
-            Participant level{" "}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              width="24"
-              height="24"
-              className={
-                activeDropdown.participantLevel ? Styles.activeSvg : ""
-              }
+            {activeDropdown.ecosystem && (
+              <p className={`${Styles.modal} ${Styles.modalEco}`}>
+                {currentCategoryContent?.ecosystem}
+              </p>
+            )}
+          </div>
+          <div className={Styles.participant}>
+            <p
+              className={Styles.main}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleClickModal("participantLevel");
+              }}
             >
-              <path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
-            </svg>
-          </p>
-          {activeDropdown.participantLevel && (
-            <p className={`${Styles.modal} ${Styles.modalParticipant}`}>
-              Description: <br />
-              {currentCategoryContent?.participantLevel}
+              Participant level{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                width="24"
+                height="24"
+                className={
+                  activeDropdown.participantLevel ? Styles.activeSvg : ""
+                }
+              >
+                <path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z" />
+              </svg>
             </p>
-          )}
+            {activeDropdown.participantLevel && (
+              <p className={`${Styles.modal} ${Styles.modalParticipant}`}>
+                {currentCategoryContent?.participantLevel}
+              </p>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+      <div
+        className={
+          activeDropdown?.dataSpace
+            ? Styles.largeSpace
+            : activeDropdown?.ecosystem
+            ? Styles.mediumSpace
+            : activeDropdown?.participantLevel
+            ? Styles.smallSpace
+            : Styles.defaultSpace
+        }
+      ></div>
+    </>
   );
 };
