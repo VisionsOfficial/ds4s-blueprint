@@ -231,7 +231,7 @@
 .largeSpace {
   min-height: 385px;
   @include resolution(tablet, max-width) {
-    min-height: 150px;
+    min-height: 210px;
   }
 }
 
