@@ -168,6 +168,6 @@ export type CategoriesContentStakeholder = {
 };
 
 export type SchemaUseCase =
-  | "business model radat"
+  | "business model radar"
   | "data value chain tracker"
   | "data value chain tracker BB";

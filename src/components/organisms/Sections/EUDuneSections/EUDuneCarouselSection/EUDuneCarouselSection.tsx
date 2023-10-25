@@ -8,7 +8,7 @@ import { SlideTopContainer } from "../../../../atoms/Animations/SlideTopContaine
 import { useInView } from "react-intersection-observer";
 
 const CONTENT_CAROUSEL: SchemaUseCase[] = [
-  "business model radat",
+  "business model radar",
   "data value chain tracker",
   "data value chain tracker BB",
 ];
@@ -39,7 +39,7 @@ export const EUDuneCarouselSection = () => {
 
   const setContent = (name: SchemaUseCase) => {
     switch (name) {
-      case "business model radat":
+      case "business model radar":
         return (
           <>
             <p>
