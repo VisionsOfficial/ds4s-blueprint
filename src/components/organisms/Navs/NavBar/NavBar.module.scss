@@ -14,7 +14,7 @@
   }
 
   ul {
-    @include flexRow();
+    display: none;
     flex-wrap: wrap;
     gap: $medium;
     list-style: none;
@@ -23,13 +23,13 @@
       text-transform: uppercase;
       text-decoration: none;
       color: black;
-      font-size: 1.375rem;
+      font-size: 1.33rem;
     }
   }
 
-  @include resolution(xx-desktop, max-width) {
+  @include resolution(xx-desktop) {
     ul {
-      display: none;
+      @include flexRow();
     }
   }
 

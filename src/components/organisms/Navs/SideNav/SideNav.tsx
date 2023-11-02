@@ -1,33 +1,17 @@
 import { PropsWithChildren, useEffect, useState } from "react";
 import Styles from "./SideNav.module.scss";
 import { Link } from "react-router-dom";
-import { APP_LINKS } from "../../../../utils/appLinks";
 import { NavBarLinks } from "../../../../types";
 
 type SideNavProps = {
   closing: () => void;
+  linkContent: NavBarLinks[];
 };
 
-const CONTENT_NAVBAR: NavBarLinks[] = [
-  {
-    name: "Home",
-    url: APP_LINKS.home,
-  },
-  {
-    name: "Use cases",
-    url: APP_LINKS.useCases + "/match",
-  },
-  {
-    name: "Building blocks",
-    url: APP_LINKS.buildingBlocks,
-  },
-  {
-    name: "Wiki",
-    url: "http://example.com",
-  },
-];
-
-export const SideNav = ({ closing }: PropsWithChildren<SideNavProps>) => {
+export const SideNav = ({
+  closing,
+  linkContent,
+}: PropsWithChildren<SideNavProps>) => {
   const [closingAnimation, setClosingAnimation] = useState(false);
 
   const handleClosingAnimation = () => {
@@ -107,7 +91,7 @@ export const SideNav = ({ closing }: PropsWithChildren<SideNavProps>) => {
           </svg>
         </div>
         <ul>
-          {CONTENT_NAVBAR.map((el, index) => (
+          {linkContent.map((el, index) => (
             <li key={el.name + index}>{setNavBarLink(el)}</li>
           ))}
         </ul>

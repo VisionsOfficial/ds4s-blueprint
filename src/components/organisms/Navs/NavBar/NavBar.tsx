@@ -21,6 +21,10 @@ const CONTENT_NAVBAR: NavBarLinks[] = [
     url: APP_LINKS.buildingBlocks,
   },
   {
+    name: "Governance model",
+    url: APP_LINKS.govervance,
+  },
+  {
     name: "Wiki",
     url: "http://example.com",
   },
@@ -69,6 +73,7 @@ export const NavBar = () => {
 
       {sideNavActive && (
         <SideNav
+          linkContent={CONTENT_NAVBAR}
           closing={() => {
             handleSideNavActive();
           }}
