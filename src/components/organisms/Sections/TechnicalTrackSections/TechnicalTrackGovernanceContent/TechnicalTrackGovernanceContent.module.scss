@@ -1,8 +1,19 @@
 @use "../../../../../shared/styles/index" as *;
 
 .TechnicalTrackGovernanceContent {
-  @include fluidGrid(500px);
+  @include flexColumn(stretch);
   gap: $large;
-  height: auto;
-  min-height: auto;
+
+  .content {
+    @include fluidGrid(500px);
+    gap: $large;
+    height: auto;
+    min-height: auto;
+  }
+
+  .btn {
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: $small;
+  }
 }

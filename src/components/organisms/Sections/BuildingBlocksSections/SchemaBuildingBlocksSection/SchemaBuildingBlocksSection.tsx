@@ -40,6 +40,7 @@ export const SchemaBuildingBlocksSection = () => {
   return (
     <>
       <SectionContainer className={Styles.legend}>
+        <h2>Legend</h2>
         <Button variantBgColor="secondary">
           DSSC Technical Building Block
         </Button>
