@@ -79,6 +79,46 @@ export const StakeholderModal = ({
       );
     }
 
+    if (stakeholder?.name === "Business" && stakeholder.content.business) {
+      return stakeholder?.content?.business?.map((bm, index) => (
+        <React.Fragment key={bm.title + index}>
+          <h4>{bm.title}</h4>
+          <div>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: bm.definition || "",
+              }}
+            ></p>
+          </div>
+
+          <Button
+            onClick={() => {
+              handleClickButton(index + 1);
+            }}
+          >
+            Learn more
+          </Button>
+        </React.Fragment>
+      ));
+    }
+    if (
+      stakeholder?.name === "Business" &&
+      stakeholder.content.title.includes("Individuals")
+    ) {
+      return (
+        <>
+          <h4>{stakeholder?.content.title}</h4>
+          <div>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: stakeholder?.content.definition || "",
+              }}
+            ></p>
+          </div>
+        </>
+      );
+    }
+
     return (
       <>
         <h4>{stakeholder?.content.title}</h4>
@@ -135,12 +175,21 @@ export const StakeholderModal = ({
         break;
     }
 
+    let addKeyParams;
+    if (stakeholder?.name === "Business" && key) {
+      addKeyParams = `?bm=${key}`;
+    } else if (stakeholder?.name === "Governance" && key) {
+      addKeyParams = `?gov=${key}`;
+    } else {
+      addKeyParams = "";
+    }
+
     navigate(
       APP_LINKS.useCases +
         `/${useCase ? useCase : "eudune"}/${stakeholderSection?.replace(
           /\s+/g,
           "-"
-        )}/${stakeholder?.name}${key ? `?gov=${key}` : ""}`
+        )}/${stakeholder?.name}${addKeyParams}`
     );
   };
 

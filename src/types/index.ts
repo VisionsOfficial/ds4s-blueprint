@@ -1,5 +1,11 @@
 export type NavBarLinks = {
-  name: "Home" | "Use cases" | "Building blocks" | "Initiatives" | "Wiki";
+  name:
+    | "Home"
+    | "Use cases"
+    | "Building blocks"
+    | "Initiatives"
+    | "Wiki"
+    | "Governance model";
   url: string;
 };
 
@@ -147,6 +153,15 @@ export type CategoriesContentStakeholder = {
       title: string;
       definition: string;
       obligations?: string[];
+    }[];
+    business?: {
+      title: string;
+      definition: string;
+      examples?: string[];
+      valuePropositions?: {
+        dataSpace: string[];
+        roleValue: string[];
+      };
     }[];
     definition: string;
     examples?: string[];

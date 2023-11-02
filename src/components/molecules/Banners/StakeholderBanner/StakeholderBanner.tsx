@@ -46,6 +46,8 @@ export const StakeholderBanner = ({
       if (el.name === (category as StakeholderCategories)) {
         if (el.content.governance) {
           return el.content.governance[parseInt(searchLocation) - 1].title;
+        } else if (el.content.business) {
+          return el.content.business[parseInt(searchLocation) - 1].title;
         } else return "";
       } else return "";
     });
@@ -60,6 +62,10 @@ export const StakeholderBanner = ({
           if (el.content.governance) {
             setCurrentDefinition(
               el.content.governance[parseInt(searchLocation) - 1].definition
+            );
+          } else if (el.content.business) {
+            setCurrentDefinition(
+              el.content.business[parseInt(searchLocation) - 1].definition
             );
           } else return "";
         } else return "";

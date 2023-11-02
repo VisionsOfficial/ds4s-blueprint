@@ -17,7 +17,9 @@ type StakeholderDocumentationByCategoryCardProps = {
     | "Examples"
     | "Obligations"
     | "Second Examples"
-    | "Building Blocks";
+    | "Building Blocks"
+    | "Data space use case’s value proposition for the Role"
+    | "Role’s value proposition for other data space use case stakeholders";
   stakeholder: Stakeholder;
   category: StakeholderCategories;
   currentColor: ColorVariant;
@@ -57,18 +59,29 @@ export const StakeholderDocumentationByCategoryCard = ({
               ));
             }
           case "Examples":
-            if (el.content.examples?.length) {
-              return el.content.examples?.map((ex, index) => (
+            if (searchLocation) {
+              if (!el.content.business) return;
+              return el.content.business[
+                parseInt(searchLocation) - 1
+              ].examples?.map((ex, index) => (
                 <p className={selectedColor} key={ex + index}>
                   {ex}
                 </p>
               ));
             } else {
-              return (
-                <p className={selectedColor} key={"example"}>
-                  This stakeholder don't have example
-                </p>
-              );
+              if (el.content.examples?.length) {
+                return el.content.examples?.map((ex, index) => (
+                  <p className={selectedColor} key={ex + index}>
+                    {ex}
+                  </p>
+                ));
+              } else {
+                return (
+                  <p className={selectedColor} key={"example"}>
+                    This stakeholder doesn't have an example
+                  </p>
+                );
+              }
             }
           case "Second Examples":
             return el.content.secondExamples?.map((secondEx, index) => (
@@ -115,6 +128,68 @@ export const StakeholderDocumentationByCategoryCard = ({
                 {bbs.name}
               </p>
             ));
+          case "Data space use case’s value proposition for the Role":
+            if (searchLocation) {
+              if (!el.content.business) return;
+
+              if (
+                el?.content?.business[parseInt(searchLocation) - 1]
+                  ?.valuePropositions?.dataSpace.length === 0
+              ) {
+                return (
+                  <p className={selectedColor} key={"example"}>
+                    This stakeholder doesn't have an data space use case's value
+                    proposition for the Role
+                  </p>
+                );
+              }
+
+              return el?.content?.business[
+                parseInt(searchLocation) - 1
+              ]?.valuePropositions?.dataSpace.map((ds, index) => (
+                <p className={selectedColor} key={"data space" + index}>
+                  {ds}
+                </p>
+              ));
+            } else {
+              return (
+                <p className={selectedColor} key={"example"}>
+                  This stakeholder doesn't have an data space use case's value
+                  proposition for the Role
+                </p>
+              );
+            }
+          case "Role’s value proposition for other data space use case stakeholders":
+            if (searchLocation) {
+              if (!el.content.business) return;
+
+              if (
+                el?.content?.business[parseInt(searchLocation) - 1]
+                  ?.valuePropositions?.roleValue.length === 0
+              ) {
+                return (
+                  <p className={selectedColor} key={"example"}>
+                    This stakeholder doesn't have an role’s value proposition
+                    for other data space use case stakeholders
+                  </p>
+                );
+              } else {
+                return el?.content?.business[
+                  parseInt(searchLocation) - 1
+                ]?.valuePropositions?.roleValue.map((ds, index) => (
+                  <p className={selectedColor} key={"data space" + index}>
+                    {ds}
+                  </p>
+                ));
+              }
+            } else {
+              return (
+                <p className={selectedColor} key={"example"}>
+                  This stakeholder doesn't have an role’s value proposition for
+                  other data space use case stakeholders
+                </p>
+              );
+            }
 
           default:
             break;

@@ -52,6 +52,18 @@ export const StakeholderContentSection = ({
         return (
           <>
             <StakeholderDocumentationByCategoryCard
+              title="Data space use case’s value proposition for the Role"
+              stakeholder={currentStakeholder}
+              category={currentCategory}
+              currentColor={currentColor}
+            />
+            <StakeholderDocumentationByCategoryCard
+              title="Role’s value proposition for other data space use case stakeholders"
+              stakeholder={currentStakeholder}
+              category={currentCategory}
+              currentColor={currentColor}
+            />
+            <StakeholderDocumentationByCategoryCard
               title="Examples"
               stakeholder={currentStakeholder}
               category={currentCategory}

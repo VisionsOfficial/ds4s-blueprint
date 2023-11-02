@@ -117,7 +117,48 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
             E.g.: Transaction, freemium, subscription model,
             `,
-          examples: [],
+          business: [
+            {
+              title: "University & Training providers (end user)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "Get valuable insights and recommendations to futureproof individuals and organizations at the labour market.",
+                  "Access skills data for informed planning and decision-making. Utilize data-driven insights to shape effective policies and strategies.",
+                  "Trust and fairness: Data sharing is transparent and equitable.",
+                  "Access to valuable skills data sources, services resources to enhance your services. Bolster research capabilities and offer trend analysis to better serve your clients.",
+                  "Platform for skill-related data management.",
+                ],
+                roleValue: [
+                  "Organisational end users are the main clients of the data space use cases.",
+                ],
+              },
+            },
+            {
+              title: "University & Training providers (data provider)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "A data provider joins the data space to find a use case that can leverage the provided data and attract diverse data users on its data set.",
+                ],
+                roleValue: [
+                  `The data provided serves as a fundamental resource, or "oil," that powers activities, insights, and value generation across all other roles with the possibility of accessing, combining, and comparing it with other sources in the data space use case.`,
+                ],
+              },
+            },
+          ],
         },
       },
       {
@@ -207,11 +248,52 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Business",
         content: {
-          title: "Employers Business",
+          title: "Employers",
           definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
           E.g.: Transaction, freemium, subscription model,
           `,
-          examples: [],
+          business: [
+            {
+              title: "Employers (end user)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "Get valuable insights and recommendations to futureproof individuals and organizations at the labour market.",
+                  "Access skills data for informed planning and decision-making. Utilize data-driven insights to shape effective policies and strategies.",
+                  "Trust and fairness: Data sharing is transparent and equitable.",
+                  "Access to valuable skills data sources, services resources to enhance your services. Bolster research capabilities and offer trend analysis to better serve your clients.",
+                  "Platform for skill-related data management.",
+                ],
+                roleValue: [
+                  "Organisational end users are the main clients of the data space use cases.",
+                ],
+              },
+            },
+            {
+              title: "Employers (data provider)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "A data provider joins the data space to find a use case that can leverage the provided data and attract diverse data users on its data set.",
+                ],
+                roleValue: [
+                  `The data provided serves as a fundamental resource, or "oil," that powers activities, insights, and value generation across all other roles with the possibility of accessing, combining, and comparing it with other sources in the data space use case.`,
+                ],
+              },
+            },
+          ],
         },
       },
       {
@@ -306,7 +388,48 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
             E.g.: Transaction, freemium, subscription model,
             `,
-          examples: [],
+          business: [
+            {
+              title: "Educational Institutions (end user)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "Get valuable insights and recommendations to futureproof individuals and organizations at the labour market.",
+                  "Access skills data for informed planning and decision-making. Utilize data-driven insights to shape effective policies and strategies.",
+                  "Trust and fairness: Data sharing is transparent and equitable.",
+                  "Access to valuable skills data sources, services resources to enhance your services. Bolster research capabilities and offer trend analysis to better serve your clients.",
+                  "Platform for skill-related data management.",
+                ],
+                roleValue: [
+                  "Organisational end users are the main clients of the data space use cases.",
+                ],
+              },
+            },
+            {
+              title: "Educational Institutions (data provider)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "A data provider joins the data space to find a use case that can leverage the provided data and attract diverse data users on its data set.",
+                ],
+                roleValue: [
+                  `The data provided serves as a fundamental resource, or "oil," that powers activities, insights, and value generation across all other roles with the possibility of accessing, combining, and comparing it with other sources in the data space use case.`,
+                ],
+              },
+            },
+          ],
         },
       },
       {
@@ -445,7 +568,30 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
           E.g.: Transaction, freemium, subscription model,
           `,
-          examples: [],
+          business: [
+            {
+              title: "Employment Agencies (end user)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "Get valuable insights and recommendations to futureproof individuals and organizations at the labour market.",
+                  "Access skills data for informed planning and decision-making. Utilize data-driven insights to shape effective policies and strategies.",
+                  "Trust and fairness: Data sharing is transparent and equitable.",
+                  "Access to valuable skills data sources, services resources to enhance your services. Bolster research capabilities and offer trend analysis to better serve your clients.",
+                  "Platform for skill-related data management.",
+                ],
+                roleValue: [
+                  "Organisational end users are the main clients of the data space use cases.",
+                ],
+              },
+            },
+          ],
         },
       },
       {
@@ -545,8 +691,28 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Edtechs & AI Providers (data and service providers)",
           definition: "E.g.: Transaction, freemium, subscription model, ",
-          examples: [
-            "Data based - pays only for tailored or custom data product. Example: SkillProfiX charges for the data included in the analytics towards the employers.",
+          business: [
+            {
+              title:
+                "Edtechs & AI Providers (service providers for organisation & individuals)",
+              definition:
+                "Offer better-personalised services due to better data access.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Data based - pays only for tailored or custom data product. Example: SkillProfiX charges for the data included in the analytics towards the employers.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "New customer acquisition, access to unique data sets, enhanced visibility",
+                  "Empower service providers to expand their business, improve their offerings, and establish a competitive advantage. The data space use case serves as both a marketplace and a marketing channel, extending their reach and bolstering credibility.",
+                ],
+                roleValue: [
+                  "For the data space use case, the inclusion of service providers specializing in areas like skills matching or analytics adds significant value by diversifying the range of services available to participants. These specialized services not only attract a broader audience but also encourage higher engagement within the data space use case. By integrating services that meet specific needs, such as analytics, the data space use case becomes more robust, versatile, and appealing, thereby fostering its overall growth and sustainability.",
+                ],
+              },
+            },
           ],
         },
       },
@@ -652,7 +818,28 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Infrastructure providers",
           definition: "E.g.: Transaction, freemium, subscription model, ",
-          examples: [],
+          business: [
+            {
+              title:
+                "Infrastructure providers (organisational & personal data intermediary)",
+              definition:
+                "Offer better-personalised services due to better data access.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Data based - pays only for tailored or custom data product. Example: SkillProfiX charges for the data included in the analytics towards the employers.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "All use cases need infrastructure services, joining use cases allows the data intermediaries to generate business.",
+                ],
+                roleValue: [
+                  "Data Intermediaries provide data space enabling services to use case participants (such as identity, authorisation management, interoperability, catalogue, matching). They allow the use case to easily share data while implementing the data space building blocks",
+                ],
+              },
+            },
+          ],
         },
       },
       {
@@ -734,10 +921,27 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Orchestrator",
           definition:
             "E.g.: Transaction (sell reports), Subscription (portal access), Freemium",
-          examples: [
-            "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
-            "Marketplace model - a marketplace provider typically charges participants on commission on transactions (either per number of transactions or per monetary value of transactions). Example: SkillsFast provides a qualified skills profile",
-            "Usage-based - pays for the usage of a software or data product instead of for its availability. Example: YourTraining pays SkillsFast a subscription according to the number of individual profile it receives.",
+          business: [
+            {
+              title: "Orchestrator",
+              definition:
+                "Organisation that organises operationally the data ecosystem and ensures its diffusion and commercialisation.",
+              examples: [
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Marketplace model - a marketplace provider typically charges participants on commission on transactions (either per number of transactions or per monetary value of transactions). Example: SkillsFast provides a qualified skills profile",
+                "Usage-based - pays for the usage of a software or data product instead of for its availability. Example: YourTraining pays SkillsFast a subscription according to the number of individual profile it receives.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "The orchestrator sets up the use case. He is serving the end users and need to combine providers in order to provide better value to end users, he can find and combine thanks to the data space.",
+                ],
+                roleValue: [
+                  "The orchestrator takes care of the business and governance operations of the data space use case.",
+                ],
+              },
+            },
           ],
         },
       },
@@ -827,7 +1031,48 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
           E.g.: Transaction, freemium, subscription model,
           `,
-          examples: [],
+          business: [
+            {
+              title: "Organisational & employers (end user)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "Get valuable insights and recommendations to futureproof individuals and organizations at the labour market.",
+                  "Access skills data for informed planning and decision-making. Utilize data-driven insights to shape effective policies and strategies.",
+                  "Trust and fairness: Data sharing is transparent and equitable.",
+                  "Access to valuable skills data sources, services resources to enhance your services. Bolster research capabilities and offer trend analysis to better serve your clients.",
+                  "Platform for skill-related data management.",
+                ],
+                roleValue: [
+                  "Organisational end users are the main clients of the data space use cases.",
+                ],
+              },
+            },
+            {
+              title: "Organisational & employers (data provider)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "A data provider joins the data space to find a use case that can leverage the provided data and attract diverse data users on its data set.",
+                ],
+                roleValue: [
+                  `The data provided serves as a fundamental resource, or "oil," that powers activities, insights, and value generation across all other roles with the possibility of accessing, combining, and comparing it with other sources in the data space use case.`,
+                ],
+              },
+            },
+          ],
         },
       },
       {
@@ -922,7 +1167,48 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
             E.g.: Transaction, freemium, subscription model,
             `,
-          examples: [],
+          business: [
+            {
+              title: "Learning & development units (end user)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "Get valuable insights and recommendations to futureproof individuals and organizations at the labour market.",
+                  "Access skills data for informed planning and decision-making. Utilize data-driven insights to shape effective policies and strategies.",
+                  "Trust and fairness: Data sharing is transparent and equitable.",
+                  "Access to valuable skills data sources, services resources to enhance your services. Bolster research capabilities and offer trend analysis to better serve your clients.",
+                  "Platform for skill-related data management.",
+                ],
+                roleValue: [
+                  "Organisational end users are the main clients of the data space use cases.",
+                ],
+              },
+            },
+            {
+              title: "Learning & development units (data provider)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "A data provider joins the data space to find a use case that can leverage the provided data and attract diverse data users on its data set.",
+                ],
+                roleValue: [
+                  `The data provided serves as a fundamental resource, or "oil," that powers activities, insights, and value generation across all other roles with the possibility of accessing, combining, and comparing it with other sources in the data space use case.`,
+                ],
+              },
+            },
+          ],
         },
       },
       {
@@ -1017,7 +1303,48 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
             E.g.: Transaction, freemium, subscription model,
             `,
-          examples: [],
+          business: [
+            {
+              title: "Educational & Training providers (end user)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "Get valuable insights and recommendations to futureproof individuals and organizations at the labour market.",
+                  "Access skills data for informed planning and decision-making. Utilize data-driven insights to shape effective policies and strategies.",
+                  "Trust and fairness: Data sharing is transparent and equitable.",
+                  "Access to valuable skills data sources, services resources to enhance your services. Bolster research capabilities and offer trend analysis to better serve your clients.",
+                  "Platform for skill-related data management.",
+                ],
+                roleValue: [
+                  "Organisational end users are the main clients of the data space use cases.",
+                ],
+              },
+            },
+            {
+              title: "Educational & Training providers (data provider)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "A data provider joins the data space to find a use case that can leverage the provided data and attract diverse data users on its data set.",
+                ],
+                roleValue: [
+                  `The data provided serves as a fundamental resource, or "oil," that powers activities, insights, and value generation across all other roles with the possibility of accessing, combining, and comparing it with other sources in the data space use case.`,
+                ],
+              },
+            },
+          ],
         },
       },
       {
@@ -1095,7 +1422,30 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
           E.g.: Transaction, freemium, subscription model,
           `,
-          examples: [],
+          business: [
+            {
+              title: "Public Institutions (end user)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "Get valuable insights and recommendations to futureproof individuals and organizations at the labour market.",
+                  "Access skills data for informed planning and decision-making. Utilize data-driven insights to shape effective policies and strategies.",
+                  "Trust and fairness: Data sharing is transparent and equitable.",
+                  "Access to valuable skills data sources, services resources to enhance your services. Bolster research capabilities and offer trend analysis to better serve your clients.",
+                  "Platform for skill-related data management.",
+                ],
+                roleValue: [
+                  "Organisational end users are the main clients of the data space use cases.",
+                ],
+              },
+            },
+          ],
         },
       },
       {
@@ -1263,7 +1613,48 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition: `Give data for the data space use case, get back services provided and pay for the services. <br/>
             E.g.: Transaction, freemium, subscription model,
             `,
-          examples: [],
+          business: [
+            {
+              title: "Observatories (end user)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "Get valuable insights and recommendations to futureproof individuals and organizations at the labour market.",
+                  "Access skills data for informed planning and decision-making. Utilize data-driven insights to shape effective policies and strategies.",
+                  "Trust and fairness: Data sharing is transparent and equitable.",
+                  "Access to valuable skills data sources, services resources to enhance your services. Bolster research capabilities and offer trend analysis to better serve your clients.",
+                  "Platform for skill-related data management.",
+                ],
+                roleValue: [
+                  "Organisational end users are the main clients of the data space use cases.",
+                ],
+              },
+            },
+            {
+              title: "Observatories (data provider)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "A data provider joins the data space to find a use case that can leverage the provided data and attract diverse data users on its data set.",
+                ],
+                roleValue: [
+                  `The data provided serves as a fundamental resource, or "oil," that powers activities, insights, and value generation across all other roles with the possibility of accessing, combining, and comparing it with other sources in the data space use case.`,
+                ],
+              },
+            },
+          ],
         },
       },
       {
@@ -1444,10 +1835,29 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Orchestrator: SkillsFast",
           definition:
             "E.g.: Transaction (sell reports), Subscription (portal access), Freemium",
-          examples: [
-            "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees",
-            "Marketplace model - a marketplace provider typically charges participants on commission on transactions (either per number of transactions or per monetary value of transactions). Example: SkillsFast provides a qualified skills profile marketplace for training catalogues such as YourTraining to access.",
-            "Usage-based - pays for the usage of a software or data product instead of for its availability. Example: YourTraining pays SkillsFast a subscription according to the number of individual profile it receives. ",
+          business: [
+            {
+              title: "Orchestrator: SkillsFast",
+              definition:
+                "Organisation that organises operationally the data ecosystem and ensures its diffusion and commercialisation.",
+              examples: [
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Marketplace model - a marketplace provider typically charges participants on commission on transactions (either per number of transactions or per monetary value of transactions). Example: SkillsFast provides a qualified skills profile",
+                "Usage-based - pays for the usage of a software or data product instead of for its availability. Example: YourTraining pays SkillsFast a subscription according to the number of individual profile it receives.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "The orchestrator sets up the use case. He is serving the end users and need to combine providers in order to provide better value to end users, he can find and combine thanks to the data space.",
+                  "SkillsFast as the orchestrator can combine SKillProfiX and SDAI to provide an augmented and powerful app to end users.",
+                ],
+                roleValue: [
+                  "The orchestrator takes care of the business and governance operations of the data space use case.",
+                  "SkillsFast commercialises EU-DUNE and brings more business to all the use case participants.",
+                ],
+              },
+            },
           ],
         },
       },
@@ -1541,8 +1951,31 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Service Providers: SkillProfiX, SDAI, SkillFast",
           definition: "E.g.: Transaction, freemium, subscription model.",
-          examples: [
-            "Data based - pays only for tailored or custom data product. Example: SkillProfiX charges for the data included in the analytics towards the employers.",
+          business: [
+            {
+              title:
+                "Service Providers: SkillProfiX, SDAI, SkillFast (organisational & personal data intermediary)",
+              definition:
+                "Offer better-personalised services due to better data access.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Data based - pays only for tailored or custom data product. Example: SkillProfiX charges for the data included in the analytics towards the employers.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "All use cases need infrastructure services, joining use cases allows the data intermediaries to generate business.",
+                  "EU-Dune needs a data intermediary to operate.",
+                  "SkillsFast, SDAI, SkillPRofiX, IntelliAITraining and all job boards and training catalogs pay a subscription to InfraTrust services.",
+                  "InfraTrust gets building blocks and certifications from Fire-X to operate a trusted data intermediary service.",
+                ],
+                roleValue: [
+                  "Data Intermediaries provide data space enabling services to use case participants (such as identity, authorisation management, interoperability, catalogue, matching). They allow the use case to easily share data while implementing the data space building blocks",
+                  "InfraTrust, Personal and Organisational Data Intermediary provides Personal and Organisational Data sharing services to ensure EU-Dune is compliant with all regulations and data can flow between all players, compliant with the rules set out by Fire-X.",
+                ],
+              },
+            },
           ],
         },
       },
@@ -1650,14 +2083,36 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title:
             "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool",
           definition: "E.g.: Transaction, freemium, subscription model, ",
-          examples: [
-            "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-            "Aggregation model - an aggregation of data products from multiple sources. Example: YourTraining aggregates data from multiple training organisations and sells it to SDAI.",
-            "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-            "Advertisement model - offers data products to consumers without payment (data product is sold for advertisement). Example: IntelliAITraining provides data about its training to be advertised on YourTraining. ",
-            "Availability based - charges users for the availability of the data product regardless of whether it is used or not. Example: SkillProfiX buys API access for JobRightNow, Jobijob and Jobo.",
-            "Performance-based - pays for the performance of the data product. Example: SkillProfiX pays for a platform access that will support peak times.",
-            "Value-based - pays for a value that could be financial gain, functional or even emotional outcome received. However, some value streams may not be directly chargeable or it's difficult to find applicable charging metrics. Example: IntelliAITraining pays to YourTraining a percentage on the trainings it sells thanks to its service. ",
+          business: [
+            {
+              title:
+                "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Aggregation model - an aggregation of data products from multiple sources. Example: YourTraining aggregates data from multiple training organisations and sells it to SDAI.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Advertisement model - offers data products to consumers without payment (data product is sold for advertisement). Example: IntelliAITraining provides data about its training to be advertised on YourTraining. ",
+                "Availability based - charges users for the availability of the data product regardless of whether it is used or not. Example: SkillProfiX buys API access for JobRightNow, Jobijob and Jobo.",
+                "Performance-based - pays for the performance of the data product. Example: SkillProfiX pays for a platform access that will support peak times.",
+                "Value-based - pays for a value that could be financial gain, functional or even emotional outcome received. However, some value streams may not be directly chargeable or it's difficult to find applicable charging metrics. Example: IntelliAITraining pays to YourTraining a percentage on the trainings it sells thanks to its service. ",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "Get valuable insights and recommendations to futureproof individuals and organizations at the labour market.",
+                  "Access skills data for informed planning and decision-making. Utilize data-driven insights to shape effective policies and strategies.",
+                  "Trust and fairness: Data sharing is transparent and equitable.",
+                  "Access to valuable skills data sources, services resources to enhance your services. Bolster research capabilities and offer trend analysis to better serve your clients.",
+                  "Platform for skill-related data management.",
+                  "Personal data providers: SkillProfiX, DigiFutUX, UXlife, UXschool,",
+                ],
+                roleValue: [
+                  "Organisational end users are the main clients of the data space use cases.",
+                  "DigiFutUX HR system (position, skills, etc), from her past employer (UXlife) and from her university (UXschool).",
+                ],
+              },
+            },
           ],
         },
       },
@@ -1757,14 +2212,36 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title:
             "Data Providers (Organisational): Jobo, JobRightNow and Jobijob",
           definition: "E.g.: Transaction, freemium, subscription model, ",
-          examples: [
-            "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-            "Aggregation model - an aggregation of data products from multiple sources. Example: YourTraining aggregates data from multiple training organisations and sells it to SDAI.",
-            "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-            "Advertisement model - offers data products to consumers without payment (data product is sold for advertisement). Example: IntelliAITraining provides data about its training to be advertised on YourTraining. ",
-            "Availability based - charges users for the availability of the data product regardless of whether it is used or not. Example: SkillProfiX buys API access for JobRightNow, Jobijob and Jobo.",
-            "Performance-based - pays for the performance of the data product. Example: SkillProfiX pays for a platform access that will support peak times.",
-            "Value-based - pays for a value that could be financial gain, functional or even emotional outcome received. However, some value streams may not be directly chargeable or it's difficult to find applicable charging metrics. Example: IntelliAITraining pays to YourTraining a percentage on the trainings it sells thanks to its service. ",
+          examples: [],
+          business: [
+            {
+              title:
+                "Data Providers (Organisational): Jobo, JobRightNow and Jobijob",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Aggregation model - an aggregation of data products from multiple sources. Example: YourTraining aggregates data from multiple training organisations and sells it to SDAI.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Advertisement model - offers data products to consumers without payment (data product is sold for advertisement). Example: IntelliAITraining provides data about its training to be advertised on YourTraining. ",
+                "Availability based - charges users for the availability of the data product regardless of whether it is used or not. Example: SkillProfiX buys API access for JobRightNow, Jobijob and Jobo.",
+                "Performance-based - pays for the performance of the data product. Example: SkillProfiX pays for a platform access that will support peak times.",
+                "Value-based - pays for a value that could be financial gain, functional or even emotional outcome received. However, some value streams may not be directly chargeable or it's difficult to find applicable charging metrics. Example: IntelliAITraining pays to YourTraining a percentage on the trainings it sells thanks to its service. ",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "A data provider joins the data space to find a use case that can leverage the provided data and attract diverse data users on its data set.",
+                  "Organisational data providers: JobRightNow, Jobijob and Jobo, NewJob, FindTraining, YourTraining, IntelliAITraining",
+                  "EU-DUNE is a service that needs, uses and leverages all data providers data for upskilling use case, for skills analysis and for job and training recommendations. Data providers get paid for their data. EU-DUNE is also a service that can scale their data for new users, enable new use case around the data and monetize it in different ways.",
+                ],
+                roleValue: [
+                  `The data provided serves as a fundamental resource, or "oil," that powers activities, insights, and value generation across all other roles with the possibility of accessing, combining, and comparing it with other sources in the data space use case.`,
+                  "jobs data; JobRightNow, Jobijob and Jobo, NewJob",
+                  "Training catalogues: FindTraining, YourTraining",
+                  "Trainings in LMS: IntelliAITraining",
+                ],
+              },
+            },
           ],
         },
       },
@@ -1936,7 +2413,55 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition: `Give data for the data space use case, get back services provided and pay for the services. <br />
             E.g.: Transaction, freemium, subscription model,
             `,
-          examples: [],
+          business: [
+            {
+              title: "Organisations: DigiFutUX, IntelliAITraining (end user)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "Get valuable insights and recommendations to futureproof individuals and organizations at the labour market.",
+                  "Access skills data for informed planning and decision-making. Utilize data-driven insights to shape effective policies and strategies.",
+                  "Trust and fairness: Data sharing is transparent and equitable.",
+                  "Access to valuable skills data sources, services resources to enhance your services. Bolster research capabilities and offer trend analysis to better serve your clients.",
+                  "Platform for skill-related data management.",
+                  "DigiFutUX: Get valuable insights and recommendations to futureproof their employees.",
+                  "IntelliAITraining: New leads and customer acquisition, access to data and services to provide better and more focused trainings and services, and enhanced visibility.",
+                ],
+                roleValue: [
+                  "Organisational end users are the main clients of the data space use cases.",
+                  "DigiFutUX serve as the primary client and financial contributor for all roles, particularly service providers.",
+                  "IntelliAITraining is a client for services and data providers, uses the system and pays for it. ",
+                ],
+              },
+            },
+            {
+              title:
+                "Organisations: DigiFutUX, IntelliAITraining (data provider)",
+              definition:
+                "Give data for the data space use case, get back services provided and pay for the services.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "A data provider joins the data space to find a use case that can leverage the provided data and attract diverse data users on its data set.",
+                  "EU-DUNE is a service that needs, uses and leverages all data providers data for upskilling use case, for skills analysis and for job and training recommendations. Data providers get paid for their data. EU-DUNE is also a service that can scale their data for new users, enable new use case around the data and monetize it in different ways.",
+                ],
+                roleValue: [
+                  `The data provided serves as a fundamental resource, or "oil," that powers activities, insights, and value generation across all other roles with the possibility of accessing, combining, and comparing it with other sources in the data space use case.`,
+                  "DigiFutUX HR system (position, skills, etc), from her past employer (UXlife) and from her university (UXschool).",
+                ],
+              },
+            },
+          ],
         },
       },
       {
@@ -2014,6 +2539,31 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition: `Non-profit organization and business model. At the beginning a public and private partnership comes of a great importance when guaranteeing the sufficient funds for the functioning of the skills data space.<br/><br/>
             Later different business models could be used to sustain itself.  
             `,
+          business: [
+            {
+              title: "Governance Authority (association): Fire-X",
+              definition: `Non-profit organization and business model. At the beginning a public and private partnership comes of a great importance when guaranteeing the sufficient funds for the functioning of the skills data space.<br/><br/>
+              Later different business models could be used to sustain itself.  
+              `,
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "Get valuable insights and recommendations to futureproof individuals and organizations at the labour market.",
+                  "Access skills data for informed planning and decision-making. Utilize data-driven insights to shape effective policies and strategies.",
+                  "Trust and fairness: Data sharing is transparent and equitable.",
+                  "Access to valuable skills data sources, services resources to enhance your services. Bolster research capabilities and offer trend analysis to better serve your clients.",
+                  "Platform for skill-related data management.",
+                ],
+                roleValue: [
+                  "Organisational end users are the main clients of the data space use cases.",
+                ],
+              },
+            },
+          ],
         },
       },
       {
@@ -2095,7 +2645,30 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Data Intermediary: InfraTrust",
           definition: "E.g.: Transaction, freemium, subscription model, ",
-          examples: [],
+          business: [
+            {
+              title: "Data Intermediary: InfraTrust",
+              definition:
+                "Offer better-personalised services due to better data access.",
+              examples: [
+                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
+                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+              ],
+              valuePropositions: {
+                dataSpace: [
+                  "All use cases need infrastructure services, joining use cases allows the data intermediaries to generate business.",
+                  "EU-Dune needs a data intermediary to operate.",
+
+                  "InfraTrust gets building blocks and certifications from Fire-X to operate a trusted data intermediary service.",
+                ],
+                roleValue: [
+                  "Data Intermediaries provide data space enabling services to use case participants (such as identity, authorisation management, interoperability, catalogue, matching). They allow the use case to easily share data while implementing the data space building blocks",
+                  "InfraTrust, Personal and Organisational Data Intermediary provides Personal and Organisational Data sharing services to ensure EU-Dune is compliant with all regulations and data can flow between all players, compliant with the rules set out by Fire-X.",
+                ],
+              },
+            },
+          ],
         },
       },
       {
