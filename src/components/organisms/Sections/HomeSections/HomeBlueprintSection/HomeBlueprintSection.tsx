@@ -24,10 +24,10 @@ export const HomeBlueprintSection = () => {
             control of their data and share it in a trustworthy way
           </p>
           <p>
-            The Blueprint will provide the <span>"building blocks"</span>{" "}
-            (democratically governed open-source code) that will ensure that any
-            organisation can be part of the data space ecosystems without being
-            locked into any particular infrastructure provider.
+            The Blueprint will provide guidelines, governance and business
+            models as well as the <span>"building blocks"</span> (democratically
+            governed open-source code) that will help organisations put in place
+            the complex multi stakeholder collaboration the data space needs.
           </p>
 
           <Button icon="plus" variantSvgColor="secondary">

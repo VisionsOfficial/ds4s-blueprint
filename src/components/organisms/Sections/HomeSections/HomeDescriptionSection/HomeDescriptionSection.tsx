@@ -21,8 +21,9 @@ export const HomeDescriptionSection = () => {
           As an important outcome of the DS4Skills project, the Data Space for
           Skills Blueprint{" "}
           <span>
-            offers concrete building blocks and illustrated guidelines to equip
-            organisations in building data space ecosystems
+            offers concrete building blocks, governance and business models as
+            well illustrated guidelines to equip organisations in building the
+            skills data space
           </span>{" "}
           that can offer practical benefits to citizens and businesses.
         </p>
