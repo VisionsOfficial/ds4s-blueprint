@@ -9,63 +9,8 @@
     text-align: center;
   }
 
-  .carousel {
-    background-color: $grey;
-    border-radius: $large;
-    @include flexColumn();
-    width: 100%;
-    overflow: hidden;
-    padding: $medium 0;
-
-    .useCase {
-      border-top: 2px solid darken($grey, 20%);
-      padding: $small $medium;
-      @include flexColumn(stretch);
-      gap: $small;
-      h3 {
-        font-weight: bold;
-        text-transform: uppercase;
-        align-self: center;
-      }
-
-      ul {
-        list-style: inside;
-        list-style-type: disc;
-        padding-left: 1.3rem;
-        li {
-          font-size: 1.2rem;
-        }
-
-        ul {
-          list-style-type: circle;
-
-          ul {
-            list-style-type: square;
-          }
-        }
-      }
-      span {
-        font-weight: bold;
-      }
-    }
-  }
-
-  .indicator {
-    width: 100%;
-    @include flexRow();
-    gap: $small;
-    margin-top: $medium;
-
-    span {
-      width: 15px;
-      height: 15px;
-      aspect-ratio: 1/1;
-      border-radius: 50%;
-      background-color: $grey;
-    }
-
-    .activeIndicator {
-      background: darken($grey, 20%);
-    }
+  .btnReadMore {
+    width: max-content;
+    margin: $small auto 0 auto;
   }
 }

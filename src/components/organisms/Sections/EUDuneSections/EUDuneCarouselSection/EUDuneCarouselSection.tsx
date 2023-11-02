@@ -2,10 +2,11 @@ import { useState } from "react";
 import { APP_IMAGES } from "../../../../../utils/appImages";
 import { SectionContainer } from "../../../../atoms/Containers/SectionContainer/SectionContainer";
 import Styles from "./EUDuneCarouselSection.module.scss";
-import { ImageCarousel } from "../../../../molecules/Carousels/ImageCarousel/ImageCarousel";
 import { SchemaUseCase } from "../../../../../types";
 import { SlideTopContainer } from "../../../../atoms/Animations/SlideTopContainer/SlideTopContainer";
 import { useInView } from "react-intersection-observer";
+import { Carousel } from "../../../../molecules/Carousels/Carousel/Carousel";
+import { Button } from "../../../../atoms/Buttons/Button/Button";
 
 const CONTENT_CAROUSEL: SchemaUseCase[] = [
   "business model radar",
@@ -13,7 +14,7 @@ const CONTENT_CAROUSEL: SchemaUseCase[] = [
   "data value chain tracker BB",
 ];
 
-const CONTENT_IMAGES_CAROUSEL = [
+const CONTENT_IMAGES_RADAR_CAROUSEL = [
   APP_IMAGES.image.schema.schemaRadarOne,
   APP_IMAGES.image.schema.schemaRadarTwo,
   APP_IMAGES.image.schema.schemaRadarThree,
@@ -22,6 +23,9 @@ const CONTENT_IMAGES_CAROUSEL = [
   APP_IMAGES.image.schema.schemaRadarSix,
   APP_IMAGES.image.schema.schemaRadarSeven,
   APP_IMAGES.image.schema.schemaRadarEight,
+];
+
+const CONTENT_IMAGES_CAROUSEL = [
   APP_IMAGES.image.schema.schemaChainTracker,
   APP_IMAGES.image.schema.schemaLegendChainTracker,
   APP_IMAGES.image.schema.schemaChainTrackBB,
@@ -31,10 +35,11 @@ export const EUDuneCarouselSection = () => {
   const [ref, InView] = useInView({
     triggerOnce: true,
   });
-  const [currentCarouselItem, setCurrentCarouselItem] = useState<number>(0);
+  const [currentChainTrackerIndicator, setCurrentChainTrackerIndicator] =
+    useState<number>(0);
 
   const updateIndicator = (index: number) => {
-    setCurrentCarouselItem(index);
+    setCurrentChainTrackerIndicator(index);
   };
 
   const setContent = (name: SchemaUseCase) => {
@@ -74,6 +79,14 @@ export const EUDuneCarouselSection = () => {
                 engagement in this collaborative initiative.
               </li>
             </ul>
+
+            <Button
+              className={Styles.btnReadMore}
+              variantBgColor="primary"
+              icon="plus"
+            >
+              Read more
+            </Button>
           </>
         );
       case "data value chain tracker":
@@ -113,7 +126,6 @@ export const EUDuneCarouselSection = () => {
               for data, insights, services, or data space enabling services. To
               read the flow in this diagram:
             </p>
-            <p>To read the flow in this diagram:</p>
             <ul>
               <li>Focus on monetary value</li>
               <li>
@@ -170,6 +182,13 @@ export const EUDuneCarouselSection = () => {
                 </ul>
               </li>
             </ul>
+            <Button
+              className={Styles.btnReadMore}
+              variantBgColor="primary"
+              icon="plus"
+            >
+              Read more
+            </Button>
           </>
         );
       case "data value chain tracker BB":
@@ -244,43 +263,13 @@ export const EUDuneCarouselSection = () => {
                 </ul>
               </li>
             </ul>
-          </>
-        );
-
-      default:
-        return null;
-    }
-  };
-
-  const updateContentByIndex = () => {
-    switch (currentCarouselItem) {
-      case 0:
-      case 1:
-      case 2:
-      case 3:
-      case 4:
-      case 5:
-      case 6:
-      case 7:
-        return (
-          <>
-            <h3>{CONTENT_CAROUSEL[0]}</h3>
-            {setContent(CONTENT_CAROUSEL[0])}
-          </>
-        );
-      case 8:
-      case 9:
-        return (
-          <>
-            <h3>{CONTENT_CAROUSEL[1]}</h3>
-            {setContent(CONTENT_CAROUSEL[1])}
-          </>
-        );
-      case 10:
-        return (
-          <>
-            <h3>{CONTENT_CAROUSEL[2]}</h3>
-            {setContent(CONTENT_CAROUSEL[2])}
+            <Button
+              className={Styles.btnReadMore}
+              variantBgColor="primary"
+              icon="plus"
+            >
+              Read more
+            </Button>
           </>
         );
 
@@ -297,7 +286,6 @@ export const EUDuneCarouselSection = () => {
         InView={InView}
       >
         <header>
-          {/* <h2>Check other examples</h2> */}
           <p>
             The following tools: Business model radar, Value tracker, and Value
             sharing model are custom-tailored to address the unique challenges
@@ -311,25 +299,26 @@ export const EUDuneCarouselSection = () => {
             translates into monetary value.
           </p>
         </header>
-        <div>
-          <div className={Styles.carousel}>
-            <ImageCarousel
-              updateIndicator={updateIndicator}
-              images={CONTENT_IMAGES_CAROUSEL}
-            />
-            <div className={Styles.useCase}>{updateContentByIndex()}</div>
-          </div>
-          <div className={Styles.indicator}>
-            {[...Array(CONTENT_IMAGES_CAROUSEL.length)].map((_, index) => (
-              <span
-                key={"indicator" + index}
-                className={
-                  currentCarouselItem === index ? Styles.activeIndicator : ""
-                }
-              ></span>
-            ))}
-          </div>
-        </div>
+        <Carousel
+          images={CONTENT_IMAGES_RADAR_CAROUSEL}
+          titleContent="business model radar"
+          content={setContent(CONTENT_CAROUSEL[0])}
+        />
+
+        <Carousel
+          images={CONTENT_IMAGES_CAROUSEL}
+          titleContent={
+            currentChainTrackerIndicator === 2
+              ? "data value chain tracker BB"
+              : "data value chain tracker"
+          }
+          content={
+            currentChainTrackerIndicator === 2
+              ? setContent(CONTENT_CAROUSEL[2])
+              : setContent(CONTENT_CAROUSEL[1])
+          }
+          updateParentIndicator={updateIndicator}
+        />
       </SlideTopContainer>
     </SectionContainer>
   );
