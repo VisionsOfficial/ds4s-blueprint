@@ -1,0 +1,13 @@
+.GovernanceDataSpaceInteractionModel {
+  padding-bottom: 0;
+  min-height: auto;
+  ul {
+    list-style: inside;
+    font-size: 1.3rem;
+    ul {
+      list-style: inside;
+      padding-left: 20px;
+      list-style-type: circle;
+    }
+  }
+}

@@ -3,15 +3,20 @@
 .GovernancePage {
   .governances {
     @include flexColumn(stretch);
-    gap: 80px;
+    gap: $large;
 
-    div {
-      transition: all 0.3s ease-out;
-    }
+    &Content {
+      @include flexColumn(stretch);
+      gap: 80px;
 
-    h3 {
-      font-size: 1.7rem;
-      margin-bottom: $small;
+      div {
+        transition: all 0.3s ease-out;
+      }
+
+      h3 {
+        font-size: 1.7rem;
+        margin-bottom: $small;
+      }
     }
   }
 }

@@ -2,6 +2,7 @@ import { SlideTopContainer } from "../../components/atoms/Animations/SlideTopCon
 import { SectionContainer } from "../../components/atoms/Containers/SectionContainer/SectionContainer";
 import { GovernanceBanner } from "../../components/molecules/Banners/GovernanceBanner/GovernanceBanner";
 import { NestedDropdown } from "../../components/molecules/Dropdowns/NestedDropdown/NestedDropdown";
+import { GovernanceDataSpaceInteractionModel } from "../../components/organisms/Sections/GovernanceSections/GovernanceDataSpaceInteractionModel/GovernanceDataSpaceInteractionModel";
 import { GovernanceCategories } from "../../types";
 import Styles from "./GovernancePage.module.scss";
 import { useInView } from "react-intersection-observer";
@@ -47,18 +48,23 @@ export const GovernancePage = () => {
     <main className={Styles.GovernancePage}>
       <GovernanceBanner />
 
+      <GovernanceDataSpaceInteractionModel />
+
       <SectionContainer variantColor="white">
         <SlideTopContainer
           ref={ref}
           InView={InView}
           className={Styles.governances}
         >
-          {CONTENT_DROPDOWN.map((el, index) => (
-            <div key={el + index}>
-              <h3>{setTitle(el)}</h3>
-              <NestedDropdown category={el} currentIndex={index} />
-            </div>
-          ))}
+          <h2>The different levels of the data space</h2>
+          <div className={Styles.governancesContent}>
+            {CONTENT_DROPDOWN.map((el, index) => (
+              <div key={el + index}>
+                <h3>{setTitle(el)}</h3>
+                <NestedDropdown category={el} currentIndex={index} />
+              </div>
+            ))}
+          </div>
         </SlideTopContainer>
       </SectionContainer>
     </main>
