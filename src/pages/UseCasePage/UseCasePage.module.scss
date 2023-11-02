@@ -1,3 +1,9 @@
-.UseCasePage {
+@use "../../shared/styles/color" as *;
 
+.UseCasePage {
+  section {
+    &:last-child {
+      background-color: $grey;
+    }
+  }
 }

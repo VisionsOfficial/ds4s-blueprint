@@ -9,7 +9,7 @@
   min-height: 250px;
   width: 100%;
   @include flexColumn();
-  gap: $medium;
+  gap: 0;
   transition: all 0.25s ease-in-out;
 
   h3 {
@@ -23,17 +23,20 @@
     padding: 0;
     .inner {
       overflow: hidden;
+      z-index: 2;
 
-      button {
-        border-top: 2px solid $white;
-        text-align: start;
-        width: 100%;
+      .btnReadMore {
+        margin: $medium auto 0 auto;
+        color: $white;
+        z-index: 5;
       }
     }
   }
 }
 
 .isOpen {
+  gap: $medium;
+
   h3 {
     transform: translateX(0);
   }

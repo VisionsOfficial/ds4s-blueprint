@@ -3,6 +3,7 @@ import { UseCaseBanner } from "../../components/molecules/Banners/UseCaseBanner/
 import { useParams } from "react-router-dom";
 import { UseCaseDiscoverSection } from "../../components/organisms/Sections/UseCaseSections/UseCaseDiscoverSection/UseCaseDiscoverSection";
 import { UseCaseStakeholderSection } from "../../components/organisms/Sections/UseCaseSections/UseCaseStakeholderSection/UseCaseStakeholderSection";
+import { EUDuneUXSection } from "../../components/organisms/Sections/EUDuneSections/EUDuneUXSection/EUDuneUXSection";
 
 export const UseCasePage = () => {
   const { useCase } = useParams();
@@ -14,6 +15,7 @@ export const UseCasePage = () => {
       <UseCaseBanner useCase={useCase} />
       <UseCaseStakeholderSection useCase={useCase} />
       <UseCaseDiscoverSection />
+      <EUDuneUXSection />
     </main>
   );
 };

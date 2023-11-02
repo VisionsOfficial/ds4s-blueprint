@@ -26,6 +26,7 @@ type BannerContent = {
   icon: string;
   title: "1) MATCH" | "2) FORECAST";
   description: string;
+  endDescription: string;
   mainValue: string[];
 };
 
@@ -63,6 +64,8 @@ export const UseCaseBanner = ({
             "Efficiency Boost: Streamlines the recruitment and training process, saving time and resources for both employers and job seekers.",
             "Skill Development: Highlights areas for personal upskilling, leading to continuous professional growth and meeting evolving market demands.",
           ],
+          endDescription:
+            "To put into place such a use case, different stakeholders needs to interact and each have different roles and incentives. You can explore those for each:",
         });
         break;
       case "forecast":
@@ -81,6 +84,8 @@ export const UseCaseBanner = ({
             "Strategic Decision-Making: Provides businesses with valuable insights to align their talent acquisition and development strategies with future demands.",
             "Empowered Career Planning: Equips individuals with foresight on emerging skills, enabling them to remain competitive and relevant in their professions.",
           ],
+          endDescription:
+            "To put into place such a use case, different stakeholders needs to interact and each have different roles and incentives. You can explore those for each:",
         });
         break;
 
@@ -152,6 +157,7 @@ export const UseCaseBanner = ({
             ))}
           </ul>
         )}
+        <p className={Styles.endDescription}>{contentBanner?.endDescription}</p>
       </SlideTopContainer>
     </SectionContainer>
   );
