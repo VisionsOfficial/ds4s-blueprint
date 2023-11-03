@@ -34,7 +34,7 @@ export const GovernanceDataSpaceInteractionModel = () => {
         </li>
         <li>
           Data Space participants and data intermediaries can be part of the
-          DSGA to decide on: which building blocks to develop, what
+          Data Space Governance Authority (DSGA) to decide on: which building blocks to develop, what
           certification criteria, etc.
         </li>
       </ul>

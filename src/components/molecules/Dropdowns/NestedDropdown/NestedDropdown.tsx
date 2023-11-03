@@ -79,7 +79,7 @@ export const NestedDropdown = ({
       case "Standards":
         setCurrentCategoryContent({
           dataSpace:
-            "DSGA prescribes the usage of a minimal set of standards essential for the functioning of the dataspace. It may also propose a list of optional standards that may facilitate interoperability of the dataspaces. It bases its decision/choice on sector-specific standards and DSSC for enabling interoperability among data spaces and usage of generic building blocks.",
+            "Data Space Governance Authority (DSGA) prescribes the usage of a minimal set of standards essential for the functioning of the dataspace. It may also propose a list of optional standards that may facilitate interoperability of the dataspaces. It bases its decision/choice on sector-specific standards and DSSC for enabling interoperability among data spaces and usage of generic building blocks.",
           ecosystem:
             "On this level the selection of additional standards relevant for the Data space use case is conducted. Depending on the data space use case and its specific use cases, the applicable sectorial standards will vary. Furthermore, the guidelines, best practices, and examples relevant for the data space use case are set. On this level the on-boarding of new participants is carried out and a critical mass of users is achieved. Furthermore, a roadmap for the implementation of missing technical components could be proposed at this decision level (e. g., data space connectors supporting specific legacy systems).",
           participantLevel:
@@ -134,7 +134,7 @@ export const NestedDropdown = ({
           ecosystem:
             "Defines technical and organisational aspects for data policy enforcement and ensures compliance with those policies. Technical aspects can include access control policies, implementation of technical controls, encryption and data integrity checks. Organisational aspects can include formal data governance structures, administrative control and data protection policies. It can also define some general rules on data policies, like which participant roles are allowed to access specific data types",
           participantLevel:
-            "Defines policies for their own data products based on general rules set by the DSGA. It also adheres to policies of other participants when using their data products. Special care must be taken in usage policies for derived products.",
+            "Defines policies for their own data products based on general rules set by the Data Space Governance Authority (DSGA). It also adheres to policies of other participants when using their data products. Special care must be taken in usage policies for derived products.",
         });
         break;
       case "Building blocks":
