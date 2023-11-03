@@ -99,7 +99,7 @@ export const StakeholderContentSection = ({
       <div className={Styles.cards}>{setCards()}</div>
 
       <Button
-        icon="plus"
+        icon="arrowRight"
         variantSvgColor={currentColor}
         variantBgColor={currentColor}
       >

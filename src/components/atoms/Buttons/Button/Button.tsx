@@ -12,7 +12,13 @@ type ButtonProps = React.DetailedHTMLProps<
   className?: string;
   variantBgColor?: ColorVariant;
   variantSvgColor?: ColorVariant;
-  icon?: "plus" | "arrowLeft" | "arrowRight" | "plusSquare";
+  icon?:
+    | "plus"
+    | "arrowLeft"
+    | "arrowRight"
+    | "plusSquare"
+    | "arrowDown"
+    | "chevronDown";
   iconPosition?: "prev" | "next";
   animation?: "opacity";
 };
@@ -124,7 +130,7 @@ export const Button = (props: PropsWithChildren<ButtonProps>) => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="4"
+            strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
             className={setSvgColor()}
@@ -142,13 +148,49 @@ export const Button = (props: PropsWithChildren<ButtonProps>) => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="4"
+            strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
             className={setSvgColor()}
           >
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        );
+      case "arrowDown":
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={setSvgColor()}
+            style={{ padding: 2 }}
+          >
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <polyline points="19 12 12 19 5 12"></polyline>
+          </svg>
+        );
+      case "chevronDown":
+        return (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={setSvgColor()}
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
         );
       case "plusSquare":

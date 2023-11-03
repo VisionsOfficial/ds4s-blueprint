@@ -33,7 +33,7 @@ export const UXCard = ({ ux }: PropsWithChildren<UXCardProps>) => {
             className={Styles.btnReadMore}
             variantBgColor="hightLightPrimary"
             variantSvgColor="hightLightPrimary"
-            icon="plus"
+            icon="arrowRight"
             onClick={(e) => {
               e.stopPropagation();
             }}

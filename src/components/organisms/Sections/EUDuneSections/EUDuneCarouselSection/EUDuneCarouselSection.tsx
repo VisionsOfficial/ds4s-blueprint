@@ -83,7 +83,7 @@ export const EUDuneCarouselSection = () => {
             <Button
               className={Styles.btnReadMore}
               variantBgColor="primary"
-              icon="plus"
+              icon="arrowRight"
             >
               Read more
             </Button>
@@ -185,7 +185,7 @@ export const EUDuneCarouselSection = () => {
             <Button
               className={Styles.btnReadMore}
               variantBgColor="primary"
-              icon="plus"
+              icon="arrowRight"
             >
               Read more
             </Button>

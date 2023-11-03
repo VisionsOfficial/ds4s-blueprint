@@ -136,7 +136,7 @@ export const ExploreCard = ({
         variantBgColor="transparent"
         className={setMainButton()}
         variantSvgColor={variant === "discover" ? "white" : setSvgColor()}
-        icon={variant === "discover" ? "plusSquare" : "plus"}
+        icon="chevronDown"
         onClick={() => {
           setActiveWrapper((prev) => !prev);
         }}
@@ -151,7 +151,7 @@ export const ExploreCard = ({
             <Button
               key={el.linkName + index}
               variantBgColor="transparent"
-              icon={variant === "discover" ? "plusSquare" : "plus"}
+              icon="arrowRight"
               variantSvgColor={variant === "discover" ? "white" : setSvgColor()}
               onClick={() => {
                 navigate(el.url);

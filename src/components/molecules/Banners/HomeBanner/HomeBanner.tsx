@@ -19,7 +19,7 @@ export const HomeBanner = () => {
       >
         <div className={Styles.description}>
           <h1>Discover the Data Space for Skills Blueprint</h1>
-          <Button icon="plus" variantSvgColor="secondary">
+          <Button icon="arrowRight" variantSvgColor="secondary">
             Read the full document
           </Button>
         </div>

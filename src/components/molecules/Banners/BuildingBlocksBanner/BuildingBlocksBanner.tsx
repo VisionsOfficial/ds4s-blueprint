@@ -32,7 +32,7 @@ export const BuildingBlocksBanner = () => {
             blocks.
           </p>
         </header>
-        <Button icon="plus" variantSvgColor="secondary">
+        <Button icon="arrowRight" variantSvgColor="secondary">
           Read the full document
         </Button>
       </SlideTopContainer>

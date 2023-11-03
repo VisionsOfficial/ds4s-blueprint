@@ -27,7 +27,7 @@ export const TechnicalTrackGovernanceContent = ({
         />
       </div>
 
-      <Button className={Styles.btn} variantBgColor="primary" icon="plus">
+      <Button className={Styles.btn} variantBgColor="primary" icon="arrowRight">
         Read the full document
       </Button>
     </SectionContainer>

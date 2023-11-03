@@ -30,7 +30,7 @@ export const HomeBlueprintSection = () => {
             the complex multi stakeholder collaboration the data space needs.
           </p>
 
-          <Button icon="plus" variantSvgColor="secondary">
+          <Button icon="arrowRight" variantSvgColor="secondary">
             Read the full document
           </Button>
         </div>
