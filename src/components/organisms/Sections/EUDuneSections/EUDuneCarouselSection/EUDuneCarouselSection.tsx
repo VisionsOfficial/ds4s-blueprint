@@ -172,7 +172,7 @@ export const EUDuneCarouselSection = () => {
                         Blue line: Represents payments for data space enabling
                         services. This could include services related to data
                         storage, access, or management. Or denotes payments made
-                        to DSGA for their services. DSGA plays a crucial role in
+                        to Data Space Governance Authority (DSGA) for their services. DSGA plays a crucial role in
                         overseeing and governing the data space, and
                         participants may pay them for their regulatory or
                         governance services.
