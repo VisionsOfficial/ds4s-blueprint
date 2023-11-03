@@ -26,7 +26,6 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           definition: "End users as clients don't have business models",
           examples: [
             "Freemium model - free data products with limited features and charges users a premium for additional features.",
-            "Matilda will have basic functions and some of trainings available for free.",
           ],
         },
       },
@@ -123,9 +122,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features..",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -145,9 +144,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -258,9 +257,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -280,9 +279,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -394,9 +393,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -416,9 +415,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -574,9 +573,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -698,10 +697,10 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Offer better-personalised services due to better data access.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
-                "Data based - pays only for tailored or custom data product. Example: SkillProfiX charges for the data included in the analytics towards the employers.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
+                "Data based - pays only for tailored or custom data or product.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -825,10 +824,10 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Offer better-personalised services due to better data access.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
-                "Data based - pays only for tailored or custom data product. Example: SkillProfiX charges for the data included in the analytics towards the employers.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
+                "Data based - pays only for tailored or custom data or product.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -927,11 +926,11 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Organisation that organises operationally the data ecosystem and ensures its diffusion and commercialisation.",
               examples: [
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
-                "Marketplace model - a marketplace provider typically charges participants on commission on transactions (either per number of transactions or per monetary value of transactions). Example: SkillsFast provides a qualified skills profile",
-                "Usage-based - pays for the usage of a software or data product instead of for its availability. Example: YourTraining pays SkillsFast a subscription according to the number of individual profile it receives.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
+                "Marketplace model - a marketplace provider typically charges participants on commission on transactions (either per number of transactions or per monetary value of transactions).",
+                "Usage-based - pays for the usage of a software or data or product instead of for its availability.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Transaction model - one-off fee for having access to data or product.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -1037,9 +1036,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -1059,9 +1058,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -1173,9 +1172,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -1195,9 +1194,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -1309,9 +1308,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -1331,9 +1330,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -1428,9 +1427,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -1619,9 +1618,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -1641,9 +1640,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
-                "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
+                "Transaction model - one-off fee for having access to data or product.",
+                "Freemium model - free data products with limited features and charges users a premium for additional features.",
+                "Subscription model - a recurring subscription revenue for access to data products.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -1843,9 +1842,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               examples: [
                 "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
                 "Marketplace model - a marketplace provider typically charges participants on commission on transactions (either per number of transactions or per monetary value of transactions). Example: SkillsFast provides a qualified skills profile",
-                "Usage-based - pays for the usage of a software or data product instead of for its availability. Example: YourTraining pays SkillsFast a subscription according to the number of individual profile it receives.",
+                "Usage-based - pays for the usage of a software or data or product instead of for its availability. Example: YourTraining pays SkillsFast a subscription according to the number of individual profile it receives.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -1958,10 +1957,10 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Offer better-personalised services due to better data access.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
                 "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
-                "Data based - pays only for tailored or custom data product. Example: SkillProfiX charges for the data included in the analytics towards the employers.",
+                "Data based - pays only for tailored or custom data or product. Example: SkillProfiX charges for the data included in the analytics towards the employers.",
               ],
               valuePropositions: {
                 dataSpace: [
@@ -2090,12 +2089,12 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Aggregation model - an aggregation of data products from multiple sources. Example: YourTraining aggregates data from multiple training organisations and sells it to SDAI.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Advertisement model - offers data products to consumers without payment (data product is sold for advertisement). Example: IntelliAITraining provides data about its training to be advertised on YourTraining. ",
-                "Availability based - charges users for the availability of the data product regardless of whether it is used or not. Example: SkillProfiX buys API access for JobRightNow, Jobijob and Jobo.",
-                "Performance-based - pays for the performance of the data product. Example: SkillProfiX pays for a platform access that will support peak times.",
+                "Advertisement model - offers data products to consumers without payment (data or product is sold for advertisement). Example: IntelliAITraining provides data about its training to be advertised on YourTraining. ",
+                "Availability based - charges users for the availability of the data or product regardless of whether it is used or not. Example: SkillProfiX buys API access for JobRightNow, Jobijob and Jobo.",
+                "Performance-based - pays for the performance of the data or product. Example: SkillProfiX pays for a platform access that will support peak times.",
                 "Value-based - pays for a value that could be financial gain, functional or even emotional outcome received. However, some value streams may not be directly chargeable or it's difficult to find applicable charging metrics. Example: IntelliAITraining pays to YourTraining a percentage on the trainings it sells thanks to its service. ",
               ],
               valuePropositions: {
@@ -2220,12 +2219,12 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Aggregation model - an aggregation of data products from multiple sources. Example: YourTraining aggregates data from multiple training organisations and sells it to SDAI.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
-                "Advertisement model - offers data products to consumers without payment (data product is sold for advertisement). Example: IntelliAITraining provides data about its training to be advertised on YourTraining. ",
-                "Availability based - charges users for the availability of the data product regardless of whether it is used or not. Example: SkillProfiX buys API access for JobRightNow, Jobijob and Jobo.",
-                "Performance-based - pays for the performance of the data product. Example: SkillProfiX pays for a platform access that will support peak times.",
+                "Advertisement model - offers data products to consumers without payment (data or product is sold for advertisement). Example: IntelliAITraining provides data about its training to be advertised on YourTraining. ",
+                "Availability based - charges users for the availability of the data or product regardless of whether it is used or not. Example: SkillProfiX buys API access for JobRightNow, Jobijob and Jobo.",
+                "Performance-based - pays for the performance of the data or product. Example: SkillProfiX pays for a platform access that will support peak times.",
                 "Value-based - pays for a value that could be financial gain, functional or even emotional outcome received. However, some value streams may not be directly chargeable or it's difficult to find applicable charging metrics. Example: IntelliAITraining pays to YourTraining a percentage on the trainings it sells thanks to its service. ",
               ],
               valuePropositions: {
@@ -2419,7 +2418,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
                 "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
               ],
@@ -2446,7 +2445,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
                 "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
               ],
@@ -2546,7 +2545,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               Later different business models could be used to sustain itself.  
               `,
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
                 "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
               ],
@@ -2651,7 +2650,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition:
                 "Offer better-personalised services due to better data access.",
               examples: [
-                "Transaction model - one-off fee for having access to data product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
+                "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
                 "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
               ],

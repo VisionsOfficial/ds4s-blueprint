@@ -14,12 +14,12 @@ type StakeholderDocumentationByCategoryCardProps = {
   title:
     | "Benefits"
     | "Costs & Risks"
-    | "Examples"
+    | "Examples of business models the stakeholder can apply to provide that value"
     | "Obligations"
     | "Second Examples"
     | "Building Blocks"
-    | "Data space use case’s value proposition for the Role"
-    | "Role’s value proposition for other data space use case stakeholders";
+    | "What the stakeholder gets out of the data space use case"
+    | "What the stakeholder brings to the data space use case";
   stakeholder: Stakeholder;
   category: StakeholderCategories;
   currentColor: ColorVariant;
@@ -58,7 +58,7 @@ export const StakeholderDocumentationByCategoryCard = ({
                 </p>
               ));
             }
-          case "Examples":
+          case "Examples of business models the stakeholder can apply to provide that value":
             if (searchLocation) {
               if (!el.content.business) return;
               return el.content.business[
@@ -128,7 +128,7 @@ export const StakeholderDocumentationByCategoryCard = ({
                 {bbs.name}
               </p>
             ));
-          case "Data space use case’s value proposition for the Role":
+          case "What the stakeholder gets out of the data space use case":
             if (searchLocation) {
               if (!el.content.business) return;
 
@@ -159,7 +159,7 @@ export const StakeholderDocumentationByCategoryCard = ({
                 </p>
               );
             }
-          case "Role’s value proposition for other data space use case stakeholders":
+          case "What the stakeholder brings to the data space use case":
             if (searchLocation) {
               if (!el.content.business) return;
 
