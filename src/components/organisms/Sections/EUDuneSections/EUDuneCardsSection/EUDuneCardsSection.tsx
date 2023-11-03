@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { EUDuneCategoryCard } from "../../../../../types";
 import { SectionContainer } from "../../../../atoms/Containers/SectionContainer/SectionContainer";
 import { EUDuneCard } from "../../../../molecules/Cards/EUDuneCard/EUDuneCard";
@@ -34,22 +33,6 @@ export const EUDuneCardsSection = () => {
           }`}
         />
       ))}
-      <div className={Styles.end}>
-        <p>
-          <span>The end.</span>
-          <br />
-          Want to know how we can make Matilda’s experience available for
-          everyone?{" "}
-          <Link
-            to="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "underline" }}
-          >
-            Learn more
-          </Link>
-        </p>
-      </div>
     </SectionContainer>
   );
 };
