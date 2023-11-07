@@ -102,6 +102,9 @@ export type TechnicalTrackGovernanceCategory =
 export type TechnicalTrackGovernance = {
   title: TechnicalTrackGovernanceCategory;
   description: string;
+  wiki: {
+    link: string;
+  };
   functionalities: {
     desctipion: string;
     functions: {
@@ -122,6 +125,9 @@ export type TechnicalTrackGovernance = {
 
 export type UXInstruction = {
   title: "Accessibility" | "Trust" | "Holistic UX Approach";
+  wiki: {
+    link: string;
+  };
   descriptions: {
     short?: string;
     long: string;
@@ -149,14 +155,17 @@ export type CategoriesContentStakeholder = {
   name: StakeholderCategories;
   content: {
     title: string;
+    wiki?: string;
     governance?: {
       title: string;
       definition: string;
       obligations?: string[];
+      wiki?: string;
     }[];
     business?: {
       title: string;
       definition: string;
+      wiki?: string;
       examples?: string[];
       valuePropositions?: {
         dataSpace: string[];

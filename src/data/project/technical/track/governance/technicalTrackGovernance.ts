@@ -5,6 +5,9 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     title: "Data Models & Formats",
     description:
       "“This building block will provide guidelines and tools for data space initiatives to publish, create, and maintain shared domain specific vocabularies.” (as defined in the DSSC blueprint)",
+    wiki: {
+      link: "https://www.skillsdataspace.eu/blueprint/dssc-technical-building-blocks/#1-toc-title",
+    },
     functionalities: [
       {
         desctipion:
@@ -121,6 +124,9 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     title: "Data Exchange",
     description:
       "“This building block should provide guidelines and technical specifications about common communication protocols that all data space roles can use to transmit standardised data.” (as defined in the DSSC blueprint).",
+    wiki: {
+      link: "https://www.skillsdataspace.eu/blueprint/dssc-technical-building-blocks/#2-toc-title",
+    },
     functionalities: [
       {
         desctipion:
@@ -185,6 +191,9 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     title: "Access & Usage Policies and Control",
     description:
       "“This building block aims at outlining the available options for achieving this goal of Access and Usage Policies and Control, such as which mark-up languages can be used and whether there are any templates/models available for expressing access and usage policies.” (as defined in the DSSC blueprint).",
+    wiki: {
+      link: "https://www.skillsdataspace.eu/blueprint/dssc-technical-building-blocks/#5-toc-title",
+    },
     functionalities: [
       {
         desctipion:
@@ -249,6 +258,9 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     title: "Identity Management",
     description:
       "“The building block should create and offer guidelines and tools that enable data space initiatives to determine, establish, and manage their own standards and mechanisms for identifying, authenticating, and authorizing any entities within their data space.” (as defined in the DSSC blueprint).",
+    wiki: {
+      link: "https://www.skillsdataspace.eu/blueprint/dssc-technical-building-blocks/#6-toc-title",
+    },
     functionalities: [
       {
         desctipion:
@@ -333,6 +345,9 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     description: `“This building block should specify the functioning of trust anchors in a data space: what are they? How can they be used and how can they work together? And how do they work together with the identity management building block?” (as defined in the DSSC blueprint).<br />
       “Therefore, the purpose of this building block is to provide assurance to all participants of a data space to ensure the secure and reliable exchange of data between different entities within a data ecosystem while fostering data sovereignty” (as defined in the DSSC blueprint).
       `,
+    wiki: {
+      link: "https://www.skillsdataspace.eu/blueprint/dssc-technical-building-blocks/#7-toc-title",
+    },
     functionalities: [
       {
         desctipion:
@@ -384,6 +399,9 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     title: "Data, Services and Offerings Descriptions",
     description:
       "“This building block provides guidelines and tools for the conceptualisation and implementation of self-descriptions.” (as defined in the DSSC blueprint)",
+    wiki: {
+      link: "https://www.skillsdataspace.eu/blueprint/dssc-technical-building-blocks/#9-toc-title",
+    },
     functionalities: [
       {
         desctipion:
@@ -417,6 +435,9 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     title: "Publication & Discovery",
     description:
       "“Once individual self-descriptions have been created, it should be possible to publish them in a catalogue and enable other participants of the data space to find them. This is the scope of the building block for Publication & Discovery.” (as defined in the DSSC blueprint).",
+    wiki: {
+      link: "https://www.skillsdataspace.eu/blueprint/dssc-technical-building-blocks/#10-toc-title",
+    },
     functionalities: [
       {
         desctipion:
@@ -496,6 +517,9 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     title: "Marketplaces & Usage Accounting",
     description:
       "“Data spaces can provide support the creation of multi-sided markets where participants generate (monetary) value out of sharing data. This building block describes common mechanisms for establishing marketplaces of data/services and the related usage accounting (e.g., for billing). There can be different ways of achieving this, e.g., through intermediaries or peer-to-peer.” (as defined in the DSSC blueprint).",
+    wiki: {
+      link: "https://www.skillsdataspace.eu/blueprint/dssc-technical-building-blocks/#11-toc-title",
+    },
     functionalities: [
       {
         desctipion:
@@ -523,6 +547,9 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     title: "Data spaces protocol building block",
     description:
       "“A Data Space Protocol is used in the context of data spaces with the purpose to support interoperability. It is a set of specifications designed to facilitate interoperable and sovereign data sharing between entities. These specifications define the schemas and protocols required for entities to, for example, publish data, negotiate usage agreements, and access data as part of a federation of technical systems termed a data space.” (as defined in the DSSC blueprint).",
+    wiki: {
+      link: "",
+    },
     functionalities: [
       {
         desctipion:
@@ -549,6 +576,9 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     title: "Decentralized AI training",
     description:
       "AI providers need user data to train their models, while data providers need AI models to provide innovative features to their users. This building block is an answer to this need by making the link between AI providers and data providers through secure and trusted decentralized learning protocol.",
+    wiki: {
+      link: "https://www.skillsdataspace.eu/blueprint/skills-data-space-specific-technical-building-blocks/#0-toc-title",
+    },
     functionalities: [
       {
         desctipion: `●	The users give or revoke the right to mobilize their data, wherever it is stored, to train AI models.<br />

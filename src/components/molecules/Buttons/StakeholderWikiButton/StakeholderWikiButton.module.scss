@@ -1,0 +1,11 @@
+@use "../../../../shared/styles/index" as *;
+
+.StakeholderWikiButton {
+  color: $white;
+}
+
+.darkSvg {
+  svg {
+    background-color: $black !important;
+  }
+}

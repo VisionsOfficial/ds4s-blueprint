@@ -26,7 +26,7 @@ const CONTENT_NAVBAR: NavBarLinks[] = [
   },
   {
     name: "Wiki",
-    url: "http://example.com",
+    url: "https://www.skillsdataspace.eu/wiki/",
   },
 ];
 

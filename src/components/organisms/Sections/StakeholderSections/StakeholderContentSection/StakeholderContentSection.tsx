@@ -2,13 +2,13 @@ import { PropsWithChildren } from "react";
 import Styles from "./StakeholderContentSection.module.scss";
 import { SectionContainer } from "../../../../atoms/Containers/SectionContainer/SectionContainer";
 import { Params } from "react-router-dom";
-import { Button } from "../../../../atoms/Buttons/Button/Button";
 import {
   ColorVariant,
   Stakeholder,
   StakeholderCategories,
 } from "../../../../../types";
 import { StakeholderDocumentationByCategoryCard } from "../../../../molecules/Cards/StakeholderDocumentationByCategoryCard/StakeholderDocumentationByCategoryCard";
+import { StakeholderWikiButton } from "../../../../molecules/Buttons/StakeholderWikiButton/StakeholderWikiButton";
 
 type StakeholderContentSectionProps = {
   currentColor: ColorVariant;
@@ -94,17 +94,45 @@ export const StakeholderContentSection = ({
     }
   };
 
+  const setBtn = () => {
+    const currentStakeholder = stakeholder?.replace(/-/g, " ") as Stakeholder;
+    const currentCategory = category as StakeholderCategories;
+
+    switch (category as StakeholderCategories) {
+      case "Governance":
+        return (
+          <StakeholderWikiButton
+            category={currentCategory}
+            stakeholder={currentStakeholder}
+            currentColor={currentColor}
+          />
+        );
+      case "Business":
+        return (
+          <StakeholderWikiButton
+            category={currentCategory}
+            stakeholder={currentStakeholder}
+            currentColor={currentColor}
+          />
+        );
+      case "Value":
+        return (
+          <StakeholderWikiButton
+            category={currentCategory}
+            stakeholder={currentStakeholder}
+            currentColor={currentColor}
+          />
+        );
+
+      default:
+        return null;
+    }
+  };
+
   return (
     <SectionContainer className={Styles.StakeholderContentSection}>
       <div className={Styles.cards}>{setCards()}</div>
-
-      <Button
-        icon="arrowRight"
-        variantSvgColor={currentColor}
-        variantBgColor={currentColor}
-      >
-        Read the full document
-      </Button>
+      {setBtn()}
     </SectionContainer>
   );
 };

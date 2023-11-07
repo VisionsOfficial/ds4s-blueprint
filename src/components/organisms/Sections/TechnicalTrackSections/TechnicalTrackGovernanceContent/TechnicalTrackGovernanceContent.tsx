@@ -4,6 +4,7 @@ import { TechnicalTrackGovernance } from "../../../../../types";
 import { SectionContainer } from "../../../../atoms/Containers/SectionContainer/SectionContainer";
 import { TechnicalTrackGovernanceCard } from "../../../../molecules/Cards/TechnicalTrackGovernanceCard/TechnicalTrackGovernanceCard";
 import { Button } from "../../../../atoms/Buttons/Button/Button";
+import { Link } from "react-router-dom";
 
 type TechnicalTrackGovernanceContentProps = {
   bbs: TechnicalTrackGovernance;
@@ -27,9 +28,15 @@ export const TechnicalTrackGovernanceContent = ({
         />
       </div>
 
-      <Button className={Styles.btn} variantBgColor="primary" icon="arrowRight">
-        Read the full document
-      </Button>
+      <Link to={bbs.wiki.link} target="_blank">
+        <Button
+          className={Styles.btn}
+          variantBgColor="primary"
+          icon="arrowRight"
+        >
+          Read the full document
+        </Button>
+      </Link>
     </SectionContainer>
   );
 };

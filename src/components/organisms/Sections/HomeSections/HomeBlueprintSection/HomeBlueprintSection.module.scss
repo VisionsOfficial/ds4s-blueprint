@@ -9,6 +9,7 @@
     @include flexColumn();
     gap: $medium;
     text-align: center;
+    z-index: 3;
     h2 {
       color: $secondary;
     }
@@ -25,6 +26,7 @@
     width: calc(100% + 2rem);
     display: flex;
     transform: translateY(3.5rem);
+    z-index: 2;
     .laptop {
       width: 100%;
       z-index: 2;

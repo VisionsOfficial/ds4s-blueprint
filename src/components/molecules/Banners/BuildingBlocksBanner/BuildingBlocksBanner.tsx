@@ -3,6 +3,7 @@ import { SectionContainer } from "../../../atoms/Containers/SectionContainer/Sec
 import { Button } from "../../../atoms/Buttons/Button/Button";
 import { SlideTopContainer } from "../../../atoms/Animations/SlideTopContainer/SlideTopContainer";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 export const BuildingBlocksBanner = () => {
   const [ref, InView] = useInView({
@@ -32,9 +33,14 @@ export const BuildingBlocksBanner = () => {
             blocks.
           </p>
         </header>
-        <Button icon="arrowRight" variantSvgColor="secondary">
-          Read the full document
-        </Button>
+        <Link
+          to={"https://www.skillsdataspace.eu/blueprint/tech-introduction/"}
+          target="_blank"
+        >
+          <Button icon="arrowRight" variantSvgColor="secondary">
+            Read the full document
+          </Button>
+        </Link>
       </SlideTopContainer>
     </SectionContainer>
   );

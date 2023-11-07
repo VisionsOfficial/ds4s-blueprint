@@ -13,6 +13,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Individuals (end users)",
           definition: "Person using the system for their career and learning",
+          wiki: "https://www.skillsdataspace.eu/blueprint/roles/#13-toc-title",
           obligations: [
             "MUST participate in the value exchange",
             "CAN exerce their rights on their data across the ecosystem",
@@ -55,6 +56,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Individuals (end users)",
           definition: "Get innovative employment and orientation services.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -90,6 +92,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "University & Training providers (end user)",
               definition:
                 "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#10-toc-title",
               obligations: [
                 "MUST define clear data usage policies",
                 "MUST participate in the value exchange",
@@ -98,6 +101,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
             {
               title: "University & Training providers (data provider)",
               definition: "Organisations that provide data",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#24-toc-title",
               obligations: [
                 "MUST describe their organisations and service offerings in a machine readable format and human readable",
                 "MUST define clear data set terms of use",
@@ -121,6 +125,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "University & Training providers (end user)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#1-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features..",
@@ -143,6 +148,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "University & Training providers (data provider)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#4-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -190,6 +196,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "University & Training Providers (data and service providers)",
           definition: "Match their offers with relevant profiles.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -225,6 +232,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Employers (end user)",
               definition:
                 "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#10-toc-title",
               obligations: [
                 "MUST define clear data usage policies",
                 "MUST participate in the value exchange",
@@ -233,6 +241,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
             {
               title: "Employers (data provider)",
               definition: "Organisations that provide data",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#24-toc-title",
               obligations: [
                 "MUST describe their organisations and service offerings in a machine readable format and human readable",
                 "MUST define clear data set terms of use",
@@ -256,6 +265,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Employers (end user)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#1-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -278,6 +288,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Employers (data provider)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#4-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -326,6 +337,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Employers (data providers and end users)",
           definition:
             "Match their offers with relevant profiles and get precise employee profiles. ",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -361,6 +373,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Educational Institutions (end user)",
               definition:
                 "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#10-toc-title",
               obligations: [
                 "MUST define clear data usage policies",
                 "MUST participate in the value exchange",
@@ -369,6 +382,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
             {
               title: "Educational Institutions (data provider)",
               definition: "Organisations that provide data",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#24-toc-title",
               obligations: [
                 "MUST describe their organisations and service offerings in a machine readable format and human readable",
                 "MUST define clear data set terms of use",
@@ -392,6 +406,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Educational Institutions (end user)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#1-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -414,6 +429,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Educational Institutions (data provider)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#4-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -462,6 +478,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Educational Institutions (service providers and end users)",
           definition:
             "Provide students with innovative employment and orientation services.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -554,6 +571,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Employment Agencies (end user)",
           definition:
             "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/roles/#10-toc-title",
           obligations: [
             "MUST define clear data usage policies",
             "MUST participate in the value exchange",
@@ -572,6 +590,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Employment Agencies (end user)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#1-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -615,6 +634,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Employment Agencies (service providers and end users)",
           definition: "Offer innovative employment and orientation services.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -650,6 +670,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
                 "Edtechs & AI Providers (service providers for organisation)",
               definition:
                 "Organisations that provide innovative services for organisations (B2B / B2G)",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#16-toc-title",
               obligations: [
                 "MUST describe their organisations and service offerings in a machine readable format and human readable",
                 "MUST define clear data policies stating what data is used, for which purposes, the security measures, the third parties it is shared with, if there is an advertisement model in a human and machine readable way",
@@ -668,6 +689,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
                 "Edtechs & AI Providers (service providers for Individuals)",
               definition:
                 "Organisations that provide innovative services for individuals (B2C)",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#18-toc-title",
               obligations: [
                 "MUST describe their organisations and service offerings in a machine readable format and human readable",
                 "MUST define clear data policies stating what data is used, for which purposes, the security measures, the third parties it is shared with, if there is an advertisement model in a human and machine readable way",
@@ -696,6 +718,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
                 "Edtechs & AI Providers (service providers for organisation & individuals)",
               definition:
                 "Offer better-personalised services due to better data access.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#3-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -742,6 +765,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Edtechs & AI Providers (data and service providers)",
           definition:
             "Offer better-personalised services due to better data access. ",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -788,6 +812,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
                 "Infrastructure providers (organisational data intermediary)",
               definition:
                 "Tools for data and service providers to connect to the data ecosystem",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#28-toc-title",
               obligations: [
                 "MUST be a data intermediary compliant with Data Governance Act",
                 "MUST Verify the validity of agreements between data providers and data users",
@@ -800,6 +825,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Infrastructure providers (personal data intermediary)",
               definition:
                 "Tool for the person to navigate the data ecosystem, exercise their rights, manage consent and data sharing, discover the apps and use them, be informed on risks etc",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#31-toc-title",
               obligations: [
                 "CAN NOT be service or data provider or end user",
                 "MUST be a data intermediary compliant with Data Governance Act ",
@@ -823,6 +849,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
                 "Infrastructure providers (organisational & personal data intermediary)",
               definition:
                 "Offer better-personalised services due to better data access.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#5-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -872,6 +899,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Infrastructure Providers",
           definition:
             "Offer services and building blocks to enable data matching, including consent, contract, interoperability, data visualisation, and decentralised processing.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -903,6 +931,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Orchestrator",
           definition:
             "Organisation that organises operationally the data ecosystem and ensures its diffusion and commercialisation.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/roles/#6-toc-title",
           obligations: [
             "MUST define the precise governance rules",
             "MUST define the Code of conduct",
@@ -925,6 +954,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Orchestrator",
               definition:
                 "Organisation that organises operationally the data ecosystem and ensures its diffusion and commercialisation.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#2-toc-title",
               examples: [
                 "Subscription model - a recurring subscription revenue for access to data products.",
                 "Marketplace model - a marketplace provider typically charges participants on commission on transactions (either per number of transactions or per monetary value of transactions).",
@@ -967,6 +997,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Orchestrator",
           definition:
             "Provides the ecosystem portal and coordinates governance, use cases, and business model discussions.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -1004,6 +1035,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Organisational & employers (end user)",
               definition:
                 "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#10-toc-title",
               obligations: [
                 "MUST define clear data usage policies",
                 "MUST participate in the value exchange",
@@ -1012,6 +1044,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
             {
               title: "Organisational & employers (data provider)",
               definition: "Organisations that provide data",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#24-toc-title",
               obligations: [
                 "MUST describe their organisations and service offerings in a machine readable format and human readable",
                 "MUST define clear data set terms of use",
@@ -1035,6 +1068,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Organisational & employers (end user)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#1-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -1057,6 +1091,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Organisational & employers (data provider)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#4-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -1105,6 +1140,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Organisational & employers (data providers and end users)",
           definition:
             "Match their offers with relevant profiles and get precise employee profiles. ",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#14-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -1140,6 +1176,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Learning & development units (end user)",
               definition:
                 "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#10-toc-title",
               obligations: [
                 "MUST define clear data usage policies",
                 "MUST participate in the value exchange",
@@ -1148,6 +1185,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
             {
               title: "Learning & development units (data provider)",
               definition: "Organisations that provide data",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#24-toc-title",
               obligations: [
                 "MUST describe their organisations and service offerings in a machine readable format and human readable",
                 "MUST define clear data set terms of use",
@@ -1171,6 +1209,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Learning & development units (end user)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#1-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -1193,6 +1232,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Learning & development units (data provider)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#4-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -1241,6 +1281,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Learning & development units (end users and data providers)",
           definition:
             "They use the dashboard for targeted training and contribute data on training efficacy and skill development.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -1276,6 +1317,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Educational & Training providers (end user)",
               definition:
                 "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#10-toc-title",
               obligations: [
                 "MUST define clear data usage policies",
                 "MUST participate in the value exchange",
@@ -1284,6 +1326,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
             {
               title: "Educational & Training providers (data provider)",
               definition: "Organisations that provide data",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#24-toc-title",
               obligations: [
                 "MUST describe their organisations and service offerings in a machine readable format and human readable",
                 "MUST define clear data set terms of use",
@@ -1307,6 +1350,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Educational & Training providers (end user)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#1-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -1329,6 +1373,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Educational & Training providers (data provider)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#4-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -1377,6 +1422,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title:
             "Educational & Training providers (data and service providers)",
           definition: "Match their offers with relevant profiles.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#14-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -1408,6 +1454,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Public Institutions",
           definition:
             "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/roles/#10-toc-title",
           obligations: [
             "MUST define clear data usage policies",
             "MUST participate in the value exchange",
@@ -1426,6 +1473,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Public Institutions (end user)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#1-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -1478,6 +1526,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Public Institutions (data providers and end users)",
           definition:
             "Use data for policy formulation and governance, while also contributing public-sector data to enrich the dataset.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#14-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -1508,6 +1557,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Individuals and employees (end users)",
           definition: "Person using the system for their career and learning",
+          wiki: "https://www.skillsdataspace.eu/blueprint/roles/#13-toc-title",
           obligations: [
             "MUST participate in the value exchange",
             "CAN exerce their rights on their data across the ecosystem",
@@ -1551,6 +1601,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Individuals and employees (end users)",
           definition: "Get innovative employment and orientation services.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#14-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -1586,6 +1637,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Observatories (end user)",
               definition:
                 "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#10-toc-title",
               obligations: [
                 "MUST define clear data usage policies",
                 "MUST participate in the value exchange",
@@ -1594,6 +1646,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
             {
               title: "Observatories (data provider)",
               definition: "Organisations that provide data",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#24-toc-title",
               obligations: [
                 "MUST describe their organisations and service offerings in a machine readable format and human readable",
                 "MUST define clear data set terms of use",
@@ -1617,6 +1670,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Observatories (end user)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#1-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -1639,6 +1693,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Observatories (data provider)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#4-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features.",
@@ -1686,6 +1741,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Observatories (data and service providers)",
           definition: "Match their offers with relevant profiles.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#14-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -1817,6 +1873,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Orchestrator: SkillsFast",
           definition:
             "Organisation that organises operationally the data ecosystem and ensures its diffusion and commercialisation.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/roles/#6-toc-title",
           obligations: [
             "MUST define the precise governance rules",
             "MUST define the Code of conduct",
@@ -1839,6 +1896,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Orchestrator: SkillsFast",
               definition:
                 "Organisation that organises operationally the data ecosystem and ensures its diffusion and commercialisation.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#2-toc-title",
               examples: [
                 "Subscription model - a recurring subscription revenue for access to data products. Example: Francesco from DIgiFutUX pays subscription to SkillsFast to provide the service to his employees.",
                 "Marketplace model - a marketplace provider typically charges participants on commission on transactions (either per number of transactions or per monetary value of transactions). Example: SkillsFast provides a qualified skills profile",
@@ -1883,6 +1941,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Orchestrator: SkillsFast",
           definition:
             "SkillsFast orchestrates the ecosystem, ensuring seamless coordination between different services and data providers as well as its commercialisation. ",
+          wiki: "https://www.skillsdataspace.eu/blueprint/eu-dune-matildas-upskilling-use-case/",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -1913,14 +1972,15 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
       {
         name: "Governance",
         content: {
-          title: "Service Providers: SkillProfiX, SDAI, SkillFast Governance",
+          title: "Service Providers: SkillProfiX, SDAI, SkillFast",
           definition: "",
           governance: [
             {
               title:
-                "Infrastructure providers (organisational data intermediary)",
+                "Service Providers: SkillProfiX, SDAI, SkillFast (organisational data intermediary)",
               definition:
                 "Tools for data and service providers to connect to the data ecosystem",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#28-toc-title",
               obligations: [
                 "MUST be a data intermediary compliant with Data Governance Act",
                 "MUST Verify the validity of agreements between data providers and data users",
@@ -1930,9 +1990,11 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               ],
             },
             {
-              title: "Infrastructure providers (personal data intermediary)",
+              title:
+                "Service Providers: SkillProfiX, SDAI, SkillFast (personal data intermediary)",
               definition:
                 "Tool for the person to navigate the data ecosystem, exercise their rights, manage consent and data sharing, discover the apps and use them, be informed on risks etc",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#31-toc-title",
               obligations: [
                 "CAN NOT be service or data provider or end user",
                 "MUST be a data intermediary compliant with Data Governance Act ",
@@ -1956,6 +2018,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
                 "Service Providers: SkillProfiX, SDAI, SkillFast (organisational & personal data intermediary)",
               definition:
                 "Offer better-personalised services due to better data access.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#5-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
@@ -2009,6 +2072,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Service Providers: SkillProfiX, SDAI, SkillFast",
           definition:
             "SkillProfiX and SDAI offer skills assessment and training recommendation services, respectively",
+          wiki: "https://www.skillsdataspace.eu/blueprint/eu-dune-matildas-upskilling-use-case/",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -2056,6 +2120,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
                 "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool (end user)",
               definition:
                 "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#10-toc-title",
               obligations: [
                 "MUST define clear data usage policies",
                 "MUST participate in the value exchange",
@@ -2065,6 +2130,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title:
                 "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool (data provider)",
               definition: "Organisations that provide data",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#24-toc-title",
               obligations: [
                 "MUST describe their organisations and service offerings in a machine readable format and human readable",
                 "MUST define clear data set terms of use",
@@ -2088,6 +2154,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
                 "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#24-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Aggregation model - an aggregation of data products from multiple sources. Example: YourTraining aggregates data from multiple training organisations and sells it to SDAI.",
@@ -2148,6 +2215,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
             "Data Providers (Personal): SkillProfiX, DigiFutUX, UXlife, UXschool",
           definition:
             "SkillProfiX, DigiFutUX, UXlife, and UXschool provide Matilda's skills data.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/eu-dune-matildas-upskilling-use-case/",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -2185,6 +2253,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
                 "Data Providers (Organisational): Jobo, JobRightNow and Jobijob Governance (end user)",
               definition:
                 "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#10-toc-title",
               obligations: [
                 "MUST define clear data usage policies",
                 "MUST participate in the value exchange",
@@ -2194,6 +2263,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title:
                 "Data Providers (Organisational): Jobo, JobRightNow and Jobijob Governance (data provider)",
               definition: "Organisations that provide data",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#24-toc-title",
               obligations: [
                 "MUST describe their organisations and service offerings in a machine readable format and human readable",
                 "MUST define clear data set terms of use",
@@ -2218,6 +2288,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
                 "Data Providers (Organisational): Jobo, JobRightNow and Jobijob",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#4-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Aggregation model - an aggregation of data products from multiple sources. Example: YourTraining aggregates data from multiple training organisations and sells it to SDAI.",
@@ -2277,6 +2348,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
             "Data Providers (Organisational): Jobo, JobRightNow and Jobijob",
           definition:
             "JobRightNow, Jobijob, and Jobo provide job market data; FindTraining and YourTraining offer training catalogues.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/eu-dune-matildas-upskilling-use-case/",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -2307,6 +2379,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Individuals: Matilda, Francesco, Anita",
           definition: "Person using the system for their career and learning",
+          wiki: "https://www.skillsdataspace.eu/blueprint/roles/#13-toc-title",
           obligations: [
             "MUST participate in the value exchange",
             "CAN exerce their rights on their data across the ecosystem",
@@ -2351,6 +2424,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Individuals: Matilda, Francesco, Anita",
           definition:
             "Matilda (trainee), Francesco (employer), Anita (training sales representative).",
+          wiki: "https://www.skillsdataspace.eu/blueprint/eu-dune-matildas-upskilling-use-case/",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -2385,6 +2459,8 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Organisations: DigiFutUX, IntelliAITraining (end user)",
               definition:
                 "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#10-toc-title",
+
               obligations: [
                 "MUST define clear data usage policies",
                 "MUST participate in the value exchange",
@@ -2394,6 +2470,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title:
                 "Organisations: DigiFutUX, IntelliAITraining (data provider)",
               definition: "Organisations that provide data",
+              wiki: "https://www.skillsdataspace.eu/blueprint/roles/#24-toc-title",
               obligations: [
                 "MUST describe their organisations and service offerings in a machine readable format and human readable",
                 "MUST define clear data set terms of use",
@@ -2417,6 +2494,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               title: "Organisations: DigiFutUX, IntelliAITraining (end user)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#1-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
@@ -2444,6 +2522,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
                 "Organisations: DigiFutUX, IntelliAITraining (data provider)",
               definition:
                 "Give data for the data space use case, get back services provided and pay for the services.",
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#4-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
@@ -2494,6 +2573,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Organisations: DigiFutUX, IntelliAITraining",
           definition:
             "DigiFutUX (employer), IntelliAITraining (training provider).",
+          wiki: "https://www.skillsdataspace.eu/blueprint/eu-dune-matildas-upskilling-use-case/",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -2525,6 +2605,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Governance Authority (association): Fire-X",
           definition:
             "End users and customers of the data space use case, make use of the functionalities and the result in their day-to-day activities.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/roles/#10-toc-title",
           obligations: [
             "MUST define clear data usage policies",
             "MUST participate in the value exchange",
@@ -2544,6 +2625,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
               definition: `Non-profit organization and business model. At the beginning a public and private partnership comes of a great importance when guaranteeing the sufficient funds for the functioning of the skills data space.<br/><br/>
               Later different business models could be used to sustain itself.  
               `,
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#1-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
@@ -2596,6 +2678,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Governance Authority (association): Fire-X",
           definition:
             "Fire-X sets and oversees the data space standards as well provides building blocks and certifies InfraTrust.",
+          wiki: "https://www.skillsdataspace.eu/blueprint/eu-dune-matildas-upskilling-use-case/",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -2627,8 +2710,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Governance",
         content: {
           title: "Data Intermediary: InfraTrust",
-          definition:
-            "Tool for the person to navigate the data ecosystem, exercise their rights, manage consent and data sharing, discover the apps and use them, be informed on risks etc",
+          definition: `Personal Data Intermediary (PDI) ensuring that human centricity aspect is taken care of in every decision. <br />
+          Tool for the person to navigate the data ecosystem, exercise their rights, manage consent and data sharing, discover the apps and use them, be informed on risks etc`,
+          wiki: "https://www.skillsdataspace.eu/blueprint/roles/#27-toc-title",
           obligations: [
             "CAN NOT be service or data provider or end user",
             "MUST be a data intermediary compliant with Data Governance Act ",
@@ -2647,8 +2731,9 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           business: [
             {
               title: "Data Intermediary: InfraTrust",
-              definition:
-                "Offer better-personalised services due to better data access.",
+              definition: `Personal Data Intermediary (PDI) ensuring that human centricity aspect is taken care of in every decision. <br />
+                Offer better-personalised services due to better data access.`,
+              wiki: "https://www.skillsdataspace.eu/blueprint/5-4-use-case-value-exchange-and-participant-business-journeys/#5-toc-title",
               examples: [
                 "Transaction model - one-off fee for having access to data or product. Example: Anita from IntelliAITraining pays one-off fee to YourTraining for each qualified lead sent. YourTraining pays one-off fee to SkillsFast for each profile sent.",
                 "Freemium model - free data products with limited features and charges users a premium for additional features. Example: Matilda will have basic functions and some of trainings available for free.",
@@ -2699,21 +2784,24 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         name: "Value",
         content: {
           title: "Data Intermediary: InfraTrust",
-          definition:
-            "InfraTrust manages data flows and ensures compliance with Fire-X standards.",
+          definition: `Personal Data Intermediary (PDI) ensuring that human centricity aspect is taken care of in every decision. <br /> InfraTrust manages data flows and ensures compliance with Fire-X standards.`,
+          wiki: "https://www.skillsdataspace.eu/blueprint/eu-dune-matildas-upskilling-use-case/",
           benefits: [
             {
               actor: "Monetary benefits",
-              definition: "",
+              definition: "Gets paid for services",
             },
             {
               actor: "Non-monetary benefits",
-              definition: "",
+              definition: `Gets requirements to improve their services. <br/>
+              Gets digital commons to operate 
+              `,
             },
           ],
           costsRisks: {
-            costs: "",
-            risks: "",
+            costs: "Pays for Data space operational costs",
+            risks:
+              "Limited number of consumers, paying customers, data sources, limited engagement and interest from users, service/data providers, inability to generate value for stakeholders. ",
           },
         },
       },

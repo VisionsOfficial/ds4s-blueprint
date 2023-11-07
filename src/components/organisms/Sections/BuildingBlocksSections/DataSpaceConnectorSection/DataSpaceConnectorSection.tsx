@@ -76,7 +76,15 @@ export const DataSpaceConnectorSection = ({
           Decentralized AI training
         </Button>
 
-        <WrapperSchemaButtons title="Data, Services & Offerings Descriptions">
+        <WrapperSchemaButtons
+          title="Data, Services & Offerings Descriptions"
+          onClick={() => {
+            handleClick(
+              APP_PARAMS.buildingBlocks.dataServicesAndOfferingDescriptions
+            );
+          }}
+          style={{ cursor: "pointer" }}
+        >
           <Button
             variantBgColor="lightPrimary"
             onClick={() => {

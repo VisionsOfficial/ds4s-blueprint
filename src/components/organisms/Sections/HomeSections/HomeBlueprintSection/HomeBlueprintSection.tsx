@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { APP_IMAGES } from "../../../../../utils/appImages";
 import { SlideTopContainer } from "../../../../atoms/Animations/SlideTopContainer/SlideTopContainer";
 import { Button } from "../../../../atoms/Buttons/Button/Button";
@@ -30,9 +31,11 @@ export const HomeBlueprintSection = () => {
             the complex multi stakeholder collaboration the data space needs.
           </p>
 
-          <Button icon="arrowRight" variantSvgColor="secondary">
-            Read the full document
-          </Button>
+          <Link to={"https://www.skillsdataspace.eu/wiki/"} target="_blank">
+            <Button icon="arrowRight" variantSvgColor="secondary">
+              Read the full document
+            </Button>
+          </Link>
         </div>
         <div className={Styles.image}>
           <img

@@ -7,6 +7,7 @@ import { SlideTopContainer } from "../../../../atoms/Animations/SlideTopContaine
 import { useInView } from "react-intersection-observer";
 import { Carousel } from "../../../../molecules/Carousels/Carousel/Carousel";
 import { Button } from "../../../../atoms/Buttons/Button/Button";
+import { Link } from "react-router-dom";
 
 const CONTENT_CAROUSEL: SchemaUseCase[] = [
   "business model radar",
@@ -26,8 +27,8 @@ const CONTENT_IMAGES_RADAR_CAROUSEL = [
 ];
 
 const CONTENT_IMAGES_CAROUSEL = [
-  APP_IMAGES.image.schema.schemaChainTracker,
   APP_IMAGES.image.schema.schemaLegendChainTracker,
+  APP_IMAGES.image.schema.schemaChainTracker,
   APP_IMAGES.image.schema.schemaChainTrackBB,
 ];
 
@@ -80,46 +81,25 @@ export const EUDuneCarouselSection = () => {
               </li>
             </ul>
 
-            <Button
-              className={Styles.btnReadMore}
-              variantBgColor="primary"
-              icon="arrowRight"
+            <Link
+              to={
+                "https://www.skillsdataspace.eu/blueprint/business-perspective-of-eu-dune-use-case/#0-toc-title"
+              }
+              target="_blank"
             >
-              Read more
-            </Button>
+              <Button
+                className={Styles.btnReadMore}
+                variantBgColor="primary"
+                icon="arrowRight"
+              >
+                Read more
+              </Button>
+            </Link>
           </>
         );
       case "data value chain tracker":
         return (
           <>
-            <p>
-              The "Data Value Chain Tracker" functions as a map that assists in
-              tracing the path of data, services, insights, and their conversion
-              into monetary value.
-            </p>
-            <p>
-              The initial phase of the Data value chain tracker involves
-              showcasing all the participants in the use case and illustrating
-              the flow of interactions among them, encompassing data, insights,
-              services, and data space enabling services. To read the flow in
-              this diagram:
-            </p>
-            <ul>
-              <li>
-                The diagram primarily represents data and insights, services and
-                data space enabling services within the EU-DUNE use case.
-              </li>
-              <li>
-                EU-DUNE participants in circles: Each participant in the EU-DUNE
-                use case is represented by a circle. These circles likely
-                contain the names or logos of the participants.
-              </li>
-              <li>
-                Lines between participants: The lines connecting these circles
-                represent data/insight/services/DS enabling service interactions
-                between participants as indicated by colour.
-              </li>
-            </ul>
             <p>
               Another facet of the Data value chain tracker concerns the
               financial transactions between participants, involving payments
@@ -172,23 +152,30 @@ export const EUDuneCarouselSection = () => {
                         Blue line: Represents payments for data space enabling
                         services. This could include services related to data
                         storage, access, or management. Or denotes payments made
-                        to Data Space Governance Authority (DSGA) for their services. DSGA plays a crucial role in
-                        overseeing and governing the data space, and
-                        participants may pay them for their regulatory or
-                        governance services.
+                        to Data Space Governance Authority (DSGA) for their
+                        services. DSGA plays a crucial role in overseeing and
+                        governing the data space, and participants may pay them
+                        for their regulatory or governance services.
                       </li>
                     </ul>
                   </li>
                 </ul>
               </li>
             </ul>
-            <Button
-              className={Styles.btnReadMore}
-              variantBgColor="primary"
-              icon="arrowRight"
+            <Link
+              to={
+                "https://www.skillsdataspace.eu/blueprint/business-perspective-of-eu-dune-use-case/#1-toc-title"
+              }
+              target="_blank"
             >
-              Read more
-            </Button>
+              <Button
+                className={Styles.btnReadMore}
+                variantBgColor="primary"
+                icon="arrowRight"
+              >
+                Read more
+              </Button>
+            </Link>
           </>
         );
       case "data value chain tracker BB":
@@ -215,17 +202,14 @@ export const EUDuneCarouselSection = () => {
                 <span>Innovative incentives:</span> It has the potential to
                 foster the creation of novel incentives and business models that
                 encourage the responsible and profitable utilization of
-                available data resources.
+                available data resources. <br /> In essence, this building block{" "}
+                <span>
+                  empowers individuals and organizations, promoting transparency
+                  and trust while unlocking new opportunities
+                </span>{" "}
+                in the data sharing data space use case.
               </li>
             </ul>
-            <p>
-              In essence, this building block{" "}
-              <span>
-                empowers individuals and organizations, promoting transparency
-                and trust while unlocking new opportunities
-              </span>{" "}
-              in the data sharing data space use case.
-            </p>
             <p>
               <span>Key Elements & Key Functions</span>
             </p>
@@ -263,13 +247,49 @@ export const EUDuneCarouselSection = () => {
                 </ul>
               </li>
             </ul>
-            <Button
-              className={Styles.btnReadMore}
-              variantBgColor="primary"
-              icon="plus"
+            <p>
+              The "Data Value Chain Tracker" functions as a map that assists in
+              tracing the path of data, services, insights, and their conversion
+              into monetary value.
+            </p>
+            <p>
+              The initial phase of the Data value chain tracker involves
+              showcasing all the participants in the use case and illustrating
+              the flow of interactions among them, encompassing data, insights,
+              services, and data space enabling services. To read the flow in
+              this diagram:
+            </p>
+            <ul>
+              <li>
+                The diagram primarily represents data and insights, services and
+                data space enabling services within the EU-DUNE use case.
+              </li>
+              <li>
+                EU-DUNE participants in circles: Each participant in the EU-DUNE
+                use case is represented by a circle. These circles likely
+                contain the names or logos of the participants.
+              </li>
+              <li>
+                Lines between participants: The lines connecting these circles
+                represent data/insight/services/DS enabling service interactions
+                between participants as indicated by colour.
+              </li>
+            </ul>
+
+            <Link
+              to={
+                "https://www.skillsdataspace.eu/blueprint/business-perspective-of-eu-dune-use-case/#1-toc-title"
+              }
+              target="_blank"
             >
-              Read more
-            </Button>
+              <Button
+                className={Styles.btnReadMore}
+                variantBgColor="primary"
+                icon="arrowRight"
+              >
+                Read more
+              </Button>
+            </Link>
           </>
         );
 
@@ -309,13 +329,13 @@ export const EUDuneCarouselSection = () => {
           images={CONTENT_IMAGES_CAROUSEL}
           titleContent={
             currentChainTrackerIndicator === 2
-              ? "data value chain tracker BB"
-              : "data value chain tracker"
+              ? "data value chain tracker"
+              : "data value chain tracker BB"
           }
           content={
             currentChainTrackerIndicator === 2
-              ? setContent(CONTENT_CAROUSEL[2])
-              : setContent(CONTENT_CAROUSEL[1])
+              ? setContent(CONTENT_CAROUSEL[1])
+              : setContent(CONTENT_CAROUSEL[2])
           }
           updateParentIndicator={updateIndicator}
         />
