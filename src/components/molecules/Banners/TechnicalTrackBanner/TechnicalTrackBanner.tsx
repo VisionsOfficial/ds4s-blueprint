@@ -10,12 +10,28 @@ type TechnicalTrackBannerProps = {
 export const TechnicalTrackBanner = ({
   bbs,
 }: PropsWithChildren<TechnicalTrackBannerProps>) => {
+  const addSubTitle = () => {
+    switch (bbs.title) {
+      case "PDI Consent":
+        return <small>(extends DSSC Acces & usage Control)</small>;
+      case "PDI Identify":
+        return <small>(extends DSSC Identify Management)</small>;
+      case "PDI Catalogue":
+        return <small>(extends DSSC Publication & Discovery)</small>;
+
+      default:
+        return null;
+    }
+  };
+
   return (
     <SectionContainer
       className={Styles.TechnicalTrackBanner}
       variantColor="primary"
     >
-      <h1>{bbs?.title}</h1>
+      <h1>
+        {bbs?.title} {addSubTitle()}
+      </h1>
       <p dangerouslySetInnerHTML={{ __html: bbs?.description || "" }}></p>
     </SectionContainer>
   );

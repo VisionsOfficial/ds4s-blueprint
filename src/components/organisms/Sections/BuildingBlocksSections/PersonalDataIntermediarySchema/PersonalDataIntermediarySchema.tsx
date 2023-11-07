@@ -3,7 +3,9 @@ import Styles from "./PersonalDataIntermediarySchema.module.scss";
 import { Button } from "../../../../atoms/Buttons/Button/Button";
 import { WrapperSchemaButtons } from "../../../../molecules/Wrappers/WrapperSchemaButtons/WrapperSchemaButtons";
 import { APP_IMAGES } from "../../../../../utils/appImages";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { APP_LINKS } from "../../../../../utils/appLinks";
+import { APP_PARAMS } from "../../../../../utils/appParams";
 
 type PersonalDataIntermediarySchemaProps = {
   className?: string;
@@ -12,6 +14,11 @@ type PersonalDataIntermediarySchemaProps = {
 export const PersonalDataIntermediarySchema = ({
   className = "",
 }: PropsWithChildren<PersonalDataIntermediarySchemaProps>) => {
+  const navigate = useNavigate();
+
+  const handleClick = (params: string) => {
+    navigate(APP_LINKS.buildingBlocks + `/${params}`);
+  };
   return (
     <div className={`${Styles.PersonalDataIntermediarySchema} ${className}`}>
       <figure>
@@ -50,50 +57,47 @@ export const PersonalDataIntermediarySchema = ({
         title="Personal Data Intermediary"
         className={Styles.section}
       >
-        <Link
-          to={
-            "https://www.skillsdataspace.eu/blueprint/governance-building-blocks/#2-toc-title"
-          }
-          target="_blank"
+        <Button
+          variantBgColor="lightPrimary"
+          onClick={() => {
+            handleClick(APP_PARAMS.buildingBlocks.PDIConsent);
+          }}
         >
-          <Button variantBgColor="lightPrimary">
-            PDI Consent
-            <br />
-            (extends DSSC Acces & usage Control)
-          </Button>
-        </Link>
-        <Link
-          to={
-            "https://www.skillsdataspace.eu/blueprint/governance-building-blocks/#3-toc-title"
-          }
-          target="_blank"
+          PDI Consent
+          <br />
+          (extends DSSC Acces & usage Control)
+        </Button>
+
+        <Button
+          variantBgColor="lightPrimary"
+          onClick={() => {
+            handleClick(APP_PARAMS.buildingBlocks.PDIIdentify);
+          }}
         >
-          <Button variantBgColor="lightPrimary">
-            PDI Identify <br />
-            (extends DSSC Identify Management)
-          </Button>
-        </Link>
-        <Link
-          to={
-            "https://www.skillsdataspace.eu/blueprint/governance-building-blocks/#6-toc-title"
-          }
-          target="_blank"
+          PDI Identify <br />
+          (extends DSSC Identify Management)
+        </Button>
+
+        <Button
+          variantBgColor="lightPrimary"
+          onClick={() => {
+            handleClick(APP_PARAMS.buildingBlocks.PDICatalogue);
+          }}
         >
-          <Button variantBgColor="lightPrimary">
-            PDI Catalogue <br />
-            (extends DSSC Publication & Discovery)
-          </Button>
-        </Link>
-        <Link
-          to={
-            "https://www.skillsdataspace.eu/blueprint/governance-building-blocks/#5-toc-title"
-          }
-          target="_blank"
+          PDI Catalogue <br />
+          (extends DSSC Publication & Discovery)
+        </Button>
+
+        <Button
+          variantBgColor="lightPrimary"
+          onClick={() => {
+            handleClick(
+              APP_PARAMS.buildingBlocks.PDIDistributedDataVisualisation
+            );
+          }}
         >
-          <Button variantBgColor="lightPrimary">
-            PDI Distributed Data Visualisation
-          </Button>
-        </Link>
+          PDI Distributed Data Visualisation
+        </Button>
       </WrapperSchemaButtons>
     </div>
   );

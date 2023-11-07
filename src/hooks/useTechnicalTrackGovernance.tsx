@@ -44,6 +44,18 @@ export const useTechnicalTrackGovernance = ({ bbs }: Props) => {
       case APP_PARAMS.buildingBlocks.decentralizedAITraining:
         setData(Technical_Track_Governance[9]);
         break;
+      case APP_PARAMS.buildingBlocks.PDIConsent:
+        setData(Technical_Track_Governance[10]);
+        break;
+      case APP_PARAMS.buildingBlocks.PDIIdentify:
+        setData(Technical_Track_Governance[11]);
+        break;
+      case APP_PARAMS.buildingBlocks.PDICatalogue:
+        setData(Technical_Track_Governance[12]);
+        break;
+      case APP_PARAMS.buildingBlocks.PDIDistributedDataVisualisation:
+        setData(Technical_Track_Governance[13]);
+        break;
 
       default:
         break;

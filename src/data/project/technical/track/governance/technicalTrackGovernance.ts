@@ -592,4 +592,111 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     standards: [],
     referenceImplementations: [],
   },
+  {
+    title: "PDI Consent",
+    description:
+      "Ensuring that human centricity aspect is taken care of in every decision.",
+    wiki: {
+      link: "https://www.skillsdataspace.eu/blueprint/governance-building-blocks/#2-toc-title",
+    },
+    functionalities: [
+      {
+        desctipion: "",
+        functions: [
+          {
+            description:
+              "The consent service allows participants of the data space to generate a consent towards an end user to share their data with another participant of the data space.",
+          },
+          {
+            description:
+              "People can manage their consent from the services concerned in the data exchange or from their Personal Data Intermediary where they can find and manage all their consents from a single place",
+          },
+          {
+            description:
+              "The consent is generated from a data sharing agreement existing between the parties sharing the data; the consent triggers the real data exchange or access.",
+          },
+        ],
+      },
+    ],
+    standards: [],
+    referenceImplementations: [],
+  },
+  {
+    title: "PDI Identify",
+    description:
+      "Ensuring that human centricity aspect is taken care of in every decision.",
+    wiki: {
+      link: "https://www.skillsdataspace.eu/blueprint/governance-building-blocks/#3-toc-title",
+    },
+    functionalities: [
+      {
+        desctipion: "",
+        functions: [
+          {
+            description:
+              "Ensuring interoperability across personal identities, providers and standards, including identity delivery tools that are compatible with the use of wallets.",
+          },
+        ],
+      },
+    ],
+    standards: [],
+    referenceImplementations: [],
+  },
+  {
+    title: "PDI Catalogue",
+    description:
+      "Ensuring that human centricity aspect is taken care of in every decision.",
+    wiki: {
+      link: "https://www.skillsdataspace.eu/blueprint/governance-building-blocks/#6-toc-title",
+    },
+    functionalities: [
+      {
+        desctipion: "",
+        functions: [
+          {
+            description: `Allowing people to have a <span>user-friendly catalogue</span> of data users and sources of their personal data space and interact with them from a single point.`,
+          },
+          {
+            description:
+              "Allowing people to easily navigate and find the apps, data users and data sources of their personal data space and be matched with the most relevant applications according to their needs and preferences.",
+          },
+          {
+            description:
+              "Allowing people to be informed on the risks and value of sharing their personal data with the data space participants.",
+          },
+        ],
+      },
+    ],
+    standards: [],
+    referenceImplementations: [],
+  },
+  {
+    title: "PDI Distributed Data Visualisation",
+    description:
+      "Ensuring that human centricity aspect is taken care of in every decision.",
+    wiki: {
+      link: "https://www.skillsdataspace.eu/blueprint/governance-building-blocks/#5-toc-title",
+    },
+    functionalities: [
+      {
+        desctipion: "",
+        functions: [
+          {
+            description:
+              "Allowing recommendations to be shown to people in any UI of the data space",
+          },
+          {
+            description:
+              "The data model that is built/constructed/manipulated in the service layer (data storages, APIs, AIs, service providers, etc) and/or in the edge and finally passed to the UI/visualization component in client side.",
+          },
+          {
+            description:
+              "Visualization component that can be embedded into any application like Google Ad -plugin component can be embedded into any web page or app. This Google Ad -type of approach is meant to ensure the UI & visualization mechanism is embeddable to any part of the data space.",
+          },
+        ],
+      },
+    ],
+    standards: [],
+    referenceImplementations: [],
+  },
 ];

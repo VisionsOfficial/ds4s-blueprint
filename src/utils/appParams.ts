@@ -11,5 +11,9 @@ export const APP_PARAMS = {
     dataSpacesProtocolBuildingBlock: "data-spaces-protocol-building-block",
     decentralizedAITraining: "decentralized-AI-training",
     personalDataIntermediary: "personal-data-intermediary",
+    PDIConsent: "pdi-consent",
+    PDIIdentify: "pdi-identify",
+    PDICatalogue: "pdi-catalogue",
+    PDIDistributedDataVisualisation: "pdi-distributed-data-visualisation",
   },
 } as const;

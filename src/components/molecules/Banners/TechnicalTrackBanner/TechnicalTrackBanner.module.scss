@@ -4,4 +4,10 @@
   @include flexColumn(flex-start, flex-start);
   gap: $medium;
   min-height: 250px;
+
+  h1 {
+    small {
+      font-size: 1.5rem;
+    }
+  }
 }

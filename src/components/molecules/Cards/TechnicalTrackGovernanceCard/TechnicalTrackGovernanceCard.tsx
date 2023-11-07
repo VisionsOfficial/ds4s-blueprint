@@ -45,7 +45,11 @@ export const TechnicalTrackGovernanceCard = ({
               <ul className={Styles.listFunctionalites}>
                 {el.functions.map((func, i) => (
                   <li key={"functions" + i}>
-                    {func.description}
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: func.description || "",
+                      }}
+                    ></p>
                     {func?.subDescription?.length && (
                       <ul>
                         {func.subDescription.map((sub, index) => (

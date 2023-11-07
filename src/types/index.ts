@@ -97,7 +97,11 @@ export type TechnicalTrackGovernanceCategory =
   | "Publication & Discovery"
   | "Marketplaces & Usage Accounting"
   | "Data spaces protocol building block"
-  | "Decentralized AI training";
+  | "Decentralized AI training"
+  | "PDI Consent"
+  | "PDI Identify"
+  | "PDI Catalogue"
+  | "PDI Distributed Data Visualisation";
 
 export type TechnicalTrackGovernance = {
   title: TechnicalTrackGovernanceCategory;
