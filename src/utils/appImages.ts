@@ -37,6 +37,8 @@ import useCase from "../assets/imgs/img/useCase/use_case.jpg";
 import initiatives from "../assets/imgs/img/Initiatives/initiatives.jpg";
 import BBs from "../assets/imgs/img/buildingBlocks/building_blocks.jpg";
 
+import hightLevelinteractionModel from "../assets/imgs/img/governance/hight_level_interaction_model.png";
+
 import individuals from "../assets/imgs/img/stakeholders/individuals.jpg";
 import edtechsAIProviders from "../assets/imgs/img/stakeholders/edtechs_ai_providers.jpg";
 import educationalInstitutions from "../assets/imgs/img/stakeholders/educational_institutions.jpg";
@@ -135,6 +137,9 @@ export const APP_IMAGES = {
       schemaChainTrackBB,
       schemaLegendChainTracker,
       schemaChainTracker,
+    },
+    governance: {
+      hightLevelinteractionModel,
     },
   },
 };

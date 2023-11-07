@@ -10,4 +10,10 @@
       list-style-type: circle;
     }
   }
+
+  img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+  }
 }

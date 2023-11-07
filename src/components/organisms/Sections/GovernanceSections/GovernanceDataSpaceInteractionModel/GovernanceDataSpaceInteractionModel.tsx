@@ -1,3 +1,4 @@
+import { APP_IMAGES } from "../../../../../utils/appImages";
 import { SectionContainer } from "../../../../atoms/Containers/SectionContainer/SectionContainer";
 import Styles from "./GovernanceDataSpaceInteractionModel.module.scss";
 
@@ -34,10 +35,21 @@ export const GovernanceDataSpaceInteractionModel = () => {
         </li>
         <li>
           Data Space participants and data intermediaries can be part of the
-          Data Space Governance Authority (DSGA) to decide on: which building blocks to develop, what
-          certification criteria, etc.
+          Data Space Governance Authority (DSGA) to decide on: which building
+          blocks to develop, what certification criteria, etc.
         </li>
       </ul>
+
+      <a
+        href={APP_IMAGES.image.governance.hightLevelinteractionModel}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src={APP_IMAGES.image.governance.hightLevelinteractionModel}
+          alt="Hight Level Interaction Model"
+        />
+      </a>
     </SectionContainer>
   );
 };
