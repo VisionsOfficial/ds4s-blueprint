@@ -63,7 +63,7 @@ export const StakeholderWikiButton = ({
                 </Button>
               </Link>
             );
-          }
+          } else return null;
         }
       }
 
@@ -103,7 +103,7 @@ export const StakeholderWikiButton = ({
                 </Button>
               </Link>
             );
-          }
+          } else return null;
         }
       }
 
@@ -121,14 +121,15 @@ export const StakeholderWikiButton = ({
               </Button>
             </Link>
           );
-        }
+        } else return null;
       }
 
       return null;
     });
-
-    return content;
+    if (content) {
+      return content;
+    } else return null;
   };
 
-  return setBtn();
+  return <>{setBtn()}</>;
 };
