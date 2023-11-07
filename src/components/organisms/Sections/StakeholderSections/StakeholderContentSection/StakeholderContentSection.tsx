@@ -1,4 +1,4 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, useState } from "react";
 import Styles from "./StakeholderContentSection.module.scss";
 import { SectionContainer } from "../../../../atoms/Containers/SectionContainer/SectionContainer";
 import { Params } from "react-router-dom";
@@ -20,6 +20,11 @@ export const StakeholderContentSection = ({
   params,
 }: PropsWithChildren<StakeholderContentSectionProps>) => {
   const { stakeholder, category } = params;
+  const [showExamples, setShowExamples] = useState(true);
+
+  const updateExampleByCurrentStakeHolder = () => {
+    setShowExamples(false);
+  };
 
   const setCards = () => {
     const currentStakeholder = stakeholder?.replace(/-/g, " ") as Stakeholder;
@@ -63,12 +68,15 @@ export const StakeholderContentSection = ({
               category={currentCategory}
               currentColor={currentColor}
             />
-            <StakeholderDocumentationByCategoryCard
-              title="Examples of business models the stakeholder can apply to provide that value"
-              stakeholder={currentStakeholder}
-              category={currentCategory}
-              currentColor={currentColor}
-            />
+            {showExamples && (
+              <StakeholderDocumentationByCategoryCard
+                title="Examples of business models the stakeholder can apply to provide that value"
+                stakeholder={currentStakeholder}
+                category={currentCategory}
+                currentColor={currentColor}
+                stakeholderExamples={updateExampleByCurrentStakeHolder}
+              />
+            )}
           </>
         );
       case "Value":

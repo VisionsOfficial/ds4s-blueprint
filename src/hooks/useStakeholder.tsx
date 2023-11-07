@@ -3,7 +3,7 @@ import { ContentStakeholder, Stakeholder } from "../types";
 import { STAKEHOLDER_CONTENT } from "../data/project/stakeholders/stakeholders";
 
 type Props = {
-  stakeholder: Stakeholder;
+  stakeholder: Stakeholder | null;
 };
 
 export const useStakeholder = ({ stakeholder }: Props) => {

@@ -23,6 +23,7 @@ type StakeholderDocumentationByCategoryCardProps = {
   stakeholder: Stakeholder;
   category: StakeholderCategories;
   currentColor: ColorVariant;
+  stakeholderExamples?: () => void;
 };
 
 export const StakeholderDocumentationByCategoryCard = ({
@@ -30,12 +31,29 @@ export const StakeholderDocumentationByCategoryCard = ({
   stakeholder,
   category,
   currentColor,
+  stakeholderExamples,
 }: PropsWithChildren<StakeholderDocumentationByCategoryCardProps>) => {
   const { data } = useStakeholder({ stakeholder });
   const { selectedColor } = UseColor({ color: currentColor });
   const location = useLocation();
   const searchLocation = location.search.split("=")[1];
   const navigate = useNavigate();
+
+  const checkStakeholderExample = (title: string) => {
+    const stringsToCheck = [
+      "end user",
+      "individuals",
+      "organisation",
+      "organisational",
+    ];
+
+    if (
+      stringsToCheck.some((keyword) => title.toLowerCase().includes(keyword))
+    ) {
+      if (stakeholderExamples) stakeholderExamples();
+      return;
+    }
+  };
 
   const setContent = () => {
     const content = data?.categories.map((el) => {
@@ -61,6 +79,11 @@ export const StakeholderDocumentationByCategoryCard = ({
           case "Examples of business models the stakeholder can apply to provide that value":
             if (searchLocation) {
               if (!el.content.business) return;
+
+              checkStakeholderExample(
+                el.content.business[parseInt(searchLocation) - 1].title
+              );
+
               return el.content.business[
                 parseInt(searchLocation) - 1
               ].examples?.map((ex, index) => (
@@ -69,6 +92,8 @@ export const StakeholderDocumentationByCategoryCard = ({
                 </p>
               ));
             } else {
+              checkStakeholderExample(el.content.title);
+
               if (el.content.examples?.length) {
                 return el.content.examples?.map((ex, index) => (
                   <p className={selectedColor} key={ex + index}>

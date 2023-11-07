@@ -3,6 +3,7 @@ import Styles from "./PersonalDataIntermediarySchema.module.scss";
 import { Button } from "../../../../atoms/Buttons/Button/Button";
 import { WrapperSchemaButtons } from "../../../../molecules/Wrappers/WrapperSchemaButtons/WrapperSchemaButtons";
 import { APP_IMAGES } from "../../../../../utils/appImages";
+import { Link } from "react-router-dom";
 
 type PersonalDataIntermediarySchemaProps = {
   className?: string;
@@ -49,22 +50,50 @@ export const PersonalDataIntermediarySchema = ({
         title="Personal Data Intermediary"
         className={Styles.section}
       >
-        <Button variantBgColor="lightPrimary">
-          PDI Consent
-          <br />
-          (extends DSSC Acces & usage Control)
-        </Button>
-        <Button variantBgColor="lightPrimary">
-          PDI Identify <br />
-          (extends DSSC Identify Management)
-        </Button>
-        <Button variantBgColor="lightPrimary">
-          PDI Catalogue <br />
-          (extends DSSC Publication & Discovery)
-        </Button>
-        <Button variantBgColor="lightPrimary">
-          PDI Distributed Data Visualisation
-        </Button>
+        <Link
+          to={
+            "https://www.skillsdataspace.eu/blueprint/governance-building-blocks/#2-toc-title"
+          }
+          target="_blank"
+        >
+          <Button variantBgColor="lightPrimary">
+            PDI Consent
+            <br />
+            (extends DSSC Acces & usage Control)
+          </Button>
+        </Link>
+        <Link
+          to={
+            "https://www.skillsdataspace.eu/blueprint/governance-building-blocks/#3-toc-title"
+          }
+          target="_blank"
+        >
+          <Button variantBgColor="lightPrimary">
+            PDI Identify <br />
+            (extends DSSC Identify Management)
+          </Button>
+        </Link>
+        <Link
+          to={
+            "https://www.skillsdataspace.eu/blueprint/governance-building-blocks/#6-toc-title"
+          }
+          target="_blank"
+        >
+          <Button variantBgColor="lightPrimary">
+            PDI Catalogue <br />
+            (extends DSSC Publication & Discovery)
+          </Button>
+        </Link>
+        <Link
+          to={
+            "https://www.skillsdataspace.eu/blueprint/governance-building-blocks/#5-toc-title"
+          }
+          target="_blank"
+        >
+          <Button variantBgColor="lightPrimary">
+            PDI Distributed Data Visualisation
+          </Button>
+        </Link>
       </WrapperSchemaButtons>
     </div>
   );
