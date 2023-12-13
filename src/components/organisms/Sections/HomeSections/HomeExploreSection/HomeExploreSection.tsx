@@ -10,7 +10,7 @@ export const HomeExploreSection = () => {
     >
       <h2>What do you want to explore?</h2>
       <div className={Styles.cards}>
-        <ExploreCard category="Use cases" />
+        <ExploreCard category="Usage scenario" />
         <ExploreCard category="Building Blocks" />
       </div>
     </SectionContainer>

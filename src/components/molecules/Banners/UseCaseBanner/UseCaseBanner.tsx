@@ -93,7 +93,7 @@ export const UseCaseBanner = ({
   if (useCaseError) {
     return (
       <SectionContainer variantColor="primary">
-        <p>Sorry this use case does not exist</p>
+        <p>Sorry this usage scenario does not exist</p>
         <Button
           onClick={() => {
             navigate(APP_LINKS.home);
@@ -119,7 +119,8 @@ export const UseCaseBanner = ({
               icon="arrowLeft"
               iconPosition="prev"
             >
-              Previous use case <span>({contentBanner?.links.prev.name})</span>
+              Previous usage scenario{" "}
+              <span>({contentBanner?.links.prev.name})</span>
             </Button>
           )}
           {contentBanner?.links?.next && (
@@ -131,7 +132,8 @@ export const UseCaseBanner = ({
               }}
               icon="arrowRight"
             >
-              Next use case <span>({contentBanner?.links.next.name})</span>
+              Next usage scenario{" "}
+              <span>({contentBanner?.links.next.name})</span>
             </Button>
           )}
         </div>

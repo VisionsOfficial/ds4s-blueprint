@@ -41,7 +41,7 @@ export const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to={APP_LINKS.useCases + "/match"}>Use cases</Link>
+              <Link to={APP_LINKS.useCases + "/match"}>Usage scenario</Link>
             </li>
             <li>
               <Link to={APP_LINKS.buildingBlocks}>Building Blocks</Link>
