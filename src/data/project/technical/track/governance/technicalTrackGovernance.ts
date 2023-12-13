@@ -622,7 +622,7 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
     referenceImplementations: [],
   },
   {
-    title: "PDI Identify",
+    title: "PDI Identity",
     description:
       "Ensuring that human centricity aspect is taken care of in every decision.",
     wiki: {

@@ -74,8 +74,8 @@ export const PersonalDataIntermediarySchema = ({
             handleClick(APP_PARAMS.buildingBlocks.PDIIdentify);
           }}
         >
-          PDI Identify <br />
-          (extends DSSC Identify Management)
+          PDI Identity <br />
+          (extends DSSC Identity Management)
         </Button>
 
         <Button

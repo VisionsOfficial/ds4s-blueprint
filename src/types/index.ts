@@ -99,7 +99,7 @@ export type TechnicalTrackGovernanceCategory =
   | "Data spaces protocol building block"
   | "Decentralized AI training"
   | "PDI Consent"
-  | "PDI Identify"
+  | "PDI Identity"
   | "PDI Catalogue"
   | "PDI Distributed Data Visualisation";
 
