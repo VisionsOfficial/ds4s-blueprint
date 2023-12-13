@@ -5,6 +5,7 @@ import { UseCase } from "../../../../types";
 import { APP_LINKS } from "../../../../utils/appLinks";
 import { Button } from "../../../atoms/Buttons/Button/Button";
 import { useNavigate } from "react-router-dom";
+import { Dropdown } from "../../../atoms/Dropdowns/Dropdown/Dropdown";
 
 type UseCaseBannerProps = {
   useCase: UseCase | string;
@@ -109,7 +110,14 @@ export const UseCaseBanner = ({
     <SectionContainer variantColor="primary" className={Styles.bgImage}>
       <div className={Styles.UseCaseBanner}>
         <div className={Styles.nav}>
-          {contentBanner?.links?.prev && (
+          <Dropdown
+            text="Usage scenario"
+            options={[
+              { name: `Match`, url: APP_LINKS.useCases + "/match" },
+              { name: "Forecast", url: APP_LINKS.useCases + "/forecast" },
+            ]}
+          />
+          {/* {contentBanner?.links?.prev && (
             <Button
               variantBgColor="transparent"
               onClick={() => {
@@ -135,7 +143,7 @@ export const UseCaseBanner = ({
               Next usage scenario{" "}
               <span>({contentBanner?.links.next.name})</span>
             </Button>
-          )}
+          )} */}
         </div>
 
         <header>
