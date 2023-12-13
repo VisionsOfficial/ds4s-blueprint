@@ -16,6 +16,10 @@
     }
   }
 
+  .imageContainer {
+    display: flex;
+  }
+
   .image {
     align-self: center;
     @include flexColumn(center, flex-end);
@@ -38,11 +42,11 @@
   @include resolution(xx-desktop) {
     @include flexRow();
 
-    .image {
+    .imageContainer {
       align-self: flex-end;
     }
 
-    .image,
+    .imageContainer,
     .informations {
       width: calc((100% / 2) - $medium);
     }

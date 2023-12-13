@@ -11,6 +11,12 @@
     @include flexColumn(flex-start);
     gap: $medium;
     z-index: 2;
+
+    button {
+      &:hover {
+        box-shadow: 0 0 15px -3px $white;
+      }
+    }
   }
 
   .image {

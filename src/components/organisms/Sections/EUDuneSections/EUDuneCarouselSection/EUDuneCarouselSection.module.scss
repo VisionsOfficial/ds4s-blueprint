@@ -12,5 +12,10 @@
   .btnReadMore {
     width: max-content;
     margin: $small auto 0 auto;
+    transition: transform 0.15s ease-in-out;
+
+    &:hover {
+      box-shadow: $shadow;
+    }
   }
 }

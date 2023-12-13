@@ -13,4 +13,10 @@
     font-size: 1.35rem;
     margin-bottom: $small;
   }
+
+  li {
+    &:is(:not(.title)):hover {
+      text-decoration: underline;
+    }
+  }
 }

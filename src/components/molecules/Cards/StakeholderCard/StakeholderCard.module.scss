@@ -6,6 +6,11 @@
   @include flexColumn(stretch, space-between);
   position: relative;
   overflow: visible;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    box-shadow: $shadow;
+  }
 
   header {
     @include flexColumn();
@@ -35,6 +40,11 @@
       padding: 0.5rem 1.5rem;
       font-size: 1.2rem;
       color: $black;
+      transition: all 0.15s ease;
+
+      &:last-child {
+        border-radius: 0 0 30px 30px;
+      }
     }
   }
 
@@ -49,6 +59,17 @@
       button {
         svg {
           background-color: $hight-light-primary !important;
+        }
+
+        &:hover {
+          background-color: $hight-light-primary !important;
+
+          color: $white;
+
+          svg {
+            background-color: $white !important;
+            stroke: $hight-light-primary;
+          }
         }
       }
     }
@@ -66,6 +87,17 @@
         svg {
           background-color: $tertiary !important;
         }
+
+        &:hover {
+          background-color: $tertiary !important;
+
+          color: $white;
+
+          svg {
+            background-color: $white !important;
+            stroke: $tertiary;
+          }
+        }
       }
     }
   }
@@ -81,6 +113,17 @@
       button {
         svg {
           background-color: $light-primary !important;
+        }
+
+        &:hover {
+          background-color: $light-primary !important;
+
+          color: $white;
+
+          svg {
+            background-color: $white !important;
+            stroke: $light-primary;
+          }
         }
       }
     }
@@ -98,6 +141,17 @@
         svg {
           background-color: $quaternary !important;
         }
+
+        &:hover {
+          background-color: $quaternary !important;
+
+          color: $white;
+
+          svg {
+            background-color: $white !important;
+            stroke: $quaternary;
+          }
+        }
       }
     }
   }
@@ -113,6 +167,17 @@
       button {
         svg {
           background-color: $secondary !important;
+        }
+
+        &:hover {
+          background-color: $secondary !important;
+
+          color: $white;
+
+          svg {
+            background-color: $white !important;
+            stroke: $secondary;
+          }
         }
       }
     }

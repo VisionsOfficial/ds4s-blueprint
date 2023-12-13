@@ -59,6 +59,7 @@
       font-size: 1.05rem;
       text-transform: uppercase;
       margin-top: $small;
+      border: 2px solid transparent;
     }
   }
 }
@@ -94,6 +95,12 @@
   .content {
     button {
       background-color: $hight-light-primary;
+
+      &:hover {
+        background-color: $white;
+        border: 2px solid $hight-light-primary;
+        color: $hight-light-primary;
+      }
     }
   }
 }
@@ -120,6 +127,12 @@
   .content {
     button {
       background-color: $tertiary;
+
+      &:hover {
+        background-color: $white;
+        border: 2px solid $tertiary;
+        color: $tertiary;
+      }
     }
   }
 }
@@ -146,6 +159,12 @@
   .content {
     button {
       background-color: $light-primary;
+
+      &:hover {
+        background-color: $white;
+        border: 2px solid $light-primary;
+        color: $light-primary;
+      }
     }
   }
 }
@@ -172,6 +191,12 @@
   .content {
     button {
       background-color: $quaternary;
+
+      &:hover {
+        background-color: $white;
+        border: 2px solid $quaternary;
+        color: $quaternary;
+      }
     }
   }
 }
@@ -198,6 +223,12 @@
   .content {
     button {
       background-color: $secondary;
+
+      &:hover {
+        background-color: $white;
+        border: 2px solid $secondary;
+        color: $secondary;
+      }
     }
   }
 }
