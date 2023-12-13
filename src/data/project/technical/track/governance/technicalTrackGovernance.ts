@@ -112,7 +112,7 @@ export const Technical_Track_Governance: TechnicalTrackGovernance[] = [
       },
       {
         name: "ELMO",
-        website: "",
+        website: "https://github.com/emrex-eu/elmo-schemas",
       },
       {
         name: "HeadAI Graphmind",
