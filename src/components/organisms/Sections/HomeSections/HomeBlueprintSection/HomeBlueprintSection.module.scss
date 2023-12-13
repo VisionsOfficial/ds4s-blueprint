@@ -21,6 +21,10 @@
     }
   }
 
+  .imageContainer {
+    display: flex;
+  }
+
   .image {
     position: relative;
     width: calc(100% + 2rem);

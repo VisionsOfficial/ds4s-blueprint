@@ -5,8 +5,6 @@ import { UseCase } from "../../../../types";
 import { APP_LINKS } from "../../../../utils/appLinks";
 import { Button } from "../../../atoms/Buttons/Button/Button";
 import { useNavigate } from "react-router-dom";
-import { useInView } from "react-intersection-observer";
-import { SlideTopContainer } from "../../../atoms/Animations/SlideTopContainer/SlideTopContainer";
 
 type UseCaseBannerProps = {
   useCase: UseCase | string;
@@ -34,9 +32,6 @@ export const UseCaseBanner = ({
   useCase,
 }: PropsWithChildren<UseCaseBannerProps>) => {
   const navigate = useNavigate();
-  const [ref, InView] = useInView({
-    triggerOnce: true,
-  });
 
   const [contentBanner, setContentBanner] = useState<BannerContent>();
   const [useCaseError, setUseCaseError] = useState<boolean>(false);
@@ -112,11 +107,7 @@ export const UseCaseBanner = ({
 
   return (
     <SectionContainer variantColor="primary" className={Styles.bgImage}>
-      <SlideTopContainer
-        className={Styles.UseCaseBanner}
-        ref={ref}
-        InView={InView}
-      >
+      <div className={Styles.UseCaseBanner}>
         <div className={Styles.nav}>
           {contentBanner?.links?.prev && (
             <Button
@@ -158,7 +149,7 @@ export const UseCaseBanner = ({
           </ul>
         )}
         <p className={Styles.endDescription}>{contentBanner?.endDescription}</p>
-      </SlideTopContainer>
+      </div>
     </SectionContainer>
   );
 };

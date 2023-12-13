@@ -12,32 +12,26 @@ export const HomeBanner = () => {
   });
 
   return (
-    <SectionContainer variantColor="primary">
-      <SlideTopContainer
-        className={Styles.HomeBanner}
-        ref={ref}
-        InView={inView}
-      >
-        <div className={Styles.description}>
-          <h1>Discover the Data Space for Skills Blueprint</h1>
-          <Link to={"https://www.skillsdataspace.eu/wiki/"} target="_blank">
-            <Button icon="arrowRight" variantSvgColor="secondary">
-              Read the full document
-            </Button>
-          </Link>
-        </div>
-        <div className={Styles.image}>
-          <img
-            src={APP_IMAGES.icon.ds4s.cubeDS4S}
-            alt=""
-            className={Styles.cube}
-          />
-          <img
-            src={APP_IMAGES.image.home.homeBanner}
-            alt="team works"
-            className={Styles.mainImg}
-          />
-        </div>
+    <SectionContainer variantColor="primary" className={Styles.HomeBanner}>
+      <div className={Styles.description}>
+        <h1>Discover the Data Space for Skills Blueprint</h1>
+        <Link to={"https://www.skillsdataspace.eu/wiki/"} target="_blank">
+          <Button icon="arrowRight" variantSvgColor="secondary">
+            Read the full document
+          </Button>
+        </Link>
+      </div>
+      <SlideTopContainer className={Styles.image} ref={ref} InView={inView}>
+        <img
+          src={APP_IMAGES.icon.ds4s.cubeDS4S}
+          alt=""
+          className={Styles.cube}
+        />
+        <img
+          src={APP_IMAGES.image.home.homeBanner}
+          alt="team works"
+          className={Styles.mainImg}
+        />
       </SlideTopContainer>
     </SectionContainer>
   );
