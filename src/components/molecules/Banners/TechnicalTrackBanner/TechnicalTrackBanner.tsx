@@ -14,8 +14,8 @@ export const TechnicalTrackBanner = ({
     switch (bbs.title) {
       case "PDI Consent":
         return <small>(extends DSSC Acces & usage Control)</small>;
-      case "PDI Identify":
-        return <small>(extends DSSC Identify Management)</small>;
+      case "PDI Identity":
+        return <small>(extends DSSC Identity Management)</small>;
       case "PDI Catalogue":
         return <small>(extends DSSC Publication & Discovery)</small>;
 

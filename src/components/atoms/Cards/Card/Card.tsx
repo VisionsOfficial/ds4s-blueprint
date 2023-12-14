@@ -28,7 +28,7 @@ export const Card = forwardRef<HTMLDivElement, PropsWithChildren<CardProps>>(
         case "default":
           color = selectedColor;
           break;
-        case "Use cases":
+        case "Usage scenario":
           color = Styles.bgUseCases;
           break;
         case "Building Blocks":

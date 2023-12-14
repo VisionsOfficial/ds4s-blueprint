@@ -13,7 +13,7 @@ const CONTENT_NAVBAR: NavBarLinks[] = [
     url: APP_LINKS.home,
   },
   {
-    name: "Use cases",
+    name: "Usage scenario",
     url: APP_LINKS.useCases + "/match",
   },
   {

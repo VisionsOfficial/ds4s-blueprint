@@ -5,8 +5,7 @@ import { UseCase } from "../../../../types";
 import { APP_LINKS } from "../../../../utils/appLinks";
 import { Button } from "../../../atoms/Buttons/Button/Button";
 import { useNavigate } from "react-router-dom";
-import { useInView } from "react-intersection-observer";
-import { SlideTopContainer } from "../../../atoms/Animations/SlideTopContainer/SlideTopContainer";
+import { Dropdown } from "../../../atoms/Dropdowns/Dropdown/Dropdown";
 
 type UseCaseBannerProps = {
   useCase: UseCase | string;
@@ -34,9 +33,6 @@ export const UseCaseBanner = ({
   useCase,
 }: PropsWithChildren<UseCaseBannerProps>) => {
   const navigate = useNavigate();
-  const [ref, InView] = useInView({
-    triggerOnce: true,
-  });
 
   const [contentBanner, setContentBanner] = useState<BannerContent>();
   const [useCaseError, setUseCaseError] = useState<boolean>(false);
@@ -98,7 +94,7 @@ export const UseCaseBanner = ({
   if (useCaseError) {
     return (
       <SectionContainer variantColor="primary">
-        <p>Sorry this use case does not exist</p>
+        <p>Sorry this usage scenario does not exist</p>
         <Button
           onClick={() => {
             navigate(APP_LINKS.home);
@@ -112,13 +108,16 @@ export const UseCaseBanner = ({
 
   return (
     <SectionContainer variantColor="primary" className={Styles.bgImage}>
-      <SlideTopContainer
-        className={Styles.UseCaseBanner}
-        ref={ref}
-        InView={InView}
-      >
+      <div className={Styles.UseCaseBanner}>
         <div className={Styles.nav}>
-          {contentBanner?.links?.prev && (
+          <Dropdown
+            text="Usage scenario"
+            options={[
+              { name: `Match`, url: APP_LINKS.useCases + "/match" },
+              { name: "Forecast", url: APP_LINKS.useCases + "/forecast" },
+            ]}
+          />
+          {/* {contentBanner?.links?.prev && (
             <Button
               variantBgColor="transparent"
               onClick={() => {
@@ -128,7 +127,8 @@ export const UseCaseBanner = ({
               icon="arrowLeft"
               iconPosition="prev"
             >
-              Previous use case <span>({contentBanner?.links.prev.name})</span>
+              Previous usage scenario{" "}
+              <span>({contentBanner?.links.prev.name})</span>
             </Button>
           )}
           {contentBanner?.links?.next && (
@@ -140,9 +140,10 @@ export const UseCaseBanner = ({
               }}
               icon="arrowRight"
             >
-              Next use case <span>({contentBanner?.links.next.name})</span>
+              Next usage scenario{" "}
+              <span>({contentBanner?.links.next.name})</span>
             </Button>
-          )}
+          )} */}
         </div>
 
         <header>
@@ -158,7 +159,7 @@ export const UseCaseBanner = ({
           </ul>
         )}
         <p className={Styles.endDescription}>{contentBanner?.endDescription}</p>
-      </SlideTopContainer>
+      </div>
     </SectionContainer>
   );
 };

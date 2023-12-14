@@ -1,6 +1,6 @@
 export const APP_LINKS = {
   home: "/",
-  useCases: "/use-cases",
+  useCases: "/usage-scenario",
   buildingBlocks: "/building-blocks",
   initiatives: "/initiatives",
   govervance: "/governance",

@@ -11,7 +11,7 @@
     border-radius: $x-small;
   }
 
-  @include resolution(xx-desktop) {
+  @media screen and (min-width: 1045px) {
     display: none;
   }
 }

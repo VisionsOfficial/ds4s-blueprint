@@ -19,6 +19,16 @@
         font-weight: bold;
       }
     }
+
+    button {
+      &:hover {
+        box-shadow: $shadow;
+      }
+    }
+  }
+
+  .imageContainer {
+    display: flex;
   }
 
   .image {

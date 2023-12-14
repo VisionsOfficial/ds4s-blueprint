@@ -22,11 +22,11 @@ export const ExploreCard = ({
 
   const setImage = () => {
     switch (category) {
-      case "Use cases":
+      case "Usage scenario":
         return (
           <img
             src={APP_IMAGES.image.card.useCase}
-            alt="use case"
+            alt="usage scenario"
             onClick={() => {
               setActiveWrapper((prev) => !prev);
             }}
@@ -76,7 +76,7 @@ export const ExploreCard = ({
 
   const setSvgColor = () => {
     switch (category) {
-      case "Use cases":
+      case "Usage scenario":
         return "tertiary";
       case "Building Blocks":
         return "secondary";
@@ -92,7 +92,7 @@ export const ExploreCard = ({
 
   useEffect(() => {
     switch (category) {
-      case "Use cases":
+      case "Usage scenario":
         setLinksCard([
           { linkName: "1) MATCH", url: APP_LINKS.useCases + "/match" },
           { linkName: "2) FORECAST", url: APP_LINKS.useCases + "/forecast" },

@@ -11,32 +11,32 @@ export const HomeBlueprintSection = () => {
     triggerOnce: true,
   });
   return (
-    <SectionContainer>
+    <SectionContainer className={Styles.HomeBlueprintSection}>
+      <div className={Styles.HomeBlueprintSectionContent}>
+        <h2>Why do we need a Blueprint?</h2>
+        <p>
+          Developing a Data Space for Skills Blueprint is essential to create a{" "}
+          <span>human-centric data space</span>, where individuals have control
+          of their data and share it in a trustworthy way
+        </p>
+        <p>
+          The Blueprint will provide guidelines, governance and business models
+          as well as the <span>"building blocks"</span> (democratically governed
+          open-source code) that will help organisations put in place the
+          complex multi stakeholder collaboration the data space needs.
+        </p>
+
+        <Link to={"https://www.skillsdataspace.eu/wiki/"} target="_blank">
+          <Button icon="arrowRight" variantSvgColor="secondary">
+            Read the full document
+          </Button>
+        </Link>
+      </div>
       <SlideTopContainer
-        className={Styles.HomeBlueprintSection}
         ref={ref}
         InView={InView}
+        className={Styles.imageContainer}
       >
-        <div className={Styles.HomeBlueprintSectionContent}>
-          <h2>Why do we need a Blueprint?</h2>
-          <p>
-            Developing a Data Space for Skills Blueprint is essential to create
-            a <span>human-centric data space</span>, where individuals have
-            control of their data and share it in a trustworthy way
-          </p>
-          <p>
-            The Blueprint will provide guidelines, governance and business
-            models as well as the <span>"building blocks"</span> (democratically
-            governed open-source code) that will help organisations put in place
-            the complex multi stakeholder collaboration the data space needs.
-          </p>
-
-          <Link to={"https://www.skillsdataspace.eu/wiki/"} target="_blank">
-            <Button icon="arrowRight" variantSvgColor="secondary">
-              Read the full document
-            </Button>
-          </Link>
-        </div>
         <div className={Styles.image}>
           <img
             src={APP_IMAGES.icon.ds4s.cubeDS4S}

@@ -1,7 +1,7 @@
 export type NavBarLinks = {
   name:
     | "Home"
-    | "Use cases"
+    | "Usage scenario"
     | "Building blocks"
     | "Initiatives"
     | "Wiki"
@@ -10,7 +10,7 @@ export type NavBarLinks = {
 };
 
 export type ExploreCategories =
-  | "Use cases"
+  | "Usage scenario"
   | "Building Blocks"
   | "Initiatives"
   | "Examples";
@@ -99,7 +99,7 @@ export type TechnicalTrackGovernanceCategory =
   | "Data spaces protocol building block"
   | "Decentralized AI training"
   | "PDI Consent"
-  | "PDI Identify"
+  | "PDI Identity"
   | "PDI Catalogue"
   | "PDI Distributed Data Visualisation";
 
