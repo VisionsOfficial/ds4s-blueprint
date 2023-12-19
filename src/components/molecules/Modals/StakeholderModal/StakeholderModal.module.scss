@@ -47,6 +47,12 @@
 
     ul {
       list-style: inside;
+
+      a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
     p {
@@ -93,6 +99,15 @@
   }
 
   .content {
+    ul {
+      li::marker {
+        color: $hight-light-primary;
+      }
+      a {
+        color: $hight-light-primary;
+      }
+    }
+
     button {
       background-color: $hight-light-primary;
 
@@ -125,6 +140,14 @@
   }
 
   .content {
+    ul {
+      li::marker {
+        color: $tertiary;
+      }
+      a {
+        color: $tertiary;
+      }
+    }
     button {
       background-color: $tertiary;
 
@@ -157,6 +180,14 @@
   }
 
   .content {
+    ul {
+      li::marker {
+        color: $light-primary;
+      }
+      a {
+        color: $light-primary;
+      }
+    }
     button {
       background-color: $light-primary;
 
@@ -189,6 +220,14 @@
   }
 
   .content {
+    ul {
+      li::marker {
+        color: $quaternary;
+      }
+      a {
+        color: $quaternary;
+      }
+    }
     button {
       background-color: $quaternary;
 
@@ -221,6 +260,14 @@
   }
 
   .content {
+    ul {
+      li::marker {
+        color: $secondary;
+      }
+      a {
+        color: $secondary;
+      }
+    }
     button {
       background-color: $secondary;
 
