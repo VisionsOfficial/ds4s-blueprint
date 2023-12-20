@@ -56,7 +56,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Individuals (end users)",
           definition: "Get innovative employment and orientation services.",
-          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#12-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -196,7 +196,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "University & Training Providers (data and service providers)",
           definition: "Match their offers with relevant profiles.",
-          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#12-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -337,7 +337,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Employers (data providers and end users)",
           definition:
             "Match their offers with relevant profiles and get precise employee profiles. ",
-          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#12-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -478,7 +478,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Educational Institutions (service providers and end users)",
           definition:
             "Provide students with innovative employment and orientation services.",
-          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#12-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -634,7 +634,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
         content: {
           title: "Employment Agencies (service providers and end users)",
           definition: "Offer innovative employment and orientation services.",
-          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#12-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -765,7 +765,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Edtechs & AI Providers (data and service providers)",
           definition:
             "Offer better-personalised services due to better data access. ",
-          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#12-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -899,7 +899,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Infrastructure Providers",
           definition:
             "Offer services and building blocks to enable data matching, including consent, contract, interoperability, data visualisation, and decentralised processing.",
-          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#12-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",
@@ -997,7 +997,7 @@ export const STAKEHOLDER_CONTENT: ContentStakeholder[] = [
           title: "Orchestrator",
           definition:
             "Provides the ecosystem portal and coordinates governance, use cases, and business model discussions.",
-          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#7-toc-title",
+          wiki: "https://www.skillsdataspace.eu/blueprint/overview-of-strategic-usage-scenarios/#12-toc-title",
           benefits: [
             {
               actor: "Monetary benefits",

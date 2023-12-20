@@ -3,7 +3,7 @@ import Styles from "./StakeholderModal.module.scss";
 import { Modal } from "../../../atoms/Modals/Modal/Modal";
 import { Button } from "../../../atoms/Buttons/Button/Button";
 import { CategoriesContentStakeholder, Stakeholder } from "../../../../types";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { APP_LINKS } from "../../../../utils/appLinks";
 import { LOCAL_STORAGE_KEY } from "../../../../utils/keys/localStorageKeys";
 import React from "react";
@@ -65,16 +65,11 @@ export const StakeholderModal = ({
           <p>{stakeholder?.content.definition} :</p>
           <ul>
             {stakeholder?.content?.bbs?.map((bbs, index) => (
-              <li key={bbs.name + index}>{bbs.name}</li>
+              <li key={bbs.name + index}>
+                <Link to={bbs.path}>{bbs.name}</Link>
+              </li>
             ))}
           </ul>
-          <Button
-            onClick={() => {
-              handleClickButton();
-            }}
-          >
-            Learn more
-          </Button>
         </>
       );
     }
