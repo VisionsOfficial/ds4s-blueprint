@@ -30,6 +30,7 @@ import organisation from "../assets/imgs/icons/buildingblocks/organisation.jpg";
 //IMAGES
 import homeBanner from "../assets/imgs/img/home/banner.png";
 import homeBlueprint from "../assets/imgs/img/home/laptop_blueprint.png";
+import homeMatilda from "../assets/imgs/img/home/Mathilda_highlight.png";
 
 import useCaseBanner from "../assets/imgs/img/useCase/use_case_banner.jpg";
 
@@ -102,6 +103,7 @@ export const APP_IMAGES = {
     home: {
       homeBanner,
       homeBlueprint,
+      homeMatilda,
     },
     card: {
       useCase,

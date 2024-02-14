@@ -1,0 +1,47 @@
+@use "../../../../../shared/styles/index" as *;
+
+.HomeEUDuneSection {
+  @include flexRow(space-between);
+  gap: $medium;
+
+  .information {
+    @include flexColumn(flex-start);
+    gap: $medium;
+
+    a {
+      width: fit-content;
+    }
+
+    .btn {
+      padding: 0.5rem 2.5rem;
+
+      &:hover {
+        box-shadow: 0 0 15px -3px $white;
+      }
+    }
+  }
+
+  .image {
+    position: relative;
+    width: calc(100% + 1rem);
+    min-width: 50%;
+    display: flex;
+    z-index: 1;
+    .mainImg {
+      width: 100%;
+      max-height: 450px;
+      object-fit: contain;
+    }
+  }
+
+  @include resolution(xx-desktop, max-width) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $medium;
+
+    .information {
+      text-align: center;
+      align-items: center;
+    }
+  }
+}
